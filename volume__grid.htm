@@ -1,0 +1,87 @@
+<!DOCTYPE HTML PUBLIC "-//W3C//DTD HTML 4.01 Transitional//EN">
+<html>
+<head>
+   <title>VOLUME : Grid</title>
+   <meta name="generator" content="Help &amp; Manual" />
+   <meta name="keywords" content="" />
+   <meta http-equiv="Content-Type" content="text/html; charset=ISO-8859-1" />
+   <meta http-equiv="Content-Style-Type" content="text/css" />
+   <link type="text/css" href="default.css" rel="stylesheet" />
+
+<script type="text/javascript" src="helpman_topicinit.js"></script>
+</head>
+<body style="margin: 0px 0px 0px 0px; background: #FFFFFF;">
+
+
+<table width="100%" border="0" cellspacing="0" cellpadding="5" bgcolor="#D0D0D0">
+  <tr valign="middle">
+    <td align="left">
+      <p class="p_Heading1"><span class="f_Heading1">VOLUME : Grid</span></p>
+
+    </td>
+    <td align="right">
+     <span style="font-size: 9pt">
+     <a href="start_up.htm">Top</a>&nbsp;
+     <a href="volume___triangles.htm">Previous</a>&nbsp;
+     <a href="analysis.htm">Next</a>
+     </span>
+    </td>
+  </tr>
+</table>
+
+
+<!-- Placeholder for topic body. -->
+<table width="100%" border="0" cellspacing="0" cellpadding="5"><tr valign="top"><td align="left">
+<p>The Grid Volume method is intended to calculate volumes of dumps and works as follows.</p>
+<p>&nbsp;</p>
+<p>&nbsp;</p>
+<p>1) The user points to an island of triangles. If only one dump exists, then the island is in fact the whole model.</p>
+<p><img src="embim37.png" width="249" height="207" vspace="1" hspace="1" border="0" alt="">In this example there are 5 different dump models.</p>
+<p>&nbsp;</p>
+<p>2) After a dump has been identified the program works on a selected grid and;</p>
+<p>&nbsp;</p>
+<p><span style="width:48px">&nbsp;</span>a) &nbsp;determine the elevation per grid point on the model</p>
+<p><span style="width:48px">&nbsp;</span>b) interpolate a base elevation on the grid point as follows:</p>
+<p>&nbsp;</p>
+<div style="text-align: left; text-indent: 10px; padding: 0px 0px 0px 0px; margin: 0px 0px 0px 0px;"><table cellspacing="0" cellpadding="0" border="0" style="border: none; border-spacing:0px;">
+<tr style="text-align:left;vertical-align:top;">
+<td valign="top" width="365" style="width:365px;"><p><span class="f_ImageCaption"> &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; <img src="clip2126.png" width="263" height="272" border="0" alt="clip2126"></span></p>
+</td>
+<td valign="top" width="823" style="width:823px;"><p>&nbsp;</p>
+<p>For each grid point, radials are used to determine the shortest distance between the coordinates of the grid point and the perimeter of the model.</p>
+<p>&nbsp;</p>
+<p>In this example the radial (orange circles) gives the shortest distance between the grid point and the opposite model perimeter.</p>
+<p>&nbsp;</p>
+<p>Based on the elevations where the radial intersects with the perimeter, an elevation is interpolated at the grid point.</p>
+<p>&nbsp;</p>
+<p>The difference between the elevation on the model and the interpolated point from the perimeter lines is then used to calculate the volume.</p>
+</td>
+</tr>
+</table>
+</div>
+<p><span style="width:48px">&nbsp;</span></p>
+<p>3) The differences between the model elevation and the interpolated elevation are then accumulated to determine the dump volume.</p>
+<p>&nbsp;</p>
+<p>&nbsp;</p>
+<p><span style="font-weight: bold;">Advantages of this volume method:</span></p>
+<p>&nbsp;</p>
+<p>1) The user does not have to generate a base model with triangles. The radial interpolation method simulates the base triangles automatically.</p>
+<p>2) Unlike the <a href="volume___contours_.htm">volume by contours</a> or <a href="volume___sections.htm">volume by sections</a> this method can handle cut and fill situations.</p>
+<p>&nbsp;</p>
+<p><span style="font-weight: bold;">Cautions:</span></p>
+<p>&nbsp;</p>
+<p>Since this method interpolates between the closest perimeter points of the model, it will only be accurate of the triangles between multiple dumps are trimmed so that each dump has it's own toeline. This means the user should delete any triangles that connect one dump to another.</p>
+<p>&nbsp;</p>
+<p>Also be aware that interpolations are used to simulate the base model underneath the dump and the method should only be used if the original ground surface was fairly even.</p>
+<p>If the you are uncertain about using this method, rather use the <a href="terrace___volumes___cut___fill.htm">Terrace cut and fill methods</a> which could be more accurate.</p>
+<p>&nbsp;</p>
+<p>&nbsp;</p>
+<p>&nbsp;</p>
+<p>&nbsp;</p>
+<p>&nbsp;</p>
+<p>&nbsp;</p>
+
+</td></tr></table>
+
+</body>
+</html>

@@ -1,0 +1,70 @@
+<!DOCTYPE HTML PUBLIC "-//W3C//DTD HTML 4.01 Transitional//EN">
+<html>
+<head>
+   <title>STRING : Add - Toeline</title>
+   <meta name="generator" content="Help &amp; Manual" />
+   <meta name="keywords" content="GXT,Slope,Toelines" />
+   <meta http-equiv="Content-Type" content="text/html; charset=ISO-8859-1" />
+   <meta http-equiv="Content-Style-Type" content="text/css" />
+   <link type="text/css" href="default.css" rel="stylesheet" />
+
+<script type="text/javascript" src="helpman_topicinit.js"></script>
+</head>
+<body style="margin: 0px 0px 0px 0px; background: #FFFFFF;">
+
+
+<table width="100%" border="0" cellspacing="0" cellpadding="5" bgcolor="#D0D0D0">
+  <tr valign="middle">
+    <td align="left">
+      <p class="p_Heading1"><span class="f_Heading1">STRING : Add - Toeline</span></p>
+
+    </td>
+    <td align="right">
+     <span style="font-size: 9pt">
+     <a href="start_up.htm">Top</a>&nbsp;
+     <a href="stringadd_node.htm">Previous</a>&nbsp;
+     <a href="stringadd_fillet.htm">Next</a>
+     </span>
+    </td>
+  </tr>
+</table>
+
+
+<!-- Placeholder for topic body. -->
+<table width="100%" border="0" cellspacing="0" cellpadding="5"><tr valign="top"><td align="left">
+<p class="p_Heading1"><span class="f_Heading1">&nbsp;</span></p>
+<p class="p_Heading1"><span class="f_rrelatedtopic">MENU : gXt - Add - Toeline</span></p>
+<p class="p_Heading1"><span style="font-size: 5pt; color: #010100;">&nbsp;</span></p>
+<p class="p_Heading1"><span style="font-size: 9pt; color: #010100;">Create a new string next to an existing one at a position determined by the specified slope value and the elevation on the triangle model of the active project.</span></p>
+<p class="p_Heading1"><span style="font-size: 9pt; color: #010100;">The indicated string will be followed. At regular intervals, cross-sections will be interpolated on the surface of the active project. Model Maker will then determine the position of the toe point by comparing the elevation on the string at that point to that of the ground.</span></p>
+<p class="p_Heading1"><span class="f_Heading1">&nbsp;</span></p>
+<p class="p_Heading1"><img src="_bm1058.png" width="233" height="104" border="0" alt="_bm1058"></p>
+<p class="p_Heading1"><span class="f_Heading1">&nbsp;</span></p>
+<p class="p_Heading1"><span style="font-size: 9pt; color: #010100;">The picture presents a </span><span style="font-size: 9pt; font-weight: bold; color: #010100;">cross-section</span><span style="font-size: 9pt; color: #010100;"> through the indicated string. A new node is added to the new toe line string at the position where the toeline based on the specified slope meets the ground. The original string is above the ground and in a fill position. Model Maker will automatically go down in a fill situation to get the toe point and up in a cut situation to determine the toe point position. You may,however, force the toepoint to be calculated as a cut or fill situation. In the picture, the forced toeline is calculated as a cut toeline, although the string is above the ground.</span></p>
+<p style="text-indent: 0px;"><span style="color: #000000;">&nbsp;</span></p>
+<p style="text-indent: 0px;"><span class="f_rrelatedtopic">Parameters</span></p>
+<p style="text-indent: 0px;"><span style="font-size: 5pt;">&nbsp;</span></p>
+<p style="text-indent: 0px;"><span class="f_CourierFixed">Slope</span></p>
+<p style="text-indent: 0px;"><span style="font-size: 9pt; color: #010100;">This indicates the embankment slope. Model Maker expects the slope to be specified as one over a user value,ie., a 10% slope is 1:10 (enter 10), a 25% slope is 1:4 (enter 4).</span></p>
+<p style="text-indent: 0px;"><span style="font-size: 5pt;">&nbsp;</span></p>
+<p style="text-indent: 0px;"><span class="f_CourierFixed">Interval</span></p>
+<p style="text-indent: 0px;"><span style="font-size: 9pt; color: #010100;">Nodes will be added to the new toeline string at the specified interval. </span></p>
+<p style="text-indent: 0px;"><span style="color: #000000;">&nbsp;</span></p>
+<div style="text-align: left; text-indent: 0px; padding: 0px 0px 0px 0px; margin: 0px 0px 0px 0px;"><table cellspacing="0" cellpadding="1" border="0" style="border: none; border-spacing:0px;">
+<tr style="text-align:left;vertical-align:top;">
+<td valign="top" width="661" style="width:661px;"><p style="text-align: center; text-indent: 0px;"><span style="font-style: italic; font-weight: bold; color: #ff0000; text-decoration: underline;">Special instructions: </span></p>
+<p style="text-align: center; text-indent: 0px;"><span style="font-size: 9pt; color: #010100;">Normal toepoint is where the toeline will go down in a fill situation and up in a cut situation.</span></p>
+<p style="text-align: center; text-indent: 0px;"><span style="font-size: 9pt; color: #010100;">Force up &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; </span><span class="f_CourierFixed"> &nbsp;:</span><span style="font-size: 9pt; color: #010100;"> The toepoint will always be above the main string if an intersection with the ground is found.</span></p>
+<p style="text-align: center; text-indent: 0px;"><span style="font-size: 9pt; color: #010100;">Force down &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp;  </span><span class="f_CourierFixed"> : </span><span style="font-size: 9pt; color: #010100;">The toepoint will always be below the main string if an &nbsp; &nbsp;intersection with the ground is found.</span></p>
+</td>
+</tr>
+</table>
+</div>
+<p style="text-indent: 0px;"><span style="color: #000000;">&nbsp;</span></p>
+<p style="text-indent: 0px;"><span class="f_rrelatedtopic">Related topics:</span></p>
+<p style="text-indent: 0px;"><span style="font-size: 9pt; color: #010100;"><a href="toepoint____add.htm">Toelines</a></span></p>
+
+</td></tr></table>
+
+</body>
+</html>

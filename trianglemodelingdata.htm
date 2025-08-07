@@ -1,0 +1,129 @@
+<!DOCTYPE HTML PUBLIC "-//W3C//DTD HTML 4.01 Transitional//EN">
+<html>
+<head>
+   <title>TRIANGLE : Modeling data</title>
+   <meta name="generator" content="Help &amp; Manual" />
+   <meta name="keywords" content="Contour,Data,Modeling,Surface,TRIANGLES" />
+   <meta http-equiv="Content-Type" content="text/html; charset=ISO-8859-1" />
+   <meta http-equiv="Content-Style-Type" content="text/css" />
+   <link type="text/css" href="default.css" rel="stylesheet" />
+
+<script type="text/javascript" src="helpman_topicinit.js"></script>
+</head>
+<body style="margin: 0px 0px 0px 0px; background: #FFFFFF;">
+
+
+<table width="100%" border="0" cellspacing="0" cellpadding="5" bgcolor="#D0D0D0">
+  <tr valign="middle">
+    <td align="left">
+      <p class="p_Heading1"><span class="f_Heading1">TRIANGLE : Modeling data</span></p>
+
+    </td>
+    <td align="right">
+     <span style="font-size: 9pt">
+     <a href="start_up.htm">Top</a>&nbsp;
+     <a href="newitem6.htm">Previous</a>&nbsp;
+     <a href="triangle___add.htm">Next</a>
+     </span>
+    </td>
+  </tr>
+</table>
+
+
+<!-- Placeholder for topic body. -->
+<table width="100%" border="0" cellspacing="0" cellpadding="5"><tr valign="top"><td align="left">
+<p class="p_Heading1"><span class="f_Heading1">&nbsp;</span></p>
+<p class="p_Heading1"><span class="f_rrelatedtopic">MENU : Tri</span></p>
+<p class="p_Heading1"><span style="font-size: 6pt; color: #010100;">&nbsp;</span></p>
+<p class="p_Heading1"><span style="font-size: 9pt; color: #010100;">Most of the functions relating to triangles are found under the </span><span style="font-size: 9pt; font-weight: bold; color: #010100;">Tri</span><span style="font-size: 9pt; color: #010100;"> &nbsp;menu on the left of the <a href="main_screen.htm">main screen</a>.</span></p>
+<p class="p_Heading1"><span style="font-size: 9pt; color: #010100;">&nbsp;</span></p>
+<p class="p_Heading1"><span style="font-size: 9pt; color: #010100;"> </span><map name="map10"><area shape="rect" coords="386,143,417,162" href="triangle___wipeout.htm#trianglelegs" alt=""><area shape="rect" coords="287,143,318,162" href="triangle___wipeout.htm#triangleid" alt=""><area shape="rect" coords="320,143,382,163" href="triangle___wipeout.htm#triangleduplicate" alt=""><area shape="rect" coords="255,143,286,162" href="triangle___wipeout.htm#triangleline" alt=""><area shape="rect" coords="95,144,125,163" href="triangle___wipeout.htm" alt=""><area shape="rect" coords="542,58,581,77" href="triangle___special.htm" alt=""><area shape="rect" coords="498,58,541,77" href="triangle___errors.htm" alt=""><area shape="rect" coords="452,57,490,76" href="triangle___add_constant.htm" alt=""><area shape="rect" coords="397,58,450,77" href="triangle___display.htm" alt=""><area shape="rect" coords="366,58,393,77" href="triangle___parameters.htm" alt=""><area shape="rect" coords="324,58,365,77" href="triangle___clear.htm" alt=""><area shape="rect" coords="269,58,323,77" href="triangle___csearch.htm" alt=""><area shape="rect" coords="237,58,266,77" href="triangledetail.htm" alt=""><area shape="rect" coords="196,58,235,77" href="triangle___cross_section.htm" alt=""><area shape="rect" coords="165,59,192,78" href="triangle___side_.htm" alt=""><area shape="rect" coords="129,58,164,79" href="triangle___creating___automati.htm" alt=""><area shape="rect" coords="96,59,129,78" href="triangle___wipeout.htm" alt=""><area shape="rect" coords="65,58,94,77" href="triangle___delete.htm" alt=""><area shape="rect" coords="32,57,63,76" href="triangle___edit___example.htm" alt=""><area shape="rect" coords="3,58,30,77" href="triangle___add.htm" alt=""></map><img src="untitled2.png" width="587" height="171" border="0" alt="Untitled2" usemap="#map10"></p>
+<p style="text-indent: 0px;"><span style="color: #000000;">&nbsp;</span></p>
+<p style="text-indent: 0px;"><span style="font-size: 9pt; color: #010100;">Form a triangle by connecting 3 points and form the surface between the 3 points.</span></p>
+<p style="text-indent: 0px;"><span style="color: #000000;">&nbsp;</span></p>
+<p style="text-indent: 0px;"><span style="font-size: 9pt; color: #010100;">Visualize a triangle, not as 3 lines, but as a triangular surface between 3 points with the boundary of the triangle being formed by the legs.</span></p>
+<p style="text-indent: 0px;"><span style="color: #000000;">&nbsp;</span></p>
+<p style="text-indent: 0px;"><span style="font-size: 9pt; color: #010100;">In memory, a triangle is stored as an object with six variables. Variables 1 to 3 hold the database number of the DTM points on the corners of the triangle. Variables 4 to 6 hold the number of the neighboring triangles on the side of the triangle. The term <a href="definitionopensidetriangl.htm">open side</a> refers to a triangle that has a side not connected to a neighboring triangle.</span></p>
+<p style="text-indent: 0px;"><span style="font-size: 9pt; color: #010100;">A model consisting of only 1 triangle has three open sides and, if the model has 2 triangles next to each other, each triangle will have 1 closed side, (the side where the 2 triangles are joined) and each will have 2 open sides.</span></p>
+<p style="text-indent: 0px;"><span style="color: #000000;">&nbsp;</span></p>
+<p style="text-indent: 0px;"><span style="font-size: 9pt; color: #010100;">About open sides:</span></p>
+<p style="text-indent: 0px;"><span style="color: #000000;">&nbsp;</span></p>
+<p style="text-indent: 0px;"><span class="f_CourierFixed">1) &nbsp; &nbsp; &nbsp; &nbsp;</span><span style="font-size: 9pt; color: #010100;">Adding a new triangle to a triangle model can only be done from an open side of the existing triangles.</span></p>
+<p style="text-indent: 0px;"><span style="color: #000000;">&nbsp;</span></p>
+<p style="text-indent: 0px;"><span class="f_CourierFixed">2) &nbsp; &nbsp; &nbsp; &nbsp;</span><span style="font-size: 9pt; color: #010100;">The open sides of the triangle model will always indicate the boundary of the model.</span></p>
+<p style="text-indent: 0px;"><span style="color: #000000;">&nbsp;</span></p>
+<p style="text-indent: 0px;"><span style="width:24px">&nbsp;</span> &nbsp; &nbsp; &nbsp; &nbsp;<img src="_bm1207.png" width="250" height="234" border="0" alt="_bm1207"></p>
+<p style="text-indent: 0px;"><span style="color: #000000;">&nbsp;</span></p>
+<p style="text-indent: 0px;"><span class="f_CourierFixed">3) &nbsp; &nbsp; &nbsp; &nbsp;</span><span style="font-size: 9pt; color: #010100;">Open sides can be inspected with the  <a href="triangle___side_.htm">SIDE</a> &nbsp;option in the &nbsp;TRI &nbsp;menu.</span></p>
+<p style="text-indent: 0px;"><span style="color: #000000;">&nbsp;</span></p>
+<p style="text-indent: 0px;"><span class="f_CourierFixed">4) &nbsp; &nbsp; &nbsp; &nbsp;</span><span style="font-size: 9pt; color: #010100;">Contours originating from an open sided leg of a triangle will result in a contour that does not form a closed area. Therefore, it &nbsp;will  &nbsp; &nbsp; &nbsp; &nbsp;always stop on an open sided triangle &nbsp;again.</span></p>
+<p style="text-indent: 0px;"><span style="color: #000000;">&nbsp;</span></p>
+<p style="text-indent: 0px;"><span class="f_CourierFixed">5) &nbsp; &nbsp; &nbsp; &nbsp;</span><span style="font-size: 9pt; color: #010100;">The perimeter of a triangle model, as depicted by the open sided triangle, can be copied to CAD lines via the &nbsp;CAD - GEN - COPY -  &nbsp; &nbsp; &nbsp; &nbsp;SIDE &nbsp;function.</span></p>
+<p style="text-indent: 0px;"><span style="color: #000000;">&nbsp;</span></p>
+<p style="text-indent: 0px;"><span class="f_CourierFixed">6) &nbsp; &nbsp; &nbsp; &nbsp;</span><span style="font-size: 9pt; color: #010100;">It is good practice to use the &nbsp;TRI - SIDE &nbsp;function after a triangle model is created in order to ascertain that the triangles cover the  &nbsp; &nbsp; &nbsp; &nbsp;whole model and that no gaps are left within the model. If you find any sides flashing inside the model, zoom or magnify into those  &nbsp; &nbsp; &nbsp; &nbsp;areas and manually add new triangles in the open areas with the TRI - ADD &nbsp;function. It is sometimes useful to use the &nbsp;CONTINUE  &nbsp; &nbsp; &nbsp; &nbsp;SEARCH &nbsp;(CSEARCH) option to have &nbsp;Model Maker closes those gaps automatically.</span></p>
+<p style="text-indent: 0px;"><span style="color: #000000;">&nbsp;</span></p>
+<p style="text-indent: 0px;"><span class="f_CourierFixed">7) &nbsp; &nbsp; &nbsp; &nbsp;</span><span style="font-size: 9pt; color: #010100;">The &nbsp;CONTINUE SEARCH &nbsp;function will always inspect the open sides and try to add new triangles from them.</span></p>
+<p style="text-indent: 0px;"><span style="color: #000000;">&nbsp;</span></p>
+<p style="text-indent: 0px;"><span style="color: #000000;">&nbsp;</span></p>
+<p style="text-indent: 0px;"><span style="font-size: 9pt; font-style: italic; font-weight: bold; color: #ff0000;">THINGS TO WATCH OUT FOR :</span></p>
+<div style="text-align: left; text-indent: 0px; padding: 0px 0px 0px 0px; margin: 0px 0px 0px 0px;"><table cellspacing="0" cellpadding="1" border="0" style="border: none; border-spacing:0px;">
+<tr style="text-align:left;vertical-align:top;">
+<td colspan="2" valign="top" width="726" style="width:726px;"><p style="text-indent: 0px;"><span class="f_CourierFixed">1) &nbsp; &nbsp; &nbsp; &nbsp;</span><span style="font-size: 9pt; color: #010100;">Triangles should never overlap each other. Model Maker takes all precautions to &nbsp;prevent triangles from overlapping or, in other words, model the same area with 2 &nbsp;triangles.</span></p>
+<p style="text-indent: 0px;"><span style="color: #000000;">&nbsp;</span></p>
+<p class="p_Heading1"><span style="font-size: 9pt; color: #010100;">Some situations result in an incorrect triangle model:-</span></p>
+</td>
+</tr>
+<tr style="text-align:left;vertical-align:top;">
+<td valign="top" width="363" style="width:363px;"><p style="text-align: center; text-indent: 0px;"><span style="color: #000000;">&nbsp;</span></p>
+<p style="text-align: center; text-indent: 0px;"><span class="f_CourierFixed">a) &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp;</span><span style="font-size: 9pt; color: #010100;">Where triangles have been connected to a point and the point is then moved so far away from its original position that it drags the triangle over the legs of others.</span></p>
+<p style="text-align: center; text-indent: 0px;"><span style="color: #000000;">&nbsp;</span></p>
+<p style="text-align: center; text-indent: 0px;"><span style="width:24px">&nbsp;</span> &nbsp; &nbsp; &nbsp; &nbsp;</p>
+<p style="text-align: center; text-indent: 0px;"><span style="color: #000000;">&nbsp;</span></p>
+<p style="text-align: center; text-indent: 0px;"><span style="font-size: 9pt; color: #010100;"> <img src="_bm1208.png" width="167" height="157" border="0" alt="_bm1208" style="margin:0 auto;margin:0px;"> &nbsp; &nbsp; &nbsp; &nbsp;</span></p>
+</td>
+<td valign="top" width="363" style="width:363px;"><p style="text-indent: 0px;"><span style="color: #000000;">&nbsp;</span></p>
+<p style="text-align: center; text-indent: 0px;"><span class="f_CourierFixed">b) &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp;</span><span style="font-size: 9pt; color: #010100;">Model Make &nbsp;does not allow triangles to be built on a set of points that have duplicated points. Although the program checks and tries to accommodate duplicated points before triangles are generated, confusing situations arise and Model &nbsp;Maker could lose control over the triangle model and overlapping triangles may be formed.</span></p>
+<p style="text-align: center; text-indent: 0px;"><img src="_bm1209.png" width="166" height="157" border="0" alt="_bm1209" style="margin:0 auto;margin:0px;"></p>
+</td>
+</tr>
+<tr style="text-align:left;vertical-align:top;">
+<td colspan="2" valign="top" width="726" style="width:726px;"><p class="p_Heading1"><span class="f_Heading1">&nbsp;</span></p>
+<p style="text-indent: 0px;"><span style="font-size: 9pt; color: #010100;">Use the &nbsp;TRI - WIPEOUT - LAST &nbsp;function to backtrack out the situation if possible. The bottom line is to try and avoid a model with duplicated points. From &nbsp; &nbsp; &nbsp; &nbsp;the top menu, use the &nbsp;DATA - GENERAL - AUDIT option to deactivate duplicated points.</span></p>
+</td>
+</tr>
+</table>
+</div>
+<p style="text-indent: 0px;"><span style="color: #000000;">&nbsp;</span></p>
+<p style="text-indent: 0px;"><span class="f_CourierFixed">2) &nbsp; &nbsp; &nbsp; &nbsp;</span><span style="font-size: 9pt; color: #010100;">Model Maker cannot model a solid surface, overhang or vertical surface.</span></p>
+<p style="text-indent: 0px;"><span style="color: #000000;">&nbsp;</span></p>
+<p style="text-indent: 0px;"><span class="f_CourierFixed">3) &nbsp; &nbsp; &nbsp; &nbsp;</span><span style="font-size: 9pt; color: #010100;">On average, you will have twice as many triangles as points on a model.</span></p>
+<p style="text-indent: 0px;"><span style="color: #000000;">&nbsp;</span></p>
+<p style="text-indent: 0px;"><span class="f_CourierFixed">4) &nbsp; &nbsp; &nbsp; &nbsp;</span><span style="font-size: 9pt; color: #010100;">Triangles are normally saved separately from the DTM points in a &nbsp;.TR2 &nbsp;file. The 2 file formats that save the triangles and DTM points together in one file is the <a href="filetotal.htm">TOT</a> and MAL formats.</span></p>
+<p style="text-indent: 0px;"><span style="color: #000000;">&nbsp;</span></p>
+<p style="text-indent: 0px;"><span class="f_CourierFixed">5) &nbsp; &nbsp; &nbsp; &nbsp;</span><span style="font-size: 9pt; color: #010100;">Often,a single project of points may have different triangle models that fit over it. For example, you have a set of DTM points  &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp;modeling a coal seam having points coded TC for top of coal and BC for bottom of coal. Separate sets of triangles may be  &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp;formed to all the TC points and saved to disk and triangles to BC points and saved under a different file name to disk.</span></p>
+<p style="text-indent: 0px;"><span style="color: #000000;">&nbsp;</span></p>
+<p style="text-indent: 0px;"><span class="f_CourierFixed">6) &nbsp; &nbsp; &nbsp; &nbsp;</span><span style="font-size: 9pt; color: #010100;">Because triangles are referenced to coordinates via their point numbers in the database, it is important to note that a set of  &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp;triangles can only be useful if loaded together with the points from which it was originally created.</span></p>
+<p style="text-indent: 0px;"><span style="color: #000000;">&nbsp;</span></p>
+<p style="text-indent: 0px;"><span class="f_CourierFixed">7) &nbsp; &nbsp; &nbsp; &nbsp;</span><span style="font-size: 9pt; color: #010100;">Number 6 implies that triangles data is of no use if the original points data is not available.</span></p>
+<p style="text-indent: 0px;"><span style="color: #000000;">&nbsp;</span></p>
+<p style="text-indent: 0px;"><span class="f_CourierFixed">8) &nbsp; &nbsp; &nbsp; &nbsp;</span><span style="font-size: 9pt; color: #010100;">Number 6 implies that you should not alter the structure of your points database after a triangle model have been based on it,  &nbsp; &nbsp; &nbsp; &nbsp;meaning that deleting or adding points to the database in between the original points would jeopardize the integrity that exist  &nbsp; &nbsp; &nbsp; &nbsp;between the triangles and the points.</span></p>
+<p style="text-indent: 0px;"><span style="color: #000000;">&nbsp;</span></p>
+<p style="text-indent: 0px;"><span style="width:24px">&nbsp;</span><span style="font-size: 9pt; color: #010100;">You can add points to the database if the new points follow sequentially after the last points of the original database.</span></p>
+<p style="text-indent: 0px;"><span style="color: #000000;">&nbsp;</span></p>
+<p style="text-indent: 0px;"><span class="f_CourierFixed">9) &nbsp; &nbsp; &nbsp; &nbsp;</span><span style="font-size: 9pt; color: #010100;">The only file type that saves points and triangles together in one is the <a href="filetotal.htm">TOT</a> file. </span></p>
+<p style="text-indent: 0px;"><span style="color: #000000;">&nbsp;</span></p>
+<p style="text-indent: 0px;"><span class="f_rrelatedtopic">Related topics:</span></p>
+<p style="text-indent: 0px;"><span style="font-size: 9pt; color: #010100;"><a href="trianglecreating_manually.htm">Creating Triangles Manually</a></span></p>
+<p style="text-indent: 0px;"><span style="font-size: 9pt; color: #010100;"><a href="triangle___creating___automati.htm">Creating Triangles Automatically</a></span></p>
+<p style="text-indent: 0px;"><span style="font-size: 9pt; color: #010100;"><a href="triangleedit(2).htm">Editing Triangles</a></span></p>
+<p style="text-indent: 0px;"><span style="font-size: 9pt; color: #010100;"><a href="triangleedit_beforemodel.htm">Model Editing before Triangles are Created</a></span></p>
+<p style="text-indent: 0px;"><span style="font-size: 9pt; color: #010100;"><a href="triangleedit_aftermodel.htm">Model Editing after Triangles have been Created</a></span></p>
+<p style="text-indent: 0px;"><span style="font-size: 9pt; color: #010100;"><a href="triangleedit_summary.htm">Edit Triangles Summary</a></span></p>
+<p style="text-indent: 0px;"><span style="font-size: 9pt; color: #010100;"><a href="triangle___delete.htm">Deleting Triangles</a></span></p>
+<p style="text-indent: 0px;"><span style="font-size: 9pt; color: #010100;"><a href="trianglesave.htm">Saving Triangles</a></span></p>
+<p style="text-indent: 0px;"><span style="color: #000000;">&nbsp;</span></p>
+
+</td></tr></table>
+
+</body>
+</html>

@@ -1,0 +1,98 @@
+<!DOCTYPE HTML PUBLIC "-//W3C//DTD HTML 4.01 Transitional//EN">
+<html>
+<head>
+   <title>SURVEY : Helmert</title>
+   <meta name="generator" content="Help &amp; Manual" />
+   <meta name="keywords" content="Convert,Helmert" />
+   <meta http-equiv="Content-Type" content="text/html; charset=ISO-8859-1" />
+   <meta http-equiv="Content-Style-Type" content="text/css" />
+   <link type="text/css" href="default.css" rel="stylesheet" />
+
+<script type="text/javascript" src="helpman_topicinit.js"></script>
+</head>
+<body style="margin: 0px 0px 0px 0px; background: #FFFFFF;">
+
+
+<table width="100%" border="0" cellspacing="0" cellpadding="5" bgcolor="#D0D0D0">
+  <tr valign="middle">
+    <td align="left">
+      <p class="p_Heading1"><span class="f_Heading1">SURVEY : Helmert</span></p>
+
+    </td>
+    <td align="right">
+     <span style="font-size: 9pt">
+     <a href="start_up.htm">Top</a>&nbsp;
+     <a href="survey___traverse___radial.htm">Previous</a>&nbsp;
+     <a href="surveygeogrid.htm">Next</a>
+     </span>
+    </td>
+  </tr>
+</table>
+
+
+<!-- Placeholder for topic body. -->
+<table width="100%" border="0" cellspacing="0" cellpadding="5"><tr valign="top"><td align="left">
+<p style="text-indent: 0px; margin: 0px 0px 0px 10px;"><span style="color: #000000;">&nbsp;</span></p>
+<p style="text-indent: 0px; margin: 0px 0px 0px 10px;">The Helmert transformation procedure transfers Dtm,Cad and Strings data to a new system based on a set of Old and New coordinates. </p>
+<p style="text-indent: 0px; margin: 0px 0px 0px 10px;"><span style="color: #000000;">&nbsp;</span></p>
+<p style="text-indent: 0px; margin: 0px 0px 0px 10px;">The Input Data editor is used to enter sets of coordinates on the existing (old) and new system.</p>
+<p style="text-indent: 0px; margin: 0px 0px 0px 10px;"><span style="color: #000000;">&nbsp;</span></p>
+<p style="text-indent: 0px; margin: 0px 0px 0px 10px;">The coordinates (old and new) for 3 or more base points must be entered.</p>
+<p style="text-indent: 0px; margin: 0px 0px 0px 10px;"><span style="color: #000000;">&nbsp;</span></p>
+<div style="text-align: left; text-indent: 0px; padding: 0px 0px 0px 0px; margin: 0px 0px 0px 10px;"><table cellspacing="0" cellpadding="0" border="0" style="border: none; border-spacing:0px;">
+<tr style="text-align:left;vertical-align:top;">
+<td rowspan="5" valign="top" width="603" style="width:603px;"><p style="text-indent: 0px; margin: 0px 0px 0px 10px;"><img src="clip1908.png" width="580" height="474" border="0" alt="clip1908"></p>
+</td>
+<td valign="top" width="596" style="width:596px;"><p style="text-indent: 0px;"><span class="f_CourierFixed" style="font-size: 12pt; color: #ffffff; background-color: #ff9900;">&nbsp;1&nbsp;</span></p>
+<p style="text-indent: 0px;">For each base point, define the Y and X coordinate values on the old (or from) system.</p>
+</td>
+</tr>
+<tr style="text-align:left;vertical-align:top;">
+<td valign="top" width="596" style="width:596px;"><p style="text-indent: 0px;"><span class="f_CourierFixed" style="font-size: 12pt; color: #ffffff; background-color: #ff9900;">&nbsp;2&nbsp;</span></p>
+<p style="text-indent: 0px;">Define the Y and X coordinate for each point on the new (or to) system.</p>
+</td>
+</tr>
+<tr style="text-align:left;vertical-align:top;">
+<td valign="top" width="596" style="width:596px;"><p style="text-indent: 0px;"><span class="f_CourierFixed" style="font-size: 12pt; color: #ffffff; background-color: #ff9900;">&nbsp;3&nbsp;</span></p>
+<p style="text-indent: 0px;">The Helmert function uses the difference between the Old and New systems and calculates the residuals for each base (common) point.</p>
+<p style="text-indent: 0px;"><span style="color: #000000;">&nbsp;</span></p>
+<p style="text-indent: 0px;">Before converting the data, inspect the residual values to determine the projected accuracy of the conversion.</p>
+</td>
+</tr>
+<tr style="text-align:left;vertical-align:top;">
+<td valign="top" width="596" style="width:596px;"><p style="text-indent: 0px;"><span class="f_CourierFixed" style="font-size: 12pt; color: #ffffff; background-color: #ff9900;">&nbsp;4&nbsp;</span></p>
+<p style="text-indent: 0px;">The conversion function can be applied to the Dtm, Cad and Strings data. Check the relative options.</p>
+<p style="text-indent: 0px; margin: 0px 0px 0px 10px;"><span style="color: #000000;">&nbsp;</span></p>
+</td>
+</tr>
+<tr style="text-align:left;vertical-align:top;">
+<td valign="top" width="596" style="width:596px;"><p style="text-indent: 0px;"><span class="f_CourierFixed" style="font-size: 12pt; color: #ffffff; background-color: #ff9900;">&nbsp;5&nbsp;</span></p>
+<p style="text-indent: 0px;">After the base coordinates have been entered and the residuals are acceptable, click the Convert Data button to transform the coordinates.</p>
+</td>
+</tr>
+<tr style="text-align:left;vertical-align:top;">
+<td valign="top"><br>
+</td>
+<td valign="top" width="596" style="width:596px;"><p style="text-indent: 0px;"><span class="f_CourierFixed" style="font-size: 12pt; color: #ffffff; background-color: #ff9900;">&nbsp;6&nbsp;</span></p>
+<p style="text-indent: 0px;">Base points with undesired residual values can be deactivated. To activate/de-activate a base point, select the point by clicking in the editor and then click the <span style="font-weight: bold;">Activate</span> option in the top menu.</p>
+<p style="text-indent: 0px;">In the above example, points 5 &amp; 6 &nbsp;are NOT active (X) and will not be used to calculate residual values.</p>
+<p style="text-indent: 0px;"><span style="color: #000000;">&nbsp;</span></p>
+<p style="text-indent: 0px;"><img src="clip1909.png" width="184" height="44" border="0" alt="clip1909"></p>
+<p style="text-indent: 0px; margin: 0px 0px 0px 10px;"><span style="color: #000000;">&nbsp;</span></p>
+</td>
+</tr>
+</table>
+</div>
+<p style="text-indent: 0px; margin: 0px 0px 0px 10px;"><span style="color: #000000;">&nbsp;</span></p>
+<p style="text-indent: 0px; margin: 0px 0px 0px 10px;"><span style="font-weight: bold;">FILE :</span> function to save and load the base (old &amp; new) coordinates.</p>
+<p style="text-indent: 0px; margin: 0px 0px 0px 10px;">  </p>
+<p style="text-indent: 0px; margin: 0px 0px 0px 10px;"><span style="font-weight: bold;">GRAPHICS :</span> function to pick coordinates from the screen. Most of the time the user will manually enter the old (A) and new (B) coordinates in the Input Data editor. If any of the base coordinates are already part of your drawing and you want to select it. use the Graphics function.</p>
+<p style="text-indent: 0px; margin: 0px 0px 0px 10px;">First click on the coordinate line which you want to populate and then use the correct option. <img src="clip1910.png" width="250" height="110" border="0" alt="clip1910"></p>
+<p style="text-indent: 0px; margin: 0px 0px 0px 10px;"><span style="color: #000000;">&nbsp;</span></p>
+<p style="text-indent: 0px; margin: 0px 0px 0px 10px;"><span style="color: #000000;">&nbsp;</span></p>
+<p style="text-indent: 0px; margin: 0px 0px 0px 10px;"><span style="color: #000000;">&nbsp;</span></p>
+
+</td></tr></table>
+
+</body>
+</html>

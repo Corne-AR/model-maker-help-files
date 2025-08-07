@@ -1,0 +1,182 @@
+<!DOCTYPE HTML PUBLIC "-//W3C//DTD HTML 4.01 Transitional//EN">
+<html>
+<head>
+   <title>MINE : Rehab - Id String</title>
+   <meta name="generator" content="Help &amp; Manual" />
+   <meta name="keywords" content="" />
+   <meta http-equiv="Content-Type" content="text/html; charset=ISO-8859-1" />
+   <meta http-equiv="Content-Style-Type" content="text/css" />
+   <link type="text/css" href="default.css" rel="stylesheet" />
+
+<script type="text/javascript" src="helpman_topicinit.js"></script>
+</head>
+<body style="margin: 0px 0px 0px 0px; background: #FFFFFF;">
+
+
+<table width="100%" border="0" cellspacing="0" cellpadding="5" bgcolor="#D0D0D0">
+  <tr valign="middle">
+    <td align="left">
+      <p class="p_Heading1"><span class="f_Heading1">MINE : Rehab - Id String</span></p>
+
+    </td>
+    <td align="right">
+     <span style="font-size: 9pt">
+     <a href="start_up.htm">Top</a>&nbsp;
+     <a href="minerehab_string2.htm">Previous</a>&nbsp;
+     <a href="mine__rehab___average_elevatio.htm">Next</a>
+     </span>
+    </td>
+  </tr>
+</table>
+
+
+<!-- Placeholder for topic body. -->
+<table width="100%" border="0" cellspacing="0" cellpadding="5"><tr valign="top"><td align="left">
+<p style="text-indent: 0px; margin: 0px 0px 0px 10px;"><span style="color: #000000;">&nbsp;</span></p>
+<p style="text-indent: 0px; margin: 0px 0px 0px 10px;">This rehab function is specifically designed to automate and optimize the cut &amp; fill volume calculations when filling an excavated ramp to user defined maximum slope standards. </p>
+<p style="text-indent: 0px; margin: 0px 0px 0px 10px;">The type of ramps referred to here, are mostly found when big draglines are used to excavate coal in an open pit mining operation.</p>
+<p style="text-indent: 0px; margin: 0px 0px 0px 10px;"><span style="color: #000000;">&nbsp;</span></p>
+<p style="text-indent: 0px; margin: 0px 0px 0px 10px;">It is normally required that the water should drain out of the ramp, that an optional ditch must be formed along the center alignment of the ramp and that the side slopes may not be steeper than a predefined value. The purpose of this function is to develop a new surface that will satisfy the parameter requirements but also do it with the least amount of material movement and also in the end, have a balanced cut and fill volume distribution.</p>
+<p style="text-indent: 0px; margin: 0px 0px 0px 10px;"><span style="color: #000000;">&nbsp;</span></p>
+<p style="text-indent: 0px; margin: 0px 0px 0px 10px;">This rehab method works with the following elements:</p>
+<div style="text-align: left; text-indent: 0px; padding: 0px 0px 0px 0px; margin: 0px 0px 0px 9px;"><table border="0" cellpadding="0" cellspacing="0" style="line-height: normal;"><tr style="vertical-align:baseline" valign="baseline"><td width="27">1.</td><td>Gridded DTm data. If your survey data is in a random format, use <a href="3d___grid.htm">3D grid</a> option to create points on a regular grid.</td></tr></table></div><div style="text-align: left; text-indent: 0px; padding: 0px 0px 0px 0px; margin: 0px 0px 0px 9px;"><table border="0" cellpadding="0" cellspacing="0" style="line-height: normal;"><tr style="vertical-align:baseline" valign="baseline"><td width="27">2.</td><td>String. At least 2 strings are needed. One string to define the centerline of the ramp and another to define the toe point positions of the centerline string.</td></tr></table></div><p style="text-indent: 0px; margin: 0px 0px 0px 10px;"><span style="color: #000000;">&nbsp;</span></p>
+<p style="text-indent: 0px; margin: 0px 0px 0px 10px;"><span style="color: #000000;">&nbsp;</span></p>
+<p style="text-indent: 0px; margin: 0px 0px 0px 10px;"><span class="f_rrelatedtopic">Create the Strings</span></p>
+<p style="text-indent: 0px; margin: 0px 0px 0px 10px;"><span style="color: #000000;">&nbsp;</span></p>
+<div style="text-align: left; text-indent: 0px; padding: 0px 0px 0px 0px; margin: 0px 0px 0px 10px;"><table cellspacing="0" cellpadding="0" border="0" style="border: none; border-spacing:0px;">
+<tr style="text-align:left;vertical-align:top;">
+<td valign="top" width="281" style="width:281px;"><p class="p_Heading1"><img src="clip1661.png" width="265" height="624" border="0" alt="clip1661"></p>
+</td>
+<td valign="top" width="548" style="width:548px;"><p class="p_Heading1"><span class="f_Heading1">&nbsp;</span></p>
+<p class="p_Heading1"><span class="f_Heading1">&nbsp;</span></p>
+<p class="p_Heading1"><span class="f_Heading1">&nbsp;</span></p>
+<p class="p_Heading1"><span class="f_Heading1">&nbsp;</span></p>
+<p class="p_Heading1"><span class="f_CourierFixed" style="font-weight: normal;">The image is showing a ramp to be rehabilitated</span></p>
+<p class="p_Heading1"><span class="f_Heading1">&nbsp;</span></p>
+<p class="p_Heading1"><span class="f_Heading1">&nbsp;</span></p>
+<p class="p_Heading1"><span class="f_Heading1">&nbsp;</span></p>
+<p class="p_Heading1"><span class="f_Heading1">&nbsp;</span></p>
+<p class="p_Heading1"><span class="f_Heading1">&nbsp;</span></p>
+<p class="p_Heading1"><span class="f_CourierFixed" style="font-weight: normal;">To define the strings, do the following:.</span></p>
+<p class="p_Heading1"><span class="f_Heading1">&nbsp;</span></p>
+<p class="p_Heading1"><span class="f_CourierFixed" style="font-weight: normal;">a) Draw a general string along the center of the ramp. Use the String, <a href="string___vert.htm">vertical view</a> function and <a href="stringgradenode.htm">grade</a> the centerline string according to the required slope to drain the ramp (after it is rehabilitated).</span></p>
+<p class="p_Heading1"><span class="f_Heading1">&nbsp;</span></p>
+<p class="p_Heading1"><span class="f_CourierFixed" style="font-weight: normal;"> &nbsp;  <img src="clip1659.png" width="457" height="111" border="0" alt="clip1659"></span></p>
+<p class="p_Heading1"><span class="f_Heading1">&nbsp;</span></p>
+<p class="p_Heading1"><span class="f_Heading1">&nbsp;</span></p>
+<p class="p_Heading1"><span class="f_CourierFixed" style="font-weight: normal;">b) Draw <a href="stringadd_parallel.htm">parallel</a> strings (2) to the center string (1) if a flow ditch must be formed in the middle.</span></p>
+<p class="p_Heading1"><span class="f_Heading1">&nbsp;</span></p>
+<p class="p_Heading1"><span class="f_CourierFixed" style="font-weight: normal;"> &nbsp;  <img src="clip1660.png" width="326" height="125" border="0" alt="clip1660"></span></p>
+<p class="p_Heading1"><span class="f_Heading1">&nbsp;</span></p>
+<p class="p_Heading1"><span class="f_Heading1">&nbsp;</span></p>
+<p class="p_Heading1"><span class="f_Heading1">&nbsp;</span></p>
+<p class="p_Heading1"><span class="f_Heading1">&nbsp;</span></p>
+<p class="p_Heading1"><span class="f_Heading1">&nbsp;</span></p>
+</td>
+</tr>
+<tr style="text-align:left;vertical-align:top;">
+<td valign="top" width="281" style="width:281px;"><p class="p_Heading1"><span class="f_Heading1">&nbsp;</span></p>
+<p class="p_Heading1"><img src="clip1655.png" width="305" height="304" border="0" alt="clip1655"></p>
+<p class="p_Heading1"><span class="f_Heading1">&nbsp;</span></p>
+</td>
+<td valign="top" width="548" style="width:548px;"><p class="p_Heading1"><span class="f_Heading1">&nbsp;</span></p>
+<p class="p_Heading1"><span class="f_Heading1">&nbsp;</span></p>
+<p class="p_Heading1"><span class="f_CourierFixed" style="font-weight: normal;">c) To add the toeline string, use the <a href="stringadd_toeline.htm">Toeline</a> function and add strings (3 &amp; 4) on both sides of the new rehab surface.</span></p>
+<p class="p_Heading1"><span class="f_Heading1">&nbsp;</span></p>
+<p class="p_Heading1"><span class="f_Heading1">&nbsp;</span></p>
+<p class="p_Heading1"><span class="f_CourierFixed" style="font-weight: normal;">Since the center strings will normally be above the ramp surface, one has to select the Force Toepoints Up option. This will force the toeline strings be higher than the centerline and thus form a V slope towards the middle.</span></p>
+<p class="p_Heading1"><span class="f_Heading1">&nbsp;</span></p>
+<p class="p_Heading1"><span class="f_CourierFixed" style="font-weight: normal;">These strings will hit the sides and define (with the centreline strings) the surface of the Fill area.</span></p>
+<p class="p_Heading1"><span class="f_Heading1">&nbsp;</span></p>
+<p class="p_Heading1"><span class="f_Heading1">&nbsp;</span></p>
+</td>
+</tr>
+</table>
+</div>
+<p style="text-indent: 0px; margin: 0px 0px 0px 10px;"><span style="color: #000000;">&nbsp;</span></p>
+<div style="text-align: left; text-indent: 0px; padding: 0px 0px 0px 0px; margin: 0px 0px 0px 10px;"><table cellspacing="0" cellpadding="0" border="0" style="border: none; border-spacing:0px;">
+<tr style="text-align:left;vertical-align:top;">
+<td valign="top" width="282" style="width:282px;"><p class="p_Heading1"><span class="f_Heading1">&nbsp;</span></p>
+<p class="p_Heading1"><span class="f_Heading1">&nbsp;</span></p>
+<p class="p_Heading1"><img src="clip1662.png" width="232" height="189" border="0" alt="clip1662"></p>
+</td>
+<td valign="top" width="548" style="width:548px;"><p class="p_Heading1"><span class="f_Heading1">&nbsp;</span></p>
+<p class="p_Heading1"><span class="f_CourierFixed" style="font-weight: normal;">Important. </span></p>
+<p class="p_Heading1"><span class="f_Heading1">&nbsp;</span></p>
+<p class="p_Heading1"><span class="f_CourierFixed" style="font-weight: normal;">When the left and right toeline strings (3 &amp; 4) have been, they exist as 2 separate, individual strings. These 2 strings must be combined so they can define the total area that must be rehabilitated.</span></p>
+<p class="p_Heading1"><span class="f_Heading1">&nbsp;</span></p>
+<p class="p_Heading1"><span class="f_CourierFixed" style="font-weight: normal;">This is done by using the String, Edit, <a href="string___edit___flip.htm#combine">Combine</a> function.</span></p>
+<p class="p_Heading1"><img src="clip1663.png" width="196" height="105" border="0" alt="clip1663"></p>
+</td>
+</tr>
+</table>
+</div>
+<p style="text-indent: 0px; margin: 0px 0px 0px 10px;"><span style="color: #000000;">&nbsp;</span></p>
+<p class="p_Heading1"><span class="f_rrelatedtopic">Identify the Strings</span></p>
+<p style="text-indent: 0px; margin: 0px 0px 0px 10px;"><span style="color: #000000;">&nbsp;</span></p>
+<p style="text-indent: 0px; margin: 0px 0px 0px 10px;">In this example we have created 5 strings but in the end, combined the 2 toeline string. Use the <a href="stringidentify.htm">String ID</a> options and identify the 4 design strings.</p>
+<p style="text-indent: 0px; margin: 0px 0px 0px 10px;"><span style="color: #000000;">&nbsp;</span></p>
+<p style="text-indent: 0px; margin: 0px 0px 0px 10px;"><span style="color: #000000;">&nbsp;</span></p>
+<p style="text-indent: 0px; margin: 0px 0px 0px 10px;"><span class="f_rrelatedtopic">Rehabilitation</span></p>
+<p style="text-indent: 0px; margin: 0px 0px 0px 10px;"><span style="color: #000000;">&nbsp;</span></p>
+<p style="text-indent: 0px; margin: 0px 0px 0px 10px;">The setup work has now been done and the Rehab option can be used.</p>
+<p style="text-indent: 0px; margin: 0px 0px 0px 10px;"><span style="color: #000000;">&nbsp;</span></p>
+<p style="text-indent: 0px; margin: 0px 0px 0px 10px;">1) &nbsp;Now use the Mining, Rehab, Rehab-String option. &nbsp;(the function of this help topic)</p>
+<p style="text-indent: 0px; margin: 0px 0px 0px 10px;"><span style="color: #000000;">&nbsp;</span></p>
+<p style="text-indent: 0px; margin: 0px 0px 0px 10px;">The following dialog boxes are shown:</p>
+<p style="text-indent: 0px; margin: 0px 0px 0px 10px;"><span style="color: #000000;">&nbsp;</span></p>
+<p style="text-indent: 0px; margin: 0px 0px 0px 10px;"><span style="width:38px">&nbsp;</span>Confirm the grid spacing. &nbsp; &nbsp; &nbsp; &nbsp;If the survey points of the active dtm project is not on a regular grid, the function will not proceed.</p>
+<p style="text-indent: 0px; margin: 0px 0px 0px 10px;"><span style="color: #000000;">&nbsp;</span></p>
+<p style="text-indent: 0px; margin: 0px 0px 0px 10px;"><span style="width:38px">&nbsp;</span>Select the Identified Strings option.</p>
+<p style="text-indent: 0px; margin: 0px 0px 0px 10px;"><span style="color: #000000;">&nbsp;</span></p>
+<p style="text-indent: 0px; margin: 0px 0px 0px 10px;">When asked to indicate the boundary string, point to the toe string (the one combined from strings 3 &amp; 4)</p>
+<p style="text-indent: 0px; margin: 0px 0px 0px 10px;"><span style="color: #000000;">&nbsp;</span></p>
+<p style="text-indent: 0px; margin: 0px 0px 0px 10px;"><span style="color: #000000;">&nbsp;</span></p>
+<p style="text-indent: 0px; margin: 0px 0px 0px 10px;"><span class="f_rrelatedtopic">Rehab parameters</span></p>
+<p style="text-indent: 0px; margin: 0px 0px 0px 10px;"><span style="color: #000000;">&nbsp;</span></p>
+<p style="text-indent: 0px; margin: 0px 0px 0px 10px;"><span class="f_rrelatedtopic">1) Maintain balanced volume</span></p>
+<p style="text-indent: 0px; margin: 0px 0px 0px 10px;"><span style="color: #000000;">&nbsp;</span></p>
+<div style="text-align: left; text-indent: 0px; padding: 0px 0px 0px 0px; margin: 0px 0px 0px 10px;"><table cellspacing="0" cellpadding="0" border="0" style="border: none; border-spacing:0px;">
+<tr style="text-align:left;vertical-align:top;">
+<td valign="top" width="489" style="width:489px;"><p class="p_Heading1"><img src="clip1666.png" width="537" height="243" border="0" alt="clip1666"></p>
+</td>
+<td valign="top" width="548" style="width:548px;"><p class="p_Heading1"><span class="f_Heading1">&nbsp;</span></p>
+<p class="p_Heading1"><span class="f_CourierFixed" style="font-weight: normal;"> 1) All the side slopes (along the toeline string) will be cut to at least this maximum slope.</span></p>
+<p class="p_Heading1"><span class="f_Heading1">&nbsp;</span></p>
+<p class="p_Heading1"><span class="f_CourierFixed" style="font-weight: normal;"> 2) After all the side slopes have been cut to the maximum and still more material is needed, Model Maker will start cutting the slopes (closest to where the material is needed) until enough material is gained or the minimum slope is reached.</span></p>
+<p class="p_Heading1"><span class="f_Heading1">&nbsp;</span></p>
+<p class="p_Heading1"><span class="f_CourierFixed" style="font-weight: normal;">3) Enter the preferred maximum hauling distance. Model Maker will try to complete the cut &amp; fill design without moving material further than the maximum. This is not always possible and if cut material is not available within the maximum radius, the iterations will eventually stop with a deficit of cut material. </span></p>
+</td>
+</tr>
+</table>
+</div>
+<p style="text-indent: 0px; margin: 0px 0px 0px 10px;"><span style="color: #000000;">&nbsp;</span></p>
+<p style="text-indent: 0px; margin: 0px 0px 0px 10px;">There are 3 stages in the rehab process.</p>
+<p style="text-indent: 0px; margin: 0px 0px 0px 10px;"><span style="color: #000000;">&nbsp;</span></p>
+<p style="text-indent: 0px; margin: 0px 0px 0px 10px;">1) MM cuts all the side slopes to the preferred (maximum) outside slope and the amount of material is recorded. In the same go, the program also determines how much fill is needed to excavate the model to the surface as defined by the identified string. These 2 values are displayed.</p>
+<p style="text-indent: 0px; margin: 0px 0px 0px 10px;"><span style="color: #000000;">&nbsp;</span></p>
+<p style="text-indent: 0px; margin: 0px 0px 0px 10px;">2) The available cut (from maximum slopes) is then distributed in to the ramp. Material is moved along the closest distance from cut to fill and the ramp is filled to the ID string levels.</p>
+<p style="text-indent: 0px; margin: 0px 0px 0px 10px;"><span style="color: #000000;">&nbsp;</span></p>
+<p style="text-indent: 0px; margin: 0px 0px 0px 10px;">If the available cut is more than the fill needed, the ramp will be filled and the side slopes cut. This will then result in a model that is not going to balance and in practice, the excess cut material will have to placed somewhere else.</p>
+<p style="text-indent: 0px; margin: 0px 0px 0px 10px;"><span style="color: #000000;">&nbsp;</span></p>
+<p style="text-indent: 0px; margin: 0px 0px 0px 10px;">If the Cut is less than the fill, stage 3 is processed.</p>
+<p style="text-indent: 0px; margin: 0px 0px 0px 10px;"><span style="color: #000000;">&nbsp;</span></p>
+<p style="text-indent: 0px; margin: 0px 0px 0px 10px;">3) Model Maker will make repeated sweeps through the ramp and systematically cut the sides to flatter slopes to gain material where it is needed in the ramp.</p>
+<p style="text-indent: 0px; margin: 0px 0px 0px 10px;"><span style="color: #000000;">&nbsp;</span></p>
+<p style="text-indent: 0px; margin: 0px 0px 0px 10px;">A running total is displayed at the bottom</p>
+<p style="text-indent: 0px; margin: 0px 0px 0px 10px;"><img src="clip1657.png" width="947" height="53" border="0" alt="clip1657"></p>
+<p style="text-indent: 0px; margin: 0px 0px 0px 10px;"><span style="color: #000000;">&nbsp;</span></p>
+<p style="text-indent: 0px; margin: 0px 0px 0px 10px;">Once the ramp is completely filled, the user can select &nbsp;either undo the rehab or have the new elevations applied to the model.</p>
+<p style="text-indent: 0px; margin: 0px 0px 0px 10px;"><span style="color: #000000;">&nbsp;</span></p>
+<p style="text-indent: 0px; margin: 0px 0px 0px 10px;"><span class="f_rrelatedtopic">2) As is cut and fill</span></p>
+<p style="text-indent: 0px; margin: 0px 0px 0px 10px;"><span style="color: #000000;">&nbsp;</span></p>
+<p style="text-indent: 0px; margin: 0px 0px 0px 10px;"><img src="clip1668.png" width="528" height="123" border="0" alt="clip1668"></p>
+<p style="text-indent: 0px; margin: 0px 0px 0px 10px;">Model maker will use the identified strings and update the surface elevations accordingly. </p>
+<p style="text-indent: 0px; margin: 0px 0px 0px 10px;"><span style="color: #000000;">&nbsp;</span></p>
+<p style="text-indent: 0px; margin: 0px 0px 0px 10px;">Use this method if you have designed the new model in total by means of the strings. That is, both the cut and fill elevations are derived from the strings.</p>
+<p style="text-indent: 0px; margin: 0px 0px 0px 10px;"><span style="color: #000000;">&nbsp;</span></p>
+
+</td></tr></table>
+
+</body>
+</html>

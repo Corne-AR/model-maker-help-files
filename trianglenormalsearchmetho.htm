@@ -1,0 +1,85 @@
+<!DOCTYPE HTML PUBLIC "-//W3C//DTD HTML 4.01 Transitional//EN">
+<html>
+<head>
+   <title>TRIANGLE : Normal search method</title>
+   <meta name="generator" content="Help &amp; Manual" />
+   <meta name="keywords" content="Search,TRIANGLES" />
+   <meta http-equiv="Content-Type" content="text/html; charset=ISO-8859-1" />
+   <meta http-equiv="Content-Style-Type" content="text/css" />
+   <link type="text/css" href="default.css" rel="stylesheet" />
+
+<script type="text/javascript" src="helpman_topicinit.js"></script>
+</head>
+<body style="margin: 0px 0px 0px 0px; background: #FFFFFF;">
+
+
+<table width="100%" border="0" cellspacing="0" cellpadding="5" bgcolor="#D0D0D0">
+  <tr valign="middle">
+    <td align="left">
+      <p class="p_Heading1"><span class="f_Heading1">TRIANGLE : Normal search method</span></p>
+
+    </td>
+    <td align="right">
+     <span style="font-size: 9pt">
+     <a href="start_up.htm">Top</a>&nbsp;
+     <a href="triangle___parameters.htm">Previous</a>&nbsp;
+     <a href="triangle___display.htm">Next</a>
+     </span>
+    </td>
+  </tr>
+</table>
+
+
+<!-- Placeholder for topic body. -->
+<table width="100%" border="0" cellspacing="0" cellpadding="5"><tr valign="top"><td align="left">
+<p style="text-indent: 0px;"><span style="color: #000000;">&nbsp;</span></p>
+<p style="text-indent: 0px;"><span class="f_rrelatedtopic">MENU : Tri - Par</span></p>
+<p style="text-indent: 0px;"><span style="font-size: 5pt; color: #010100;">&nbsp;</span></p>
+<p style="text-indent: 0px;"><span style="font-size: 9pt; color: #010100;">This finds triangles &nbsp;the opposite way as the &nbsp;QUICK SEARCH &nbsp;method. First the triangle is formed between the 3 left most points. The other triangles will be added by standing in the middle of the open sides of existing triangles and then form the new triangle to the closest point within the maximum radius and search angle as set in the SEARCH <a href="triangle___parameters.htm">PARAMETERS</a> &nbsp;menu.</span></p>
+<p style="text-indent: 0px;"><span style="color: #000000;">&nbsp;</span></p>
+<p style="text-indent: 0px;"><span class="f_CourierFixed">Aspects on &nbsp;QUICK &nbsp;and &nbsp;NORMAL SEARCH methods :</span></p>
+<p style="text-indent: 0px;"><span style="color: #000000;">&nbsp;</span></p>
+<p style="text-indent: 0px;"><span class="f_CourierFixed">1) &nbsp; &nbsp; &nbsp; &nbsp;</span><span style="font-size: 9pt; color: #010100;">The search radius and angle apply to NORMAL SEARCH only.</span></p>
+<p style="text-indent: 0px;"><span style="width:24px">&nbsp;</span><span style="font-size: 9pt; color: #010100;">QUICK SEARCH &nbsp;works without these 2 parameters.</span></p>
+<p style="text-indent: 0px;"><span style="color: #000000;">&nbsp;</span></p>
+<p style="text-indent: 0px;"><span class="f_CourierFixed">2) &nbsp; &nbsp; &nbsp; &nbsp;</span><span style="font-size: 9pt; color: #010100;">QUICK SEARCH &nbsp;can only be used as a method to search for triangles from scratch. NORMAL SEARCH &nbsp;works from scratch or can  &nbsp; &nbsp; &nbsp; &nbsp;be used in the CONTINUE SEARCH option to find triangles from those already in memory.</span></p>
+<p style="text-indent: 0px;"><span style="color: #000000;">&nbsp;</span></p>
+<p style="text-indent: 0px;"><span class="f_CourierFixed">3) &nbsp; &nbsp; &nbsp; &nbsp;</span><span style="font-size: 9pt; color: #010100;">Both methods will adhere to the option that you may instruct it to search to only certain points, not to certain points or only the &nbsp;ID'd  &nbsp; &nbsp; &nbsp; &nbsp;points as specified in the SEARCH PARAMETER &nbsp;menu.</span></p>
+<p style="text-indent: 0px;"><span style="color: #000000;">&nbsp;</span></p>
+<p style="text-indent: 0px;"><span class="f_CourierFixed">4) &nbsp; &nbsp; &nbsp; &nbsp;</span><span style="font-size: 9pt; color: #010100;">Using the &nbsp;ID'd Cadline function where the triangles are in the initial creation process formed in such a way that their legs will not  &nbsp; &nbsp; &nbsp; &nbsp;inspect an &nbsp;ID'd CAD line, works only with the &nbsp;NORMAL SEARCH.</span></p>
+<p style="text-indent: 0px;"><span style="color: #000000;">&nbsp;</span></p>
+<p style="text-indent: 0px;"><span class="f_CourierFixed">5) &nbsp; &nbsp; &nbsp; &nbsp;</span><span style="font-size: 9pt; color: #010100;">QUICK SEARCH &nbsp;finds triangles about 3 times faster than &nbsp;NORMAL SEARCH.</span></p>
+<p style="text-indent: 0px;"><span style="color: #000000;">&nbsp;</span></p>
+<p style="text-indent: 0px;"><span class="f_CourierFixed">6) &nbsp; &nbsp; &nbsp; &nbsp;</span><span style="font-size: 9pt; color: #010100;">If you have a project with, for example, two mine dumps 200 meters apart, NORMAL SEARCH &nbsp;will find the triangles of the first dump  &nbsp; &nbsp; &nbsp; &nbsp;but be unable to continue on the second dump if the search radius is set to 30 meters. </span></p>
+<p style="text-indent: 0px;"><span style="color: #000000;">&nbsp;</span></p>
+<p style="text-indent: 0px;"><span style="font-size: 9pt; color: #010100;">It could be that even if you increase the radius to 300 meters &nbsp;NORMAL SEARCH &nbsp;will still be unable to find triangles on the second dump. This is caused by the restriction of the search angle being placed on the process. Remember the search angle is there to prevent &nbsp;Model Maker from creating long thin triangles. It cannot jump from one dump to the other without long thin triangles. Two different methods to overcome this problem :-</span></p>
+<p style="text-indent: 0px;"><span style="color: #000000;">&nbsp;</span></p>
+<p style="text-indent: 0px;"><span style="width:24px">&nbsp;</span></p>
+<div style="text-align: left; text-indent: 0px; padding: 0px 0px 0px 0px; margin: 0px 0px 0px 0px;"><table cellspacing="0" cellpadding="1" border="0" style="border: none; border-spacing:0px;">
+<tr style="text-align:left;vertical-align:top;">
+<td valign="top" width="374" style="width:374px;"><p class="p_Heading1"><span style="font-size: 9pt;"> </span><img src="_bm1210.png" width="358" height="340" border="0" alt="_bm1210"></p>
+</td>
+<td valign="top" width="361" style="width:361px;"><p style="text-indent: 0px;"><span class="f_CourierFixed">a) &nbsp; &nbsp; &nbsp; &nbsp;</span><span style="font-size: 9pt; color: #010100;">After using &nbsp;NORMAL SEARCH &nbsp;and all the triangles of the first dump are found, use the &nbsp;ADD TRIANGLE &nbsp;option and manually add at least 2 triangles with open sides in dump 1 to points in dump 2.</span></p>
+<p style="text-indent: 0px;"><span style="color: #000000;">&nbsp;</span></p>
+<p style="text-indent: 0px;"><span style="font-size: 9pt; color: #010100;">Use the &nbsp;CONTINUE SEARCH &nbsp;option. Triangles on dump 2 will be formed because Model Maker forms the triangle added manually to dump 2, search to the points within the set radius.</span></p>
+<p style="text-indent: 0px;"><span style="color: #000000;">&nbsp;</span></p>
+<p style="text-indent: 0px;"><span style="font-size: 9pt; color: #010100;">Use the &nbsp;WIPEOUT &nbsp;function to delete the long legged triangles that you added manually to create the bridge between the two dumps.</span></p>
+</td>
+</tr>
+<tr style="text-align:left;vertical-align:top;">
+<td valign="top" width="374" style="width:374px;"><p class="p_Heading1"><span style="font-size: 9pt;">  </span><img src="_bm1211.png" width="355" height="328" border="0" alt="_bm1211"></p>
+</td>
+<td valign="top" width="361" style="width:361px;"><p style="text-indent: 0px;"><span class="f_CourierFixed">b) &nbsp; &nbsp; &nbsp; &nbsp;</span><span style="font-size: 9pt; color: #010100;">Use &nbsp;QUICK SEARCH &nbsp;as the searching method from the outset. Triangles will be formed between all the points. Use the &nbsp;WIPEOUT LINE &nbsp;function to delete unwanted triangles between the 2 models.</span></p>
+</td>
+</tr>
+</table>
+</div>
+<p style="text-indent: 0px;"><span style="color: #000000;">&nbsp;</span></p>
+<p style="text-indent: 0px;"><span class="f_CourierFixed">7) &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp;</span><span style="font-size: 9pt; color: #010100;">The final triangle model for &nbsp;Model Maker is no different no matter which search process was used.</span></p>
+<p style="text-indent: 0px;"><span style="color: #000000;">&nbsp;</span></p>
+<p style="text-indent: 0px;"><span style="color: #000000;">&nbsp;</span></p>
+
+</td></tr></table>
+
+</body>
+</html>

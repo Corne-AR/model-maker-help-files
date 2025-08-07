@@ -1,0 +1,139 @@
+<!DOCTYPE HTML PUBLIC "-//W3C//DTD HTML 4.01 Transitional//EN">
+<html>
+<head>
+   <title>Pivot : Manufacturers</title>
+   <meta name="generator" content="Help &amp; Manual" />
+   <meta name="keywords" content="DBF,Length,Oem,Pivot,Spans" />
+   <meta http-equiv="Content-Type" content="text/html; charset=ISO-8859-1" />
+   <meta http-equiv="Content-Style-Type" content="text/css" />
+   <link type="text/css" href="default.css" rel="stylesheet" />
+
+<script type="text/javascript" src="helpman_topicinit.js"></script>
+</head>
+<body style="margin: 0px 0px 0px 0px; background: #FFFFFF;">
+
+
+<table width="100%" border="0" cellspacing="0" cellpadding="5" bgcolor="#D0D0D0">
+  <tr valign="middle">
+    <td align="left">
+      <p class="p_Heading1"><span class="f_Heading1">Pivot : Manufacturers</span></p>
+
+    </td>
+    <td align="right">
+     <span style="font-size: 9pt">
+     <a href="start_up.htm">Top</a>&nbsp;
+     <a href="pivot__spans.htm">Previous</a>&nbsp;
+     <a href="irrigation__pivot_operation.htm">Next</a>
+     </span>
+    </td>
+  </tr>
+</table>
+
+
+<!-- Placeholder for topic body. -->
+<table width="100%" border="0" cellspacing="0" cellpadding="5"><tr valign="top"><td align="left">
+<p>Link manufacturers databases </p>
+<p>&nbsp;</p>
+<p><span style="font-weight: bold;">This dialog box allows you to:</span></p>
+<p>&nbsp;</p>
+<p>A. Define a manufacturer name (OEM).</p>
+<p>B. Link the name to an existing database that defines the span info.</p>
+<p>C. Optionally create a new database that can by populated with span info from scratch.</p>
+<p>&nbsp;</p>
+<p><span style="font-weight: bold;">Database definition.</span></p>
+<p>&nbsp;</p>
+<div style="text-align: left; text-indent: 0px; padding: 0px 0px 0px 0px; margin: 0px 0px 0px 10px;"><table border="0" cellpadding="0" cellspacing="0" style="line-height: normal;"><tr style="vertical-align:baseline" valign="baseline"><td width="15"><span style="font-size: 10pt; font-family: 'Arial'; color: #000000;">1.</span></td><td>A DBF database file format is used. </td></tr></table></div><div style="text-align: left; text-indent: 0px; padding: 0px 0px 0px 0px; margin: 0px 0px 0px 10px;"><table border="0" cellpadding="0" cellspacing="0" style="line-height: normal;"><tr style="vertical-align:baseline" valign="baseline"><td width="15"><span style="font-size: 10pt; font-family: 'Arial'; color: #000000;">2.</span></td><td>The database will have records describing each span for that OEM. </td></tr></table></div><div style="text-align: left; text-indent: 0px; padding: 0px 0px 0px 0px; margin: 0px 0px 0px 10px;"><table border="0" cellpadding="0" cellspacing="0" style="line-height: normal;"><tr style="vertical-align:baseline" valign="baseline"><td width="15"><span style="font-size: 10pt; font-family: 'Arial'; color: #000000;">3.</span></td><td>The minimum number of fields in the dbf is 7 and they need to be named: Model,Name,Diameter,Length,Outlets,Nominal and Type.</td></tr></table></div><p>&nbsp;</p>
+<p><span style="font-weight: bold;">How to obtain or create such a database.</span></p>
+<p>&nbsp;</p>
+<p>As indicated above, there need to be at least 7 fields in the dbf file. </p>
+<p>&nbsp;</p>
+<p>A) The OEM span database files used by Senninger's Sennpaq program has more that 200 fields (which are used by Sennpaq) but it also has the seven fields required by MM. Those Sennpaq DBF file can thus be used without any changes.</p>
+<p> &nbsp; &nbsp;Note: The Sennpaq dbf file are in English units. The column (3) need to say NO when they are used.</p>
+<p>&nbsp;</p>
+<p>B) If you do not use Sennpaq and want to start your own DBF file. Use the (5) (Create new database) and MM will create a DBF file with the 7 fields that you can use to enter (type) your own span details.</p>
+<p> &nbsp; &nbsp;Once the basic file is created, enter a (1) Manufacturer name in a new line and use (4) (Link existing) to link your Manufacturer name to the database.</p>
+<p> &nbsp; &nbsp;Remember to set column (3) to YES if you define your own database in metric units.</p>
+<p>&nbsp;</p>
+<p><span style="font-weight: bold;">FileNames</span></p>
+<p>&nbsp;</p>
+<div style="text-align: left; text-indent: 10px; padding: 0px 0px 0px 0px; margin: 0px 0px 0px 0px;"><table cellspacing="0" cellpadding="0" border="0" style="border: none; border-spacing:0px;">
+<tr style="text-align:left;vertical-align:top;">
+<td valign="top" width="717" style="width:717px;"><p><img src="embim192.png" width="677" height="241" vspace="1" hspace="1" border="0" alt=""></p>
+<p>&nbsp;</p>
+<p>&nbsp;</p>
+<p>&nbsp;</p>
+<p>&nbsp;</p>
+<p><span style="font-weight: bold;">Dbase</span></p>
+<p>&nbsp;</p>
+<p><span style="font-weight: bold;">This example refers to a user created dbf file with the 7 fields.</span></p>
+<p>&nbsp;</p>
+</td>
+<td valign="top" width="780" style="width:780px;"><p>&nbsp;</p>
+<p><span style="font-weight: bold;">To create a link, do the the following:</span></p>
+<p>&nbsp;</p>
+<p>1) Select a blank line and enter the OEM name in the manufacturer column.</p>
+<p>&nbsp;</p>
+<p>4) Click on Link existing to select a DBF file that goes with that oem.</p>
+<p>&nbsp;</p>
+<p>The default DBF file is the ones used by Senninger Irrigation's SennPaq program. If you are using SennPaq and already have span databases, just point to that dbf file to use when linking.</p>
+<p>&nbsp;</p>
+<p>5) You may also use the Create New to create a simple dbf file that you can populate yourself.</p>
+<p>&nbsp;</p>
+<p>2) The linked file name will be displayed in the DBF column.</p>
+<p>&nbsp;</p>
+<p>3) Click on the this column to select between YES and NO. Select YES if the DBF is defined in metric units.</p>
+<p> &nbsp; &nbsp;Select NO if the dbf is in Feet. MM will then, if your design is in meters, translate the feet values in the dbf to metric.</p>
+<p>&nbsp;</p>
+<p>6) Click on this tab to edit the selected DBF file. You would normally not edit files linked to SennPaq but if you created your own DBF file with (5), use this tab to define the span lengths.</p>
+</td>
+</tr>
+<tr style="text-align:left;vertical-align:top;">
+<td valign="top" width="717" style="width:717px;"><p><img src="embim193.png" width="633" height="195" vspace="1" hspace="1" border="0" alt=""></p>
+<p>&nbsp;</p>
+<p><span style="font-size: 14pt; font-weight: bold;">Note</span>. At present MM only uses the length values. The other attributes are only for informational purposes but may formally be used in future versions. Although MM does not use the other fields now (and can be left blank), you could populate them (at least the Model and Name fields) to better identify the spans in future.</p>
+<p>&nbsp;</p>
+<p>As indicated, the length is specifically required. </p>
+<p>&nbsp;</p>
+<p>The pipe diameter is optional. If the pipe diameter has a value other than 0, then that value will also be used to define the<a href="irrigation__pivot_pressure_and.htm#pipediameters"> pipe diameters</a> in the pivot. </p>
+<p><span style="font-weight: bold;">Important. </span>MM will only use the database pipe diameters if all the spans of the pivot have defined diameters. If any span has a zero value then you need to manually define the diameters in the <a href="irrigation__pivot_pressure_and.htm#pipediameters">pipe diameters</a> function.</p>
+<p>&nbsp;</p>
+<p>The Type is optional but if a span with a O (overhang) type is used as last span, then MM will assign that span length as the overhang.</p>
+<p>&nbsp;</p>
+</td>
+<td valign="top" width="780" style="width:780px;"><p>&nbsp;</p>
+<p>&nbsp;</p>
+<p>&nbsp;</p>
+<p>&nbsp;</p>
+<p>Entering data in the DBF in either Metric or English units.</p>
+<p>&nbsp;</p>
+<p>1) Model description. </p>
+<p>&nbsp;</p>
+<p>2) Span Name. (ID)</p>
+<p>&nbsp;</p>
+<p>3) Pipe Diameter is in mm (Metric) or inches (English)</p>
+<p>&nbsp;</p>
+<p>4) Span Length is in meter or feet.</p>
+<p>&nbsp;</p>
+<p>5) Number of outlets on the span.</p>
+<p>&nbsp;</p>
+<p>6) Nominal Outlet Spacing is in meter or inches. </p>
+<p>&nbsp;</p>
+<p>7) Span type. &nbsp;Any character to define the type. &nbsp;Normally an O (for overhang) &nbsp;and I (for intermediate).</p>
+<p> &nbsp; &nbsp;If the type is defined as O then MM will automatically assign the length to the overhang value when used as last span in the list. </p>
+<p>&nbsp;</p>
+<p>8) The database filename being edited.</p>
+</td>
+</tr>
+<tr style="text-align:left;vertical-align:top;">
+<td valign="top" width="717" style="width:717px;"><br>
+</td>
+<td valign="top" width="780" style="width:780px;"><br>
+</td>
+</tr>
+</table>
+</div>
+
+</td></tr></table>
+
+</body>
+</html>

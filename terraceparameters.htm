@@ -1,0 +1,110 @@
+<!DOCTYPE HTML PUBLIC "-//W3C//DTD HTML 4.01 Transitional//EN">
+<html>
+<head>
+   <title>TERRACE : Parameters</title>
+   <meta name="generator" content="Help &amp; Manual" />
+   <meta name="keywords" content="Layerworks,TERRACE,Topsoil" />
+   <meta http-equiv="Content-Type" content="text/html; charset=ISO-8859-1" />
+   <meta http-equiv="Content-Style-Type" content="text/css" />
+   <link type="text/css" href="default.css" rel="stylesheet" />
+
+<script type="text/javascript" src="helpman_topicinit.js"></script>
+</head>
+<body style="margin: 0px 0px 0px 0px; background: #FFFFFF;">
+
+
+<table width="100%" border="0" cellspacing="0" cellpadding="5" bgcolor="#D0D0D0">
+  <tr valign="middle">
+    <td align="left">
+      <p class="p_Heading1"><span class="f_Heading1">TERRACE : Parameters</span></p>
+
+    </td>
+    <td align="right">
+     <span style="font-size: 9pt">
+     <a href="start_up.htm">Top</a>&nbsp;
+     <a href="terracecross_sections.htm">Previous</a>&nbsp;
+     <a href="terrace__optimize.htm">Next</a>
+     </span>
+    </td>
+  </tr>
+</table>
+
+
+<!-- Placeholder for topic body. -->
+<table width="100%" border="0" cellspacing="0" cellpadding="5"><tr valign="top"><td align="left">
+<p class="p_Heading1"><span class="f_Heading1">&nbsp;</span></p>
+<p class="p_Heading1"><span class="f_rrelatedtopic">MENU : teR - Autostring - Parameters</span></p>
+<p class="p_Heading1"><span style="font-size: 6pt; color: #010100;">&nbsp;</span></p>
+<p class="p_Heading1"><span style="font-size: 9pt; color: #010100;">Calculate volume areas &nbsp;between 2 surfaces using the terrace options.</span></p>
+<p class="p_Heading1"><span class="f_Heading1">&nbsp;</span></p>
+<div style="text-align: left; text-indent: 0px; padding: 0px 0px 0px 0px; margin: 0px 0px 0px 0px;"><table cellspacing="0" cellpadding="1" border="0" style="border: none; border-spacing:0px;">
+<tr style="text-align:left;vertical-align:top;">
+<td valign="top" width="224" style="width:224px;"><p class="p_Heading1"><span style="font-size: 9pt;"> </span><img src="clip0588.png" width="199" height="162" border="0" alt="clip0588"></p>
+<p class="p_Heading1"><span style="font-size: 9pt; color: #010100;">The parameters control the calculation method.</span></p>
+</td>
+<td valign="top" width="468" style="width:468px;"><p class="p_Heading1"><span class="f_CourierFixed">Grid interval</span></p>
+<p class="p_Heading1"><span style="font-size: 9pt; color: #010100;">This is the grid size used for the calculation.</span></p>
+<p class="p_Heading1"><span style="font-size: 9pt; color: #010100;">A suggested grid value is displayed as a guide line.</span></p>
+<p class="p_Heading1"><span style="font-size: 9pt; color: #010100;">In general, use a grid interval smaller than the suggested value. This will ensure an accurate volume result.</span></p>
+<p class="p_Heading1"><span style="font-size: 9pt; color: #010100;">Also remember that the calculated results are going to differ with each new grid interval because the measurements between the 2 surfaces are based on the height difference at each grid point. If the position or number of grid points are changed, the answers will be slightly different.</span></p>
+<p class="p_Heading1"><span class="f_Heading1">&nbsp;</span></p>
+<p class="p_Heading1"><span class="f_CourierFixed">Grid direction</span></p>
+<p class="p_Heading1"><span style="font-size: 9pt; color: #010100;">Model Maker will calculate the grids in horizontal and vertical lines across the model if a zero value is specified.</span></p>
+<p class="p_Heading1"><span style="font-size: 9pt; color: #010100;">In a case where the design or ground data is on a grid format, a zero grid direction is not recommended since it could lead to answers not representative of the models.</span></p>
+<p class="p_Heading1"><span style="font-size: 9pt; color: #010100;">A grid direction of 5 degrees is normally used. Changing the grid direction will also result in different answers for the same reasons as stated above for the gird interval.</span></p>
+</td>
+</tr>
+</table>
+</div>
+<p class="p_Heading1"><span style="font-size: 9pt; color: #010100;">&nbsp;</span></p>
+<div style="text-align: left; text-indent: 0px; padding: 0px 0px 0px 0px; margin: 0px 0px 0px 0px;"><table cellspacing="0" cellpadding="1" border="0" style="border: none; border-spacing:0px;">
+<tr style="text-align:left;vertical-align:top;">
+<td valign="top" width="523" style="width:523px;"><p style="text-align: center; text-indent: 0px;"><span style="font-size: 9pt; font-style: italic; font-weight: bold; color: #ff0000;">Note:</span></p>
+<p style="text-align: center; text-indent: 0px;"><span style="font-size: 9pt; color: #010100;">In general, a smaller grid size should result in a more accurate volume as a larger size because more grid points have a better chance of taking all the topographic changes into account.</span></p>
+<p style="text-align: center; text-indent: 0px;"><span style="font-size: 9pt; color: #010100;">A grid direction other than zero will also have a better chance of getting a more accurate answer because the points will not coincide with platforms and other shapes that are directly orientated east-west and north-south.</span></p>
+<p style="text-align: center; text-indent: 0px;"><span style="font-size: 9pt; color: #010100;">If the result is saved as an ASCII file to be used in the <a href="mine___rehabilitation.htm">mine rehabilitation</a> module, a zero value must be entered because the mining module would suspect the data to be in a random format when calculated at an angle.</span></p>
+</td>
+</tr>
+</table>
+</div>
+<p class="p_Heading1"><span class="f_Heading1">&nbsp;</span></p>
+<p class="p_Heading1"><span class="f_CourierFixed">Topsoil depth</span></p>
+<p class="p_Heading1"><span style="font-size: 9pt; color: #010100;">This is the value (in millimeters) taken from the ground model before the mass earthworks is calculated.</span></p>
+<p class="p_Heading1"><span style="font-size: 9pt; color: #010100;">The topsoil is removed from the ground model and reported separately. </span></p>
+<p class="p_Heading1"><span class="f_Heading1">&nbsp;</span></p>
+<p class="p_Heading1"><span class="f_CourierFixed">Layerwork depth</span></p>
+<p class="p_Heading1"><span style="font-size: 9pt; color: #010100;">This is the value (in millimeters) taken from the design model before the mass earthworks is calculated.  </span></p>
+<p class="p_Heading1"><span style="font-size: 9pt; color: #010100;">The bulk cut &amp; fill answers are calculated from the ground surface less the topsoil to the design surface less the layerworks.</span></p>
+<p class="p_Heading1"><span class="f_Heading1">&nbsp;</span></p>
+<p class="p_Heading1"><img src="_bm1149.png" width="93" height="21" border="0" alt="_bm1149"><span style="font-size: 9pt; color: #010100;"> Output or record the gridded depths using the following options.</span></p>
+<p class="p_Heading1"><span class="f_Heading1">&nbsp;</span></p>
+<p class="p_Heading1"><img src="_bm1150.png" width="255" height="55" border="0" alt="_bm1150"></p>
+<p class="p_Heading1"><span class="f_Heading1">&nbsp;</span></p>
+<p class="p_Heading1"><span style="font-size: 9pt; font-weight: bold; color: #010100;">Save depths to ASCII file</span></p>
+<p class="p_Heading1"><span style="font-size: 9pt; color: #010100;">The elevation difference between the ground and design surfaces will be recorded and save to a user defined ASCII yxz file. This file has the normal Model Maker yxz co-ordinate file format except for the elevations that are actually height differences. This file may be used in the <a href="mine___rehabilitation.htm">mining</a> module.</span></p>
+<p class="p_Heading1"><span style="font-size: 9pt; font-weight: bold; color: #010100;">Add depths to project</span></p>
+<p class="p_Heading1"><span style="font-size: 9pt; color: #010100;">The height differences on the grid will be added to the selected (1,2 or 3) project as normal dtm points with either a CUT or a FILL code. The elevation of the point will be the height difference between the design and the ground projects.</span></p>
+<p class="p_Heading1"><span class="f_Heading1">&nbsp;</span></p>
+<p class="p_Heading1"><img src="_bm1151.png" width="258" height="79" border="0" alt="_bm1151"></p>
+<p class="p_Heading1"><span class="f_Heading1">&nbsp;</span></p>
+<p class="p_Heading1"><span style="font-size: 9pt; color: #010100;">The following information is added to the CAD as normal elements.</span></p>
+<p class="p_Heading1"><span style="font-size: 9pt; font-weight: bold; color: #010100;">None</span></p>
+<p class="p_Heading1"><span style="font-size: 9pt; color: #010100;">Nothing is added to the CAD.</span></p>
+<p class="p_Heading1"><span style="font-size: 9pt; font-weight: bold; color: #010100;">As</span><span style="font-size: 9pt; color: #010100;"> </span><span style="font-size: 9pt; font-weight: bold; color: #010100;">lines</span></p>
+<p class="p_Heading1"><span style="font-size: 9pt; color: #010100;">Lines will be drawn on the grid points. The lines will have different directions, layers names and colours depending if the grid is a cut or a fill position.</span></p>
+<p class="p_Heading1"><span style="font-size: 9pt; font-weight: bold; color: #010100;">Crosses &amp; circles</span></p>
+<p class="p_Heading1"><span style="font-size: 9pt; color: #010100;">Crosses will be placed on all the cut points and <a href="cad_arccircle_info.htm">circles</a> on the fill points.</span></p>
+<p class="p_Heading1"><span style="font-size: 9pt; font-weight: bold; color: #010100;">Pattern </span></p>
+<p class="p_Heading1"><span style="font-size: 9pt; color: #010100;">This option will only be active if a pattern named CUT and another named FILL exist in the <a href="cadpattern_save.htm">pattern</a> directory. These 2 patterns will automatically be placed on the appropriate positions.</span></p>
+<p class="p_Heading1"><span style="font-size: 9pt; font-weight: bold; color: #010100;">Text</span></p>
+<p class="p_Heading1"><span style="font-size: 9pt; color: #010100;">CAD text on cut and fill layers with different colours will be placed on the grid positions. The text value will be the depth between the surfaces.</span></p>
+<p class="p_Heading1"><span class="f_Heading1">&nbsp;</span></p>
+<p class="p_Heading1"><img src="_bm1152.png" width="84" height="31" border="0" alt="_bm1152"><span style="font-size: 9pt; color: #010100;"> This input box allows you to set the relative size of the lines and circles when outputted to CAD. This size works hand in hand with the selected grid size. If, for instance, you have a grid size of 10, then the crosses will be 10 wide and the circles will have a radius of 5. If the relative size is set to 0.5, then the crosses and circles will be half the size of the grid interval.</span></p>
+<p class="p_Heading1"><span class="f_Heading1">&nbsp;</span></p>
+<p class="p_Heading1"><span class="f_rrelatedtopic">Related topics:</span></p>
+<p class="p_Heading1"><span style="font-size: 9pt; color: #010100;"><a href="terrace___volumes___cut___fill.htm">Cut &amp; fill</a></span></p>
+
+</td></tr></table>
+
+</body>
+</html>

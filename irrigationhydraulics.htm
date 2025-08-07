@@ -1,0 +1,239 @@
+<!DOCTYPE HTML PUBLIC "-//W3C//DTD HTML 4.01 Transitional//EN">
+<html>
+<head>
+   <title>IRRIGATION : Hydraulics</title>
+   <meta name="generator" content="Help &amp; Manual" />
+   <meta name="keywords" content="Calculations,Cost,DESIGN,Flow,Hydraulics,Info,IRRIGATION,Pressure,Results,Secondary losses,Sizing" />
+   <meta http-equiv="Content-Type" content="text/html; charset=ISO-8859-1" />
+   <meta http-equiv="Content-Style-Type" content="text/css" />
+   <link type="text/css" href="default.css" rel="stylesheet" />
+
+<script type="text/javascript" src="helpman_topicinit.js"></script>
+</head>
+<body style="margin: 0px 0px 0px 0px; background: #FFFFFF;">
+
+
+<table width="100%" border="0" cellspacing="0" cellpadding="5" bgcolor="#D0D0D0">
+  <tr valign="middle">
+    <td align="left">
+      <p class="p_Heading1"><span class="f_Heading1">IRRIGATION : Hydraulics</span></p>
+
+    </td>
+    <td align="right">
+     <span style="font-size: 9pt">
+     <a href="start_up.htm">Top</a>&nbsp;
+     <a href="irrigation__parts___pipe_rolls.htm">Previous</a>&nbsp;
+     <a href="pipelengths.htm">Next</a>
+     </span>
+    </td>
+  </tr>
+</table>
+
+
+<!-- Placeholder for topic body. -->
+<table width="100%" border="0" cellspacing="0" cellpadding="5"><tr valign="top"><td align="left">
+<p style="text-indent: 0px;"><span style="color: #000000;">&nbsp;</span></p>
+<p style="text-indent: 0px;"><span class="f_rrelatedtopic">MENU : Irr </span></p>
+<p style="text-indent: 0px;"><span style="font-size: 5pt; color: #010100;">&nbsp;</span></p>
+<p style="text-indent: 0px;"><span style="font-size: 9pt; color: #010100;">The hydraulics function applies water to the system and calculate the respective pressures and flows in all the pipes and nodes. Automatic sizing of pipes may be done and a report of the available flows and pressures can be generated.</span></p>
+<p style="text-indent: 0px;"><span style="color: #000000;">&nbsp;</span></p>
+<p style="text-indent: 0px;"><span class="f_CourierFixed">RESULTS &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp;/ &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp;<a href="irrigationhydraulics_size.htm">Size Pipes</a> &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp;/ &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp;<a href="irrigationhydraulics_info.htm">Info</a></span></p>
+<p style="text-indent: 0px;"><span style="color: #000000;">&nbsp;</span></p>
+<p style="text-indent: 0px;"><img src="clip1251.png" width="772" height="574" border="0" alt="clip1251"></p>
+<p style="text-indent: 0px;"><span style="color: #000000;">&nbsp;</span></p>
+<p style="text-indent: 0px;"><span style="color: #000000;">&nbsp;</span></p>
+<p style="text-indent: 0px;"><span style="color: #000000;">&nbsp;</span></p>
+<p style="text-indent: 0px;"><span style="font-size: 9pt; color: #010100;">This page displays the graphical picture of the hydraulic gradient of all the pipes when the flows and pressures are calculated. The relevant information is also displayed in a table format for numerical analysis. </span></p>
+<p style="text-indent: 0px;"><span style="color: #000000;">&nbsp;</span></p>
+<p style="text-indent: 0px;"><span class="f_CourierFixed">Input Values</span></p>
+<p style="text-indent: 0px;"><span style="font-size: 9pt; color: #010100;">The following are displayed as indication of the flows and pressures:</span></p>
+<p style="text-indent: 0px;"><span style="color: #000000;">&nbsp;</span></p>
+<p style="text-indent: 0px; margin: 0px 0px 0px 6px;"><img src="clip1059.png" width="129" height="89" border="0" alt="clip1059"></p>
+<p style="text-indent: 0px;"><span class="f_CourierFixed">Approximate flow required </span><span style="font-size: 9pt; color: #010100;">: &nbsp; &nbsp; &nbsp; &nbsp;If a block is calculated the flow indicates the total discharge of all the sprinkler nodes in the network when operating at their design pressures. If the block is defined as a micro/drip system, the flow is the total discharge of all the emitters in the block. On the main line, the flow is the total consumption of all the valves operating in the selected shift.</span></p>
+<p style="text-indent: 0px;"><span style="color: #000000;">&nbsp;</span></p>
+<p style="text-indent: 0px;"><span class="f_CourierFixed">Average pressure @ nodes </span><span style="font-size: 9pt; font-weight: bold; color: #010100;">: &nbsp; &nbsp; &nbsp; &nbsp;</span><span style="font-size: 9pt; color: #010100;">If a block is calculated the indicated pressure is the average design pressure of all the sprinklers. On a micro/drip system, the pressure is equal to the global <a href="irrigationblocks_layout.htm#microdrip">design pressure</a> for the block.</span></p>
+<p style="text-indent: 0px;"><span style="color: #000000;">&nbsp;</span></p>
+<p style="text-indent: 0px; margin: 0px 0px 0px 6px;"><img src="clip1062.png" width="131" height="93" border="0" alt="clip1062"> &nbsp; &nbsp; &nbsp; &nbsp;</p>
+<p style="text-indent: 0px;"><span style="font-size: 9pt; color: #010100;">Enter the available pressure at the source node. </span></p>
+<p style="text-indent: 0px;"><span style="font-size: 9pt; color: #010100;">If a block is calculated, this is the pressure at the </span><span style="font-size: 9pt; font-weight: bold; color: #010100;">valve</span><span style="font-size: 9pt; color: #010100;"> (source) node.</span></p>
+<p style="text-indent: 0px;"><span style="font-size: 9pt; color: #010100;">If the main line is calculated, enter the </span><span style="font-size: 9pt; font-weight: bold; color: #010100;">pump</span><span style="font-size: 9pt; color: #010100;"> operating pressure. If 2 pumps are used, please check the help topic for <a href="irrigationdualpumps.htm">dual pumps</a>.</span></p>
+<p style="text-indent: 0px;"><span style="color: #000000;">&nbsp;</span></p>
+<p style="text-indent: 0px;"><a href="irrigation__pumps.htm">More about pumps.</a></p>
+<p style="text-indent: 0px;"><span style="color: #000000;">&nbsp;</span></p>
+<p style="text-indent: 0px;"><span style="font-size: 9pt; color: #010100;">Click the Calc flow along pipes button to activate the calculation process. Irri Maker will apply water to the system with the defined source pressure and balance the flows to all the nodes. </span></p>
+<p style="text-indent: 0px;"><span style="font-size: 9pt; color: #010100;">If for any reason the calculations take too long, you may press any key to abort the operation. This could happen when one or more pipes in the system are too small preventing Irri Maker from finding a suitable convergence value. In such a case, inspect the pipe sizes and elevations of the nodes.</span></p>
+<p style="text-indent: 0px;"><span style="color: #000000;">&nbsp;</span></p>
+<p style="text-indent: 0px;"><span class="f_CourierFixed">Error messages</span></p>
+<p style="text-indent: 0px;"><span style="font-size: 9pt; color: #010100;">In some cases Irri Maker will post a warning if it finds that the system cannot be resolved. </span></p>
+<p style="text-indent: 0px;"><span style="font-size: 9pt; color: #010100;">This could happen if :</span></p>
+<div style="text-align: left; text-indent: 0px; padding: 0px 0px 0px 0px; margin: 0px 0px 0px 1px;"><table border="0" cellpadding="0" cellspacing="0" style="line-height: normal;"><tr style="vertical-align:baseline" valign="baseline"><td width="23"><img src="_bm26.png" width="10" height="15" border="0" alt="_bm26"></td><td> &nbsp; &nbsp; &nbsp; &nbsp;<span style="font-size: 9pt; color: #010100;">the pipes are not <a href="irrigationhydraulics_size.htm">sized</a> correctly, or;</span></td></tr></table></div><div style="text-align: left; text-indent: 0px; padding: 0px 0px 0px 0px; margin: 0px 0px 0px 1px;"><table border="0" cellpadding="0" cellspacing="0" style="line-height: normal;"><tr style="vertical-align:baseline" valign="baseline"><td width="23"><img src="_bm26.png" width="10" height="15" border="0" alt="_bm26"></td><td> &nbsp; &nbsp; &nbsp; &nbsp;<span style="font-size: 9pt; color: #010100;">the slope of the terrain is very steep, or;</span></td></tr></table></div><div style="text-align: left; text-indent: 0px; padding: 0px 0px 0px 0px; margin: 0px 0px 0px 1px;"><table border="0" cellpadding="0" cellspacing="0" style="line-height: normal;"><tr style="vertical-align:baseline" valign="baseline"><td width="23"><img src="_bm26.png" width="10" height="15" border="0" alt="_bm26"></td><td> &nbsp; &nbsp; &nbsp; &nbsp;<span style="font-size: 9pt; color: #010100;">the change of flow based on the different <a href="irrigationnodedatabase.htm#sprinklerpressures">pressures </a>of the selected emitters is too big.</span></td></tr></table></div><p style="text-indent: -23px; margin: 0px 0px 0px 24px;"><span style="width:24px">&nbsp;</span> &nbsp; &nbsp; &nbsp; &nbsp;<span style="font-size: 9pt; color: #010100;">The last item can often be the reason that you cannot get a micro/drip system to converge correctly. In the micro/drip design method, Irri Maker makes certain assumptions and if the specified emitter has a very wide flow range (relative to different pressure values) it can cause the system to post the warning that the flow differences are too big. In such a case, try using the sprinkler method to do the design.</span></p>
+<p style="text-indent: 0px;"><span style="color: #000000;">&nbsp;</span></p>
+<p style="text-indent: 0px;"><img src="clip1393.png" width="760" height="270" border="0" alt="clip1393"></p>
+<p style="text-indent: 0px;"><span style="font-size: 9pt; color: #010100;">This message is normally shown when the pressure varies too much over the system.</span></p>
+<p style="text-indent: 0px;"><span style="font-size: 9pt; color: #010100;">As indicated it could be the pipes being too small or the discharges varying too much. In this example it is caused by a node having an incorrect elevation and causing a very big pressure loss in the system. Notice the big values in the pipes and nodes text box showing the pressure loss values.</span></p>
+<p style="text-indent: 0px;"><span style="color: #000000;">&nbsp;</span></p>
+<p style="text-indent: 0px;"><span style="color: #000000;">&nbsp;</span></p>
+<p style="text-indent: 0px;"><img src="clip1394.png" width="766" height="278" border="0" alt="clip1394"></p>
+<p style="text-indent: 0px;"><span style="font-size: 9pt; color: #010100;">This message is displayed when the actual flow and the design differs by more than 20%. The design flow is the approximate flow required by all the emitters if they were operating at their design pressure. The actual flow is the flow going into the system based on the discharge of all the emitters when operating at the actual pressure at each node.</span></p>
+<p style="text-indent: 0px;"><span style="font-size: 9pt; color: #010100;">In this example the valve pressure is too low in relation to the design pressure of the nodes (9.6m in this case) and therefore most of the emitters are working at pressures lower than the design pressure and therefore emit less water.</span></p>
+<p style="text-indent: 0px;"><span style="color: #000000;">&nbsp;</span></p>
+<p style="text-indent: 0px;"><span style="color: #000000;">&nbsp;</span></p>
+<p style="text-indent: 0px;"><span style="color: #000000;">&nbsp;</span></p>
+<p style="text-indent: 0px;"><span style="font-size: 9pt; color: #010100;">The following options has an effect on the hydraulics.</span></p>
+<p style="text-indent: 0px;"><span style="color: #000000;">&nbsp;</span></p>
+<p style="text-indent: 0px; margin: 0px 0px 0px 6px;"><img src="clip1064.png" width="257" height="94" border="0" alt="clip1064"></p>
+<p style="text-indent: 0px;"><span style="color: #000000;">&nbsp;</span></p>
+<p style="text-indent: 0px;"><span class="f_CourierFixed">Apply secondary losses</span></p>
+<p style="text-indent: 0px;"><span style="font-size: 9pt; color: #010100;">If this box is checked, the <a href="irrigationnodedatabasek.htm">secondary losses</a> at each node will be calculated and deducted from the available pressure in the system. This will effect the regular hydraulics results and could also have an influence on the pipe sizing routine, depending on the magnitude of the secondary losses.</span></p>
+<p style="text-indent: 0px;"><span style="font-size: 9pt; color: #010100;">The k values are defined in the <a href="irrigationnodedatabase.htm">node data base</a> &nbsp;for each node type.</span></p>
+<p style="text-indent: 0px;"><span style="color: #000000;">&nbsp;</span></p>
+<div style="text-align: left; text-indent: 0px; padding: 0px 0px 0px 0px; margin: 0px 0px 0px 0px;"><table cellspacing="0" cellpadding="1" border="0" style="border: none; border-spacing:0px;">
+<tr style="text-align:left;vertical-align:top;">
+<td valign="top" width="434" style="width:434px;"><p style="text-align: center; text-indent: 0px;"><span style="font-style: italic; font-weight: bold; color: #d10707;">Note:</span></p>
+<p style="text-align: center; text-indent: 0px;"><span style="font-size: 9pt; color: #010100;">Remember that the k values are added to the node data base but only transferred to an irrigation design when new nodes are added to the design. This implies that older projects, designed before the secondary loss option in Irri Maker has been in place, will not automatically inherit k values from the node data base just because they are now available. Existing nodes will have to be <a href="irrigation___nodes.htm#type">redefined</a> (re edited) to have them make use of the secondary loss option.</span></p>
+</td>
+</tr>
+</table>
+</div>
+<p style="text-indent: 0px;"><span style="color: #000000;">&nbsp;</span></p>
+<p style="text-indent: 0px;"><span class="f_CourierFixed">Regulate node pressure</span></p>
+<p style="text-indent: 0px;"><span style="font-size: 9pt; color: #010100;">If this box is checked all the sprinkler nodes will behave as if a regulator is placed at the node. That is, if a pressure higher than the design pressure of the sprinkler is available at the node, the sprinkler will perform at the design pressure level. The sprinkler will operate at the available pressure when that is less than the design value.</span></p>
+<p style="text-indent: 0px;"><span style="font-size: 9pt; color: #010100;">If the pressure to each lateral is to be regulated at the entrance of each lateral pipe and not at each node, introduce a pressure regulator node (node type=OTHER) at the start of the lateral.</span></p>
+<p style="text-indent: 0px;"><span style="color: #000000;">&nbsp;</span></p>
+<p style="text-indent: 0px;"><span class="f_CourierFixed">Update pipe classes</span></p>
+<p style="text-indent: 0px;"><span style="font-size: 9pt; color: #010100;">After the flow to all the pipes have been calculated, Irri Maker calculates the maximum pressure in each pipe segment based on the available pressure at the valve or pump and taking into account the friction losses and elevation differences. These pressures are then compared against the selected pipe classes and the lowest pipe class that can accommodate the actual pressure is selected from the data base. If only one pipe class for the specific pipe diameter is defined and that is less than the actual pressure, a warning will be posted. If multiple classes are defined in the <a href="irrigationpipedatabase.htm">data base</a> for a specific diameter, the appropriate class is selected. If the actual pressure exceeds the highest available class, a warning is posted.</span></p>
+<p style="text-indent: 0px;"><span style="font-size: 9pt; color: #010100;">Normally a pipe with the same nominal outside diameter will have different inside diameters for the different classes. The hydraulics are calculated using the ID values. If Irri Maker updates a pipe class, it results in a different ID value being allocated to the pipe which in turn has an effect on the hydraulics. For that reason a warning is posted when classes are changed, prompting you to click the </span><span style="font-size: 9pt; font-weight: bold; color: #010100;">Calc flow along pipes </span><span style="font-size: 9pt; color: #010100;">button so that the new hydraulics is calculated based on the revised ID values. Normally the hydraulics would not change much when the ID's are updated. It is however advisable to perform the recalculations.</span></p>
+<p style="text-indent: 0px;"><span style="font-size: 9pt; color: #010100;">Leave this option unchecked if the pipe pressures do not have to be checked against the data base values.</span></p>
+<p style="text-indent: 0px;"><span style="color: #000000;">&nbsp;</span></p>
+<p style="text-indent: 0px;"><span style="font-size: 9pt; font-weight: bold; color: #010100;">Warn : Overload pump</span></p>
+<p style="text-indent: 0px;"><span style="font-size: 9pt; color: #010100;">When the main line is calculated you would enter the available pressure at the pump under which the system will operate. Irri Maker will determine which values and sprinklers, if any, are open in the shift and calculate the amount of flow through the system. When the calculations are done, the pressure and flow at the pump node will be checked against the specific pump performance as specified in the node data base.</span></p>
+<p style="text-indent: 0px;"><span style="font-size: 9pt; color: #010100;">If the required values exceed the maximum pump capacity, a warning will be posted. This does not influence the hydraulics but only serves as a reminder to you that the pump would not be able to physically supply the demand.</span></p>
+<p style="text-indent: 0px;"><span style="font-size: 9pt; color: #010100;">Leave this option unchecked if you are not concerned about the pump's real performance.</span></p>
+<p style="text-indent: 0px;"><span style="color: #000000;">&nbsp;</span></p>
+<p style="text-indent: 0px;"><span style="font-size: 9pt; font-weight: bold; color: #010100;">Warn : Nodes on zero elevation</span></p>
+<p style="text-indent: 0px;"><span style="font-size: 9pt; color: #010100;">Irri Maker uses the DTM survey to assign the appropriate elevations to the nodes when they are generated. Often, when the survey model is not covering the total irrigation area, a situation may arise where some nodes fall off the model and can not be elevated resulting in huge elevation differences between some nodes. A situation that is definitely undesirable and may cause incorrect hydraulic calculations.</span></p>
+<p style="text-indent: 0px;"><span style="font-size: 9pt; color: #010100;">When this option is checked a warning will posted if any or all the nodes are on zero elevations.</span></p>
+<p style="text-indent: 0px;"><span style="font-size: 9pt; color: #010100;">You would probably deactivate this warning if you are not working with an actual surveyed project and do not want to be reminded about the nodes being on zero elevation each time.</span></p>
+<p style="text-indent: 0px;"><span style="color: #000000;">&nbsp;</span></p>
+<p style="text-indent: 0px;"><span style="font-size: 9pt; font-weight: bold; color: #010100;">Velocity Limits</span></p>
+<p style="text-indent: 0px;"><span style="font-size: 9pt; color: #010100;">The velocity in each pipe is calculated after the hydraulic analysis is performed. These velocities can be compared against certain user defined limits and a warning posted if the velocity of any pipe falls outside the criteria.</span></p>
+<p style="text-indent: 0px;"><span style="color: #000000;">&nbsp;</span></p>
+<p style="text-indent: 0px; margin: 0px 0px 0px 6px;"><img src="clip1066.png" width="254" height="179" border="0" alt="clip1066"><span style="font-size: 9pt; color: #010100;"> </span></p>
+<p style="text-indent: -6px; margin: 0px 0px 0px 6px;"><span style="font-size: 9pt; color: #010100;">Click on the </span><span class="f_CourierFixed">Warnings</span><span style="font-size: 9pt; color: #010100;"> page and set the desired velocity limits.</span></p>
+<p style="text-indent: 0px;"><span style="font-size: 9pt; color: #010100;">If the velocity warning is required, Irri Maker will mark all the pipes with a velocity outside the limits, with a ( * ).</span></p>
+<p style="text-indent: 0px;"><span style="color: #000000;">&nbsp;</span></p>
+<p style="text-indent: 0px;"><span style="color: #000000;">&nbsp;</span></p>
+<p style="text-indent: 0px; margin: 0px 0px 0px 6px;"><img src="_bm597.png" width="323" height="131" border="0" alt="_bm597"></p>
+<p style="text-indent: 0px;"><span style="font-size: 5pt; color: #010100;">&nbsp;</span></p>
+<p style="text-indent: 0px;"><span style="font-size: 9pt; color: #010100;">In this example, pipes 1 and 2 have a too high velocity.</span></p>
+<p style="text-indent: 0px;"><span style="color: #000000;">&nbsp;</span></p>
+<p style="text-indent: 0px;"><span style="color: #000000;">&nbsp;</span></p>
+<p style="text-indent: 0px; margin: 0px 0px 0px 6px;"><img src="clip1067.png" width="316" height="112" border="0" alt="clip1067"></p>
+<p style="text-indent: 0px;"><span style="font-size: 9pt; color: #010100;">This panel will be displayed if the limits are exceeded. </span></p>
+<p style="text-indent: 0px;"><span style="font-size: 9pt; color: #010100;">Click on the </span><span class="f_CourierFixed">Plot Above button</span><span style="font-size: 9pt; color: #010100;"> to visually inspect the positions of the pipes with a high velocity. Click on </span><span class="f_CourierFixed">Plot Below </span><span style="font-size: 9pt; color: #010100;">to look at the pipes with a too low velocity.</span></p>
+<p style="text-indent: 0px;"><span style="font-size: 9pt; color: #010100;">Click on the </span><span class="f_CourierFixed">Close</span><span style="font-size: 9pt; color: #010100;"> button to remove the panel. </span></p>
+<p style="text-indent: 0px;"><span style="color: #000000;">&nbsp;</span></p>
+<p style="text-indent: 0px; margin: 0px 0px 0px 6px;"><span style="font-size: 9pt; color: #010100;"> </span><img src="clip1068.png" width="51" height="118" border="0" alt="clip1068"></p>
+<p style="text-indent: 0px;"><span style="font-size: 5pt; color: #010100;">&nbsp;</span></p>
+<p style="text-indent: 0px;"><span style="font-size: 9pt; color: #010100;">The shift number list box is displayed when calculating the main line. By selecting a different shift number, the calculations for that shift is done. Also the default input <a href="irrigationhydraulics.htm">flow and pressure</a> &nbsp;values will reflect the values for the selected shift. For each shift, the flow will be the total demand of all the active valves.</span></p>
+<p style="text-indent: 0px;"><span style="color: #000000;">&nbsp;</span></p>
+<p style="text-indent: 0px;"><span class="f_CourierFixed">Results : Nodes</span></p>
+<p style="text-indent: 0px; margin: 0px 0px 0px 6px;"><span style="font-size: 5pt; color: #010100;">&nbsp;</span></p>
+<p style="text-indent: 0px; margin: 0px 0px 0px 6px;"><img src="clip1069.png" width="274" height="110" border="0" alt="clip1069"></p>
+<p style="text-indent: 0px;"><span style="font-size: 9pt; color: #010100;">All the nodes will be listed in this grid box.</span></p>
+<p style="text-indent: 0px;"><span style="color: #000000;">&nbsp;</span></p>
+<p style="text-indent: 0px;"><span style="font-size: 9pt; color: #010100;">For each node the following is reported.</span></p>
+<p style="text-indent: 0px;"><span style="color: #000000;">&nbsp;</span></p>
+<div style="text-align: left; text-indent: 0px; padding: 0px 0px 0px 0px; margin: 0px 0px 0px 0px;"><table cellspacing="0" cellpadding="0" border="0" style="border: none; border-spacing:0px;">
+<tr style="text-align:left;vertical-align:top;">
+<td valign="top" width="78" style="width:78px;"><p style="text-indent: 0px;"><span style="font-size: 9pt; font-weight: bold; color: #010100;">Flow</span></p>
+<p style="text-indent: 0px;"><span style="font-size: 9pt; font-weight: bold; color: #010100;">Spray</span></p>
+<p style="text-indent: 0px;"><span style="font-size: 9pt; font-weight: bold; color: #010100;">Pressure</span></p>
+<p style="text-indent: 0px;"><span style="font-size: 9pt; font-weight: bold; color: #010100;">% Difference</span><span style="font-size: 9pt; color: #010100;"> </span></p>
+</td>
+<td valign="top" width="637" style="width:637px;"><p style="text-indent: 0px;"><span style="font-size: 9pt; color: #010100;">: &nbsp; &nbsp; &nbsp; &nbsp;The amount of water entering the node. This is equivalent to the total flow in the supplying pipe.</span></p>
+<p style="text-indent: 0px;"><span style="font-size: 9pt; color: #010100;">: &nbsp; &nbsp; &nbsp; &nbsp;The consumption (discharge) of the node based on the available pressure.</span></p>
+<p style="text-indent: 0px;"><span style="font-size: 9pt; color: #010100;">: &nbsp; &nbsp; &nbsp; &nbsp;The available pressure at the node. </span></p>
+<p style="text-indent: 0px;"><span style="font-size: 9pt; color: #010100;">:  &nbsp; &nbsp; &nbsp; &nbsp;The relative percentage that the actual pressure at the node is above or below the design pressure.</span></p>
+</td>
+</tr>
+</table>
+</div>
+<p style="text-indent: 0px;"><span style="color: #000000;">&nbsp;</span></p>
+<p style="text-indent: 0px;"><span style="font-size: 9pt; color: #010100;">To view and edit any one of the nodes, double click on the node line number. The hydraulics dialog will be removed and the <a href="irrigationnodes_info.htm">node editor</a> displayed. <a href="irrigationhydraulics.htm">Recalculate</a> the hydraulics after nodes have been edited.</span></p>
+<p style="text-indent: 0px;"><span style="color: #000000;">&nbsp;</span></p>
+<p style="text-indent: 0px;"><span class="f_CourierFixed">Results : Pipes</span></p>
+<p style="text-indent: 0px; margin: 0px 0px 0px 6px;"><span style="font-size: 5pt; color: #010100;">&nbsp;</span></p>
+<p style="text-indent: 0px; margin: 0px 0px 0px 6px;"><img src="clip1070.png" width="323" height="90" border="0" alt="clip1070"></p>
+<p style="text-indent: 0px;"><span style="font-size: 9pt; color: #010100;">All the pipes will be listed in this grid box.</span></p>
+<p style="text-indent: 0px;"><span style="color: #000000;">&nbsp;</span></p>
+<div style="text-align: left; text-indent: 0px; padding: 0px 0px 0px 0px; margin: 0px 0px 0px 0px;"><table cellspacing="0" cellpadding="0" border="0" style="border: none; border-spacing:0px;">
+<tr style="text-align:left;vertical-align:top;">
+<td valign="top" width="97" style="width:97px;"><p style="text-indent: 0px;"><span style="font-size: 9pt; font-weight: bold; color: #010100;">Flow</span></p>
+<p style="text-indent: 0px;"><span style="font-size: 9pt; font-weight: bold; color: #010100;">Pressure Loss</span></p>
+<p style="text-indent: 0px;"><span style="font-size: 9pt; font-weight: bold; color: #010100;">Velocity</span></p>
+<p style="text-indent: 0px;"><span style="font-size: 9pt; font-weight: bold; color: #010100;">ID</span></p>
+<p style="text-indent: 0px;"><span style="font-size: 9pt; font-weight: bold; color: #010100;">% Pressure loss</span></p>
+</td>
+<td valign="top" width="628" style="width:628px;"><p style="text-indent: 0px;"><span style="font-size: 9pt; color: #010100;">: &nbsp; &nbsp; &nbsp; &nbsp;The amount of flow passing through the pipe.</span></p>
+<p style="text-indent: 0px;"><span style="font-size: 9pt; color: #010100;">: &nbsp; &nbsp; &nbsp; &nbsp;The loss in pressure due to the movement and friction of the water.</span></p>
+<p style="text-indent: 0px;"><span style="font-size: 9pt; color: #010100;">:  &nbsp; &nbsp; &nbsp; &nbsp;The speed at which the water travels through the pipe.</span></p>
+<p style="text-indent: 0px;"><span style="font-size: 9pt; color: #010100;">: &nbsp; &nbsp; &nbsp; &nbsp;The inside diameter of the pipe.</span></p>
+<p style="text-indent: 0px;"><span style="font-size: 9pt; color: #010100;">: &nbsp; &nbsp; &nbsp; &nbsp;The pressure loss due to friction and elevations difference divided by the length of the pipe.</span></p>
+</td>
+</tr>
+</table>
+</div>
+<p style="text-indent: 0px;"><span style="color: #000000;">&nbsp;</span></p>
+<p style="text-indent: 0px;"><span style="font-size: 9pt; color: #010100;">For each pipe the following is reported.</span></p>
+<p style="text-indent: 0px;"><span style="width:24px">&nbsp;</span> &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp;</p>
+<p style="text-indent: 0px;"><span style="font-size: 9pt; color: #010100;">To view and edit any one of the pipes, double click on the pipe line number. The hydraulics dialog will be removed and the <a href="irrigationpipes_info.htm">pipe editor</a> displayed. <a href="irrigationhydraulics.htm">Recalculate</a> the hydraulics after nodes have been edited.</span></p>
+<p style="text-indent: 0px;"><span style="color: #000000;">&nbsp;</span></p>
+<p style="text-indent: 0px;"><span class="f_CourierFixed">Graphics</span></p>
+<p style="text-indent: 0px;"><span style="font-size: 5pt; color: #010100;">&nbsp;</span></p>
+<p style="text-indent: 0px;"><span style="font-size: 9pt; color: #010100;">A graph displaying the nodes on the horizontal axes and the pressures on the vertical axes is displayed on the top part of the dialog box.</span></p>
+<p style="text-indent: 0px;"><img src="_bm602.png" width="159" height="165" border="0" alt="_bm602"></p>
+<p style="text-indent: 0px;"><span style="font-size: 9pt; color: #010100;">Pressure lines will join all the nodes and is an indication of the pressure gradient.</span></p>
+<p style="text-indent: 0px;"><span style="font-size: 9pt; color: #010100;">The node numbers are displayed along the top of the graphics screen.</span></p>
+<p style="text-indent: 0px;"><span style="font-size: 9pt; color: #010100;">Blue horizontal grid lines indicate specific pressure grid values. The actual pressure value is written to the left and just below these lines.</span></p>
+<p style="text-indent: 0px;"><span style="font-size: 9pt; color: #010100;">The red horizontal line indicates the bottom (%Press-) pressure limit as specified by the envelope values.</span></p>
+<p style="text-indent: 0px;"><span style="font-size: 9pt; color: #010100;">The green horizontal line indicates the top (%Press+) pressure limit as specified by the envelope values.</span></p>
+<p style="text-indent: 0px;"><span style="color: #000000;">&nbsp;</span></p>
+<p style="text-indent: 0px;"><img src="_bm603.png" width="133" height="79" border="0" alt="_bm603"><span style="font-size: 9pt; color: #010100;"> Envelope limits. Only used for visual display purposes.</span></p>
+<p style="text-indent: 0px;"><span style="color: #000000;">&nbsp;</span></p>
+<p style="text-indent: 0px;"><span style="font-size: 9pt; font-weight: bold; color: #804000;">Nodes in Graph</span></p>
+<p style="text-indent: 0px;"><span style="font-size: 9pt; color: #010100;">The settings in this panel will control the graphics format.</span></p>
+<p style="text-indent: 0px;"><span style="color: #000000;">&nbsp;</span></p>
+<p style="text-indent: 0px;"><img src="_bm604.png" width="41" height="27" border="0" alt="_bm604"><span style="font-size: 9pt; color: #010100;"> Check this radio button to display the hydraulic gradients of all the pipes in the active block. &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp;</span></p>
+<p style="text-indent: 0px;"><span style="color: #000000;">&nbsp;</span></p>
+<p style="text-indent: 0px;"><img src="_bm605.png" width="160" height="24" border="0" alt="_bm605"><span style="font-size: 9pt; color: #010100;"> This option will display the hydraulic gradient of the continuous flow path between 2 selected nodes. Use the <img src="_bm606.png" width="30" height="22" border="0" alt="_bm606"> button to graphically indicate the 2 selected nodes </span></p>
+<p style="text-indent: 0px;"><span style="color: #000000;">&nbsp;</span></p>
+<p style="text-indent: 0px;"><img src="_bm607.png" width="321" height="30" border="0" alt="_bm607"><span style="font-size: 9pt; color: #010100;"> </span></p>
+<p style="text-indent: 0px;"><span style="font-size: 9pt; font-weight: bold; color: #010100;">Laterals </span></p>
+<p style="text-indent: 0px;"><span style="font-size: 9pt; color: #010100;">Each lateral will be displayed in turn. Click on the red arrow buttons to display the next or previous lateral. To see the position of the displayed lateral in plan, double click on the graphics. The current lateral will be plotted with a wide line. Press Escape to return to the design dialog.</span></p>
+<p style="text-indent: 0px;"><span style="font-size: 9pt; font-weight: bold; color: #010100;">Manifold</span></p>
+<p style="text-indent: 0px;"><span style="font-size: 9pt; color: #010100;">The manifold line will be displayed. If the valve was placed in the middle of the manifold the other part of the manifold is viewed by using the red arrow keys.</span></p>
+<p style="text-indent: 0px;"><span style="color: #000000;">&nbsp;</span></p>
+<p style="text-indent: 0px;"><span style="font-size: 9pt; color: #010100;">To view all the pipes again, click the ALL check box.</span></p>
+<p style="text-indent: 0px;"><span style="color: #000000;">&nbsp;</span></p>
+<p style="text-indent: 0px;"><img src="_bm608.png" width="90" height="20" border="0" alt="_bm608"><span style="font-size: 9pt; color: #010100;"> Check this box to display the graphics in the relevant pipe colors.</span></p>
+<p style="text-indent: 0px;"><span style="color: #000000;">&nbsp;</span></p>
+<p style="text-indent: 0px;"><img src="_bm609.png" width="43" height="21" border="0" alt="_bm609"><span style="font-size: 9pt; color: #010100;"> If this box is checked, the gradient line will incorporate the elevation of the nodes along with the calculated pressure. If not, only the actual pressure at each node will be displayed.</span></p>
+<p style="text-indent: 0px;"><span style="color: #000000;">&nbsp;</span></p>
+<p style="text-indent: 0px;"><span style="font-size: 9pt; font-style: italic; font-weight: bold; color: #ff0000; text-decoration: underline;">Hints:</span></p>
+<p style="text-indent: 0px;"><span style="font-size: 9pt; color: #010100;">After the calculation result are displayed in the node and pipe grid boxes, you may inspect the attributes of any of the items by double clicking on the information row. </span></p>
+<p style="text-indent: 0px;"><span style="font-size: 9pt; color: #010100;">The <a href="irrigationnodes_info.htm">node</a> or <a href="irrigationpipes_info.htm">pipe</a> dialog will be displayed with the information of the item in question.</span></p>
+<p style="text-indent: 0px;"><span style="color: #000000;">&nbsp;</span></p>
+<p style="text-indent: 0px;"><span class="f_CourierFixed">Edit plan data</span></p>
+<p style="text-indent: 0px;"><span style="font-size: 5pt; color: #010100;">&nbsp;</span></p>
+<p style="text-indent: 0px;"><span style="font-size: 9pt; color: #010100;">Click on these buttons to access and edit the data in graphics mode.</span></p>
+<p style="text-indent: 0px;"><span style="color: #000000;">&nbsp;</span></p>
+<p style="text-indent: 0px;"><map name="map53"><area shape="rect" coords="122,2,226,27" href="irrigationnodes_info.htm" alt=""><area shape="rect" coords="233,1,323,26" href="irrigationpipes_info.htm" alt=""></map><img src="_bm610.png" width="326" height="86" border="0" alt="_bm610" usemap="#map53"></p>
+<p style="text-indent: 0px;"><span style="color: #000000;">&nbsp;</span></p>
+<p style="text-indent: 0px;"><span class="f_rrelatedtopic">Related topics:</span></p>
+<p style="text-indent: 0px;"><span style="font-size: 9pt; color: #010100;"><a href="irrigation___global.htm">Global</a></span></p>
+
+</td></tr></table>
+
+</body>
+</html>

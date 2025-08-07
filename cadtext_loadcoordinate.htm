@@ -1,0 +1,68 @@
+<!DOCTYPE HTML PUBLIC "-//W3C//DTD HTML 4.01 Transitional//EN">
+<html>
+<head>
+   <title>CAD : Text - Load coordinate</title>
+   <meta name="generator" content="Help &amp; Manual" />
+   <meta name="keywords" content="Co-ordinate,Files,Load,TEXT" />
+   <meta http-equiv="Content-Type" content="text/html; charset=ISO-8859-1" />
+   <meta http-equiv="Content-Style-Type" content="text/css" />
+   <link type="text/css" href="default.css" rel="stylesheet" />
+
+<script type="text/javascript" src="helpman_topicinit.js"></script>
+</head>
+<body style="margin: 0px 0px 0px 0px; background: #FFFFFF;">
+
+
+<table width="100%" border="0" cellspacing="0" cellpadding="5" bgcolor="#D0D0D0">
+  <tr valign="middle">
+    <td align="left">
+      <p class="p_Heading1"><span class="f_Heading1">CAD : Text - Load coordinate </span></p>
+
+    </td>
+    <td align="right">
+     <span style="font-size: 9pt">
+     <a href="start_up.htm">Top</a>&nbsp;
+     <a href="menu__cad__text___load.htm">Previous</a>&nbsp;
+     <a href="cadtext_loadidentifiedp.htm">Next</a>
+     </span>
+    </td>
+  </tr>
+</table>
+
+
+<!-- Placeholder for topic body. -->
+<table width="100%" border="0" cellspacing="0" cellpadding="5"><tr valign="top"><td align="left">
+<p class="p_Heading1"><span class="f_Heading1">&nbsp;</span></p>
+<p class="p_Heading1"><span class="f_rrelatedtopic">MENU : Cad - Text - Load - loadcoord</span></p>
+<p class="p_Heading1"><span style="font-size: 5pt; color: #010100;">&nbsp;</span></p>
+<p class="p_Heading1"><span style="font-size: 9pt; color: #010100;">A specific ASCII file will be read from disk and placed on CAD at base points as defined by the ASCII file. </span></p>
+<p class="p_Heading1"><span class="f_Heading1">&nbsp;</span></p>
+<div style="text-align: left; text-indent: 0px; padding: 0px 0px 0px 0px; margin: 0px 0px 0px 0px;"><table cellspacing="0" cellpadding="1" border="0" style="border: none; border-spacing:0px;">
+<tr style="text-align:left;vertical-align:top;">
+<td valign="top" width="495" style="width:495px;"><p style="text-align: center; text-indent: 0px;"><span style="font-style: italic; font-weight: bold; color: #ff0000; text-decoration: underline;">Hint:</span><span style="font-size: 9pt; font-style: italic; font-weight: bold; color: #ff0000;"> </span></p>
+<p style="text-align: center; text-indent: 0px;"><span style="font-size: 9pt; color: #010100;">The following lines should be viewed with the help screen enlarged to the full screen size.</span></p>
+</td>
+</tr>
+</table>
+</div>
+<p class="p_Heading1"><span class="f_Heading1">&nbsp;</span></p>
+<p class="p_Heading1"><span style="font-size: 9pt; color: #010100;">Example of a line in a typical file:</span></p>
+<p class="p_Heading1"><span style="font-size: 9pt; color: #010100;">! &nbsp; &nbsp; ! &nbsp; &nbsp; ~ &nbsp; &nbsp; &nbsp; &nbsp; ~ &nbsp; &nbsp; &nbsp;* &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp;* &nbsp; &nbsp; &nbsp;% &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp;% &nbsp; &nbsp;^ &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; ^ &nbsp; &nbsp; &nbsp;&amp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &amp; &nbsp; &nbsp;# &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; # &nbsp;(this line only for explanation)</span></p>
+<p class="p_Heading1"><span style="font-size: 9pt; color: #010100;">BH1 &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; 10.123 &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; 24500.234 &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp;5460.201 &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp;1202.234 &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; 1201.900 &nbsp; &nbsp; 1200.123</span></p>
+<p class="p_Heading1"><span class="f_Heading1">&nbsp;</span></p>
+<p class="p_Heading1"><span style="font-size: 9pt; color: #010100;">The co-ordinates of the base point must be on every line of the text file . You will be asked to specify the start and end columns for the Y and X co-ordinates. In the example, the column numbers are * * and % %.</span></p>
+<p class="p_Heading1"><span class="f_Heading1">&nbsp;</span></p>
+<p class="p_Heading1"><span style="font-size: 9pt; color: #010100;">The ASCII characters between these columns determine the position of the text for that line. The text will be placed at Y24500.234 and X5460.201.</span></p>
+<p class="p_Heading1"><span style="font-size: 9pt; color: #010100;">Specify the columns of the text's start and end points to be used on the line. </span></p>
+<p class="p_Heading1"><span style="font-size: 9pt; color: #010100;">If the bore hole name must be placed at the defined co-ordinates, enter the column for ! !.</span></p>
+<p class="p_Heading1"><span style="font-size: 9pt; color: #010100;">Or if the whole set of elevations should be written next to the point, in which case the column should be specified from ^ to the last #.</span></p>
+<p class="p_Heading1"><span class="f_Heading1">&nbsp;</span></p>
+<p class="p_Heading1"><span style="font-size: 9pt; color: #010100;">It is important to have the <a href="textattributes.htm">default text</a> parameters set correctly before the operation. It is also good practice to set the <a href="scaleplotting.htm">drawing scale</a> correctly beforehand.</span></p>
+<p class="p_Heading1"><span class="f_Heading1">&nbsp;</span></p>
+<p class="p_Heading1"><span class="f_rrelatedtopic">Related topics:</span></p>
+<p class="p_Heading1"><span style="font-size: 9pt; color: #010100;"><a href="cadtext_edit.htm">Edit Text</a></span></p>
+
+</td></tr></table>
+
+</body>
+</html>

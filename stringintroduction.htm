@@ -1,0 +1,151 @@
+<!DOCTYPE HTML PUBLIC "-//W3C//DTD HTML 4.01 Transitional//EN">
+<html>
+<head>
+   <title>STRING : Introduction</title>
+   <meta name="generator" content="Help &amp; Manual" />
+   <meta name="keywords" content="STRINGS" />
+   <meta http-equiv="Content-Type" content="text/html; charset=ISO-8859-1" />
+   <meta http-equiv="Content-Style-Type" content="text/css" />
+   <link type="text/css" href="default.css" rel="stylesheet" />
+
+<script type="text/javascript" src="helpman_topicinit.js"></script>
+</head>
+<body style="margin: 0px 0px 0px 0px; background: #FFFFFF;">
+
+
+<table width="100%" border="0" cellspacing="0" cellpadding="5" bgcolor="#D0D0D0">
+  <tr valign="middle">
+    <td align="left">
+      <p class="p_Heading1"><span class="f_Heading1">STRING : Introduction</span></p>
+
+    </td>
+    <td align="right">
+     <span style="font-size: 9pt">
+     <a href="start_up.htm">Top</a>&nbsp;
+     <a href="strings__gxt_.htm">Previous</a>&nbsp;
+     <a href="stringadd.htm">Next</a>
+     </span>
+    </td>
+  </tr>
+</table>
+
+
+<!-- Placeholder for topic body. -->
+<table width="100%" border="0" cellspacing="0" cellpadding="5"><tr valign="top"><td align="left">
+<p style="text-align: center; text-indent: 0px;"><span style="color: #000000;">&nbsp;</span></p>
+<p class="p_Heading1"><span class="f_rrelatedtopic">GEOMETRICAL ALIGNMENT STRINGS IN MODEL MAKER</span></p>
+<p class="p_Heading1"><span class="f_Heading1">&nbsp;</span></p>
+<p class="p_Heading1"><span style="font-size: 9pt; color: #010100;">Strings have been introduced as a new module in Model Maker to assist in manipulating lines (strings of data) in horizontal and vertical planes. Strings, in contrast to normal CAD lines, may consist of one or more segments which operate as a unit. The segments as defined by the nodes at the endpoints may be moved, copied, rotated, re-elevated, deleted etc. as one entity. </span></p>
+<p class="p_Heading1"><span class="f_Heading1">&nbsp;</span></p>
+<p class="p_Heading1"><span style="font-size: 9pt; color: #010100;">A string will have a pen, line type and layer name associated with it. These attributes may be changed over the whole string by just indicating any segment. A single string may be broken up into separate strings and different strings may be combined to form new strings.</span></p>
+<p class="p_Heading1"><span class="f_Heading1">&nbsp;</span></p>
+<p class="p_Heading1"><span style="font-size: 9pt; color: #010100;">You can add new nodes to an existing string. They may be added to the start of the string, in between existing nodes or at the end of the string. A string also has a starting peg distance value and the intelligence to calculate its length with peg distance values for every node.  </span></p>
+<p class="p_Heading1"><span class="f_Heading1">&nbsp;</span></p>
+<p class="p_Heading1"><span style="font-size: 9pt; color: #010100;">Strings are generally viewed in plan mode, but the unique vertical view option easily flips any string to the mode where the peg distance and elevations are displayed. This is similar to viewing the string as a long-section.</span></p>
+<p class="p_Heading1"><span class="f_Heading1">&nbsp;</span></p>
+<p class="p_Heading1"><span style="font-size: 9pt; color: #010100;">All the necessary functions are available to manipulate the components of the string in the vertical mode. For example,a node can be moved to a new position by entering a new peg distance value and elevation or by graphically pointing to a new position. &nbsp;Add or delete nodes while in vertical view mode. A powerful function is available to regrade the string as a whole or partly between indicated nodes to any specified slope.</span></p>
+<p class="p_Heading1"><span class="f_Heading1">&nbsp;</span></p>
+<p class="p_Heading1"><span style="font-size: 9pt; color: #010100;">Strings may also be regraded by the vertical alignment of any indicated base string, making it invaluable for road, ramp and intersection designs. &nbsp;Strings may present themselves as horizontal alignment definitions for a network of roads, pipes or any other service detail. The vertical design data of the service is incorporated in the elevation of the string nodes, allowing the strings to determine whether services, when crossing, clash or follow freely over each other.</span></p>
+<p class="p_Heading1"><span class="f_Heading1">&nbsp;</span></p>
+<p class="p_Heading1"><span style="font-size: 9pt; color: #010100;">A detailed report of all the crossing services is produced along with the graphical indication of any conflicting situations. &nbsp;Groups of identified strings may be used to indicate areas of volume calculations or to extract cross and long sections automatically.</span></p>
+<p class="p_Heading1"><span class="f_Heading1">&nbsp;</span></p>
+<p class="p_Heading1"><span style="font-size: 9pt; color: #010100;">Contours can be simulated with strings making it a powerful landscaping tool to design irregular shapes. The mining module in Model Maker makes extensive use of strings to perform complicated rehabilitation functions with great ease.</span></p>
+<p class="p_Heading1"><span class="f_Heading1">&nbsp;</span></p>
+<p class="p_Heading1"><span style="font-size: 9pt; color: #010100;">Strings have the added ability to generate DTM points at every node. This allows you to triangulate these new points and view the contours as defined by the strings. Changes in the vertical alignment of the string are easily translated to the newly defined DTM points and are immediately updated in the contours.</span></p>
+<p class="p_Heading1"><span class="f_Heading1">&nbsp;</span></p>
+<p class="p_Heading1"><span class="f_Heading1">&nbsp;</span></p>
+<p class="p_Heading1"><span class="f_rrelatedtopic">Three types of strings are defined:</span></p>
+<p class="p_Heading1"><span class="f_Heading1">&nbsp;</span></p>
+<p class="p_Heading1"><span class="f_CourierFixed">Alignment string</span></p>
+<p class="p_Heading1"><span style="font-size: 5pt; color: #010100;">&nbsp;</span></p>
+<p class="p_Heading1"><span style="font-size: 9pt; color: #010100;">This string is unique because the horizontal component works exactly the same as the definition of a road horizontal alignment. &nbsp;The horizontal pi's are defined by pointing to the coordinate positions. Enter the curve radius and transitional length. &nbsp;These horizontal pi's (plan nodes) have no elevation defined. The vertical component of the alignment string is defined in the Vert option of the string menu. This vertical component of the alignment string works independent from the plan nodes, meaning that the alignment string may consist of a different number of plan nodes and vertical nodes. Each component must have at least a start and end node (2 nodes).</span></p>
+<p class="p_Heading1"><span class="f_Heading1">&nbsp;</span></p>
+<p class="p_Heading1"><span style="font-size: 9pt; color: #010100;">Two vertical nodes, one at the start peg distance of the horizontal alignment and the other at the end peg distance, are defined automatically. The Z value of these initial nodes are undefined and must be updated by the user using the Vert&gt;Vert&gt;Z-Node option. New vertical nodes can be added between the original two nodes with the Vert&gt;Vert&gt;Special function.</span></p>
+<p class="p_Heading1"><span class="f_Heading1">&nbsp;</span></p>
+<p class="p_Heading1"><span class="f_CourierFixed">General string</span></p>
+<p class="p_Heading1"><span style="font-size: 5pt; color: #010100;">&nbsp;</span></p>
+<p class="p_Heading1"><span style="font-size: 9pt; color: #010100;">This type of string is also defined by pointing to the plan nodes. &nbsp;The line defining the string will be the segments joining the plan nodes in order of input.</span></p>
+<p class="p_Heading1"><span class="f_Heading1">&nbsp;</span></p>
+<p class="p_Heading1"><span style="font-size: 9pt; color: #010100;">The horizontal alignment is therefore only defined by the number of plan nodes and not by pi's, curves and transitions.</span></p>
+<p class="p_Heading1"><span class="f_Heading1">&nbsp;</span></p>
+<p class="p_Heading1"><span style="font-size: 9pt; color: #010100;">The vertical component of this string consists of the elevation of every defined plan node. The number of plan and vertical nodes will always be the same. Additional vertical nodes are thus defined by first adding a plan node to the string. The Z value of the new node may then be entered. &nbsp;The elevation of a node may be interpolated directly from an existing model.</span></p>
+<p style="text-indent: 0px;"><span style="color: #000000;">&nbsp;</span></p>
+<p style="text-indent: 0px;"><span style="font-weight: bold; color: #010100;">Pipe string</span></p>
+<p style="text-indent: 0px;"><span style="color: #000000;">&nbsp;</span></p>
+<p style="text-indent: 0px;"><span style="font-size: 9pt; color: #010100;">This string type is very similar to the general sting type but it also allows for pipe diameters and invert elevations at the nodes.</span></p>
+<p style="text-indent: 0px;"><span style="color: #000000;">&nbsp;</span></p>
+<p style="text-indent: 0px;"><span class="f_CourierFixed">Functions applied to strings</span></p>
+<p style="text-indent: 0px;"><span style="font-size: 5pt; color: #010100;">&nbsp;</span></p>
+<p style="text-indent: 0px;"><span style="font-size: 9pt; color: #010100;">Strings are defined by the following means:</span></p>
+<p style="text-indent: 0px;"><span style="color: #000000;">&nbsp;</span></p>
+<p style="text-indent: 0px;"><span style="font-size: 9pt; color: #010100;">1) &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp;Indicate the plan nodes. Use the Nearline mode to have a string follow a pre defined CAD poly line.</span></p>
+<p style="text-indent: 0px;"><span style="color: #000000;">&nbsp;</span></p>
+<p style="text-indent: 0px;"><span style="font-size: 9pt; color: #010100;">2) &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp;Copy a string to a new position.</span></p>
+<p style="text-indent: 0px;"><span style="color: #000000;">&nbsp;</span></p>
+<p style="text-indent: 0px;"><span style="font-size: 9pt; color: #010100;">3) &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp;Copy a string parallel to another. The new string will always be of the general type. If the base string is of an alignment type the following will apply :</span></p>
+<p style="text-indent: 0px;"><span style="color: #000000;">&nbsp;</span></p>
+<p style="text-indent: 0px;"><span style="font-size: 9pt; color: #010100;">The new general string will follow the alignment string along it's defined horizontal alignment position, taking curves and transitions into account. the user will be asked for the interval between the plan nodes of the new general string. The elevations on the new string will be interpolated from the base string.</span></p>
+<p style="text-indent: 0px;"><span style="color: #000000;">&nbsp;</span></p>
+<p style="text-indent: 0px;"><span style="font-size: 9pt; color: #010100;">The vertical component of the new string is manipulated in the Vert menu.</span></p>
+<p style="text-indent: 0px;"><span style="color: #000000;">&nbsp;</span></p>
+<p style="text-indent: 0px;"><span style="font-size: 9pt; color: #010100;">4) &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp;Generate the toe-line string by calculating toe-points along an indicated base string at a set slope value down to the ground surface as defined by the active DTM project. </span></p>
+<p style="text-indent: 0px;"><span style="font-size: 9pt; color: #010100;"> &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp;Toe-Lines are defined without first creating a design surface with triangles.</span></p>
+<p style="text-indent: 0px;"><span style="color: #000000;">&nbsp;</span></p>
+<p style="text-indent: 0px;"><span class="f_CourierFixed">Vertical menu</span></p>
+<p style="text-indent: 0px;"><span style="font-size: 5pt; color: #010100;">&nbsp;</span></p>
+<p style="text-indent: 0px;"><span style="font-size: 9pt; color: #010100;">View one or more strings in the vertical mode. The ground long section below the string may be displayed with the string. &nbsp;  </span></p>
+<p style="text-indent: 0px;"><span style="color: #000000;">&nbsp;</span></p>
+<p style="text-indent: 0px;"><span style="font-size: 9pt; color: #010100;">You can apply the following vertical manipulations to the strings while in vertical mode. </span></p>
+<p style="text-indent: 0px;"><span style="color: #000000;">&nbsp;</span></p>
+<p style="text-indent: 0px;"><span style="font-size: 9pt; color: #010100;">1) &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp;Regrading a segment or all the segments between indicated nodes.</span></p>
+<p style="text-indent: 0px;"><span style="color: #000000;">&nbsp;</span></p>
+<p style="text-indent: 0px;"><span style="font-size: 9pt; color: #010100;">2) &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp;Grading a string relative to another.</span></p>
+<p style="text-indent: 0px;"><span style="color: #000000;">&nbsp;</span></p>
+<p style="text-indent: 0px;"><span style="font-size: 9pt; color: #010100;">3) &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp;Adding a Z constant to the whole string.</span></p>
+<p style="text-indent: 0px;"><span style="color: #000000;">&nbsp;</span></p>
+<p style="text-indent: 0px;"><span style="font-size: 9pt; color: #010100;">4) &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp;Moving Z nodes graphically up or down in space.</span></p>
+<p style="text-indent: 0px;"><span style="color: #000000;">&nbsp;</span></p>
+<p style="text-indent: 0px;"><span style="color: #000000;">&nbsp;</span></p>
+<p style="text-indent: 0px;"><span style="font-size: 9pt; color: #010100;">Strings may be used :</span></p>
+<p style="text-indent: 0px;"><span style="font-size: 9pt; color: #010100;">1) &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp;as a substitute for a CAD poly line.</span></p>
+<p style="text-indent: 0px;"><span style="color: #000000;">&nbsp;</span></p>
+<p style="text-indent: 0px;"><span style="font-size: 9pt; color: #010100;">2) &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp;to define design lines for parking areas, roads, platforms, landscape forms, rehabilitation etc.</span></p>
+<p style="text-indent: 0px;"><span style="color: #000000;">&nbsp;</span></p>
+<p style="text-indent: 0px;"><span style="font-size: 9pt; color: #010100;">3) &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp;to generate new DTM points at the nodes of the strings. &nbsp;(This applies only to general strings.)  </span></p>
+<p style="text-indent: 0px;"><span style="width:24px">&nbsp;</span> &nbsp; &nbsp; &nbsp; &nbsp;<span style="font-size: 9pt; color: #010100;">These DTM points may be manipulated by the normal menu's.</span></p>
+<p style="text-indent: 0px;"><span style="color: #000000;">&nbsp;</span></p>
+<p style="text-indent: 0px;"><span style="font-size: 9pt; color: #010100;">4) &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp;to update the elevations of DTM points at the nodes using of the string. &nbsp;This is used mainly after </span></p>
+<p style="text-indent: 0px;"><span style="width:24px">&nbsp;</span> &nbsp; &nbsp; &nbsp; &nbsp;<span style="font-size: 9pt; color: #010100;">the vertical component of a string has been changed.</span></p>
+<p style="text-indent: 0px;"><span style="color: #000000;">&nbsp;</span></p>
+<p style="text-indent: 0px;"><span style="font-size: 9pt; color: #010100;">5) &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp;to model the top and bottom part of an embankment. &nbsp;Embankment hatch lines can then be drawn</span></p>
+<p style="text-indent: 0px;"><span style="width:24px">&nbsp;</span> &nbsp; &nbsp; &nbsp; &nbsp;<span style="font-size: 9pt; color: #010100;">automatically between the strings.</span></p>
+<p style="text-indent: 0px;"><span style="color: #000000;">&nbsp;</span></p>
+<p style="text-indent: 0px;"><span class="f_CourierFixed">Example workshop</span></p>
+<p style="text-indent: 0px;"><span style="color: #000000;">&nbsp;</span></p>
+<p style="text-indent: 0px;"><span style="font-size: 9pt; color: #010100;">1) &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp;Remodel landscape area to new design contours.</span></p>
+<p style="text-indent: 0px;"><span style="color: #000000;">&nbsp;</span></p>
+<p style="text-indent: 0px;"><span style="font-size: 9pt; color: #010100;">Load the OGL model and triangles into project 1.</span></p>
+<p style="text-indent: 0px;"><span style="color: #000000;">&nbsp;</span></p>
+<p style="text-indent: 0px;"><span style="font-size: 9pt; color: #010100;">Switch the active project to #2. &nbsp;Add general strings graphically by adding nodes along the intended new landscape contour. These strings will initially all have a 0 elevation. &nbsp;Use the Vert options and elevate each string to the desired level.</span></p>
+<p style="text-indent: 0px;"><span style="color: #000000;">&nbsp;</span></p>
+<p style="text-indent: 0px;"><span style="font-size: 9pt; color: #010100;">Use the Utility option and generate new dtm points onto project #2 by pointing to each string individually. Search for triangles between points in project 2. Draw contours and calculate volumes with the Terrace option. Redesign the vertical part of the strings if necessary. Update the elevations of the DTM points along the new designed string. Use the Utility option.</span></p>
+<p style="text-indent: 0px;"><span style="color: #000000;">&nbsp;</span></p>
+<p style="text-indent: 0px;"><span style="font-size: 9pt; color: #010100;">The above could also be done by defining the strings, not as contours, but as cross-sections over the OGL model.</span></p>
+<p style="text-indent: 0px;"><span style="color: #000000;">&nbsp;</span></p>
+<div style="text-align: left; text-indent: 0px; padding: 0px 0px 0px 0px; margin: 0px 0px 0px 0px;"><table cellspacing="0" cellpadding="1" border="0" style="border: none; border-spacing:0px;">
+<tr style="text-align:left;vertical-align:top;">
+<td valign="top" width="284" style="width:284px;"><p style="text-align: center; text-indent: 0px;"><span style="font-size: 9pt; font-style: italic; font-weight: bold; color: #ff0000;">Note:</span></p>
+<p style="text-indent: 0px;"><span style="font-size: 9pt; color: #010100;">Strings are stored separately from any other data in the strings File menu.</span></p>
+</td>
+</tr>
+</table>
+</div>
+<p style="text-indent: 0px;"><span style="color: #000000;">&nbsp;</span></p>
+<p style="text-indent: 0px;"><span class="f_rrelatedtopic">Related topics:</span></p>
+<p style="text-indent: 0px;"><span style="font-size: 9pt; color: #010100;"><a href="stringadd.htm">Add</a></span></p>
+<p style="text-indent: 0px;"><span style="font-size: 9pt; color: #010100;"><a href="string___edit___flip.htm">Edit</a></span></p>
+
+</td></tr></table>
+
+</body>
+</html>

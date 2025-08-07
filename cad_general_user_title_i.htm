@@ -1,0 +1,96 @@
+<!DOCTYPE HTML PUBLIC "-//W3C//DTD HTML 4.01 Transitional//EN">
+<html>
+<head>
+   <title>CAD : General - User title - Inverted</title>
+   <meta name="generator" content="Help &amp; Manual" />
+   <meta name="keywords" content="Invert,Title,User" />
+   <meta http-equiv="Content-Type" content="text/html; charset=ISO-8859-1" />
+   <meta http-equiv="Content-Style-Type" content="text/css" />
+   <link type="text/css" href="default.css" rel="stylesheet" />
+
+<script type="text/javascript" src="helpman_topicinit.js"></script>
+<object id=hhctrl_90 type="application/x-oleobject" classid="clsid:adb880a6-d8ff-11cf-9377-00aa003b7a11"><param name="Command" value="ALink"><param name="Window" value="second"><param name="Item1" value=""><param name="Item2" value="$topicid_popupcadidmanid"></object></head>
+<body style="margin: 0px 0px 0px 0px; background: #FFFFFF;">
+
+
+<table width="100%" border="0" cellspacing="0" cellpadding="5" bgcolor="#D0D0D0">
+  <tr valign="middle">
+    <td align="left">
+      <p class="p_Heading1"><span class="f_Heading1">CAD : General - User title - Inverted</span></p>
+
+    </td>
+    <td align="right">
+     <span style="font-size: 9pt">
+     <a href="start_up.htm">Top</a>&nbsp;
+     <a href="cad_general_user_title.htm">Previous</a>&nbsp;
+     <a href="cad__general___user_title___ma.htm">Next</a>
+     </span>
+    </td>
+  </tr>
+</table>
+
+
+<!-- Placeholder for topic body. -->
+<table width="100%" border="0" cellspacing="0" cellpadding="5"><tr valign="top"><td align="left">
+<p style="text-indent: 0px;"><span style="color: #000000;">&nbsp;</span></p>
+<p style="text-indent: 0px;"><span style="font-size: 9pt; font-weight: bold; color: #000080;">MENU : CAD - Id &nbsp;- Man_id &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; </span><span style="font-size: 9pt; font-weight: bold; color: #0000ff;"><a href="javascript:hhctrl_90.hhclick()">Show me how to get there</a></span></p>
+<p style="text-indent: 0px;"><span style="color: #000000;">&nbsp;</span></p>
+<p style="text-indent: 0px;"><img src="_bm77.png" width="103" height="28" border="0" alt="_bm77"></p>
+<p style="text-indent: 0px;"><span style="font-size: 9pt; color: #010100;">The user title block option has been developed so that the user can produce plotted plans with complete title information along one edge of the drawing and CAD, DTM and other elements, displayed within a defined rectangular area.</span></p>
+<p style="text-indent: 0px;"><span style="color: #000000;">&nbsp;</span></p>
+<p style="text-indent: 0px;"><span style="font-size: 9pt; color: #010100;">This is a format that works extremely well except that it does not allow for the definition of an irregular active plotting area. This drawback is overcome by the inverted user defined title block option.</span></p>
+<p style="text-indent: 0px;"><span style="color: #000000;">&nbsp;</span></p>
+<p style="text-indent: 0px;"><span style="font-size: 9pt; font-weight: bold; color: #804000;">Background</span></p>
+<p style="text-indent: 0px;"><span style="font-size: 9pt; color: #010100;">The regular user title block is drawn in the following sequence.</span></p>
+<p style="text-indent: 0px;"><span style="font-size: 9pt; color: #010100;">1) &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp;The complete paper area is activated.</span></p>
+<p style="text-indent: 0px;"><span style="font-size: 9pt; color: #010100;">2) &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp;The user defined title block information is plotted.</span></p>
+<p style="text-indent: 0px;"><span style="font-size: 9pt; color: #010100;">3) &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp;The active plotting area (the user defined rectangle) within the title block is activated.</span></p>
+<p style="text-indent: 0px;"><span style="font-size: 9pt; color: #010100;">4) &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp;The drawing elements are plotted that falls within the active area. Elements outside the area or crossing the boundary are clipped and not displayed.</span></p>
+<p style="text-indent: 0px;"><span style="color: #000000;">&nbsp;</span></p>
+<p style="text-indent: 0px;"><span style="font-size: 9pt; font-weight: bold; color: #010100;">Figure 1</span></p>
+<p style="text-indent: 0px;"><img src="_bm84.png" width="153" height="192" border="0" alt="_bm84"><span style="font-size: 9pt; color: #010100;">Take this layout as an example. </span></p>
+<p style="text-indent: 0px;"><span style="font-size: 9pt; color: #010100;">If the actual title block was defined as area a1 to a2 then the active plotting area could be:</span></p>
+<p style="text-indent: 0px;"><span style="color: #000000;">&nbsp;</span></p>
+<p style="text-indent: 0px;"><span style="font-size: 9pt; color: #010100;">A to B - rendering the area E to D ineffective plotting area.</span></p>
+<p style="text-indent: 0px;"><span style="font-size: 9pt; color: #010100;">or</span></p>
+<p style="text-indent: 0px;"><span style="font-size: 9pt; color: #010100;">C to D - leaving the area A to E ineffective.</span></p>
+<p style="text-indent: 0px;"><span style="color: #000000;">&nbsp;</span></p>
+<p style="text-indent: 0px;"><span style="color: #000000;">&nbsp;</span></p>
+<p style="text-indent: 0px;"><span style="font-size: 9pt; color: #010100;">The inverted title block option allows Model Maker to use the complete paper area for plotting purposes.</span></p>
+<p style="text-indent: 0px;"><span style="font-size: 9pt; color: #010100;">The plotting sequence is as follows.</span></p>
+<p style="text-indent: 0px;"><span style="font-size: 9pt; color: #010100;">1) &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp;The complete paper area is activated.</span></p>
+<p style="text-indent: 0px;"><span style="font-size: 9pt; color: #010100;">2) &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp;All the drawing elements are plotted first.</span></p>
+<p style="text-indent: 0px;"><span style="font-size: 9pt; color: #010100;">3) &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp;Keeping the total area activated, the defined title block information is plotted second, on top of the drawing elements.</span></p>
+<p style="text-indent: 0px;"><span style="color: #000000;">&nbsp;</span></p>
+<p style="text-indent: 0px;"><span style="font-size: 9pt; color: #010100;">The secret to this method is that the user must define hatch areas in the areas where title block lines and text are defined.</span></p>
+<p style="text-indent: 0px;"><span style="color: #000000;">&nbsp;</span></p>
+<p style="text-indent: 0px;"><span style="font-size: 9pt; color: #010100;">EXAMPLE of an inverted title block</span></p>
+<p style="text-indent: 0px;"><span style="font-size: 9pt; font-weight: bold; color: #010100;">Figure 2</span></p>
+<p style="text-indent: 0px;"><img src="_bm85.png" width="126" height="160" border="0" alt="_bm85"></p>
+<p style="text-indent: 0px;"><span style="font-size: 9pt; color: #010100;">Notice how 4 hatch areas have been placed at the corners to allow the title block information to be plotted on top of CAD elements.</span></p>
+<p style="text-indent: 0px;"><span style="font-size: 9pt; color: #010100;">The red dots indicate that this irregular area will in fact be used to display the rest of the drawing elements.</span></p>
+<p style="text-indent: 0px;"><span style="color: #000000;">&nbsp;</span></p>
+<p style="text-indent: 0px;"><span style="font-size: 9pt; font-weight: bold; color: #804000;">Defining an inverted title block</span></p>
+<p style="text-indent: 0px;"><span style="font-size: 9pt; color: #010100;">Define the inverted title block in the same way as the <a href="cad_general_user_title.htm">regular title</a> block except for the following.</span></p>
+<p style="text-indent: 0px;"><span style="color: #000000;">&nbsp;</span></p>
+<div style="text-align: left; text-indent: 0px; padding: 0px 0px 0px 0px; margin: 0px 0px 0px 1px;"><table border="0" cellpadding="0" cellspacing="0" style="line-height: normal;"><tr style="vertical-align:baseline" valign="baseline"><td width="23"><img src="_bm26.png" width="10" height="15" border="0" alt="_bm26"></td><td> &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp;<span style="font-size: 9pt; color: #010100;">Place a <a href="cad___hatch___add_.htm">hatch</a> in the area where the title information must be displayed.</span></td></tr></table></div><div style="text-align: left; text-indent: 0px; padding: 0px 0px 0px 0px; margin: 0px 0px 0px 1px;"><table border="0" cellpadding="0" cellspacing="0" style="line-height: normal;"><tr style="vertical-align:baseline" valign="baseline"><td width="23"><img src="_bm26.png" width="10" height="15" border="0" alt="_bm26"></td><td> &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp;<span style="font-size: 9pt; color: #010100;">When defining the plotting area, indicate the complete paper area. In figure 1 that will be area A to D.</span></td></tr></table></div><p style="text-indent: -23px; margin: 0px 0px 0px 24px;"><span style="color: #000000;">&nbsp;</span></p>
+<div style="text-align: left; text-indent: 0px; padding: 0px 0px 0px 0px; margin: 0px 0px 0px 1px;"><table border="0" cellpadding="0" cellspacing="0" style="line-height: normal;"><tr style="vertical-align:baseline" valign="baseline"><td width="23"><img src="_bm26.png" width="10" height="15" border="0" alt="_bm26"></td><td> &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp;<span style="font-size: 9pt; color: #010100;">Finally, when saving the title block, check the invert option.<img src="_bm86.png" width="381" height="64" border="0" alt="_bm86"></span></td></tr></table></div><p style="text-indent: -23px; margin: 0px 0px 0px 24px;"><span style="color: #000000;">&nbsp;</span></p>
+<p style="text-indent: -23px; margin: 0px 0px 0px 24px;"><span style="font-size: 9pt; color: #010100;">A typical final result obtained by using the defined title block as shown in figure 2. Notice how the hatched areas fill the corners, erasing the original drawing in those areas.</span></p>
+<p style="text-indent: -23px; margin: 0px 0px 0px 24px;"><img src="_bm87.png" width="151" height="191" border="0" alt="_bm87"></p>
+<p style="text-indent: 0px;"><span style="color: #000000;">&nbsp;</span></p>
+<p style="text-indent: 0px;"><span style="font-style: italic; font-weight: bold; color: #d10707;">Notes:</span></p>
+<p style="text-indent: -23px; margin: 0px 0px 0px 24px;"><span style="font-size: 9pt; color: #010100;">This format of title block can only be used on the newer ink jet plotters. </span></p>
+<p style="text-indent: -23px; margin: 0px 0px 0px 24px;"><span style="font-size: 9pt; color: #010100;">Plotting to ink jet plotters is done through an electronic canvas component which allows the adding and erasing of pixels before the final image is displayed on the printer. </span></p>
+<p style="text-indent: -23px; margin: 0px 0px 0px 24px;"><span style="font-size: 9pt; color: #010100;">So what really happens, is that the full paper area is initially covered by the drawing elements. When the title block is plotted, the hatched areas below the title areas actually erase what ever was visible before, again, creating a clear area in which the title lines and text can be displayed.</span></p>
+<p style="text-indent: -23px; margin: 0px 0px 0px 24px;"><span style="font-size: 9pt; color: #010100;">On pen plotters this would not work as lines already drawn cannot be erased again.</span></p>
+<p style="text-indent: -23px; margin: 0px 0px 0px 24px;"><span style="font-size: 9pt; color: #010100;">When plotting on regular white paper, also make the colour of the hatch - used as the title area back drop - white. </span></p>
+<p style="text-indent: -23px; margin: 0px 0px 0px 24px;"><span style="font-size: 9pt; color: #010100;">Ensure that the CAD <a href="settings___defaults.htm">plotting sequence</a> is set that the hatch elements area plotted before the other elements.</span></p>
+<p style="text-indent: -23px; margin: 0px 0px 0px 24px;"><span style="color: #000000;">&nbsp;</span></p>
+<p style="text-indent: -23px; margin: 0px 0px 0px 24px;"><span style="color: #000000;">&nbsp;</span></p>
+<p style="text-indent: 0px;"><span style="color: #000000;">&nbsp;</span></p>
+<p style="text-indent: 0px;"><span style="color: #000000;">&nbsp;</span></p>
+
+</td></tr></table>
+
+</body>
+</html>

@@ -1,0 +1,113 @@
+<!DOCTYPE HTML PUBLIC "-//W3C//DTD HTML 4.01 Transitional//EN">
+<html>
+<head>
+   <title>CAD : Line - Replace</title>
+   <meta name="generator" content="Help &amp; Manual" />
+   <meta name="keywords" content="CAD,Line,Replace" />
+   <meta http-equiv="Content-Type" content="text/html; charset=ISO-8859-1" />
+   <meta http-equiv="Content-Style-Type" content="text/css" />
+   <link type="text/css" href="default.css" rel="stylesheet" />
+
+<script type="text/javascript" src="helpman_topicinit.js"></script>
+<object id=hhctrl_11 type="application/x-oleobject" classid="clsid:adb880a6-d8ff-11cf-9377-00aa003b7a11"><param name="Command" value="ALink"><param name="Window" value="second"><param name="Item1" value=""><param name="Item2" value="$topicid_popup_cad_line_replace"></object></head>
+<body style="margin: 0px 0px 0px 0px; background: #FFFFFF;">
+
+
+<table width="100%" border="0" cellspacing="0" cellpadding="5" bgcolor="#D0D0D0">
+  <tr valign="middle">
+    <td align="left">
+      <p class="p_Heading1"><span class="f_Heading1">CAD : Line - Replace</span></p>
+<p class="p_Heading1"><span class="f_purpose"><a href="javascript:hhctrl_11.hhclick()">Show me how to get there</a></span></p>
+
+    </td>
+    <td align="right">
+     <span style="font-size: 9pt">
+     <a href="start_up.htm">Top</a>&nbsp;
+     <a href="cadline_parallel.htm">Previous</a>&nbsp;
+     <a href="cadline_shape.htm">Next</a>
+     </span>
+    </td>
+  </tr>
+</table>
+
+
+<!-- Placeholder for topic body. -->
+<table width="100%" border="0" cellspacing="0" cellpadding="5"><tr valign="top"><td align="left">
+<p style="text-indent: 0px;"><span style="color: #000000;">&nbsp;</span></p>
+<p style="text-indent: 0px;"><span class="f_rrelatedtopic">MENU : Cad - Line - Replace &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp;</span></p>
+<p style="text-indent: 0px;"><span style="font-size: 5pt; color: #010100;">&nbsp;</span></p>
+<p style="text-indent: 0px;"><span style="font-size: 9pt; color: #010100;">This function will allow you to replace 2 CAD lines with a single CAD line. Looking at Figure 1 below, one would possibly expect to have to delete the line BC and CD, and then create the required line BD. Model Maker has made that task a lot easier. However there are a few things to consider when doing this. The order in which the lines are selected is important. Examples of the possible steps and results are detailed below.</span></p>
+<p style="text-indent: 0px;"><span style="color: #000000;">&nbsp;</span></p>
+<div style="text-align: left; text-indent: 0px; padding: 0px 0px 0px 0px; margin: 0px 0px 0px 0px;"><table cellspacing="0" cellpadding="1" border="0" style="border: none; border-spacing:0px;">
+<tr style="text-align:left;vertical-align:top;">
+<td valign="top" width="245" style="width:245px;"><p class="p_Heading1"><span style="font-size: 12pt;"> </span><img src="_bm158.png" width="237" height="229" border="0" alt="_bm158"></p>
+</td>
+<td valign="top" width="348" style="width:348px;"><p style="text-indent: 0px;"><span style="font-size: 9pt; color: #010100;">Figure 1 shows the line BC broken into imaginary segments 1&amp;2 and the line CD into segments 3&amp;4.</span></p>
+<p style="text-indent: 0px;"><span style="color: #000000;">&nbsp;</span></p>
+<p style="text-indent: 0px;"><span style="font-size: 9pt; color: #010100;">The lines BC and CD are in different colors and the CD also has a different linestyle. It could also be on a different layer.</span></p>
+<p style="text-indent: 0px;"><span style="font-size: 9pt; color: #010100;">The order in which you select the elements as well as the position at which they are selected makes a big difference to the end result. Lets look at the various options and their results.</span><span style="font-size: 12pt;">line style</span></p>
+</td>
+</tr>
+</table>
+</div>
+<p style="text-indent: 0px;"><span style="color: #000000;">&nbsp;</span></p>
+<p style="text-indent: 0px;"><span class="f_CourierFixed">Option 1</span></p>
+<p style="text-indent: 0px;"><span style="font-size: 9pt; color: #010100;">Selecting the line BC at position 2 and then line CD at position 3 will yield the result displayed in Figure 2. The properties (layer,line type,color) of the resulting line BD will be those of the 2nd selected line namely CD. Notice how the colour and line type have changed. The resulting line BD will also have adopted the layer of line CD.</span></p>
+<p style="text-indent: 0px;"><span style="color: #000000;">&nbsp;</span></p>
+<p style="text-indent: 0px;"><span style="font-size: 9pt; color: #010100;">Selecting the line CD at position 3 and then line BC at position 2 will yield the result displayed in Figure 3. Once again notice how the resulting line BD has adopted the properties of the second selected line BC.</span></p>
+<p style="text-indent: 0px;"><span style="color: #000000;">&nbsp;</span></p>
+<p style="text-indent: 0px;"><span style="font-size: 9pt; color: #010100;"> <img src="_bm159.png" width="471" height="201" border="0" alt="_bm159"></span></p>
+<p style="text-indent: 0px;"><span style="color: #000000;">&nbsp;</span></p>
+<p style="text-indent: 0px;"><span class="f_CourierFixed">Option 2</span></p>
+<p style="text-indent: 0px;"><span style="font-size: 9pt; color: #010100;">Selecting the line BC at position 1 and then the line CD at position 3 will yield the result in Figure 4. Line CD has in fact remained unchanged and line BC has been deleted. You will notice that both lines appear to disappear. Do not be alarmed. You must replot the screen to check the result. The same will happen when the sequence below is followed.</span></p>
+<p style="text-indent: 0px;"><span style="color: #000000;">&nbsp;</span></p>
+<p style="text-indent: 0px;"><span style="font-size: 9pt; color: #010100;">Selecting the line CD at position 4 and then the line BC at position 2 will yield the result in Figure 5. Line BC has remained unchanged and now CD has been deleted.</span></p>
+<p style="text-indent: 0px;"><span style="color: #000000;">&nbsp;</span></p>
+<p style="text-indent: 0px;"><span style="font-size: 9pt; color: #010100;"> <img src="_bm160.png" width="574" height="224" border="0" alt="_bm160"></span></p>
+<p style="text-indent: 0px;"><span style="color: #000000;">&nbsp;</span></p>
+<p style="text-indent: 0px;"><span class="f_CourierFixed">Option 3</span></p>
+<p style="text-indent: 0px;"><span style="font-size: 9pt; color: #010100;">Selecting the line BC at position 1 and then the line CD at position 4 will not change anything. The lines BC and CD will remain as is in Figure 1.</span></p>
+<p style="text-indent: 0px;"><span style="color: #000000;">&nbsp;</span></p>
+<p style="text-indent: 0px;"><span style="font-size: 9pt; color: #010100;">One can see from the above examples that the order in which, as well as the position at which, the lines are selected has a great role to play in the end result. Depending on which side of center, a line is selected, determines what Model Maker will do. If you find that the desired result is not what you expected press the &quot;+&quot; (plus key) and the operation will be reversed. You may then reselect. It may be a good idea to zoom into the area in question (close to the terminals to be replaced) when choosing to perform this operation. Doing this will enlarge the area and should make sure that you select on the correct side of the center. This would be especially true when replacing a very long and short line.</span></p>
+<p style="text-indent: 0px;"><span style="color: #000000;">&nbsp;</span></p>
+<p style="text-indent: 0px;"><span class="f_CourierFixed">Option 4</span></p>
+<div style="text-align: left; text-indent: 0px; padding: 0px 0px 0px 0px; margin: 0px 0px 0px 0px;"><table cellspacing="0" cellpadding="1" border="0" style="border: none; border-spacing:0px;">
+<tr style="text-align:left;vertical-align:top;">
+<td valign="top" width="233" style="width:233px;"><p class="p_Heading1"><img src="_bm161.png" width="195" height="118" border="0" alt="_bm161"></p>
+</td>
+<td valign="top" width="373" style="width:373px;"><p style="text-indent: 0px;"><span style="font-size: 9pt; color: #010100;">What happens when the lines are not at an angle to each other. In other words you may wish to replace 2 straight lines with a single line. Typically a frame situation. Once again the order in which the lines are selected comes into play. Figure 6 looks at a straight line scenario.</span></p>
+</td>
+</tr>
+</table>
+</div>
+<p style="text-indent: 0px;"><span style="font-size: 9pt; color: #010100;">In the above situation we have 2 different coloured lines and it is easy to see where they join. The scenario is exactly the same as detailed in Figure 1 except that the lines are straight. Following the steps detailed in Options 1 and 2 above will result in a single line with different colours.</span></p>
+<p style="text-indent: 0px;"><span style="color: #000000;">&nbsp;</span></p>
+<div style="text-align: left; text-indent: 0px; padding: 0px 0px 0px 0px; margin: 0px 0px 0px 0px;"><table cellspacing="0" cellpadding="1" border="0" style="border: none; border-spacing:0px;">
+<tr style="text-align:left;vertical-align:top;">
+<td valign="top" width="232" style="width:232px;"><p class="p_Heading1"><img src="_bm162.png" width="213" height="92" border="0" alt="_bm162"></p>
+</td>
+<td valign="top" width="396" style="width:396px;"><p style="text-indent: 0px;"><span style="font-size: 9pt; color: #010100;">Figure 7 is similar, except that the 2 lines actually look as though they are already a single line. The only way to tell where they meet is to switch on their endpoints. The green crosses indicate the line terminals and one can clearly see now where the lines meet. The selection process and results would once again be as detailed above in options 1 to 3.</span></p>
+</td>
+</tr>
+</table>
+</div>
+<p style="text-indent: 0px;"><span style="color: #000000;">&nbsp;</span></p>
+<p style="text-indent: 0px;"><span class="f_CourierFixed">EXAMPLE:</span></p>
+<p style="text-indent: 0px;"><span style="font-size: 9pt; color: #010100;">Replace 2 CAD lines with single line.</span></p>
+<p style="text-indent: 0px;"><span style="color: #000000;">&nbsp;</span></p>
+<p style="text-indent: 0px;"><img src="_bm163.png" width="180" height="83" border="0" alt="_bm163"></p>
+<p style="text-indent: 0px;"><span style="font-size: 9pt; font-weight: bold; color: #010100;">BEFORE &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; AFTER</span></p>
+<p style="text-indent: 0px;"><span style="color: #000000;">&nbsp;</span></p>
+<p style="text-indent: 0px;"><span style="font-size: 9pt; color: #010100;">Model Maker determines the endpoint &nbsp;closest to the cursor position on each line.</span></p>
+<p style="text-indent: 0px;"><span style="font-size: 9pt; color: #010100;">Note that in the example, the cursor marks are closer to the end point (B) than to A or C when the lines are indicated. </span></p>
+<p style="text-indent: 0px;"><span style="font-size: 9pt; color: #010100;">Node B is replaced. The opposing endpoints (A &amp; C) will form the co-ordinates of the new line. </span></p>
+<p style="text-indent: 0px;"><span style="color: #000000;">&nbsp;</span></p>
+<p style="text-indent: 0px;"><span class="f_rrelatedtopic">Related topics:</span></p>
+<p style="text-indent: 0px;"><span style="font-size: 9pt; color: #010100;"><a href="cad___line___add_.htm">Add line</a></span></p>
+<p style="text-indent: 0px;"><span style="font-size: 9pt; color: #010100;"><a href="cadline_delete.htm">Delete line</a></span></p>
+<p style="text-indent: 0px;"><span style="font-size: 9pt; color: #010100;"><a href="cadline_meet.htm">Line : Meet</a></span></p>
+
+</td></tr></table>
+
+</body>
+</html>

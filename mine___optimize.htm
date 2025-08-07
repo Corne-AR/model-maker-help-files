@@ -1,0 +1,181 @@
+<!DOCTYPE HTML PUBLIC "-//W3C//DTD HTML 4.01 Transitional//EN">
+<html>
+<head>
+   <title>MINE : Optimize</title>
+   <meta name="generator" content="Help &amp; Manual" />
+   <meta name="keywords" content="Mining,Optimize,Platform" />
+   <meta http-equiv="Content-Type" content="text/html; charset=ISO-8859-1" />
+   <meta http-equiv="Content-Style-Type" content="text/css" />
+   <link type="text/css" href="default.css" rel="stylesheet" />
+
+<script type="text/javascript" src="helpman_topicinit.js"></script>
+</head>
+<body style="margin: 0px 0px 0px 0px; background: #FFFFFF;">
+
+
+<table width="100%" border="0" cellspacing="0" cellpadding="5" bgcolor="#D0D0D0">
+  <tr valign="middle">
+    <td align="left">
+      <p class="p_Heading1"><span class="f_Heading1">MINE : Optimize</span></p>
+
+    </td>
+    <td align="right">
+     <span style="font-size: 9pt">
+     <a href="start_up.htm">Top</a>&nbsp;
+     <a href="mine___volume_centroids.htm">Previous</a>&nbsp;
+     <a href="minegeoaverage.htm">Next</a>
+     </span>
+    </td>
+  </tr>
+</table>
+
+
+<!-- Placeholder for topic body. -->
+<table width="100%" border="0" cellspacing="0" cellpadding="5"><tr valign="top"><td align="left">
+<p class="p_Heading1"><span class="f_Heading1">&nbsp;</span></p>
+<p class="p_Heading1"><span class="f_rrelatedtopic">MENU : Min - Optimize</span></p>
+<p class="p_Heading1"><span class="f_Heading1">&nbsp;</span></p>
+<p class="p_Heading1"><span style="font-size: 9pt; color: #010100;">This function will determine the largest balanced platform level within a perimeter string given the desired cut &amp; fill embankment slopes.</span></p>
+<p class="p_Heading1"><span style="font-size: 9pt; color: #010100;">Optionally, a dtm design surface may be used as a lid in place of a theoretical flat surface.</span></p>
+<p class="p_Heading1"><span class="f_Heading1">&nbsp;</span></p>
+<div style="text-align: left; text-indent: 0px; padding: 0px 0px 0px 0px; margin: 0px 0px 0px 0px;"><table cellspacing="0" cellpadding="0" border="0" style="border: none; border-spacing:0px;">
+<tr style="text-align:left;vertical-align:top;">
+<td valign="top" width="422" style="width:422px;"><p class="p_Heading1"><img src="clip018300.png" width="402" height="236" border="0" alt="clip018300"></p>
+</td>
+<td valign="top" width="422" style="width:422px;"><p class="p_Heading1"><span style="font-size: 9pt;">The cut and fill slopes refer to the side slope that will be used to tie the design surface to the ground surface.</span></p>
+<p class="p_Heading1"><span class="f_Heading1">&nbsp;</span></p>
+<p class="p_Heading1"><span style="font-size: 9pt;">If there is no comapction enter a zero value. If there is a compaction to be calculated, enter the value.</span></p>
+<p class="p_Heading1"><span style="font-size: 9pt;">Example. A compaction of 90% must be entered as 0.10.</span></p>
+<p class="p_Heading1"><span class="f_Heading1">&nbsp;</span></p>
+<p class="p_Heading1"><span style="font-size: 9pt; color: #010100;">The grid interval. The process is done on a regular grid interval and it should be sufficiently small enough to achieve an accurate result.</span></p>
+<p class="p_Heading1"><span style="font-size: 9pt; color: #010100;">It is suggested that the grid interval should not be greater than 0.05 times the length of the shortest segment of the original string.</span></p>
+<p class="p_Heading1"><span style="font-size: 9pt; color: #010100;">In the example (below) the shortest segment length is 30 meters so the grid interval should be set to approximately 1.5 meters to get a good result.</span></p>
+<p class="p_Heading1"><span class="f_Heading1">&nbsp;</span></p>
+<p class="p_Heading1"><span style="font-size: 9pt; color: #010100;">Convert Boundary to cad. If this option is checked a cad line will be drawn around the biggest flat area that can fit within the boundary string.</span></p>
+<p class="p_Heading1"><span style="font-size: 9pt;">compaction</span></p>
+</td>
+</tr>
+</table>
+</div>
+<p class="p_Heading1"><span class="f_Heading1">&nbsp;</span></p>
+<p style="text-indent: 0px; margin: 0px 0px 0px 10px;"><span class="f_rrelatedtopic">Balanced Cut &amp; Fill </span></p>
+<div style="text-align: left; text-indent: 0px; padding: 0px 0px 0px 0px; margin: 0px 0px 0px 0px;"><table cellspacing="0" cellpadding="0" border="0" style="border: none; border-spacing:0px;">
+<tr style="text-align:left;vertical-align:top;">
+<td valign="top" width="423" style="width:423px;"><p class="p_Heading1"><span class="f_Heading1">&nbsp;</span></p>
+<p class="p_Heading1" style="text-align: center;"><img src="clip0182.png" width="372" height="127" border="0" alt="clip0182" style="margin:0 auto;margin:0px;"></p>
+</td>
+<td valign="top" width="426" style="width:426px;"><p class="p_Heading1"><span style="font-size: 9pt;">If this option is </span><span style="font-size: 9pt; text-decoration: underline;">not</span><span style="font-size: 9pt;"> checked, the optimize function will determine the biggest flat surface (with a balanced cut and fill volume) to fit within the boundary string.</span></p>
+<p class="p_Heading1"><span class="f_Heading1">&nbsp;</span></p>
+<p class="p_Heading1"><span style="font-size: 9pt;">If this option is </span><span style="font-size: 9pt; text-decoration: underline;">checked</span><span style="font-size: 9pt;">, a design surface (dtm points and triangles) must be present in the indicated project.</span></p>
+<p class="p_Heading1"><span style="font-size: 9pt;">The design surface will act as a lid on top the ground and the elevation change that must be applied to the design surface (to place it in a balanced cut and fill situation) will be reported.</span></p>
+<p class="p_Heading1"><span class="f_Heading1">&nbsp;</span></p>
+<div style="text-align: left; text-indent: 0px; padding: 0px 0px 0px 0px; margin: 0px 0px 0px 0px;"><table border="0" cellpadding="0" cellspacing="0" style="line-height: normal;"><tr style="vertical-align:baseline" valign="baseline"><td width="13"><span style="font-size: 9pt; font-family: 'Symbol'; font-style: normal; color: #000000; text-decoration: none;">&#183;</span></td><td><span style="font-size: 9pt;">The design surface is not affected.</span></td></tr></table></div><div style="text-align: left; text-indent: 0px; padding: 0px 0px 0px 0px; margin: 0px 0px 0px 0px;"><table border="0" cellpadding="0" cellspacing="0" style="line-height: normal;"><tr style="vertical-align:baseline" valign="baseline"><td width="13"><span style="font-size: 9pt; font-family: 'Symbol'; font-style: normal; color: #000000; text-decoration: none;">&#183;</span></td><td><span style="font-size: 9pt;">The user must apply the elevation change to the design surface if the surface is to be placed at the determined height.</span></td></tr></table></div><div style="text-align: left; text-indent: 0px; padding: 0px 0px 0px 0px; margin: 0px 0px 0px 0px;"><table border="0" cellpadding="0" cellspacing="0" style="line-height: normal;"><tr style="vertical-align:baseline" valign="baseline"><td width="13"><span style="font-size: 9pt; font-family: 'Symbol'; font-style: normal; color: #000000; text-decoration: none;">&#183;</span></td><td><span style="font-size: 9pt;">Notice - The design model cannot be the same as the active project since the active project is used as the ground model.</span></td></tr></table></div><div style="text-align: left; text-indent: 0px; padding: 0px 0px 0px 0px; margin: 0px 0px 0px 0px;"><table border="0" cellpadding="0" cellspacing="0" style="line-height: normal;"><tr style="vertical-align:baseline" valign="baseline"><td width="13"><span style="font-size: 9pt; font-family: 'Symbol'; font-style: normal; color: #000000; text-decoration: none;">&#183;</span></td><td><span style="font-size: 9pt;">Also, project 2 is used internally during the calculations, the design project can therefore also not be project 2.</span></td></tr></table></div><div style="text-align: left; text-indent: 0px; padding: 0px 0px 0px 0px; margin: 0px 0px 0px 0px;"><table border="0" cellpadding="0" cellspacing="0" style="line-height: normal;"><tr style="vertical-align:baseline" valign="baseline"><td width="13"><span style="font-size: 9pt; font-family: 'Symbol'; font-style: normal; color: #000000; text-decoration: none;">&#183;</span></td><td><span style="font-size: 9pt;">The standard would be to have the ground model in project1 and the design model in project3.</span></td></tr></table></div></td>
+</tr>
+<tr style="text-align:left;vertical-align:top;">
+<td valign="top" width="423" style="width:423px;"><p class="p_Heading1" style="text-align: center;"><img src="clip018400.png" width="326" height="241" border="0" alt="clip018400" style="margin:0 auto;margin:0px;"></p>
+</td>
+<td valign="top" width="426" style="width:426px;"><p class="p_Heading1"><span class="f_Heading1">&nbsp;</span></p>
+<p class="p_Heading1"><span class="f_Heading1">&nbsp;</span></p>
+<p class="p_Heading1"><span style="font-size: 9pt;">In this example, 8 points were used to create a surface according to certain slope values.</span></p>
+<p class="p_Heading1"><span class="f_Heading1">&nbsp;</span></p>
+<p class="p_Heading1"><span style="font-size: 9pt;">The white outline indicates the area to be optimized. Notice that the design surface is much larger than the boundary. </span></p>
+<p class="p_Heading1"><span class="f_Heading1">&nbsp;</span></p>
+<p class="p_Heading1"><span style="font-size: 9pt;">The boundary will be used as the perimeter toeline and the toepoints on the design surface will be extend towards the inside of the area. </span></p>
+<p class="p_Heading1"><span class="f_Heading1">&nbsp;</span></p>
+<p class="p_Heading1"><span style="font-size: 9pt;">See the image of the final design below.</span></p>
+<p class="p_Heading1"><span class="f_Heading1">&nbsp;</span></p>
+</td>
+</tr>
+</table>
+</div>
+<p class="p_Heading1"><span class="f_Heading1">&nbsp;</span></p>
+<p style="text-indent: 0px; margin: 0px 0px 0px 10px;"><span class="f_rrelatedtopic">Fill Only </span></p>
+<div style="text-align: left; text-indent: 0px; padding: 0px 0px 0px 0px; margin: 0px 0px 0px 0px;"><table cellspacing="0" cellpadding="0" border="0" style="border: none; border-spacing:0px;">
+<tr style="text-align:left;vertical-align:top;">
+<td valign="top" width="421" style="width:421px; height:222px;"><p class="p_Heading1"><span class="f_Heading1">&nbsp;</span></p>
+<p class="p_Heading1"><span class="f_Heading1">&nbsp;</span></p>
+<p class="p_Heading1"><span class="f_Heading1">&nbsp;</span></p>
+<p class="p_Heading1"><span class="f_Heading1">&nbsp;</span></p>
+<p class="p_Heading1" style="text-align: center;"><img src="clip0180.png" width="372" height="127" border="0" alt="clip0180" style="margin:0 auto;margin:0px;"></p>
+</td>
+<td valign="top" width="423" style="width:423px; height:222px;"><p class="p_Heading1"><img src="clip0181.zoom85.png" width="357" height="221" border="0" alt="clip0181"></p>
+</td>
+</tr>
+<tr style="text-align:left;vertical-align:top;">
+<td colspan="2" valign="top" style="height:73px;"><p class="p_Heading1"><span class="f_Heading1">&nbsp;</span></p>
+<p class="p_Heading1"><span style="font-size: 9pt;">With this setting a model will be created with a flat top at the specified design surface elevation.</span></p>
+<p class="p_Heading1"><span class="f_Heading1">&nbsp;</span></p>
+<p class="p_Heading1"><span style="font-size: 9pt;">Use this option to quickly determine the volume of a proposed mine dump with toepoints inside the defined area, with the defined slope parameters and maximum top elevation.</span></p>
+</td>
+</tr>
+</table>
+</div>
+<p class="p_Heading1"><span class="f_Heading1">&nbsp;</span></p>
+<div style="text-align: left; text-indent: 0px; padding: 0px 0px 0px 0px; margin: 0px 0px 0px 0px;"><table cellspacing="0" cellpadding="0" border="0" style="border: none; border-spacing:0px;">
+<tr style="text-align:left;vertical-align:top;">
+<td valign="top" width="422" style="width:422px;"><p class="p_Heading1" style="text-align: center;"><img src="clip0185.png" width="337" height="325" border="0" alt="clip0185" style="margin:0 auto;margin:0px;"></p>
+</td>
+<td valign="top" width="420" style="width:420px;"><p class="p_Heading1"><span class="f_Heading1">&nbsp;</span></p>
+<p class="p_Heading1"><span class="f_Heading1">&nbsp;</span></p>
+<p class="p_Heading1"><span style="font-size: 9pt;">Output resulting grid data.</span></p>
+<p class="p_Heading1"><span class="f_Heading1">&nbsp;</span></p>
+<p class="p_Heading1"><span style="font-size: 9pt;">If this option is checked, new survey points will be generated in the selected survey project on the defined grid interval. These points will represent the final optimized model.</span></p>
+<p class="p_Heading1"><span class="f_Heading1">&nbsp;</span></p>
+<div style="text-align: left; text-indent: 0px; padding: 0px 0px 0px 0px; margin: 0px 0px 0px 0px;"><table border="0" cellpadding="0" cellspacing="0" style="line-height: normal;"><tr style="vertical-align:baseline" valign="baseline"><td width="13"><span style="font-size: 9pt; font-family: 'Symbol'; font-style: normal; color: #000000; text-decoration: none;">&#183;</span></td><td><span style="font-size: 9pt;">The output project must be empty (no survey points) and it cannot be the active project, project 2 or the design project.</span></td></tr></table></div></td>
+</tr>
+</table>
+</div>
+<p class="p_Heading1"><span class="f_Heading1">&nbsp;</span></p>
+<p class="p_Heading1"><span style="font-size: 9pt; color: #010100;">Use a general string to indicate the total stand area (Original string). </span></p>
+<p class="p_Heading1"><span class="f_Heading1">&nbsp;</span></p>
+<p class="p_Heading1"><span style="font-size: 9pt; color: #010100;">Cut and fill volume calculations will be done inside of this original string and the toe points of the embankment slopes will fall within the string. Model Maker will create a temporary platform, balance it and indicate the largest horizontal area (calculated platform area) that can be excavated within the perimeter string.</span></p>
+<p class="p_Heading1"><span class="f_Heading1">&nbsp;</span></p>
+<p class="p_Heading1"><span style="font-size: 9pt; color: #010100;">If the design model option is selected, the elevation that the design model must move up or down will be reported.</span></p>
+<p class="p_Heading1"><span class="f_Heading1">&nbsp;</span></p>
+<p class="p_Heading1"><img src="clip1362.png" width="445" height="230" border="0" alt="clip1362"></p>
+<p class="p_Heading1"><span class="f_Heading1">&nbsp;</span></p>
+<p class="p_Heading1"><span style="font-size: 9pt; color: #010100;">Example of a final model when a design platform was used.</span></p>
+<p class="p_Heading1"><span class="f_Heading1">&nbsp;</span></p>
+<div style="text-align: left; text-indent: 0px; padding: 0px 0px 0px 0px; margin: 0px 0px 0px 0px;"><table cellspacing="0" cellpadding="0" border="0" style="border: none; border-spacing:0px;">
+<tr style="text-align:left;vertical-align:top;">
+<td valign="top" width="426" style="width:426px;"><p class="p_Heading1"><img src="clip1741.png" width="412" height="354" border="0" alt="clip1741"></p>
+</td>
+<td valign="top" width="332" style="width:332px;"><p class="p_Heading1"><span class="f_Heading1">&nbsp;</span></p>
+<p class="p_Heading1"><span class="f_Heading1">&nbsp;</span></p>
+<p class="p_Heading1"><span class="f_Heading1">&nbsp;</span></p>
+<p class="p_Heading1"><span style="font-size: 9pt; color: #010100;">Image showing contours of the design surface and the full model of the resulting grid model. </span></p>
+<p class="p_Heading1"><span class="f_Heading1">&nbsp;</span></p>
+<p class="p_Heading1"><span style="font-size: 9pt; color: #010100;">Notice that the model contours coinside with the design surface (although on a different elevation) and then also the toeline contours inside the boundary string.</span><span style="font-size: 9pt;">coincide</span></p>
+</td>
+</tr>
+</table>
+</div>
+<p class="p_Heading1"><span class="f_Heading1">&nbsp;</span></p>
+<div style="text-align: left; text-indent: 0px; padding: 0px 0px 0px 0px; margin: 0px 0px 0px 0px;"><table cellspacing="0" cellpadding="0" border="0" style="border: none; border-spacing:0px;">
+<tr style="text-align:left;vertical-align:top;">
+<td valign="top" width="526" style="width:526px;"><p class="p_Heading1"><img src="clip1742.png" width="515" height="310" border="0" alt="clip1742"></p>
+</td>
+<td valign="top" width="261" style="width:261px;"><p class="p_Heading1"><span style="font-size: 9pt;">3D image of the final design (purple) over the original surface (yellow).</span></p>
+</td>
+</tr>
+</table>
+</div>
+<p class="p_Heading1"><span class="f_Heading1">&nbsp;</span></p>
+<p class="p_Heading1"><span class="f_CourierFixed">Optimize One</span></p>
+<p class="p_Heading1"><span style="font-size: 5pt; color: #010100;">&nbsp;</span></p>
+<p class="p_Heading1"><span style="font-size: 9pt; color: #010100;">A single area as defined by an indicated string will be optimized.</span></p>
+<p class="p_Heading1"><span class="f_Heading1">&nbsp;</span></p>
+<p class="p_Heading1"><span class="f_CourierFixed">Optimize ID</span></p>
+<p class="p_Heading1"><span style="font-size: 5pt; color: #010100;">&nbsp;</span></p>
+<p class="p_Heading1"><span style="font-size: 9pt; color: #010100;">All the areas of the <a href="stringidentify.htm">identified</a> strings will be optimized. On the optimize parameters, select store to file, so that all the results may be printed at a later stage.</span></p>
+<p class="p_Heading1"><span style="font-size: 9pt; color: #010100;">In the ID format, only the largest flat surface will be calculated. The design model as a top surface is only available when optimizing a single indicated string area.</span></p>
+<p class="p_Heading1"><span class="f_Heading1">&nbsp;</span></p>
+<p class="p_Heading1"><span class="f_rrelatedtopic">Related topics:</span></p>
+<p class="p_Heading1"><span style="font-size: 9pt; color: #0000ff;"><a href="strings__gxt_.htm">Strings</a></span></p>
+<p class="p_Heading1"><span style="font-size: 9pt; color: #0000ff;"><a href="terrace___volumes___cut___fill.htm">Terrace</a></span></p>
+<p class="p_Heading1"><span style="font-size: 9pt; color: #0000ff;"><a href="toepoint.htm">Toe Points</a></span></p>
+
+</td></tr></table>
+
+</body>
+</html>

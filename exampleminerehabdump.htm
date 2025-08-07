@@ -1,0 +1,132 @@
+<!DOCTYPE HTML PUBLIC "-//W3C//DTD HTML 4.01 Transitional//EN">
+<html>
+<head>
+   <title>EXAMPLE : Mine dump rehabilitation</title>
+   <meta name="generator" content="Help &amp; Manual" />
+   <meta name="keywords" content="Examples,Mining,Rehabilitation,Dump" />
+   <meta http-equiv="Content-Type" content="text/html; charset=ISO-8859-1" />
+   <meta http-equiv="Content-Style-Type" content="text/css" />
+   <link type="text/css" href="default.css" rel="stylesheet" />
+
+<script type="text/javascript" src="helpman_topicinit.js"></script>
+</head>
+<body style="margin: 0px 0px 0px 0px; background: #FFFFFF;">
+
+
+<table width="100%" border="0" cellspacing="0" cellpadding="5" bgcolor="#D0D0D0">
+  <tr valign="middle">
+    <td align="left">
+      <p class="p_Heading1"><span class="f_Heading1">EXAMPLE : Mine dump rehabilitation</span></p>
+
+    </td>
+    <td align="right">
+     <span style="font-size: 9pt">
+     <a href="start_up.htm">Top</a>&nbsp;
+     <a href="examplememoryissues.htm">Previous</a>&nbsp;
+     <a href="examplemineramprehabiramp.htm">Next</a>
+     </span>
+    </td>
+  </tr>
+</table>
+
+
+<!-- Placeholder for topic body. -->
+<table width="100%" border="0" cellspacing="0" cellpadding="5"><tr valign="top"><td align="left">
+<p class="p_Heading1"><span class="f_Heading1">&nbsp;</span></p>
+<p class="p_Heading1"><span style="font-weight: bold; color: #000080;">MENU : Example - Mine rehabilitation</span></p>
+<p class="p_Heading1"><span class="f_Heading1">&nbsp;</span></p>
+<p class="p_Heading1"><span style="font-size: 9pt; color: #010100;">Model Maker has a comprehensive set of functions that plan and design rehabilitated models. This includes functions found on the 3D, Mine and Strings(GXT) options. Most of the mining actions use strings that define areas, sections or slopes. The rehab has two major categories: REHAB ALL and REHAB STRING. </span></p>
+<p class="p_Heading1"><span style="font-size: 9pt; color: #010100;">Remember that all the mining applications operate on a gridded file.</span></p>
+<p class="p_Heading1"><span class="f_Heading1">&nbsp;</span></p>
+<p class="p_Heading1"><span style="font-size: 9pt; font-weight: bold; color: #804000;">Rehab all</span></p>
+<p class="p_Heading1"><span style="font-size: 9pt; color: #010100;">In its simplest form, this option operates without any defined strings. However, the whole sequence will be discussed and the different options highlighted.</span></p>
+<p class="p_Heading1"><span style="font-size: 9pt; color: #010100;">Start with the original gridded data in the active project. After activating the REHAB ALL option, answer the following question:</span></p>
+<p class="p_Heading1"><span class="f_Heading1">&nbsp;</span></p>
+<p class="p_Heading1"><span style="font-size: 9pt; color: #010100;">Use identified strings to keep points undisturbed ?</span></p>
+<p style="text-indent: 0px;"><span style="font-size: 9pt; color: #010100;">YES : Identified strings placed around areas that will not be rehabilitated will exclude those points from the rehab process. This is normally done where a dump is next to a </span></p>
+<p style="text-indent: 0px;"><span style="font-size: 9pt; color: #010100;"> &nbsp; &nbsp; &nbsp; &nbsp; &nbsp;fence or an obstruction like a road. </span></p>
+<p style="text-indent: 0px;"><span style="color: #000000;">&nbsp;</span></p>
+<p style="text-indent: 0px;"><img src="_bm268.png" width="295" height="198" border="0" alt="_bm268"><span style="font-size: 9pt; color: #010100;"> </span></p>
+<p style="text-indent: 0px;"><span style="font-size: 9pt; color: #010100;">If areas are excluded from the rehab, something must be done with the material when the normal rehab process wants to push the material over the boundary into the excluded area. </span></p>
+<p style="text-indent: 0px;"><span style="color: #000000;">&nbsp;</span></p>
+<p style="text-indent: 0px;"><span style="font-size: 9pt; color: #010100;">Your options are:</span></p>
+<p style="text-indent: 0px;"><span style="color: #000000;">&nbsp;</span></p>
+<p style="text-indent: 0px;"><span style="font-size: 9pt; color: #010100;">1) Ignore &nbsp; &nbsp; &nbsp; : The material is pushed over the boundary, but the undisturbed points are not updated. The material is not accounted for. This is not an ideal situation and</span></p>
+<p style="text-indent: 0px;"><span style="font-size: 9pt; color: #010100;">would normally not be used.</span></p>
+<p style="text-indent: 0px;"><span style="font-size: 9pt; color: #010100;">2) Sideways : The material will be pushed up to the boundary and then sideways along the boundary until a position is found where it can be placed not exceeding the slope.</span></p>
+<p style="text-indent: 0px;"><span style="color: #000000;">&nbsp;</span></p>
+<p style="text-indent: 0px;"><img src="_bm269.png" width="93" height="111" border="0" alt="_bm269"><span style="font-size: 9pt; color: #010100;"> <img src="_bm270.png" width="20" height="14" border="0" alt="_bm270"> This is where the material will eventually end up.</span></p>
+<p style="text-indent: 0px;"><span style="color: #000000;">&nbsp;</span></p>
+<p style="text-indent: 0px;"><span style="font-size: 9pt; color: #010100;">3) Picked up : Material about to be pushed over the boundary will be picked up and placed in the closest area to the boundary that has a slope less than the maximum. This material dumped in the area will again be rehabilitated during the next sweep. </span></p>
+<p style="text-indent: 0px;"><span style="color: #000000;">&nbsp;</span></p>
+<p style="text-indent: 0px;"><img src="_bm271.png" width="109" height="134" border="0" alt="_bm271"><span style="font-size: 9pt; color: #010100;"> <img src="_bm272.png" width="32" height="38" border="0" alt="_bm272"> This indicates the material being placed (red arrow) and then rehabilitated again (yellow).</span></p>
+<p style="text-indent: 0px;"><span style="color: #000000;">&nbsp;</span></p>
+<p style="text-indent: 0px;"><span style="font-size: 9pt; color: #010100;">4) Picked up area : The material will be picked up and then placed on the closest flat surface within a user defined area. You control the area where the material is dumped. Use this when you know where the fill part of the model is going to be. This option simulates an operation where trucks are used to move the material from the boundary to </span></p>
+<p style="text-indent: 0px;"><span style="font-size: 9pt; color: #010100;">a specific dumping site. To use this option, define a string around the area used for dumping. Add the string in the GXT menu before the mining-rehab is started.</span></p>
+<p style="text-indent: 0px;"><span style="color: #000000;">&nbsp;</span></p>
+<p style="text-indent: 0px;"><span style="font-size: 9pt; font-weight: bold; color: #804000;">Enter maximum slope</span></p>
+<p style="text-indent: 0px;"><span style="font-size: 9pt; color: #010100;">Enter the slope that the final model must not exceed.</span></p>
+<p style="text-indent: 0px;"><span style="color: #000000;">&nbsp;</span></p>
+<p style="text-indent: 0px;"><span style="font-size: 9pt; font-weight: bold; color: #804000;">Specific areas with slopes other than general</span></p>
+<p style="text-indent: 0px;"><span style="font-size: 9pt; color: #010100;">The maximum slope applies to the whole model. You may, however, define areas within the model where the slope is different to the general slope. In that case, use the area definition option to indicate those areas. Also enter the new slope for each area.</span></p>
+<p style="text-indent: 0px;"><span style="color: #000000;">&nbsp;</span></p>
+<p style="text-indent: 0px;"><span style="font-size: 9pt; font-weight: bold; color: #804000;">Do rehab in defined area </span></p>
+<p style="text-indent: 0px;"><span style="font-size: 9pt; color: #010100;">Specify the perimeter area of the total dump to be rehabilitated. The rehab will not go beyond the perimeter. The first question - Use identified strings to keep points undisturbed - is applicable here, especially when the boundary is reached and the dump not yet rehabilitated to the full. Whatever you specified in the first question will be used to apply the correct procedure to the material that meets the boundary.</span></p>
+<p style="text-indent: 0px;"><span style="color: #000000;">&nbsp;</span></p>
+<p style="text-indent: 0px;"><span style="font-size: 9pt; font-weight: bold; color: #804000;">Confirm grid interval</span></p>
+<p style="text-indent: 0px;"><span style="font-size: 9pt; color: #010100;">It is important to apply the rehab process to gridded data. This information box only confirms the grid interval. A warning is issued if the program finds the data is not on a regular grid.</span></p>
+<p style="text-indent: 0px;"><span style="color: #000000;">&nbsp;</span></p>
+<p style="text-indent: 0px;"><span style="font-size: 9pt; font-weight: bold; color: #804000;">Update contours while rehabilitating</span></p>
+<p style="text-indent: 0px;"><span style="font-size: 9pt; color: #010100;">Model Maker can give you a running update of the contours of the new model while the rehab is in action. This update can either be immediate or after each sweep of the model. Updating the contours as the points are changed may take unnecessarily slow the machine down. Enter a 1 for Model Maker only update the contours after each sweep.</span></p>
+<p style="text-indent: 0px;"><span style="color: #000000;">&nbsp;</span></p>
+<p style="text-indent: 0px;"><span style="font-size: 9pt; color: #010100;">Model Maker will continually apply all the slopes and restrictions and rehabilitate the points. Interrupt the action by clicking the ABORT button. The program will stop automatically when all the points fall within the maximum specified slopes.</span></p>
+<p style="text-indent: 0px;"><span style="font-size: 9pt; color: #010100;">The final question offers these options:</span></p>
+<p style="text-indent: 0px;"><span style="color: #000000;">&nbsp;</span></p>
+<p style="text-indent: 0px;"><span style="font-size: 9pt; color: #010100;">DO NOT UPDATE ELEVATIONS : The process is aborted and the data left in the initial format.</span></p>
+<p style="text-indent: 0px;"><span style="font-size: 9pt; color: #010100;">UPDATE TO NEW MODEL &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; : The new rehabilitated elevations is applied to the model.</span></p>
+<p style="text-indent: 0px;"><span style="font-size: 9pt; color: #010100;">RECALCULATE PART VOLUME : This option is not applicable to the REHAB ALL function and will have the same result as the DO NOT UPDATE ELEVATIONS.</span></p>
+<p style="text-indent: 0px;"><span style="font-size: 9pt; color: #010100;">REHAB STRING  &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; : This function makes extensive use of strings as defined in the GXT menu.</span></p>
+<p style="text-indent: 0px;"><span style="font-size: 9pt; color: #010100;"> &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; Two types of string rehabilitations are available. The first one (One string slope) works on a <a href="minerehab_string1.htm">single string</a> and is mostly used to design a water course. The second method is more involved and relies on the user to design the strings correctly by using the GXT Vert option extensively.</span></p>
+<p style="text-indent: 0px;"><span style="color: #000000;">&nbsp;</span></p>
+<p style="text-indent: 0px;"><span style="font-size: 9pt; color: #010100;">The <a href="minerehab_string2.htm">ID STRING</a> uses of the designed strings and updates the DTM model based on the elevations calculated from the strings. The strings must be designed correctly with the following functions:</span></p>
+<p style="text-indent: 0px;"><span style="color: #000000;">&nbsp;</span></p>
+<p style="text-indent: 0px;"><span style="font-size: 9pt; color: #010100;">1) Use the String Add New Indicate General string function and place strings across the area to be rehabilitated. The strings should run parallel to the direction of the critical slope. Use the Point cursor snap mode, then the start and end of the string is defined. This automatically elevates the string nodes to the correct z value. </span></p>
+<p style="text-indent: 0px;"><span style="color: #000000;">&nbsp;</span></p>
+<p style="text-indent: 0px;"><img src="_bm273.png" width="366" height="180" border="0" alt="_bm273"><span style="font-size: 9pt; color: #010100;"> </span></p>
+<p style="text-indent: 0px;"><span style="font-size: 9pt; color: #010100;">This is an example of the plan model with perimeter and design strings</span></p>
+<p style="text-indent: 0px;"><span style="font-size: 9pt; color: #010100;">The vertical view of the original sections will look like this:</span></p>
+<p style="text-indent: 0px;"><span style="color: #000000;">&nbsp;</span></p>
+<p style="text-indent: 0px;"><img src="_bm274.png" width="251" height="97" border="0" alt="_bm274"><span style="font-size: 9pt; color: #010100;"> </span></p>
+<p style="text-indent: 0px;"><span style="color: #000000;">&nbsp;</span></p>
+<p style="text-indent: 0px;"><span style="font-size: 9pt; color: #010100;">Use the String <a href="string___vert.htm">Vert</a> View option to see a section of the string. Now use the Special N_Add option to add new nodes to the string so that the new shapes comply to the design criteria. To add a node to the string based on the slope to the existing two nodes on either side, use the CTRL B (Line intersection) snap mode. Because you are in the vertical mode, Model Maker allows you to add the slopes from both sides. The new node is placed at the intersection of the 2 slopes.</span></p>
+<p style="text-indent: 0px;"><span style="color: #000000;">&nbsp;</span></p>
+<p style="text-indent: 0px;"><img src="_bm275.png" width="392" height="216" border="0" alt="_bm275"><span style="font-size: 9pt; color: #010100;"> </span></p>
+<p style="text-indent: 0px;"><span style="color: #000000;">&nbsp;</span></p>
+<p style="text-indent: 0px;"><span style="font-size: 9pt; font-style: italic; font-weight: bold; color: #ff0000;">Note:</span></p>
+<p style="text-indent: 0px;"><span style="font-size: 9pt; color: #010100;">The slopes to the new node are also displayed as a percentage in the bottom left of the screen.</span></p>
+<p style="text-indent: 0px;"><span style="font-size: 9pt; color: #010100;">A combination of adding new nodes and moving existing ones with N_Move will eventually give you a satisfactory section. Use the AREA option on the same menu to calculate the cut and fill areas between the design string and the ground. Always try to design the string so that the cut and fill areas are equal, to give a balanced total volume across the whole model. Use the HOR option to revert to the horizontal plan view of the model.</span></p>
+<p style="text-indent: 0px;"><span style="font-size: 9pt; color: #010100;">The sequence of Vertical viewing strings and adding nodes must be done for all the design strings. When finished <a href="stringidentify.htm">identify</a> the design strings and add a new boundary string around the area of interest. </span></p>
+<p style="text-indent: 0px;"><span style="font-size: 9pt; color: #010100;">Go to the Mine options and press the Rehabilitation rehab_String button. Confirm the grid interval and select ID_string. Indicate the boundary string after which the calculation will start.</span></p>
+<p style="text-indent: 0px;"><span style="font-size: 9pt; color: #010100;">Model Maker will inspect all the dtm points within the defined area and re-elevate each one. the closest string will be found and the elevation at that point on the string interpolated. The string directly opposite the first one is picked and the elevation calculated. The dtm point has 2 elevations on both its sides. A new elevation for the point is calculated based on the opposing 2 Z values.</span></p>
+<p style="text-indent: 0px;"><span style="color: #000000;">&nbsp;</span></p>
+<p style="text-indent: 0px;"><img src="_bm276.png" width="160" height="94" border="0" alt="_bm276"><span style="font-size: 9pt; color: #010100;"> <img src="_bm277.png" width="224" height="184" border="0" alt="_bm277"></span></p>
+<p style="text-indent: 0px;"><span style="font-size: 9pt; color: #010100;">Each point re-elevated = final contours. The sweep through all the points is done once, since each point can only have a unique elevation. You will again asked: </span></p>
+<p style="text-indent: 0px;"><span style="color: #000000;">&nbsp;</span></p>
+<p style="text-indent: 0px;"><span style="font-size: 9pt; color: #010100;">DO NOT UPDATE ELEVATIONS : The process is aborted and the data left in the initial format. </span></p>
+<p style="text-indent: 0px;"><span style="font-size: 9pt; color: #010100;">UPDATE TO NEW MODEL &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; : The new rehabilitated elevations is applied to the model.</span></p>
+<p style="text-indent: 0px;"><span style="font-size: 9pt; color: #010100;">RECALCULATE PART VOLUME : Specify a certain percentage of the volume to be moved. Model Maker will redo the rehab. Once the specified amount of material is moved, you can accept or abort.</span></p>
+<p style="text-indent: 0px;"><span style="color: #000000;">&nbsp;</span></p>
+<p style="text-indent: 0px;"><span style="font-size: 9pt; color: #010100;">Use the F5 key to inspect the slopes on the model and calculate a final volume between the original and the design by using the terrace option. If you find that the slopes or volumes are not satisfactory, inspect the model and make the necessary changes to the design string. Re-run the rehab function after changes have been made to the strings. With some experience you will be able to create a design in a short time.</span></p>
+<p style="text-indent: 0px;"><span style="font-size: 9pt; color: #010100;">Use the <a href="minemovevolume.htm">move volume</a> function to see how the material must be moved between the ogl and the design model.</span></p>
+<p style="text-indent: 0px;"><span style="color: #000000;">&nbsp;</span></p>
+<p style="text-indent: 0px;"><span style="color: #000000;">&nbsp;</span></p>
+<p style="text-indent: 0px;"><span style="font-size: 11pt; font-weight: bold; color: #800040;">Related topics:</span></p>
+<p style="text-indent: 0px;"><span style="font-size: 9pt; color: #010100;"><a href="strings__gxt_.htm">Strings</a></span></p>
+<p style="text-indent: 0px;"><span style="font-size: 9pt; color: #010100;"><a href="terrace___volumes___cut___fill.htm">Terrace</a></span></p>
+<p style="text-indent: 0px;"><span style="font-size: 9pt; color: #010100;"><a href="minemovevolume.htm">Move volume</a></span></p>
+<p style="text-indent: 0px;"><span style="font-size: 9pt; color: #010100;"><a href="mine___rehabilitation.htm">Rehab menu</a></span></p>
+
+</td></tr></table>
+
+</body>
+</html>

@@ -1,0 +1,297 @@
+<!DOCTYPE HTML PUBLIC "-//W3C//DTD HTML 4.01 Transitional//EN">
+<html>
+<head>
+   <title>How to create/edit line styles</title>
+   <meta name="generator" content="Help &amp; Manual" />
+   <meta name="keywords" content="CAD,Edit,Examples,Line,Shape,Styles,User,Hatch,Fill the Shape" />
+   <meta http-equiv="Content-Type" content="text/html; charset=ISO-8859-1" />
+   <meta http-equiv="Content-Style-Type" content="text/css" />
+   <link type="text/css" href="default.css" rel="stylesheet" />
+
+<script type="text/javascript" src="helpman_topicinit.js"></script>
+</head>
+<body style="margin: 0px 0px 0px 0px; background: #FFFFFF;">
+
+
+<table width="100%" border="0" cellspacing="0" cellpadding="5" bgcolor="#D0D0D0">
+  <tr valign="middle">
+    <td align="left">
+      <p class="p_Heading1"><span class="f_Heading1">EXAMPLE : Working Example 8 (Line styles)</span></p>
+
+    </td>
+    <td align="right">
+     <span style="font-size: 9pt">
+     <a href="start_up.htm">Top</a>&nbsp;
+     <a href="example___working_example_3.htm">Previous</a>&nbsp;
+     <a href="example___working_example_5.htm">Next</a>
+     </span>
+    </td>
+  </tr>
+</table>
+
+
+<!-- Placeholder for topic body. -->
+<table width="100%" border="0" cellspacing="0" cellpadding="5"><tr valign="top"><td align="left">
+<p class="p_Heading1"><span class="f_Heading1">&nbsp;</span></p>
+<p class="p_Heading1"><span style="font-size: 9pt; font-weight: bold;">Object</span></p>
+<p class="p_Heading1"><span style="font-size: 9pt; color: #010100;">This working example shows you how to create your own line styles or edit existing line styles to be used in Model Maker's CAD module.</span></p>
+<p class="p_Heading1"><span class="f_Heading1">&nbsp;</span></p>
+<p class="p_Heading1"><span style="font-size: 9pt; font-weight: bold;">Procedure</span></p>
+<p class="p_Heading1"><span class="f_Heading1">&nbsp;</span></p>
+<p class="p_Heading1"><span style="font-size: 9pt; font-weight: bold;">STEP 1 : Genera</span><span style="font-size: 9pt; font-weight: bold; color: #804000;">l</span></p>
+<p class="p_Heading1"><span style="font-size: 9pt; color: #010100;">In the CAD module you have the option of drawing <a href="cad___line___add_.htm">lines</a>, <a href="cad___arc_circle_add_.htm">circles and arcs</a> using various <a href="penattributes.htm">line styles</a>. </span></p>
+<p class="p_Heading1"><span class="f_Heading1">&nbsp;</span></p>
+<p class="p_Heading1"><img src="_bm372.png" width="181" height="144" border="0" alt="_bm372"></p>
+<p class="p_Heading1"><span style="font-size: 9pt; color: #010100;">The first eight line styles are fixed and range from a solid line to various dashed lines. Additionally, another 50 line styles can be defined to be used in CAD drawings.</span></p>
+<p class="p_Heading1"><span class="f_Heading1">&nbsp;</span></p>
+<p class="p_Heading1"><span style="font-size: 9pt; color: #010100;">To define a new line type, one has to tell the program how many elements will be in the new line, when the pen must be up or down and if certain shapes must be included in the line.</span></p>
+<p class="p_Heading1"><span class="f_Heading1">&nbsp;</span></p>
+<p class="p_Heading1"><span style="font-size: 9pt; color: #010100;">Two ASCII files are used to complete the line definition. These files are called MMW.SHM and MMW.STM and can be located in the folder where the Model Maker program is installed. If you have accepted the default folder name when Model Maker was installed, the directory is called C:. </span></p>
+<p class="p_Heading1"><span style="font-size: 9pt; color: #010100;">If you have problems locating these 2 files, use the <a href="filefind.htm">find file</a> function in Model Maker or use the find option in the Windows Explorer program.</span></p>
+<p class="p_Heading1"><span class="f_Heading1">&nbsp;</span></p>
+<p class="p_Heading1"><span style="font-size: 9pt; font-weight: bold;">MMW.STM</span></p>
+<p style="text-indent: 0px;"><span style="width:24px">&nbsp;</span> &nbsp; &nbsp; &nbsp; &nbsp;<span style="font-size: 9pt; color: #010100;">This file holds the definition of the line entities and will typically have entries like this.</span></p>
+<p style="text-indent: 0px;"><span style="color: #000000;">&nbsp;</span></p>
+<p style="text-indent: 0px;"><span style="width:24px">&nbsp;</span> &nbsp; &nbsp; &nbsp; &nbsp;<span style="font-size: 9pt; font-weight: bold; color: #010100;">#09 Railtrack &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp;8 #S1 ROTATE -4 #S2 ROTATE -4 #S2 ROTATE -4 #S2 ROTATE -4</span></p>
+<p style="text-indent: 0px;"><span style="width:24px">&nbsp;</span> &nbsp; &nbsp; &nbsp; &nbsp;<span style="font-size: 9pt; font-weight: bold; color: #010100;">#10 Fence &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp;5 4 -1 #CROSS ROTATE -1 4</span></p>
+<p style="text-indent: 0px;"><span style="width:24px">&nbsp;</span> &nbsp; &nbsp; &nbsp; &nbsp;<span style="font-size: 9pt; font-weight: bold; color: #010100;">#11 Bulldozer &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp;2 16 #BULLY ROTATE</span></p>
+<p style="text-indent: 0px;"><span style="width:24px">&nbsp;</span> &nbsp; &nbsp; &nbsp; &nbsp;<span style="font-size: 9pt; font-weight: bold; color: #010100;">#13 Sec-fence &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp;7 5 -3 #CROSS ROTATE -3 #CROSS ROTATE -3 5 5 5 5 5</span></p>
+<p style="text-indent: 0px;"><span style="color: #000000;">&nbsp;</span></p>
+<p style="text-indent: 0px;"><span style="font-size: 9pt; color: #010100;">Each line of text in the file defines a different line type. The items on each text line can be grouped together in the following order.</span></p>
+<p style="text-indent: 0px;"><span style="color: #000000;">&nbsp;</span></p>
+<p style="text-indent: 0px;"><img src="_bm373.png" width="433" height="87" border="0" alt="_bm373"></p>
+<p style="text-indent: 0px;"><span style="font-size: 9pt; color: #010100;">Column #1 &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp;: This is the line number &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp;eg. #10</span></p>
+<p style="text-indent: 0px;"><span style="font-size: 9pt; color: #010100;">Column #2 &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp;: This is the line name &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp;eg. Fence</span></p>
+<p style="text-indent: 0px;"><span style="font-size: 9pt; color: #010100;">Column #3 &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp;: The number of elements defined in column 4 &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp;eg. 5 elements, circled in blue.</span></p>
+<p style="text-indent: 0px;"><span style="font-size: 9pt; color: #010100;">Column #4 &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp;: The actual definition of the line in terms of different elements.</span></p>
+<p style="text-indent: 0px;"><span style="color: #000000;">&nbsp;</span></p>
+<p style="text-indent: 0px;"><span style="font-size: 9pt; font-weight: bold;">MMW.SHM</span></p>
+<p style="text-indent: 0px;"><span style="width:24px">&nbsp;</span> &nbsp; &nbsp; &nbsp; &nbsp;<span style="font-size: 9pt; color: #010100;">This file holds the definition of the shapes used in the STM file and typically looks like this.</span></p>
+<p style="text-indent: 0px;"><span style="color: #000000;">&nbsp;</span></p>
+<p style="text-indent: 0px;"><span style="width:24px">&nbsp;</span> &nbsp; &nbsp; &nbsp; &nbsp;<span style="font-size: 9pt; font-weight: bold; color: #010100;">#ARROW &nbsp;3</span></p>
+<p style="text-indent: 0px;"><span style="width:24px">&nbsp;</span> &nbsp; &nbsp; &nbsp; &nbsp;<span style="font-size: 9pt; font-weight: bold; color: #010100;"> &nbsp; &nbsp; 0.00 &nbsp; &nbsp; 2.00 &nbsp; &nbsp; 0.00 &nbsp; &nbsp;-2.00</span></p>
+<p style="text-indent: 0px;"><span style="width:24px">&nbsp;</span> &nbsp; &nbsp; &nbsp; &nbsp;<span style="font-size: 9pt; font-weight: bold; color: #010100;"> &nbsp; &nbsp; 0.00 &nbsp; &nbsp;-2.00 &nbsp; &nbsp; 4.00 &nbsp; &nbsp; 0.00</span></p>
+<p style="text-indent: 0px;"><span style="width:24px">&nbsp;</span> &nbsp; &nbsp; &nbsp; &nbsp;<span style="font-size: 9pt; font-weight: bold; color: #010100;"> &nbsp; &nbsp; 4.00 &nbsp; &nbsp; 0.00 &nbsp; &nbsp; 0.00 &nbsp; &nbsp; 2.00</span></p>
+<p style="text-indent: 0px;"><span style="width:24px">&nbsp;</span> &nbsp; &nbsp; &nbsp; &nbsp;<span style="font-size: 9pt; font-weight: bold; color: #010100;">#TELELINE &nbsp;2</span></p>
+<p style="text-indent: 0px;"><span style="width:24px">&nbsp;</span> &nbsp; &nbsp; &nbsp; &nbsp;<span style="font-size: 9pt; font-weight: bold; color: #010100;"> &nbsp; &nbsp;-1.00 &nbsp; &nbsp; 2.00 &nbsp; &nbsp; 1.00 &nbsp; &nbsp; 2.00</span></p>
+<p style="text-indent: 0px;"><span style="width:24px">&nbsp;</span> &nbsp; &nbsp; &nbsp; &nbsp;<span style="font-size: 9pt; font-weight: bold; color: #010100;"> &nbsp; &nbsp; 0.00 &nbsp; &nbsp; 0.00 &nbsp; &nbsp; 0.00 &nbsp; &nbsp; 2.00</span></p>
+<p style="text-indent: 0px;"><span style="width:24px">&nbsp;</span> &nbsp; &nbsp; &nbsp; &nbsp;<span style="font-size: 9pt; font-weight: bold; color: #010100;">#CROSS &nbsp;2</span></p>
+<p style="text-indent: 0px;"><span style="width:24px">&nbsp;</span> &nbsp; &nbsp; &nbsp; &nbsp;<span style="font-size: 9pt; font-weight: bold; color: #010100;"> &nbsp; &nbsp;-0.80 &nbsp; &nbsp;-0.80 &nbsp; &nbsp; 0.80 &nbsp; &nbsp; 0.80</span></p>
+<p style="text-indent: 0px;"><span style="width:24px">&nbsp;</span> &nbsp; &nbsp; &nbsp; &nbsp;<span style="font-size: 9pt; font-weight: bold; color: #010100;"> &nbsp; &nbsp;-0.80 &nbsp; &nbsp; 0.80 &nbsp; &nbsp; 0.80 &nbsp; &nbsp;-0.80</span></p>
+<p style="text-indent: 0px;"><span style="color: #000000;">&nbsp;</span></p>
+<p style="text-indent: 0px;"><span style="font-size: 9pt; color: #010100;">Each definition of a shape can be grouped together in 2 (red block) categories.</span></p>
+<p style="text-indent: 0px;"><img src="_bm374.png" width="330" height="166" border="0" alt="_bm374"></p>
+<p style="text-indent: 0px;"><span style="font-size: 9pt; color: #010100;">The first line holds the shape name and the number of elements in the shape.</span></p>
+<p style="text-indent: 0px;"><span style="color: #000000;">&nbsp;</span></p>
+<p style="text-indent: 0px;"><span style="font-size: 9pt; font-weight: bold;">Blue 1 &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp;</span><span style="font-size: 9pt; color: #010100;">: The shape name  &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp;eg. #ARROW</span></p>
+<p style="text-indent: 0px;"><span style="font-size: 9pt; font-weight: bold; color: #010100;">Blue 2 &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp;</span><span style="font-size: 9pt; color: #010100;">: Number of elements &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp;eg. 3</span></p>
+<p style="text-indent: 0px;"><span style="font-size: 9pt; font-weight: bold;">Blue 3 &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp;</span><span style="font-size: 9pt; color: #010100;">: The definition of the 3 elements in the shape.</span></p>
+<p style="text-indent: 0px;"><span style="color: #000000;">&nbsp;</span></p>
+<p style="text-indent: 0px;"><span style="font-size: 9pt; color: #010100;">Two types of lines can be defined.</span></p>
+<p style="text-indent: 0px;"><img src="_bm375.png" width="212" height="79" border="0" alt="_bm375"></p>
+<p style="text-indent: 0px;"><span style="font-size: 9pt; color: #010100;">User defined lines consisting only of line segments or lines consisting of line segments and shapes.</span></p>
+<p style="text-indent: 0px;"><span style="font-size: 9pt; color: #010100;">To open and edit the STM and SHM files on your computer, use the Windows Notepad or Wordpad programs.</span></p>
+<p style="text-indent: 0px;"><span style="color: #000000;">&nbsp;</span></p>
+<p style="text-indent: 0px;"><span style="color: #000000;">&nbsp;</span></p>
+<p style="text-indent: 0px;"><span style="font-size: 9pt; font-weight: bold;">STEP 2 : Define a basic line style</span></p>
+<p style="text-indent: 0px;"><span style="font-size: 9pt; color: #010100;">In this example a simple line type ( --- --- --- --- ---) consisting of 4mm line segments with 2mm spaces in between, will be defined. </span></p>
+<p style="text-indent: 0px;"><span style="font-size: 9pt; color: #010100;">This line does not make use of any shapes defined in the SHM file and will only consist of a one DOWN and one Up command.</span></p>
+<p style="text-indent: 0px;"><span style="color: #000000;">&nbsp;</span></p>
+<p style="text-indent: 0px;"><span style="font-size: 9pt; color: #010100;">In the MODEL.STM file, enter the 4 entities that define the line.</span></p>
+<p style="text-indent: 0px;"><img src="_bm376.png" width="343" height="82" border="0" alt="_bm376"></p>
+<p style="text-indent: 0px;"><span style="color: #000000;">&nbsp;</span></p>
+<p style="text-indent: 0px;"><span style="font-size: 9pt; font-weight: bold; color: #010100;">Column 1 # &nbsp;09 &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp;</span></p>
+<p style="text-indent: 0px;"><span style="font-size: 9pt; color: #010100;">This is the line number as defined by the user. The number has no real significance other than allowing you to identify the line easily. The # character in front of the number is important as this indicates to the program that a new line is defined.</span></p>
+<p style="text-indent: 0px;"><span style="color: #000000;">&nbsp;</span></p>
+<p style="text-indent: 0px;"><span style="color: #000000;">&nbsp;</span></p>
+<p style="text-indent: 0px;"><span style="font-size: 9pt; font-weight: bold; color: #010100;">Column 2 USER_LINE &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp;</span></p>
+<p style="text-indent: 0px;"><span style="font-size: 9pt; color: #010100;">This is the name given to the line by the user and will be displayed in the <a href="penattributes.htm">line parameter</a> menu. Any descriptive name can be used. Don't use spaces in the name.</span></p>
+<p style="text-indent: 0px;"><span style="color: #000000;">&nbsp;</span></p>
+<p style="text-indent: 0px;"><span style="color: #000000;">&nbsp;</span></p>
+<p style="text-indent: 0px;"><span style="font-size: 9pt; font-weight: bold; color: #010100;">Column 3 &nbsp; 2 &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp;</span></p>
+<p style="text-indent: 0px;"><span style="font-size: 9pt; color: #010100;">This number indicates that the pattern of the line consists of 2 entities.</span></p>
+<p style="text-indent: 0px;"><span style="color: #000000;">&nbsp;</span></p>
+<p style="text-indent: 0px;"><span style="color: #000000;">&nbsp;</span></p>
+<p style="text-indent: 0px;"><span style="font-size: 9pt; font-weight: bold; color: #010100;">Column 4 (Segments per line) &nbsp; &nbsp; &nbsp; &nbsp;4.0 &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp;</span></p>
+<p style="text-indent: 0px;"><span style="font-size: 9pt; color: #010100;">This is the length of the first entity. A positive number indicates that the pen must travel a distance of 4mm in the DOWN position. In the DOWN position a line will be drawn.</span></p>
+<p style="text-indent: 0px;"><span style="color: #000000;">&nbsp;</span></p>
+<p style="text-indent: 0px;"><span style="color: #000000;">&nbsp;</span></p>
+<p style="text-indent: 0px;"><span style="font-size: 9pt; font-weight: bold; color: #010100;">Column 4  &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp;-2.0</span></p>
+<p style="text-indent: 0px;"><span style="font-size: 9pt; color: #010100;">This is the length of the second entity. A negative number indicates that the pen must travel in the UP position for a distance of 2mm. In the UP position a blank space will be drawn.</span></p>
+<p style="text-indent: 0px;"><span style="color: #000000;">&nbsp;</span></p>
+<p style="text-indent: 0px;"><span style="font-style: italic; font-weight: bold; color: #d10707;">Note: &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp;</span></p>
+<p style="text-indent: 0px;"><a name="themaximumnumberofelements"></a><span style="font-size: 9pt; color: #010100;">The maximum number of elements per line is sixteen. &nbsp;Leave at least one space between each segment entity. &nbsp;Model Maker only reads the STM and SHM files when the program is booted up. This means that any changes made to the STM and SHM files while Model Maker is running will not have any immediate effect on your &nbsp;. Only when Model Maker is started again, will the new information in the STM and SHM files be loaded.STEP 3 : Define a shape</span></p>
+<p style="text-indent: 0px;"><span style="font-size: 9pt; color: #010100;">It is more complicated to define a line type that is made up of user defined symbols. </span></p>
+<p style="text-indent: 0px;"><span style="font-size: 9pt; color: #010100;">The symbol must first be defined into the SHM file by using any ASCII editor or the <a href="files___editor.htm">editor</a> option in Model Maker.</span></p>
+<p style="text-indent: 0px;"><span style="color: #000000;">&nbsp;</span></p>
+<p style="text-indent: 0px;"><span style="font-size: 9pt; color: #010100;">The following three lines define the shape that makes up the cross used in a fence line.</span></p>
+<p style="text-indent: 0px;"><span style="color: #000000;">&nbsp;</span></p>
+<p style="text-indent: 0px;"><span style="font-size: 9pt; font-weight: bold; color: #010100;">#CROSS &nbsp; &nbsp; &nbsp; 2</span></p>
+<p style="text-indent: 0px;"><span style="font-size: 9pt; font-weight: bold; color: #010100;">-1.0 &nbsp;-1.0 &nbsp;1.0 &nbsp;1.0</span></p>
+<p style="text-indent: 0px;"><span style="font-size: 9pt; font-weight: bold; color: #010100;">-1.0 &nbsp;1.0 &nbsp;1.0 &nbsp;-1.0</span></p>
+<p style="text-indent: 0px;"><span style="color: #000000;">&nbsp;</span></p>
+<p style="text-indent: 0px;"><span style="font-size: 9pt; color: #010100;">The first line is the reference line and must consist of 2 items.</span></p>
+<p style="text-indent: 0px;"><span style="color: #000000;">&nbsp;</span></p>
+<p style="text-indent: 0px;"><span style="font-size: 9pt; font-weight: bold; color: #010100;">First item &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp;#CROSS</span></p>
+<p style="text-indent: 0px;"><span style="font-size: 9pt; color: #010100;">This item defines the shape name and must have a # prefix. This is the same name that will be used as reference in the STM file.</span></p>
+<p style="text-indent: 0px;"><span style="color: #000000;">&nbsp;</span></p>
+<p style="text-indent: 0px;"><span style="font-size: 9pt; font-weight: bold; color: #010100;">Second item &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp;2</span></p>
+<p style="text-indent: 0px;"><span style="font-size: 9pt; color: #010100;">This is the number of segments that make up the shape. In this case there are 2 segments which are defined on the lines immediately following the reference line.</span></p>
+<p style="text-indent: 0px;"><span style="font-size: 9pt; color: #010100;">The two lines in this example define the following shape. </span><img src="_bm377.png" width="119" height="52" border="0" alt="_bm377"></p>
+<p style="text-indent: 0px;"><span style="color: #000000;">&nbsp;</span></p>
+<p style="text-indent: 0px;"><span style="color: #000000;">&nbsp;</span></p>
+<p style="text-indent: 0px;"><span style="color: #000000;">&nbsp;</span></p>
+<p style="text-indent: 0px;"><span style="font-size: 9pt; font-weight: bold;">Definition of a segment</span></p>
+<p style="text-indent: 0px;"><span style="color: #000000;">&nbsp;</span></p>
+<p style="text-indent: 0px;"><span style="font-size: 9pt; color: #010100;">Each line defining a segment has the following format and consists of 4 entities </span></p>
+<p style="text-indent: 0px;"><span style="width:24px">&nbsp;</span> &nbsp; &nbsp; &nbsp; &nbsp;<span style="font-size: 9pt; font-weight: bold; color: #010100;">StartX &nbsp; &nbsp;StartY &nbsp; &nbsp;EndX &nbsp; &nbsp;EndY</span></p>
+<p style="text-indent: 0px;"><span style="font-size: 9pt; color: #010100;">The 4 entities define the X and Y co-ordinates of the start point and the X and Y co-ordinates of the end point of each line in the shape. </span></p>
+<p style="text-indent: 0px;"><span style="font-size: 9pt; color: #010100;">The co-ordinate values on these lines should be entered as real millimeter values and separated by one or more spaces.</span></p>
+<p style="text-indent: 0px;"><span style="font-size: 9pt; color: #010100;">The SHM file can hold up to 50 symbols and each symbol may be defined by a maximum of 80 segments.</span></p>
+<p style="text-indent: 0px;"><span style="color: #000000;">&nbsp;</span></p>
+<p style="text-indent: 0px;"><span style="color: #000000;">&nbsp;</span></p>
+<div style="text-align: left; text-indent: 0px; padding: 0px 0px 0px 0px; margin: 0px 0px 0px 0px;"><table cellspacing="0" cellpadding="0" border="0" style="border: none; border-spacing:0px;">
+<tr style="text-align:left;vertical-align:top;">
+<td valign="top" width="287" style="width:287px;"><p class="p_Heading1"><img src="_bm378.png" width="282" height="257" border="0" alt="_bm378"></p>
+</td>
+<td valign="top" width="457" style="width:457px;"><p style="text-indent: 0px;"><span style="font-size: 9pt; color: #010100;">The black lines are only displayed to assist you in understanding the local grid concept.</span></p>
+<p style="text-indent: 0px;"><span style="font-size: 9pt; color: #010100;">The horizontal black line is the X axes reference and the vertical black line is the</span></p>
+<p style="text-indent: 0px;"><span style="font-size: 9pt; color: #010100;"> Y axes reference and where the 2 lines cross is the 0,0 co-ordinate position.</span></p>
+<p style="text-indent: 0px;"><span style="color: #000000;">&nbsp;</span></p>
+<p style="text-indent: 0px;"><span style="font-size: 9pt; color: #010100;">The elements on the shape are defined in relation to this local grid.</span></p>
+<p style="text-indent: 0px;"><span style="color: #000000;">&nbsp;</span></p>
+<p style="text-indent: 0px;"><span style="font-size: 9pt; color: #010100;">Study the picture closely and see how the definition of the 2 lines in the shape file</span></p>
+<p style="text-indent: 0px;"><span style="color: #000000;">&nbsp;</span></p>
+<p style="text-indent: 0px;"><span style="font-size: 9pt; font-weight: bold; color: #010100;">#CROSS &nbsp; &nbsp; &nbsp; 2</span></p>
+<p style="text-indent: 0px;"><span style="font-size: 9pt; font-weight: bold; color: #010100;">(-1.0 &nbsp;-1.0) &nbsp;(1.0 &nbsp;1.0)</span></p>
+<p style="text-indent: 0px;"><span style="font-size: 9pt; font-weight: bold; color: #010100;">(1.0 &nbsp;1.0) &nbsp;(1.0 &nbsp;-1.0)</span></p>
+<p style="text-indent: 0px;"><span style="color: #000000;">&nbsp;</span></p>
+<p style="text-indent: 0px;"><span style="font-size: 9pt; color: #010100;">relate to the 2 red lines on the local grid.</span></p>
+<p style="text-indent: 0px;"><span style="font-size: 9pt; color: #010100;">Two other methods are also available to define a shape.</span></p>
+<p class="p_Heading1"><span class="f_Heading1">&nbsp;</span></p>
+</td>
+</tr>
+</table>
+</div>
+<p style="text-indent: 0px;"><span style="color: #000000;">&nbsp;</span></p>
+<p style="text-indent: 0px;"><a name="filltheshape"></a><span class="f_rrelatedtopic">Fill the Shape</span></p>
+<p style="text-indent: 0px;"><span style="color: #000000;">&nbsp;</span></p>
+<p style="text-indent: 0px;"><span style="font-size: 9pt; color: #010100;">The vector definition of the shape will produce an image drawn by lines. In certain instances, it is desirable to fill hatch the shape to produce a more solid image.</span></p>
+<p style="text-indent: 0px;"><span style="font-size: 9pt; color: #010100;">This is easily done by defining the shape header like this:</span></p>
+<div style="text-align: left; text-indent: 0px; padding: 0px 0px 0px 0px; margin: 0px 0px 0px 0px;"><table cellspacing="0" cellpadding="0" border="0" style="border: none; border-spacing:0px;">
+<tr style="text-align:left;vertical-align:top;">
+<td valign="top" width="202" style="width:202px;"><p class="p_Heading1"><span style="font-size: 9pt; font-weight: bold; color: #bfbfbf;">#ARROW4 &nbsp;4 &nbsp; </span><span style="font-weight: bold;"> </span><span style="font-style: italic; font-weight: bold;">FILL 20</span></p>
+<p class="p_Heading1"><span style="font-size: 9pt; font-weight: bold; color: #bfbfbf;"> &nbsp; &nbsp; 0.00 &nbsp; &nbsp; 0.00 &nbsp; &nbsp;-2.00 &nbsp; &nbsp; 1.00</span></p>
+<p class="p_Heading1"><span style="font-size: 9pt; font-weight: bold; color: #bfbfbf;"> &nbsp; &nbsp;-2.00 &nbsp; &nbsp; 1.00 &nbsp; &nbsp;-1.00 &nbsp; &nbsp; 0.00</span></p>
+<p class="p_Heading1"><span style="font-size: 9pt; font-weight: bold; color: #bfbfbf;"> &nbsp; &nbsp;-1.00 &nbsp; &nbsp; 0.00 &nbsp; &nbsp;-2.00 &nbsp; &nbsp;-1.00</span></p>
+<p class="p_Heading1"><span style="font-size: 9pt; font-weight: bold; color: #bfbfbf;"> &nbsp; &nbsp;-2.00 &nbsp; &nbsp;-1.00 &nbsp; &nbsp; 0.00 &nbsp; &nbsp; 0.00</span></p>
+<p class="p_Heading1"><span class="f_Heading1">&nbsp;</span></p>
+</td>
+<td valign="top" width="114" style="width:114px;"><p class="p_Heading1"><img src="clip1564.png" width="117" height="82" border="0" alt="clip1564"></p>
+</td>
+<td valign="top" width="428" style="width:428px;"><p class="p_Heading1"><span style="font-size: 9pt;">This is the definition of an arrow head with a fill factor.</span></p>
+<p class="p_Heading1"><span class="f_Heading1">&nbsp;</span></p>
+<p class="p_Heading1"><span style="font-size: 9pt;">To fill the shape, add the word FILL to the header line. </span></p>
+<p class="p_Heading1"><span style="font-size: 9pt;">The fill intensity can be set by adding the value on the header line, after the FILL word. If no fill % is added, a 100% color will be used.</span></p>
+</td>
+</tr>
+<tr style="text-align:left;vertical-align:top;">
+<td valign="top" width="202" style="width:202px;"><p class="p_Heading1"><span style="font-size: 9pt; font-weight: bold;">#ARROW5 &nbsp;4</span></p>
+<p class="p_Heading1"><span style="font-size: 9pt; font-weight: bold;"> &nbsp; &nbsp; 0.00 &nbsp; &nbsp; 0.00 &nbsp; &nbsp;-2.00 &nbsp; &nbsp; 0.50</span></p>
+<p class="p_Heading1"><span style="font-size: 9pt; font-weight: bold;"> &nbsp; &nbsp;-2.00 &nbsp; &nbsp; 0.50 &nbsp; &nbsp;-2.00 &nbsp; &nbsp; 0.00</span></p>
+<p class="p_Heading1"><span style="font-size: 9pt; font-weight: bold;"> &nbsp; &nbsp;-2.00 &nbsp; &nbsp; 0.00 &nbsp; &nbsp;-2.00 &nbsp; &nbsp;-0.50</span></p>
+<p class="p_Heading1"><span style="font-size: 9pt; font-weight: bold;"> &nbsp; &nbsp;-2.00 &nbsp; &nbsp;-0.50 &nbsp; &nbsp; 0.00 &nbsp; &nbsp; 0.00</span></p>
+</td>
+<td valign="top" width="114" style="width:114px;"><p class="p_Heading1"><img src="clip1566.png" width="116" height="80" border="0" alt="clip1566"></p>
+</td>
+<td valign="top" width="428" style="width:428px;"><p class="p_Heading1"><span class="f_Heading1">&nbsp;</span></p>
+<p class="p_Heading1"><span style="font-size: 9pt;">No fill value is specified and only the line vectors are drawn for this arrow shape.</span></p>
+</td>
+</tr>
+</table>
+</div>
+<p style="text-indent: 0px;"><span style="color: #000000;">&nbsp;</span></p>
+<p style="text-indent: 0px;"><span style="color: #000000;">&nbsp;</span></p>
+<p style="text-indent: 0px;"><span style="font-size: 9pt; font-weight: bold;">Drawing the symbol in CAD</span></p>
+<p style="text-indent: 0px;"><span style="font-size: 9pt; color: #010100;">Run Model Maker and set the <a href="plot___parameters.htm">scale</a> to 1:1000.</span></p>
+<p style="text-indent: 0px;"><span style="font-size: 9pt; color: #010100;">Use the normal <a href="cad___line___add_.htm">line</a> functions in CAD and draw the lines of the shape you want to create.</span></p>
+<p style="text-indent: 0px;"><span style="font-size: 9pt; color: #010100;">Use the <a href="cad_identify.htm">ID function</a> and identify all the elements of the symbol.</span></p>
+<p style="text-indent: 0px;"><span style="font-size: 9pt; color: #010100;">In the Cad General menu, locate the <a href="cad___general.htm">L-shape</a> option and save the identified elements to a file.</span></p>
+<p style="text-indent: 0px;"><span style="font-size: 9pt; color: #010100;">NOTE: &nbsp; &nbsp; &nbsp; &nbsp;Do NOT use the name MMW as this is the file name of the original SHM file. Rather use a file name that refers to the symbol,</span></p>
+<p style="text-indent: 0px;"><span style="width:24px">&nbsp;</span> &nbsp; &nbsp; &nbsp; &nbsp;<span style="font-size: 9pt; color: #010100;">eg., FENCE.</span></p>
+<p style="text-indent: 0px;"><span style="color: #000000;">&nbsp;</span></p>
+<p style="text-indent: 0px;"><span style="font-size: 9pt; color: #010100;">When prompted to indicate a base point, indicate the origin (0,0) position of your shape.</span></p>
+<p style="text-indent: 0px;"><span style="font-size: 9pt; color: #010100;">After the symbol is saved, use an ASCII editor to open both the new file name eg. FENCE.SHM and the original MMW.SHM file. </span></p>
+<p style="text-indent: 0px;"><span style="font-size: 9pt; color: #010100;">Cut and paste the content of the new file into the MMW.SHM file. The new symbol can now be included in any line definition in the STM file.</span></p>
+<p style="text-indent: 0px;"><span style="color: #000000;">&nbsp;</span></p>
+<p style="text-indent: 0px;"><span style="color: #000000;">&nbsp;</span></p>
+<p style="text-indent: 0px;"><span style="font-size: 9pt; font-weight: bold;">Using the symbol editor in the Irrigation menu.</span></p>
+<p style="text-indent: 0px;"><span style="font-size: 9pt; color: #010100;">Run Model Maker, activate the <a href="irrigation.htm">Irrigation</a> menu and proceed to the <a href="irrigationdefaultcheck.htm">defaults</a> page. Locate the <a href="irrigationshapes.htm">shape editor</a> and use that to manipulate the SHM file. Remember that changes made in this editor will only become effective after Model Maker is exited and started again.</span></p>
+<p style="text-indent: 0px;"><span style="color: #000000;">&nbsp;</span></p>
+<p style="text-indent: 0px;"><span style="color: #000000;">&nbsp;</span></p>
+<p style="text-indent: 0px;"><span style="font-size: 9pt; font-weight: bold;">STEP 4 : Define line style with symbo</span><span style="font-size: 9pt; font-weight: bold; color: #804000;">l</span></p>
+<p style="text-indent: 0px;"><span style="font-size: 9pt; color: #010100;">Use the following methods to define a line type that includes the CROSS shape created in step 3.</span></p>
+<p style="text-indent: 0px;"><span style="color: #000000;">&nbsp;</span></p>
+<p style="text-indent: 0px;"><span style="font-size: 9pt; color: #010100;">Picture of what the line will look like.</span></p>
+<p style="text-indent: 0px;"><img src="_bm379.png" width="150" height="29" border="0" alt="_bm379"><span style="font-size: 9pt; color: #010100;"> </span></p>
+<p style="text-indent: 0px;"><span style="font-size: 9pt; color: #010100;">The definition of the line in the MMW.STM file.</span></p>
+<p style="text-indent: 0px;"><img src="_bm373.png" width="433" height="87" border="0" alt="_bm373"></p>
+<p style="text-indent: 0px;"><span style="color: #000000;">&nbsp;</span></p>
+<p style="text-indent: 0px;"><span style="font-size: 9pt; font-weight: bold; color: #010100;">Column #1 &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp;</span><span style="font-size: 9pt; color: #010100;">: This is the line number &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp;   &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp;eg. #10</span></p>
+<p style="text-indent: 0px;"><span style="font-size: 9pt; font-weight: bold; color: #010100;">Column #2 &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp;</span><span style="font-size: 9pt; color: #010100;">: This is the line name &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp;   &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp;eg. Fence</span></p>
+<p style="text-indent: 0px;"><span style="font-size: 9pt; font-weight: bold; color: #010100;">Column #3 &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp;</span><span style="font-size: 9pt; color: #010100;">: The number of elements defined in column 4 &nbsp; &nbsp; &nbsp; &nbsp;  &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; eg. 5 elements, circled in blue.</span></p>
+<p style="text-indent: 0px;"><span style="font-size: 9pt; font-weight: bold; color: #010100;">Column #4 &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp;</span><span style="font-size: 9pt; color: #010100;">: The actual definition of the line in terms of different elements.</span></p>
+<p style="text-indent: 0px;"><span style="color: #000000;">&nbsp;</span></p>
+<p style="text-indent: 0px;"><span style="font-size: 9pt; color: #010100;">Use any ASCII editor and open the MMW.STM file. Go to the bottom of the page and enter the definition of the line.</span></p>
+<p style="text-indent: 0px;"><span style="font-size: 9pt; color: #010100;">Description of the items in the blue circles.</span></p>
+<p style="text-indent: 0px;"><img src="_bm380.png" width="21" height="29" border="0" alt="_bm380"><span style="font-size: 9pt; color: #010100;"> The line will start with the pen in the DOWN position and travel for 4 millimeters.</span></p>
+<p style="text-indent: 0px;"><img src="_bm381.png" width="20" height="26" border="0" alt="_bm381"><span style="font-size: 9pt; color: #010100;"> The pen will be picked UP for a distance of 1 mm.</span></p>
+<p style="text-indent: 0px;"><img src="_bm382.png" width="113" height="28" border="0" alt="_bm382"><span style="font-size: 9pt; color: #010100;"> </span></p>
+<p style="text-indent: 0px;"><span style="font-size: 9pt; color: #010100;">The CROSS shape (as defined in the SHM file) will be drawn. The ROTATE instruction is optional and specifies that the shape must be rotated to the direction of the line when the line connects 2 points at an angle.</span></p>
+<p style="text-indent: 0px;"><span style="color: #000000;">&nbsp;</span></p>
+<p style="text-indent: 0px;"><img src="_bm383.png" width="283" height="147" border="0" alt="_bm383"></p>
+<p style="text-indent: 0px;"><span style="font-size: 9pt; color: #010100;">In this example a line with a bulldozer shape is drawn.</span></p>
+<p style="text-indent: 0px;"><span style="font-size: 9pt; color: #010100;">The blue line was drawn without the ROTATE instruction in the line definition. Notice how the picture of the bulldozer remained horizontal while the line is drawn at an angle.</span></p>
+<p style="text-indent: 0px;"><span style="font-size: 9pt; color: #010100;">The red line uses the ROTATE instruction. The bulldozer shape is drawn at the same angle as the line.</span></p>
+<p style="text-indent: 0px;"><span style="font-size: 9pt; color: #010100;">After the shape is drawn, the sequence is completed by :</span></p>
+<p style="text-indent: 0px;"><img src="_bm384.png" width="20" height="26" border="0" alt="_bm384"><span style="font-size: 9pt; color: #010100;"> The pen is picked UP for a distance of 1mm.</span></p>
+<p style="text-indent: 0px;"><img src="_bm385.png" width="21" height="29" border="0" alt="_bm385"><span style="font-size: 9pt; color: #010100;"> The pen is in the DOWN position and travels for 4 millimeters.</span></p>
+<p style="text-indent: 0px;"><span style="width:24px">&nbsp;</span> &nbsp; &nbsp; &nbsp; &nbsp;</p>
+<p style="text-indent: 0px;"><span style="color: #000000;">&nbsp;</span></p>
+<p style="text-indent: 0px;"><span style="color: #000000;">&nbsp;</span></p>
+<p style="text-indent: 0px;"><span style="font-size: 9pt; font-weight: bold;">The sequence as defined by the 5 elements in this example is repeated until the end point of the CAD line is reached.</span></p>
+<p style="text-indent: 0px;"><span style="font-size: 9pt; font-weight: bold;">Two commands may be used when a shape name is used in a line definition:</span></p>
+<p style="text-indent: 0px;"><span style="color: #000000;">&nbsp;</span></p>
+<p style="text-indent: 0px;"><span style="font-size: 9pt; font-weight: bold;">1. &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp;Rotate</span></p>
+<p style="text-indent: 0px;"><span style="width:24px">&nbsp;</span> &nbsp; &nbsp; &nbsp; &nbsp;<span style="font-size: 9pt; color: #010100;">This is used in the above example and instructs MODEL MAKER to rotate the whole definition of the shape to follow the direction of the line.</span></p>
+<p style="text-indent: 0px;"><span style="font-size: 9pt; font-weight: bold;">2. &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp;Endpoints</span></p>
+<p style="text-indent: 0px;"><span style="width:24px">&nbsp;</span> &nbsp; &nbsp; &nbsp; &nbsp;<span style="font-size: 9pt; color: #010100;">This indicates that the shape will not be repeated along the line but only placed once at the start and endpoint of the line.</span></p>
+<p style="text-indent: 0px;"><span style="color: #000000;">&nbsp;</span></p>
+<p style="text-indent: 0px;"><span style="color: #000000;">&nbsp;</span></p>
+<p style="text-indent: 0px;"><span style="font-size: 9pt; font-weight: bold; color: #010100;">OTHER EXAMPLES:</span></p>
+<p style="text-indent: 0px;"><span style="color: #000000;">&nbsp;</span></p>
+<p style="text-indent: 0px;"><span style="font-size: 9pt; font-weight: bold; color: #010100;">#13 &nbsp;Sec-fence &nbsp; &nbsp; &nbsp; 7  &nbsp; &nbsp; &nbsp; &nbsp;5 &nbsp; &nbsp; &nbsp; &nbsp;-3  &nbsp; &nbsp; &nbsp; &nbsp;#CROSS ROTATE &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; -3 &nbsp; &nbsp; &nbsp; &nbsp; &nbsp;#CROSS ROTATE &nbsp; &nbsp; &nbsp;-3  &nbsp; &nbsp; &nbsp; &nbsp;5</span></p>
+<p style="text-indent: 0px;"><img src="_bm386.png" width="121" height="30" border="0" alt="_bm386"><span style="font-size: 9pt; color: #010100;"> This security fence has 7 elements which consist of 2 DOWN instructions, 2 shapes and 3 UP instruction.</span></p>
+<p style="text-indent: 0px;"><span style="color: #000000;">&nbsp;</span></p>
+<p style="text-indent: 0px;"><span style="color: #000000;">&nbsp;</span></p>
+<p style="text-indent: 0px;"><span style="color: #000000;">&nbsp;</span></p>
+<p style="text-indent: 0px;"><span style="font-size: 9pt; font-weight: bold; color: #010100;">#23 &nbsp;TEL_LINE &nbsp; &nbsp; &nbsp;2 &nbsp; &nbsp; &nbsp; &nbsp;#LCIRCLE &nbsp; &nbsp; &nbsp;ENDPOINTS &nbsp; &nbsp; &nbsp; &nbsp;ROTATE  &nbsp; &nbsp; &nbsp; &nbsp;0</span></p>
+<p style="text-indent: 0px;"><img src="_bm387.png" width="167" height="44" border="0" alt="_bm387"><span style="font-size: 9pt; color: #010100;"> This telephone line will be drawn with the 2 rotated LCIRCLE shapes at the end points. </span></p>
+<p style="text-indent: 0px;"><span style="color: #000000;">&nbsp;</span></p>
+<p style="text-indent: 0px;"><span style="color: #000000;">&nbsp;</span></p>
+<p style="text-indent: 0px;"><span style="color: #000000;">&nbsp;</span></p>
+<p style="text-indent: 0px;"><span style="font-size: 9pt; font-weight: bold; color: #010100;">#31 Circ-arrow &nbsp; &nbsp; &nbsp; 2  &nbsp; &nbsp; &nbsp; &nbsp;#CIRCLE &nbsp; ENDPOINT1  &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp;#ARROW ENDPOINT2  &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; ROTATE</span></p>
+<p style="text-indent: 0px;"><img src="_bm388.png" width="173" height="56" border="0" alt="_bm388"><span style="font-size: 9pt; color: #010100;"> </span></p>
+<p style="text-indent: 0px;"><span style="font-size: 9pt; color: #010100;">This unique line defines 2 different shapes to be drawn at each endpoint. </span></p>
+<p style="text-indent: 0px;"><span style="font-size: 9pt; color: #010100;">The CIRCLE shape is drawn at ENDPOINT1, the start of the line. Notice that the ROTATE instruction is not applied to this shape because the circle shape is symmetrical and is not effected by the angle of the line.</span></p>
+<p style="text-indent: 0px;"><span style="font-size: 9pt; color: #010100;">The ARROW shape is drawn in rotated format at the end of the line. </span></p>
+<p style="text-indent: 0px;"><span style="font-size: 9pt; color: #010100;">The line between the start and end points of the line is automatically added.</span></p>
+<p style="text-indent: 0px;"><span style="color: #000000;">&nbsp;</span></p>
+<p style="text-indent: 0px;"><span style="color: #000000;">&nbsp;</span></p>
+<p style="text-indent: 0px;"><span style="font-size: 11pt; font-weight: bold; color: #800040;">Related topics:</span></p>
+<p style="text-indent: 0px;"><span style="font-size: 9pt; color: #010100;"><a href="cadline_shape.htm">SHAPE</a></span></p>
+
+</td></tr></table>
+
+</body>
+</html>

@@ -1,0 +1,163 @@
+<!DOCTYPE HTML PUBLIC "-//W3C//DTD HTML 4.01 Transitional//EN">
+<html>
+<head>
+   <title>How to determine toe points for a terrace model</title>
+   <meta name="generator" content="Help &amp; Manual" />
+   <meta name="keywords" content="Examples,Slope,TERRACE,Toelines,Toepoint" />
+   <meta http-equiv="Content-Type" content="text/html; charset=ISO-8859-1" />
+   <meta http-equiv="Content-Style-Type" content="text/css" />
+   <link type="text/css" href="default.css" rel="stylesheet" />
+
+<script type="text/javascript" src="helpman_topicinit.js"></script>
+</head>
+<body style="margin: 0px 0px 0px 0px; background: #FFFFFF;">
+
+
+<table width="100%" border="0" cellspacing="0" cellpadding="5" bgcolor="#D0D0D0">
+  <tr valign="middle">
+    <td align="left">
+      <p class="p_Heading1"><span class="f_Heading1">EXAMPLE : Working Example 5 (Terrace toe points)</span></p>
+
+    </td>
+    <td align="right">
+     <span style="font-size: 9pt">
+     <a href="start_up.htm">Top</a>&nbsp;
+     <a href="example___working_example_8.htm">Previous</a>&nbsp;
+     <a href="example___working_example_7.htm">Next</a>
+     </span>
+    </td>
+  </tr>
+</table>
+
+
+<!-- Placeholder for topic body. -->
+<table width="100%" border="0" cellspacing="0" cellpadding="5"><tr valign="top"><td align="left">
+<p style="text-indent: 0px;"><span style="color: #000000;">&nbsp;</span></p>
+<p style="text-indent: 0px;"><span class="f_rrelatedtopic">MENU : toE</span></p>
+<p style="text-indent: 0px;"><span style="font-size: 5pt; color: #804000;">&nbsp;</span></p>
+<p style="text-indent: 0px;"><span class="f_CourierFixed">Object</span></p>
+<p style="text-indent: 0px;"><span style="font-size: 5pt; color: #010100;">&nbsp;</span></p>
+<p style="text-indent: 0px;"><span style="font-size: 9pt; color: #010100;">This example shows you how to determine toe points for a terrace model and then to extend the model to the toe line.</span></p>
+<p style="text-indent: 0px;"><span style="color: #000000;">&nbsp;</span></p>
+<p style="text-indent: 0px;"><span style="font-size: 9pt; color: #010100;">Toe points are calculated between the triangle models of 2 projects.</span></p>
+<p style="text-indent: 0px;"><img src="_bm26.png" width="10" height="15" border="0" alt="_bm26"> &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp;<span style="font-size: 9pt; color: #010100;">Project 1 will consist of the points and triangle of the original ground model.</span></p>
+<p style="text-indent: 0px;"><img src="_bm26.png" width="10" height="15" border="0" alt="_bm26"> &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp;<span style="font-size: 9pt; color: #010100;">Project 2 will hold the points and triangles of the design platform.</span></p>
+<p style="text-indent: 0px;"><img src="_bm26.png" width="10" height="15" border="0" alt="_bm26"> &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp;<span style="font-size: 9pt; color: #010100;">The toe points will be calculated from project 2 to the intersection with project 1. </span></p>
+<p style="text-indent: 0px;"><span style="color: #000000;">&nbsp;</span></p>
+<p style="text-indent: 0px;"><span class="f_CourierFixed">Procedure</span></p>
+<p style="text-indent: 0px;"><span style="font-size: 5pt; color: #010100;">&nbsp;</span></p>
+<p style="text-indent: 0px;"><span style="font-size: 9pt; color: #010100;">Notice that the procedure to load the ground data is also described in detail in Working Example 6. </span></p>
+<p style="text-indent: 0px;"><span style="color: #000000;">&nbsp;</span></p>
+<p style="text-indent: 0px;"><span style="color: #000000;">&nbsp;</span></p>
+<p style="text-indent: 0px;"><span class="f_CourierFixed">STEP 1 : Load ogl data &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp;</span><span style="font-size: 9pt; font-weight: bold; color: #800040;">(<a href="example___working_example_6.htm#step1readinggroundandtri">Step1 - Example 6</a>)</span></p>
+<p style="text-indent: 0px; margin: 0px 0px 0px 1px;"><span style="font-size: 6pt; color: #010100;">&nbsp;</span></p>
+<div style="text-align: left; text-indent: 0px; padding: 0px 0px 0px 0px; margin: 0px 0px 0px 1px;"><table border="0" cellpadding="0" cellspacing="0" style="line-height: normal;"><tr style="vertical-align:baseline" valign="baseline"><td width="23"><img src="_bm26.png" width="10" height="15" border="0" alt="_bm26"></td><td> &nbsp; &nbsp; &nbsp; &nbsp;<span style="font-size: 9pt; color: #010100;">For this example the </span><span class="f_CourierFixed">PLATNGL</span><span style="font-size: 9pt; color: #010100;"> demonstration data files will be used for the original ground model.</span></td></tr></table></div><p style="text-indent: 0px;"><span style="font-size: 9pt; color: #010100;">Select &nbsp;the FILE <a href="file___open___save_menu.htm">OPEN</a> option and load the original ground data - points and triangles - from the file called PLATNGL into project #1.</span></p>
+<p style="text-indent: 0px;"><span style="color: #000000;">&nbsp;</span></p>
+<p style="text-indent: 0px;"><span style="color: #000000;">&nbsp;</span></p>
+<p style="text-indent: 0px;"><span class="f_CourierFixed">STEP 2 : Create the platform data</span></p>
+<p style="text-indent: 0px;"><span style="font-size: 5pt; color: #010100;">&nbsp;</span></p>
+<p style="text-indent: 0px; margin: 0px 0px 0px 6px;"><img src="_bm348.png" width="418" height="276" border="0" alt="_bm348"></p>
+<p style="text-indent: 0px;"><span style="font-size: 9pt; color: #010100;">In this picture the yellow dots and text represent the points of the data loaded into project 1.</span></p>
+<p style="text-indent: 0px;"><span style="font-size: 9pt; color: #010100;">The 4 green points were added to project 2 CAD lines drawn between them.</span></p>
+<p style="text-indent: 0px;"><span style="font-size: 9pt; color: #010100;">The 4 red circles were only added to indicate the positions of the 4 platform points and are not really required for the exercise.</span></p>
+<p style="text-indent: 0px;"><span style="color: #000000;">&nbsp;</span></p>
+<p style="text-indent: 0px;"><span class="f_CourierFixed">Below</span><span style="font-size: 9pt; color: #010100;"> is a detailed description, showing how the design platform is generated.</span></p>
+<p style="text-indent: 0px;"><span style="color: #000000;">&nbsp;</span></p>
+<p style="text-indent: 0px;"><span class="f_CourierFixed">Adding 4 corner points</span></p>
+<p style="text-indent: 0px;"><span style="font-size: 5pt; color: #010100;">&nbsp;</span></p>
+<p style="text-indent: 0px;"><img src="_bm26.png" width="10" height="15" border="0" alt="_bm26"> &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp;<span style="font-size: 9pt; color: #010100;">Activate the PNT option on the <a href="menuleft.htm">left menu</a> and from the <a href="menubottom.htm">bottom menu</a>, select <a href="pnt_add.htm">ADD</a> option.</span></p>
+<p style="text-indent: 0px;"><img src="_bm26.png" width="10" height="15" border="0" alt="_bm26"> &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp;<span style="font-size: 9pt; color: #010100;">On the ADD dialog box, activate project # 2 and choose the <a href="add_single.htm">Add Single</a> Format.</span></p>
+<p style="text-indent: 0px;"><img src="_bm26.png" width="10" height="15" border="0" alt="_bm26"> &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp;<span style="font-size: 9pt; color: #010100;">Set the <a href="cursor_positioningmodes.htm">cursor snap</a> mode to FREE and point approximately to the position of points </span><span style="font-size: 9pt; font-weight: bold; color: #010100;">a20.</span></p>
+<p style="text-indent: 0px;"><img src="_bm26.png" width="10" height="15" border="0" alt="_bm26"> &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp;<span style="font-size: 9pt; color: #010100;">On the <a href="pointadd_attributes.htm">New Point Attributes</a>, enter the elevation of the new point as </span><span style="font-size: 9pt; font-weight: bold; color: #010100;">65</span><span style="font-size: 9pt; color: #010100;">.</span></p>
+<p style="text-indent: 0px;"><img src="_bm26.png" width="10" height="15" border="0" alt="_bm26"> &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp;<span style="font-size: 9pt; color: #010100;">Continue to enter points at the positions of a21,a22 and a23. Press escape after the last point is defined.</span></p>
+<p style="text-indent: 0px;"><span style="color: #000000;">&nbsp;</span></p>
+<p style="text-indent: 0px;"><span class="f_CourierFixed">Adding Cad lines</span></p>
+<p style="text-indent: 0px;"><span style="font-size: 5pt; color: #010100;">&nbsp;</span></p>
+<p style="text-indent: 0px;"><img src="_bm26.png" width="10" height="15" border="0" alt="_bm26"> &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp;<span style="font-size: 9pt; color: #010100;">On the <a href="menuleft.htm">left menu</a> select the CAD option, on the bottom menu the Line, <a href="cad___line___add_.htm">ADD</a> function.</span></p>
+<p style="text-indent: 0px;"><img src="_bm26.png" width="10" height="15" border="0" alt="_bm26"> &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp;<span style="font-size: 9pt; color: #010100;">Select the Polyline option and set the <a href="cursor_positioningmodes.htm">cursor snap</a> mode to DTM Point </span><img src="clip1071.png" width="75" height="33" border="0" alt="clip1071"><span style="font-size: 9pt; color: #010100;">.</span></p>
+<p style="text-indent: 0px;"><img src="_bm26.png" width="10" height="15" border="0" alt="_bm26"> &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp;<span style="font-size: 9pt; color: #010100;">Add the 4 lines by pointing to the new points.</span></p>
+<p style="text-indent: 0px;"><span style="color: #000000;">&nbsp;</span></p>
+<p style="text-indent: 0px;"><span class="f_CourierFixed">Creating the triangles of the design platform</span></p>
+<p style="text-indent: 0px;"><span style="font-size: 5pt; color: #010100;">&nbsp;</span></p>
+<p style="text-indent: 0px;"><span style="font-size: 9pt; color: #010100;">After the 4 corner points have been added, triangles must be generated to model the surface between them.</span></p>
+<p style="text-indent: 0px;"><img src="_bm26.png" width="10" height="15" border="0" alt="_bm26"> &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp;<span style="font-size: 9pt; color: #010100;">On the <a href="menuleft.htm">left menu</a> select the TRI option. </span></p>
+<p style="text-indent: 0px;"><img src="_bm26.png" width="10" height="15" border="0" alt="_bm26"> &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp;<span style="font-size: 9pt; color: #010100;">On the bottom menu select the <a href="trianglequicksearch.htm">CSEARCH</a> function and create the triangles by following the relevant instructions of <a href="example___working_example_1.htm">example 1</a>. </span></p>
+<p style="text-indent: 0px;"><span style="font-size: 9pt; color: #010100;">After these steps have been completed, the system is loaded with both surface models and the toe points can be generated.</span></p>
+<p style="text-indent: 0px;"><span style="color: #000000;">&nbsp;</span></p>
+<p style="text-indent: 0px;"><span style="color: #000000;">&nbsp;</span></p>
+<p style="text-indent: 0px;"><span class="f_CourierFixed">STEP 3 : Project relation &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp;</span><span style="font-size: 9pt; font-weight: bold; color: #800040;"><a href="example___working_example_6.htm#step3projectrelationship">(Step3 - Example 6)</a></span></p>
+<p style="text-indent: 0px; margin: 0px 0px 0px 1px;"><span style="font-size: 6pt; color: #010100;">&nbsp;</span></p>
+<div style="text-align: left; text-indent: 0px; padding: 0px 0px 0px 0px; margin: 0px 0px 0px 1px;"><table border="0" cellpadding="0" cellspacing="0" style="line-height: normal;"><tr style="vertical-align:baseline" valign="baseline"><td width="23"><img src="_bm26.png" width="10" height="15" border="0" alt="_bm26"></td><td> &nbsp; &nbsp; &nbsp; &nbsp;<span style="font-size: 9pt; color: #010100;">Use the DEFAULT button to access the Status dialog box.</span></td></tr></table></div><p style="text-indent: 0px;"><span style="color: #000000;">&nbsp;</span></p>
+<p style="text-indent: 0px;"><span style="color: #000000;">&nbsp;</span></p>
+<p style="text-indent: 0px;"><span class="f_CourierFixed">STEP 4: Batter parameters</span></p>
+<p style="text-indent: 0px;"><span style="font-size: 5pt; color: #010100;">&nbsp;</span></p>
+<p style="text-indent: 0px;"><span style="font-size: 9pt; color: #010100;">On the <a href="menuleft.htm">left menu</a> select TOE and then  <a href="toepoint___slope_parameters_.htm">PARAM</a> &nbsp;on the bottom menu. You may now specify the batter slopes in cut and fill.</span></p>
+<p style="text-indent: 0px;"><span style="color: #000000;">&nbsp;</span></p>
+<p style="text-indent: 0px; margin: 0px 0px 0px 6px;"><img src="clip1072.png" width="322" height="222" border="0" alt="clip1072"></p>
+<p style="text-indent: 0px;"><span style="font-size: 9pt; color: #010100;">You may also specify a fixed number of toe points or a fixed distance interval along each outside triangle leg. These additional points will only be added if you select &nbsp;YES (Y) &nbsp;for the &nbsp;ADD EVERY TOE POINT &nbsp;option. If it is set to &nbsp;NO (N)., toe points will only be generated at a change in ground slope.</span></p>
+<p style="text-indent: 0px;"><span style="color: #000000;">&nbsp;</span></p>
+<p style="text-indent: 0px;"><span style="color: #000000;">&nbsp;</span></p>
+<p style="text-indent: 0px;"><span class="f_CourierFixed">STEP 5 : Determine toe points</span></p>
+<p style="text-indent: 0px;"><span style="font-size: 5pt; color: #010100;">&nbsp;</span></p>
+<p style="text-indent: 0px;"><span style="font-size: 9pt; color: #010100;">On the bottom menu select the &nbsp;ALL &nbsp;option.</span></p>
+<p style="text-indent: 0px; margin: 0px 0px 0px 6px;"><span style="color: #000000;">&nbsp;</span></p>
+<p style="text-indent: 0px; margin: 0px 0px 0px 6px;"><img src="clip1073.png" width="258" height="146" border="0" alt="clip1073"></p>
+<p style="text-indent: 0px;"><span style="font-size: 9pt; color: #010100;">You have the option of adding the toe points to the data base or viewing the toe line position. </span></p>
+<p style="text-indent: 0px;"><span style="color: #000000;">&nbsp;</span></p>
+<div style="text-align: left; text-indent: 0px; padding: 0px 0px 0px 0px; margin: 0px 0px 0px 0px;"><table cellspacing="0" cellpadding="0" border="0" style="border: none; border-spacing:0px;">
+<tr style="text-align:left;vertical-align:top;">
+<td valign="top" width="183" style="width:183px;"><p style="text-indent: 0px;"><img src="_bm26.png" width="10" height="15" border="0" alt="_bm26"> &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp;<span class="f_CourierFixed">Add New Toepoints</span></p>
+<p style="text-indent: 0px;"><span style="color: #000000;">&nbsp;</span></p>
+<p style="text-indent: 0px;"><span style="color: #000000;">&nbsp;</span></p>
+<p style="text-indent: 0px;"><img src="_bm26.png" width="10" height="15" border="0" alt="_bm26"> &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp;<span class="f_CourierFixed">Show toepoints</span><span style="font-size: 9pt; color: #010100;"> </span></p>
+</td>
+<td valign="top" width="557" style="width:557px;"><p style="text-indent: 0px;"><span style="font-size: 9pt; color: #010100;">The position of the toe points will be calculated along all the <a href="definitionopensidetriangl.htm">open sides</a> of the triangles in project 2 and the new points added to the design project.</span></p>
+<p style="text-indent: 0px;"><span style="color: #000000;">&nbsp;</span></p>
+<p style="text-indent: 0px;"><span style="font-size: 9pt; color: #010100;">The toe line will be calculated and shown but the points will not be added to any project. </span></p>
+<p style="text-indent: 0px;"><span style="color: #000000;">&nbsp;</span></p>
+</td>
+</tr>
+</table>
+</div>
+<p style="text-indent: 0px;"><span style="color: #000000;">&nbsp;</span></p>
+<p style="text-indent: 0px; margin: 0px 0px 0px 6px;"><img src="_bm351.png" width="234" height="176" border="0" alt="_bm351"></p>
+<p style="text-indent: 0px;"><span style="font-size: 9pt; color: #010100;">An example of what the picture looks like after the </span><span class="f_CourierFixed">Show Toepoint </span><span style="font-size: 9pt; color: #010100;">option have been selected.</span></p>
+<p style="text-indent: 0px;"><span style="font-size: 9pt; color: #010100;">Notice that the toe line in CUT is shown in red. The FILL toe line is drawn in yellow.</span></p>
+<p style="text-indent: 0px;"><span style="color: #000000;">&nbsp;</span></p>
+<p style="text-indent: 0px;"><span style="font-size: 9pt; color: #010100;">It is suggested that you use the Show option first before adding the toepoints. By doing this you get a chance to inspect the position of the toe line before accepting the new TOE points.</span></p>
+<p style="text-indent: 0px;"><span style="color: #000000;">&nbsp;</span></p>
+<p style="text-indent: 0px; margin: 0px 0px 0px 6px;"><img src="_bm352.png" width="242" height="171" border="0" alt="_bm352"></p>
+<p style="text-indent: 0px;"><span style="font-size: 9pt; color: #010100;">This picture shows the toe points after the </span><span class="f_CourierFixed">Add New Toepoints</span><span style="font-size: 9pt; color: #010100;"> option is used.</span></p>
+<p style="text-indent: 0px;"><span style="font-size: 9pt; color: #010100;">All the new toe points have been added to the design project - in this case project #2 - with their codes = TOE.</span></p>
+<p style="text-indent: 0px;"><span style="font-size: 9pt; color: #010100;">Notice that after the points have been created you have the option of adding a <a href="strings__gxt_.htm">string</a>, - if the <a href="definition___modules.htm">module</a> is active - or CAD lines between the new points.</span></p>
+<p style="text-indent: 0px;"><span style="font-size: 9pt; color: #010100;">After the toe points have been created and added to the design project, extend the triangles to these new points. </span></p>
+<p style="text-indent: 0px;"><span style="color: #000000;">&nbsp;</span></p>
+<p style="text-indent: 0px;"><span class="f_CourierFixed">Option : Different slopes</span></p>
+<p style="text-indent: 0px;"><span style="font-size: 5pt; color: #010100;">&nbsp;</span></p>
+<p style="text-indent: 0px;"><span style="font-size: 9pt; color: #010100;">If one side of the model should have different batter slopes than another side, use the &nbsp;IDSIDE &nbsp;option to determine the toe points.</span></p>
+<p style="text-indent: 0px;"><span style="font-size: 9pt; color: #010100;">First identify (<a href="co_ords_editing___identify_poi.htm">PNT - ID - NEW - ID</a>.) the points connected to the outside legs of the triangles where a specific batter slope must be applied. Then, use the &nbsp;TOE &nbsp;option, set the slope parameters and use the &nbsp;IDSIDE &nbsp;option to determine toe points.</span></p>
+<p style="text-indent: 0px;"><span style="color: #000000;">&nbsp;</span></p>
+<p style="text-indent: 0px;"><span style="color: #000000;">&nbsp;</span></p>
+<p style="text-indent: 0px;"><span class="f_CourierFixed">STEP 6 : Extend the model</span></p>
+<p style="text-indent: 0px;"><span style="font-size: 5pt; color: #010100;">&nbsp;</span></p>
+<p style="text-indent: 0px;"><span style="font-size: 9pt; color: #010100;">Having the toepoints added does not have real meaning unless triangles are build to the new points. </span></p>
+<p style="text-indent: 0px;"><span style="font-size: 9pt; color: #010100;">Use the Csearch option on the TOE menu to create the new triangles. </span></p>
+<p style="text-indent: 0px;"><span style="font-size: 9pt; color: #010100;">The extended triangles will then model the complete design surface, including the side slopes, so that areas and volumes can be calculated.</span></p>
+<p style="text-indent: 0px;"><span style="color: #000000;">&nbsp;</span></p>
+<p style="text-indent: 0px;"><img src="_bm26.png" width="10" height="15" border="0" alt="_bm26"> &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp;<span style="font-size: 9pt; color: #010100;">Make sure that the design project, in this case project #2 is <a href="projectsselectingtheactiv.htm">active</a>.</span></p>
+<p style="text-indent: 0px;"><img src="_bm26.png" width="10" height="15" border="0" alt="_bm26"> &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp;<span style="font-size: 9pt; color: #010100;">On the TOE menu (see step 4 above) select the CSEARCH option. You will be prompted to confirm that triangles must be built to the neutral points, ie., points that indicate the position where the batter changes from a cut to a fill situation. (See the above picture where the toe line changes colour from red to yellow)</span></p>
+<p style="text-indent: 0px;"><span style="width:24px">&nbsp;</span> &nbsp; &nbsp; &nbsp; &nbsp;<span style="font-size: 9pt; color: #010100;">Confirm the search to neutral points.</span></p>
+<p style="text-indent: 0px;"><img src="_bm26.png" width="10" height="15" border="0" alt="_bm26"> &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp;<span style="font-size: 9pt; color: #010100;">After the triangles are built to the neutral points, confirm that triangles must be extended to all the other toe points.</span></p>
+<p style="text-indent: 0px;"><img src="_bm26.png" width="10" height="15" border="0" alt="_bm26"> &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp;<span style="font-size: 9pt; color: #010100;">After all the triangles have been created, select the <a href="plotmanipulate.htm">TRI option</a> on the top menu to draw and visually inspect the new triangles.</span></p>
+<p style="text-indent: 0px;"><span style="color: #000000;">&nbsp;</span></p>
+<p style="text-indent: 0px; margin: 0px 0px 0px 6px;"><img src="_bm353.png" width="252" height="171" border="0" alt="_bm353"><span style="font-size: 9pt; color: #010100;"> </span></p>
+<p style="text-indent: 0px;"><span style="font-size: 9pt; color: #010100;">An </span><span class="f_CourierFixed">example</span><span style="font-size: 9pt; color: #010100;"> of what the picture should look like after the design triangles have been extended to the toe points.</span></p>
+<div style="text-align: left; text-indent: 0px; padding: 0px 0px 0px 0px; margin: 0px 0px 0px 1px;"><table border="0" cellpadding="0" cellspacing="0" style="line-height: normal;"><tr style="vertical-align:baseline" valign="baseline"><td width="23"><img src="_bm26.png" width="10" height="15" border="0" alt="_bm26"></td><td> &nbsp; &nbsp; &nbsp; &nbsp;<span style="font-size: 9pt; color: #010100;">Save the new model, consisting of the original points and the additional toe points as either a <a href="filetotal.htm">Total</a> file or as separate  &nbsp; &nbsp; &nbsp; &nbsp;<a href="file___open___save_menu.htm">points and triangles</a>.</span></td></tr></table></div><p style="text-indent: 0px;"><img src="_bm26.png" width="10" height="15" border="0" alt="_bm26"> &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp;<span style="font-size: 9pt; color: #010100;">To calculate <a href="menu___terrace.htm">volumes</a> between the final design model and the natural ground model, refer to Working Example 6.</span></p>
+<p style="text-indent: 0px;"><img src="_bm26.png" width="10" height="15" border="0" alt="_bm26"> &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp;<span style="font-size: 9pt; color: #010100;">To merge the new design model with the original ground surface, follow the <a href="projects___copy_data_between_p.htm">projects</a> example.</span></p>
+<p style="text-indent: 0px;"><span style="color: #000000;">&nbsp;</span></p>
+<p style="text-indent: 0px;"><span style="color: #000000;">&nbsp;</span></p>
+
+</td></tr></table>
+
+</body>
+</html>

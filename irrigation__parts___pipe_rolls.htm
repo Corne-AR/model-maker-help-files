@@ -1,0 +1,116 @@
+<!DOCTYPE HTML PUBLIC "-//W3C//DTD HTML 4.01 Transitional//EN">
+<html>
+<head>
+   <title>IRRIGATION : Parts - Pipe Rolls</title>
+   <meta name="generator" content="Help &amp; Manual" />
+   <meta name="keywords" content="BOM,Cluster,Part,Pipe,Roll" />
+   <meta http-equiv="Content-Type" content="text/html; charset=ISO-8859-1" />
+   <meta http-equiv="Content-Style-Type" content="text/css" />
+   <link type="text/css" href="default.css" rel="stylesheet" />
+
+<script type="text/javascript" src="helpman_topicinit.js"></script>
+</head>
+<body style="margin: 0px 0px 0px 0px; background: #FFFFFF;">
+
+
+<table width="100%" border="0" cellspacing="0" cellpadding="5" bgcolor="#D0D0D0">
+  <tr valign="middle">
+    <td align="left">
+      <p class="p_Heading1"><span class="f_Heading1">IRRIGATION : Parts - Pipe Rolls</span></p>
+
+    </td>
+    <td align="right">
+     <span style="font-size: 9pt">
+     <a href="start_up.htm">Top</a>&nbsp;
+     <a href="irrigationparts_template1.htm">Previous</a>&nbsp;
+     <a href="irrigationhydraulics.htm">Next</a>
+     </span>
+    </td>
+  </tr>
+</table>
+
+
+<!-- Placeholder for topic body. -->
+<table width="100%" border="0" cellspacing="0" cellpadding="5"><tr valign="top"><td align="left">
+<p><span style="font-size: 12pt; font-weight: bold;">IrriMaker – Bill of material tip: one extra connector per roll of pipe</span></p>
+<p>&nbsp;</p>
+<p class="p_Notes"><span class="f_Notes">IrriMaker has an excellent bill of material tool that allow the user to teach the software to remember pipe and node combinations and intelligently create parts and clusters of parts for the bill of material. I discussed this function and how to use it in a previous article. The parts and clusters tool will generate an automatic bill of material giving the user the confidence and time to focus on other business matters instead of wasting valuable time counting parts and preparing quotations. </span></p>
+<p class="p_Notes"><span class="f_Notes">In this article I will show you how you can automatically add enough pipe connectors or couplings to connect rolls of pipe of the same diameter where needed. This is often left out of the bill of material or quotation by designers because there are no physical nodes representing the coupler for each roll of pipe in the design, and IrriMaker cannot predict how a roll of pipe will be divided during the installation.</span></p>
+<p class="p_Notes"><span class="f_Notes">Pipes are represented by part numbers in the pipes database. There is however just space for a single part number. By creating a cluster number instead, you can now describe a roll of pipe to include much needed pipe connectors and clamps where needed. </span></p>
+<p class="p_Notes"><span class="f_Notes">&nbsp;</span></p>
+<p class="p_Notes"><span class="f_Notes">Here are the steps:</span></p>
+<p class="p_Notes"><span class="f_Notes">&nbsp;</span></p>
+<div style="text-align: left; text-indent: 10px; padding: 0px 0px 0px 0px; margin: 0px 0px 0px 0px;"><table cellspacing="0" cellpadding="4" border="0" style="border: none; border-spacing:0px;">
+<tr style="text-align:left;vertical-align:top;">
+<td valign="top" width="438" style="width:438px;"><p class="p_Notes"><span class="f_Notes">Step 1: Create the new cluster by going to (1) Parts - (2) Database</span></p>
+</td>
+<td valign="top" width="197" style="width:197px;"><p class="p_Notes"><img src="embim211.png" width="427" height="248" vspace="1" hspace="1" border="0" alt=""></p>
+</td>
+</tr>
+<tr style="text-align:left;vertical-align:top;">
+<td valign="top" width="438" style="width:438px;"><p class="p_Notes"><span class="f_Notes">&nbsp;</span></p>
+</td>
+<td valign="top" width="197" style="width:197px;"><p class="p_Notes"><span class="f_Notes">&nbsp;</span></p>
+</td>
+</tr>
+<tr style="text-align:left;vertical-align:top;">
+<td valign="top" width="438" style="width:438px;"><p class="p_Notes"><span class="f_Notes">Assuming you already have parts in your parts database, create a new cluster by clicking on (3) “+Add” in the Cluster section at the bottom of the dialog. (4) Type in a suitable cluster number and description (in this example I use nr. “C-15/3/100”). Select the first part that should form part of the cluster (5) then double click in the clusters part number column (6) to copy the selected part into the cluster. Then enter the number of instances (7) of that part in the cluster. Don’t leave it zero “0”. Repeat steps (5), (6) and (7) until all the parts needed are part of the cluster. Finally close the parts database editor (8).</span></p>
+</td>
+<td valign="top" width="197" style="width:197px;"><p class="p_Notes"><img src="embim212.png" width="432" height="351" vspace="1" hspace="1" border="0" alt=""></p>
+</td>
+</tr>
+<tr style="text-align:left;vertical-align:top;">
+<td valign="top" width="438" style="width:438px;"><p class="p_Notes"><span class="f_Notes">&nbsp;</span></p>
+</td>
+<td valign="top" width="197" style="width:197px;"><p class="p_Notes"><span class="f_Notes">&nbsp;</span></p>
+</td>
+</tr>
+<tr style="text-align:left;vertical-align:top;">
+<td valign="top" width="438" style="width:438px;"><p class="p_Notes"><span class="f_Notes">Step 2: Link the new cluster number to the relevant pipe size as follows. Go to (1) Pipes then database (2).</span></p>
+</td>
+<td valign="top" width="197" style="width:197px;"><p class="p_Notes"><img src="embim213.png" width="401" height="323" vspace="1" hspace="1" border="0" alt=""></p>
+</td>
+</tr>
+<tr style="text-align:left;vertical-align:top;">
+<td valign="top" width="438" style="width:438px;"><p class="p_Notes"><span class="f_Notes">Locate and highlight the diameter pipe in the correct pipe group that should be described by your new cluster number (3). Click the “Edit Diameter” (4), enter the cluster number you created into the “Part #” field (5). Update (6) and close the database.</span></p>
+</td>
+<td valign="top" width="197" style="width:197px;"><p class="p_Notes"><img src="embim214.png" width="390" height="315" vspace="1" hspace="1" border="0" alt=""></p>
+</td>
+</tr>
+<tr style="text-align:left;vertical-align:top;">
+<td valign="top" width="438" style="width:438px;"><p class="p_Notes"><span class="f_Notes">&nbsp;</span></p>
+</td>
+<td valign="top" width="197" style="width:197px;"><p class="p_Notes"><span class="f_Notes">&nbsp;</span></p>
+</td>
+</tr>
+<tr style="text-align:left;vertical-align:top;">
+<td valign="top" width="438" style="width:438px;"><p class="p_Notes"><span class="f_Notes">&nbsp;</span></p>
+</td>
+<td valign="top" width="197" style="width:197px;"><p class="p_Notes"><span class="f_Notes">&nbsp;</span></p>
+</td>
+</tr>
+</table>
+</div>
+<p class="p_Notes"><span class="f_Notes">Repeat Step 1 &amp; 2 for all the pipe diameters, then do your designs as normal. After the design process, you can view the bill of material report showing your connectors associated with your pipes as follows:</span></p>
+<div style="text-align: left; text-indent: 10px; padding: 0px 0px 0px 0px; margin: 0px 0px 0px 0px;"><table cellspacing="0" cellpadding="4" border="0" style="border: none; border-spacing:0px;">
+<tr style="text-align:left;vertical-align:top;">
+<td valign="top" width="316" style="width:316px;"><p style="text-indent: 0px;"><span class="f_Notes">Step 3: To view the bill of material report, go to (1) Global, then choose the blocks you want to view a report of (2). Make sure you select “Parts &amp; Pipe” (3) and run the “Report” (4).</span></p>
+</td>
+<td valign="top" width="316" style="width:316px;"><p style="text-indent: 0px;"><img src="embim215.png" width="263" height="281" vspace="1" hspace="1" border="0" alt=""></p>
+</td>
+</tr>
+<tr style="text-align:left;vertical-align:top;">
+<td valign="top" width="316" style="width:316px;"><p style="text-indent: 0px;"><span style="color: #000000;">&nbsp;</span></p>
+</td>
+<td valign="top" width="316" style="width:316px;"><p style="text-indent: 0px;"><span style="color: #000000;">&nbsp;</span></p>
+</td>
+</tr>
+</table>
+</div>
+<p style="text-indent: 0px; margin: 0px 0px 13px 0px;"><img src="embim216.png" width="661" height="672" vspace="1" hspace="1" border="0" alt=""></p>
+<p class="p_Notes"><span class="f_Notes">In the report you will see the cluster number (A) applied to, in this case only 15/3 LDPE pipe for a single block (the current block based on our selection in the previous step). The slope length of pipe used in the block is 127m (B). The Cluster total cost (C) divided by the length of the 100m (D) roll of pipe, gives us a price per meter of 1.55 (E) value is rounded to 2 decimals. This brings us to a total cost of 127 (B) x 1.55 (E) = 196.47 (F). And because the part in the database consist of a 100m roll (D), we need 2 clusters to provide enough pipe to provide enough material for the installation, bringing our absolute cost to 309.40 (G) for the 15/3 LDPE pipe in this specific irrigation block. Best of all is, the coupling and clamps are also accounted for and will not be forgotten.</span></p>
+
+</td></tr></table>
+
+</body>
+</html>

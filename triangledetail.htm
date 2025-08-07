@@ -1,0 +1,109 @@
+<!DOCTYPE HTML PUBLIC "-//W3C//DTD HTML 4.01 Transitional//EN">
+<html>
+<head>
+   <title>TRIANGLE : Detail</title>
+   <meta name="generator" content="Help &amp; Manual" />
+   <meta name="keywords" content="ADD,Automatic,Detail,Line,TRIANGLES" />
+   <meta http-equiv="Content-Type" content="text/html; charset=ISO-8859-1" />
+   <meta http-equiv="Content-Style-Type" content="text/css" />
+   <link type="text/css" href="default.css" rel="stylesheet" />
+
+<script type="text/javascript" src="helpman_topicinit.js"></script>
+</head>
+<body style="margin: 0px 0px 0px 0px; background: #FFFFFF;">
+
+
+<table width="100%" border="0" cellspacing="0" cellpadding="5" bgcolor="#D0D0D0">
+  <tr valign="middle">
+    <td align="left">
+      <p class="p_Heading1"><span class="f_Heading1">TRIANGLE : Detail</span></p>
+
+    </td>
+    <td align="right">
+     <span style="font-size: 9pt">
+     <a href="start_up.htm">Top</a>&nbsp;
+     <a href="triangle___cross_section.htm">Previous</a>&nbsp;
+     <a href="triangle___csearch.htm">Next</a>
+     </span>
+    </td>
+  </tr>
+</table>
+
+
+<!-- Placeholder for topic body. -->
+<table width="100%" border="0" cellspacing="0" cellpadding="5"><tr valign="top"><td align="left">
+<p class="p_Heading1"><span class="f_Heading1">&nbsp;</span></p>
+<p class="p_Heading1"><span class="f_rrelatedtopic">MENU : Tri - DeT</span></p>
+<p class="p_Heading1"><span style="font-size: 5pt; color: #010100;">&nbsp;</span></p>
+<p class="p_Heading1"><span style="font-size: 9pt; color: #010100;">Generate CAD lines or strings using DTM points with selected codes or tags.</span></p>
+<p class="p_Heading1"><span class="f_Heading1">&nbsp;</span></p>
+<p class="p_Heading1"><span style="font-size: 12pt; color: #010100;"> </span><img src="clip0312.png" width="495" height="198" border="0" alt="clip0312"></p>
+<p class="p_Heading1"><span class="f_Heading1">&nbsp;</span></p>
+<div style="text-align: left; text-indent: 0px; padding: 0px 0px 0px 0px; margin: 0px 0px 0px 0px;"><table cellspacing="0" cellpadding="1" border="0" style="border: none; border-spacing:0px;">
+<tr style="text-align:left;vertical-align:top;">
+<td valign="top" width="212" style="width:212px;"><p class="p_Heading1"><a name="actiontype"></a><span class="f_CourierFixed"> Action Type</span></p>
+<p class="p_Heading1"><span style="font-size: 12pt;"> </span><img src="clip0313.png" width="203" height="165" border="0" alt="clip0313"></p>
+</td>
+<td valign="top" width="517" style="width:517px;"><p class="p_Heading1"><span class="f_Heading1">&nbsp;</span></p>
+<p class="p_Heading1"><span style="font-size: 9pt; font-weight: bold; color: #010100;">1) By characters</span></p>
+<p class="p_Heading1"><span style="font-size: 9pt; color: #010100;">Draw detail lines between DTM points that use the &lt; &gt; and @ characters.  </span></p>
+<p class="p_Heading1"><span style="font-size: 9pt; color: #010100;">Use this function to automatically help in preparing a detailed contour plan based on intelligent information associated with the codes of the surveyed points.  </span></p>
+<p class="p_Heading1"><span class="f_Heading1">&nbsp;</span></p>
+<p class="p_Heading1"><span style="font-size: 9pt; font-style: italic; font-weight: bold; color: #ff0000;">Note: </span></p>
+<p class="p_Heading1"><span style="font-size: 9pt; color: #010100;">The survey points with these codes must be sequential in the file. If the code of a survey point starts with &gt;, e.g. &gt;A or &gt;01, Model Maker will join all the following A or 01 codes with a detail line. To end the detail line, start the code with a &lt;. If the detail line needs to stop and be joined with the first survey point on the detail line, the code of the point to be joined with the first is started with a @. &nbsp;The following is an example of detail codes: &nbsp;01 &gt;02 &nbsp;02 &nbsp;02 &lt;02 &nbsp;03 &gt;02 &nbsp;02 @02 &gt;03 &lt;03 </span></p>
+<p class="p_Heading1"><span class="f_Heading1">&nbsp;</span></p>
+<p class="p_Heading1"><span style="font-size: 9pt; font-weight: bold; color: #010100;">2) By sequential codes</span></p>
+<p class="p_Heading1"><span style="font-size: 9pt; color: #010100;">Draw string or CAD lines between DTM points that have the same codes and were surveyed in sequential order.  </span></p>
+<p class="p_Heading1"><span style="font-size: 9pt; color: #010100;">The DTM database is scanned from the top. The line will start at the first occurrence of the code and will join to the points following it. Points without the selected code will be skipped. </span></p>
+<p class="p_Heading1"><span class="f_Heading1">&nbsp;</span></p>
+<p class="p_Heading1"><span style="font-size: 9pt; font-weight: bold; color: #010100;">3) All points in sequence</span></p>
+<p class="p_Heading1"><span style="font-size: 9pt; color: #010100;">All the points will be joined no matter what the codes are. Model Maker will start with the first point and end with the last.</span></p>
+<p class="p_Heading1"><span class="f_Heading1">&nbsp;</span></p>
+<p class="p_Heading1"><span style="font-size: 9pt; font-weight: bold; color: #010100;">4) Selected points</span></p>
+<p class="p_Heading1"><span style="font-size: 9pt; color: #010100;">This option provides the most controlled way of generating detail lines.</span></p>
+<p class="p_Heading1"><span style="font-size: 9pt; color: #010100;">Use the SCAN button to generate all the codes/tags that were used in the current project. From this list, select either ALL the codes or, with the mouse and CTRL &amp; SHIFT keys define, the desired ones.</span></p>
+<p class="p_Heading1"><span style="font-size: 9pt; color: #010100;">On the left, use the DEFINE CODE/TAG input box to select a range of points. The full code of the points may be entered or a range can be selected by using the * wild character key. &nbsp;For example, T***** will select all the codes Tree, Top, Tennis etc. Double click the input box to activate the selection.</span></p>
+<p class="p_Heading1"><span class="f_Heading1">&nbsp;</span></p>
+<p class="p_Heading1"><span style="font-size: 9pt; font-weight: bold; color: #010100;">5) Incremental codes/tags</span></p>
+<p class="p_Heading1"><span style="font-size: 9pt; color: #010100;">This function allows you to add lines between points with codes like A1, A2, A3 etc.</span></p>
+<p class="p_Heading1"><span class="f_Heading1">&nbsp;</span></p>
+<p class="p_Heading1"><span style="font-size: 9pt; font-weight: bold; color: #010100;">6) DTM - along indicated line</span></p>
+<p class="p_Heading1"><span style="font-size: 9pt; color: #010100;">Add lines between DTM points with the same code that lies in an approximate straight line. Lines will be added to points within a set distance from a given temporary center line. Press Esc to skip a point.</span></p>
+</td>
+</tr>
+</table>
+</div>
+<p class="p_Heading1"><span style="font-size: 9pt; font-weight: bold; color: #010100;">7) Auto - within set angle</span></p>
+<p class="p_Heading1"><span style="font-size: 9pt; color: #010100;">Add lines between DTM points with the same code that lies in an approximate straight line and where the change in direction between lines connecting the points is less than a given value. &nbsp; </span></p>
+<p class="p_Heading1"><span class="f_Heading1">&nbsp;</span></p>
+<p class="p_Heading1"><img src="_bm1178.png" width="280" height="63" border="0" alt="_bm1178"></p>
+<p class="p_Heading1"><span class="f_Heading1">&nbsp;</span></p>
+<p class="p_Heading1"><span style="font-size: 9pt; color: #010100;">The light green lines are not actually drawn but are only indicated for this example.</span></p>
+<p class="p_Heading1"><span style="font-size: 9pt; color: #010100;">In the example, point 1 to 8 have the same code. Join the first line from point 1 to 2 and enter the search angle (A). </span></p>
+<p class="p_Heading1"><span style="font-size: 9pt; font-weight: bold; color: #010100;">Model Maker</span><span style="font-size: 9pt; color: #010100;"> will now look for the first point with the correct code falling within the view angle (A). </span></p>
+<p class="p_Heading1"><span style="font-size: 9pt; color: #010100;">This is point # 3. The line through 2 and 3 is now taken as the base and, with angle (A), the search continues for point 4.</span></p>
+<p class="p_Heading1"><span style="font-size: 9pt; color: #010100;">Note that although point 3A has the same code as points 1 - 8, the search angle, based on the line through 2 to 3, prevents it from being used in the process because it is to wide.</span></p>
+<p class="p_Heading1"><span style="font-size: 9pt; color: #010100;">Confirm each new point. </span></p>
+<p class="p_Heading1"><span class="f_Heading1">&nbsp;</span></p>
+<p class="p_Heading1"><img src="clip1385.png" width="758" height="21" border="0" alt="clip1385"></p>
+<p class="p_Heading1"><span style="font-size: 9pt; color: #010100;">The yellow toolbar at the bottom of the page will give you information regarding the points that are being connected. You may also click the yellow toolbar if you want the program to generate the new line without confirmation each time. </span></p>
+<p class="p_Heading1"><span style="font-size: 9pt; color: #010100;">This is handy if you have a long line and don't need to interrupt the sequence.</span></p>
+<p class="p_Heading1"><span class="f_Heading1">&nbsp;</span></p>
+<p class="p_Heading1"><span style="font-size: 9pt; color: #010100;">Most of the work involved in preparing a detailed contour map goes into joining road edges, fences, telephone lines etc. with CAD lines. The functions on this dialog assist in automating the initial connection of lines that represent above mentioned detail or break lines. </span></p>
+<p class="p_Heading1"><span style="font-size: 9pt; color: #010100;">More than 50% of the CAD work can be done with this function if the field work is done with care in terms of the position and sequence of where the DTM spots were taken.</span></p>
+<p class="p_Heading1"><span class="f_Heading1">&nbsp;</span></p>
+<p class="p_Heading1"><span style="font-size: 12pt; color: #010100;"> </span><span class="f_CourierFixed">Output Results</span></p>
+<p class="p_Heading1"><span style="font-size: 6pt; color: #010100;">&nbsp;</span></p>
+<p class="p_Heading1"><span style="font-size: 12pt; color: #010100;"> </span><img src="clip0314.png" width="126" height="135" border="0" alt="clip0314"></p>
+<p class="p_Heading1"><span style="font-size: 9pt; color: #010100;">This box regulates the output destination. The CAD lines and strings option will only be available if the specific program modules have been purchased. Use the display only option if you first want to inspect the results before converting it to elements.</span></p>
+<p class="p_Heading1"><span style="font-size: 9pt; color: #010100;">Use the maximum leg length to skip the connection between points far apart and not relevant to the project.</span></p>
+<p class="p_Heading1"><span class="f_Heading1">&nbsp;</span></p>
+<p class="p_Heading1"><span class="f_rrelatedtopic">Related topics: </span></p>
+<p class="p_Heading1"><span style="font-size: 9pt; color: #010100;"><a href="main_cad.htm">CAD</a></span></p>
+<p class="p_Heading1"><span style="font-size: 9pt; color: #000080;"><a href="strings__gxt_.htm">Strings</a></span></p>
+<p class="p_Heading1"><span class="f_Heading1">&nbsp;</span></p>
+
+</td></tr></table>
+
+</body>
+</html>

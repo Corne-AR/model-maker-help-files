@@ -1,0 +1,349 @@
+<!DOCTYPE HTML PUBLIC "-//W3C//DTD HTML 4.01 Transitional//EN">
+<html>
+<head>
+   <title>UTILITY : Electronic data</title>
+   <meta name="generator" content="Help &amp; Manual" />
+   <meta name="keywords" content="BOOKER,Capture,Data,Earth Radius,Electronic,Field book,Geographical,Import,Reduce data,Sea level,TCTOOLS,Temperature,UTILITIES" />
+   <meta http-equiv="Content-Type" content="text/html; charset=ISO-8859-1" />
+   <meta http-equiv="Content-Style-Type" content="text/css" />
+   <link type="text/css" href="default.css" rel="stylesheet" />
+
+<script type="text/javascript" src="helpman_topicinit.js"></script>
+<object id=hhctrl_119 type="application/x-oleobject" classid="clsid:adb880a6-d8ff-11cf-9377-00aa003b7a11"><param name="Command" value="ALink"><param name="Window" value="second"><param name="Item1" value=""><param name="Item2" value="$topicid_ExampleofMultisurve"></object><object id=hhctrl_120 type="application/x-oleobject" classid="clsid:adb880a6-d8ff-11cf-9377-00aa003b7a11"><param name="Command" value="ALink"><param name="Window" value="second"><param name="Item1" value=""><param name="Item2" value="$topicid_ExampleofCsvformat"></object><object id=hhctrl_121 type="application/x-oleobject" classid="clsid:adb880a6-d8ff-11cf-9377-00aa003b7a11"><param name="Command" value="ALink"><param name="Window" value="second"><param name="Item1" value=""><param name="Item2" value="$topicid_Example_of_XML_formats"></object></head>
+<body style="margin: 0px 0px 0px 0px; background: #FFFFFF;">
+
+
+<table width="100%" border="0" cellspacing="0" cellpadding="5" bgcolor="#D0D0D0">
+  <tr valign="middle">
+    <td align="left">
+      <p class="p_Heading1"><span class="f_Heading1">UTILITY : Electronic data</span></p>
+
+    </td>
+    <td align="right">
+     <span style="font-size: 9pt">
+     <a href="start_up.htm">Top</a>&nbsp;
+     <a href="utilitydownloaddata.htm">Previous</a>&nbsp;
+     <a href="uexampleoftopcondata.htm">Next</a>
+     </span>
+    </td>
+  </tr>
+</table>
+
+
+<!-- Placeholder for topic body. -->
+<table width="100%" border="0" cellspacing="0" cellpadding="5"><tr valign="top"><td align="left">
+<p class="p_Heading1"><span style="font-size: 12pt; font-weight: bold; color: #010100;">CAP</span></p>
+<p class="p_Heading1"><span class="f_rrelatedtopic">MENU : Utility - Electronic data</span></p>
+<p class="p_Heading1"><span class="f_Heading1">&nbsp;</span></p>
+<p class="p_Heading1"><span class="f_Heading1">&nbsp;</span></p>
+<p class="p_Heading1"><span style="font-size: 9pt; font-weight: bold; color: #010100;">This utility is used to import and convert survey data from various electronic data recorders, into </span><span style="font-size: 9pt; font-weight: bold; color: #0000ff;">Model Maker.</span><span style="font-size: 9pt; color: #0000ff;"> </span></p>
+<p class="p_Heading1"><span class="f_Heading1">&nbsp;</span></p>
+<p class="p_Heading1"><span style="font-size: 9pt; font-weight: bold; color: #010100;">The process works as follows</span><span style="font-size: 9pt; color: #010100;">.</span></p>
+<p class="p_Heading1"><span style="font-size: 9pt; font-weight: bold; color: #010100;">1) </span><span style="font-size: 9pt; color: #010100;">Some kind of hand held computer or device on your survey instrument is used to record your survey data.</span></p>
+<p style="text-indent: -23px; margin: 0px 0px 0px 24px;"><span style="font-size: 9pt; color: #010100;">2) A communication program is used to download the data from your capturing device onto your computer. These programs are normally made available by the supplier of your</span></p>
+<p style="text-indent: -23px; margin: 0px 0px 0px 24px;"><span style="font-size: 9pt; color: #010100;"> &nbsp; &nbsp; survey instrument or you can try and use the <a href="utilitydownloaddata.htm">Download</a> function on this menu.</span></p>
+<p style="text-indent: -23px; margin: 0px 0px 0px 24px;"><span style="font-size: 9pt; font-weight: bold; color: #010100;">3) </span><span style="font-size: 9pt; color: #010100;">The applicable function on this dialog box, relative to your data format, is selected. Model Maker will then read the survey file, use the applicable formulas and reduce the</span></p>
+<p style="text-indent: -23px; margin: 0px 0px 0px 24px;"><span style="font-size: 9pt; color: #010100;"> &nbsp; &nbsp; observations to final co-ordinates.</span></p>
+<p style="text-indent: 0px;"><span style="font-size: 9pt; font-weight: bold; color: #010100;">4)</span><span style="font-size: 9pt; color: #010100;"> The reduced data is stored in the DTM <a href="data_base.htm">data base</a>. There it can be edited and the normal <a href="plotmanipulate.htm">plotting functions</a> used to display the data on the screen.</span></p>
+<p style="text-indent: 0px;"><span style="font-size: 9pt; font-weight: bold; color: #010100;">5)</span><span style="font-size: 9pt; color: #010100;"> Finally the <a href="file___open___save_menu.htm">File Save</a> options are used to save the data in a Model Maker file format.</span></p>
+<p style="text-indent: 0px;"><span style="color: #000000;">&nbsp;</span></p>
+<p style="text-indent: 0px;"><span style="font-size: 9pt; font-weight: bold; color: #010100;">Two file types are normally used to complete the reduction of the survey points.</span></p>
+<p style="text-indent: 0px;"><span style="font-size: 9pt; font-weight: bold; color: #010100;">1) &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp;</span><span style="font-size: 9pt; color: #010100;">The observation file which holds the data of the station setup and surveyed points.</span></p>
+<p style="text-indent: 0px;"><span style="font-size: 9pt; font-weight: bold; color: #010100;">2) &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp;</span><span style="font-size: 9pt; color: #010100;">The co-ordinate file which holds the coordinate values of the position of the setups and the trig beacons.</span></p>
+<p style="text-indent: 0px;"><span style="color: #000000;">&nbsp;</span></p>
+<p style="text-indent: 0px;"><span style="font-size: 9pt; color: #010100;">The actual process of locating the observation and co-ordinate files on your data recorder and transferring them onto your computer varies from one survey instrument type to another survey instrument type. The following discussions assumes that you are able to download the 2 required files and that they are on your computer and available to be processed.</span></p>
+<p style="text-indent: 0px;"><span style="color: #000000;">&nbsp;</span></p>
+<p style="text-indent: 0px;"><span style="font-size: 9pt; color: #010100;"> &nbsp; </span><map name="map85"><area shape="rect" coords="36,241,196,265" href="utilitydownloaddata.htm" alt=""><area shape="rect" coords="25,354,102,380" href="files___editor.htm" alt=""><area shape="rect" coords="84,64,199,87" href="utilityelectronicdatapar_.htm" alt=""><area shape="rect" coords="88,27,216,54" href="utilitytrigdata.htm" alt=""></map><img src="clip0123.png" width="335" height="422" border="0" alt="clip0123" usemap="#map85"></p>
+<p style="text-indent: 0px;"><span style="color: #000000;">&nbsp;</span></p>
+<p style="text-indent: 0px;"><span class="f_CourierFixed">TRIG data</span></p>
+<p style="text-indent: 0px;"><span style="font-size: 9pt; color: #010100;">Use this button to access the <a href="utilitytrigdata.htm">trig data</a> editor. In that dialog box you will find the necessary functions to manipulate and maintain the trig (control) co-ordinate data base.</span></p>
+<p style="text-indent: 0px;"><span style="color: #000000;">&nbsp;</span></p>
+<p style="text-indent: 0px;"><span class="f_CourierFixed">Data Format</span></p>
+<p style="text-indent: 0px;"><span style="color: #000000;">&nbsp;</span></p>
+<div style="text-align: left; text-indent: 0px; padding: 0px 0px 0px 0px; margin: 0px 0px 0px 0px;"><table cellspacing="0" cellpadding="1" border="0" style="border: none; border-spacing:0px;">
+<tr style="text-align:left;vertical-align:top;">
+<td valign="top" width="90" style="width:90px;"><p class="p_Heading1"><span class="f_Heading1">&nbsp;</span></p>
+<p class="p_Heading1"><span style="font-size: 12pt;"> </span><img src="clip0125.png" width="84" height="31" border="0" alt="clip0125"></p>
+</td>
+<td valign="top" width="596" style="width:596px;"><p style="text-indent: 0px;"><span style="color: #000000;">&nbsp;</span></p>
+<p style="text-indent: 0px;"><span class="f_CourierFixed">Gre</span></p>
+<p style="text-indent: 0px;"><span style="font-size: 5pt; color: #010100;">&nbsp;</span></p>
+<p style="text-indent: 0px;"><span style="font-size: 9pt; color: #010100;">Load and reduce data recorded in the standard GRE format. </span></p>
+<p style="text-indent: 0px;"><span style="font-size: 9pt; color: #010100;">The default file extension is </span><span style="font-size: 9pt; font-weight: bold; color: #010100;">GRE</span><span style="font-size: 9pt; color: #010100;"> but can be changed by pressing</span></p>
+<p style="text-indent: 0px;"><span style="font-size: 9pt; color: #010100;"> the right mouse button while pointing to the GRE button.</span></p>
+<p style="text-indent: 0px;"><span style="color: #000000;">&nbsp;</span></p>
+<p style="text-indent: 0px;"><span style="font-size: 9pt; color: #010100;">Two GRE formats are used.</span></p>
+<p style="text-indent: 0px;"><span style="font-size: 9pt; color: #010100;">Two line station setup &nbsp; &nbsp; &nbsp; &nbsp;: The Station information is on line 1and the orientation information on line 2.</span></p>
+<p style="text-indent: 0px;"><span style="font-size: 9pt; color: #010100;">Three line station setup &nbsp; &nbsp; &nbsp; &nbsp;: The Station information is on line 1, the prism information on line 2 and the &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; orientation information on line 3.</span></p>
+<p style="text-indent: 0px;"><span style="color: #000000;">&nbsp;</span></p>
+<p style="text-indent: 0px;"><span style="font-size: 9pt; color: #010100;">Inspect your specific data file and determine which of the options must be use. Inspect your results afterwards.</span></p>
+<p class="p_Heading1"><span class="f_Heading1">&nbsp;</span></p>
+</td>
+</tr>
+<tr style="text-align:left;vertical-align:top;">
+<td valign="top" width="90" style="width:90px;"><p class="p_Heading1"><span class="f_Heading1">&nbsp;</span></p>
+<p class="p_Heading1"><span style="font-size: 12pt;"> </span><img src="clip0126.png" width="85" height="33" border="0" alt="clip0126"></p>
+</td>
+<td valign="top" width="596" style="width:596px;"><p style="text-indent: 0px;"><span style="color: #000000;">&nbsp;</span></p>
+<p style="text-indent: 0px;"><span class="f_CourierFixed">Sdr</span></p>
+<p style="text-indent: 0px;"><span style="font-size: 5pt; color: #010100;">&nbsp;</span></p>
+<p style="text-indent: 0px;"><span style="font-size: 9pt; color: #010100;">Load and reduce data recorded in the standard SDR format. The default file extension is </span><span style="font-size: 9pt; font-weight: bold; color: #010100;">SDR</span><span style="font-size: 9pt; color: #010100;"> but can be changed by pressing the right mouse button while pointing to the SDR button. </span></p>
+<p style="text-indent: 0px;"><span style="font-size: 9pt; color: #010100;">Model Maker can accommodate 4 different SDR formats. (<a href="utilityelectronicdataex1.htm">Examples</a>)</span></p>
+<p style="text-indent: 0px;"><span style="width:24px">&nbsp;</span> &nbsp; &nbsp; &nbsp; &nbsp;<span style="font-size: 9pt; color: #010100;">Final co-ordinates &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp;: The SDR file contains final reduced co-ordinates.</span></p>
+<p style="text-indent: 0px;"><span style="width:24px">&nbsp;</span> &nbsp; &nbsp; &nbsp; &nbsp;<span style="font-size: 9pt; color: #010100;">Unreduced readings &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp;: SDR survey data that must be converted to horizontal distance and height difference before the co-ordinates are calculated.</span></p>
+<p style="text-indent: 0px;"><span style="width:24px">&nbsp;</span> &nbsp; &nbsp; &nbsp; &nbsp;<span style="font-size: 9pt; color: #010100;">Reduced readings &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp;: SDR already in the format of horizontal distance and height difference.</span></p>
+<p style="text-indent: 0px;"><span style="width:24px">&nbsp;</span> &nbsp; &nbsp; &nbsp; &nbsp;<span style="font-size: 9pt; color: #010100;">SDR 33 model &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp;: SDR data in the model 33 format.</span></p>
+<p style="text-indent: 0px;"><span style="font-size: 9pt; color: #010100;">If you are using these options for the first time, use the function most applicable to your survey data but also inspect the results carefully afterwards.</span></p>
+<p style="text-indent: 0px;"><span style="color: #000000;">&nbsp;</span></p>
+<p style="text-indent: 0px;"><span class="f_CourierFixed">Gsi</span></p>
+<p style="text-indent: 0px;"><span style="font-size: 9pt; color: #010100;">Load and reduce data in the GSI format. (<a href="utilityelectronicdataex1.htm">Example</a>) The default file extension is </span><span style="font-size: 9pt; font-weight: bold; color: #010100;">GSI</span><span style="font-size: 9pt; color: #010100;"> but can be changed by pressing the right mouse button while pointing to the GSI button. The GSI format is based on the REC format with a few item codes that are different.</span></p>
+</td>
+</tr>
+<tr style="text-align:left;vertical-align:top;">
+<td valign="top" width="90" style="width:90px;"><p class="p_Heading1"><span class="f_Heading1">&nbsp;</span></p>
+<p class="p_Heading1"><span style="font-size: 9pt;"> </span><img src="clip0128.png" width="85" height="33" border="0" alt="clip0128"></p>
+</td>
+<td valign="top" width="596" style="width:596px;"><p class="p_Heading1"><span class="f_Heading1">&nbsp;</span></p>
+<p style="text-indent: 0px;"><span class="f_CourierFixed">Booker</span></p>
+<p style="text-indent: 0px;"><span style="font-size: 9pt; color: #010100;">Load and reduce data in the standard BOOKER format. (<a href="utilityelectronicdataex1.htm">Example</a>) The default file extension is </span><span style="font-size: 9pt; font-weight: bold; color: #010100;">BKR</span><span style="font-size: 9pt; color: #010100;"> but can be changed by pressing the right mouse button while pointing to the Booker button. </span></p>
+</td>
+</tr>
+<tr style="text-align:left;vertical-align:top;">
+<td valign="top" width="90" style="width:90px;"><p class="p_Heading1"><span class="f_Heading1">&nbsp;</span></p>
+<p class="p_Heading1"><span style="font-size: 9pt;"> </span><img src="clip0129.png" width="85" height="31" border="0" alt="clip0129"></p>
+</td>
+<td valign="top" width="596" style="width:596px;"><p class="p_Heading1"><span class="f_Heading1">&nbsp;</span></p>
+<p style="text-indent: 0px;"><span class="f_CourierFixed">gRm</span></p>
+<p style="text-indent: 0px;"><span style="font-size: 9pt; color: #010100;">Load and reduce data in the standard new GRM format. (<a href="utilityelectronicdataex1.htm">Example</a>) The default file extension is </span><span style="font-size: 9pt; font-weight: bold; color: #010100;">GRM</span><span style="font-size: 9pt; color: #010100;"> but can be changed by pressing the right mouse button while pointing to the GRM button. </span></p>
+</td>
+</tr>
+<tr style="text-align:left;vertical-align:top;">
+<td valign="top" width="90" style="width:90px;"><p class="p_Heading1"><span class="f_Heading1">&nbsp;</span></p>
+<p class="p_Heading1"><span style="font-size: 9pt;"> </span><img src="clip0131.png" width="84" height="31" border="0" alt="clip0131"></p>
+</td>
+<td valign="top" width="596" style="width:596px;"><p class="p_Heading1"><span class="f_Heading1">&nbsp;</span></p>
+<p style="text-indent: 0px;"><span class="f_CourierFixed">Organisur</span><span style="font-size: 9pt; font-weight: bold; color: #804000;">  </span></p>
+<p style="text-indent: 0px;"><span style="font-size: 9pt; color: #010100;">Load and reduce data in the standard ORGANISUR format. (<a href="utilityelectronicdataex1.htm">Example</a>) The default file extension is </span><span style="font-size: 9pt; font-weight: bold; color: #010100;">ORG</span><span style="font-size: 9pt; color: #010100;"> but can be changed by pressing the right mouse button while pointing to the Organisur button. </span></p>
+</td>
+</tr>
+<tr style="text-align:left;vertical-align:top;">
+<td valign="top" width="90" style="width:90px;"><p class="p_Heading1"><span class="f_Heading1">&nbsp;</span></p>
+<p class="p_Heading1"><span style="font-size: 9pt;"> </span><img src="clip0133.png" width="84" height="31" border="0" alt="clip0133"></p>
+</td>
+<td valign="top" width="596" style="width:596px;"><p style="text-indent: 0px;"><span style="color: #000000;">&nbsp;</span></p>
+<p style="text-indent: 0px;"><span class="f_CourierFixed">Logger</span></p>
+<p style="text-indent: 0px;"><span style="font-size: 9pt; color: #010100;">Load and reduce data in the standard LOGGEr format. (<a href="utilityelectronicdataex1.htm">Example</a>) The default file extension is </span><span style="font-size: 9pt; font-weight: bold; color: #010100;">ODB</span><span style="font-size: 9pt; color: #010100;"> but can be changed by pressing the right mouse button while pointing to the Logger button.</span></p>
+</td>
+</tr>
+<tr style="text-align:left;vertical-align:top;">
+<td valign="top" width="90" style="width:90px;"><p class="p_Heading1"><span class="f_Heading1">&nbsp;</span></p>
+<p class="p_Heading1"><span style="font-size: 9pt;"> </span><img src="clip0134.png" width="83" height="33" border="0" alt="clip0134"></p>
+</td>
+<td valign="top" width="596" style="width:596px;"><p style="text-indent: 0px;"><span style="color: #000000;">&nbsp;</span></p>
+<p style="text-indent: 0px;"><span class="f_CourierFixed">rEc module</span></p>
+<p style="text-indent: 0px;"><span style="font-size: 9pt; color: #010100;">Load and reduce data in the Rec module format. (<a href="utilityelectronicdataex1.htm">Example</a>) The default file extension is </span><span style="font-size: 9pt; font-weight: bold; color: #010100;">REC</span><span style="font-size: 9pt; color: #010100;"> but can be changed by pressing the right mouse button while pointing to the REC button. </span></p>
+</td>
+</tr>
+<tr style="text-align:left;vertical-align:top;">
+<td valign="top" width="90" style="width:90px;"><p class="p_Heading1"><span class="f_Heading1">&nbsp;</span></p>
+<p class="p_Heading1"><span style="font-size: 9pt;"> </span><img src="clip0135.png" width="85" height="31" border="0" alt="clip0135"></p>
+</td>
+<td valign="top" width="596" style="width:596px;"><p style="text-indent: 0px;"><span style="color: #000000;">&nbsp;</span></p>
+<p style="text-indent: 0px;"><span class="f_CourierFixed">Yoms</span></p>
+<p style="text-indent: 0px;"><span style="font-size: 9pt; color: #010100;">Load and reduce data in the YOMS format. (<a href="utilityelectronicdataex1.htm">Example</a>) The default file extension is </span><span style="font-size: 9pt; font-weight: bold; color: #010100;">YOM</span><span style="font-size: 9pt; color: #010100;"> but can be changed by pressing the right mouse button while pointing to the YOM button. </span></p>
+</td>
+</tr>
+<tr style="text-align:left;vertical-align:top;">
+<td valign="top" width="90" style="width:90px;"><p class="p_Heading1"><span class="f_Heading1">&nbsp;</span></p>
+<p class="p_Heading1"><span style="font-size: 9pt;"> </span><img src="clip0136.png" width="85" height="32" border="0" alt="clip0136"></p>
+</td>
+<td valign="top" width="596" style="width:596px;"><p class="p_Heading1"><span class="f_Heading1">&nbsp;</span></p>
+<p style="text-indent: 0px;"><span class="f_CourierFixed">Qess</span><span style="font-size: 9pt; font-weight: bold; color: #804000;">  </span></p>
+<p style="text-indent: 0px;"><span style="font-size: 9pt; color: #010100;">Load and reduce data in the QESS format. (<a href="utilityelectronicdataex1.htm">Example</a>) The default file extension is </span><span style="font-size: 9pt; font-weight: bold; color: #010100;">MMK</span><span style="font-size: 9pt; color: #010100;"> but can be changed by pressing the right mouse button while pointing to the QESS button. </span></p>
+</td>
+</tr>
+<tr style="text-align:left;vertical-align:top;">
+<td valign="top" width="90" style="width:90px;"><p class="p_Heading1"><span class="f_Heading1">&nbsp;</span></p>
+<p class="p_Heading1"><span style="font-size: 9pt;"> </span><img src="clip0137.png" width="84" height="31" border="0" alt="clip0137"></p>
+</td>
+<td valign="top" width="596" style="width:596px;"><p class="p_Heading1"><span class="f_Heading1">&nbsp;</span></p>
+<p style="text-indent: 0px;"><span class="f_CourierFixed">Surpac</span><span style="font-size: 9pt; font-weight: bold; color: #804000;"> </span><span class="f_CourierFixed">ASCII</span></p>
+<p style="text-indent: 0px;"><span style="font-size: 9pt; color: #010100;">Load data from the Surpac program's ASCII file format. The default file extension is </span><span style="font-size: 9pt; font-weight: bold; color: #010100;">OBA</span><span style="font-size: 9pt; color: #010100;"> but can be changed by pressing the right mouse button while pointing to the Surpac button. </span></p>
+<p class="p_Heading1"><span class="f_Heading1">&nbsp;</span></p>
+</td>
+</tr>
+<tr style="text-align:left;vertical-align:top;">
+<td valign="top" width="90" style="width:90px;"><p class="p_Heading1"><span class="f_Heading1">&nbsp;</span></p>
+<p class="p_Heading1"><span style="font-size: 9pt;"> </span><img src="clip0139.png" width="85" height="33" border="0" alt="clip0139"></p>
+</td>
+<td valign="top" width="596" style="width:596px;"><p class="p_Heading1"><span class="f_Heading1">&nbsp;</span></p>
+<p style="text-indent: 0px;"><span class="f_CourierFixed">Geodimeter</span></p>
+<p style="text-indent: 0px;"><span style="font-size: 9pt; color: #010100;">Load co-ordinates in the Geodimeter format. The default file extension is</span><span style="font-size: 9pt; font-weight: bold; color: #010100;"> ARE</span><span style="font-size: 9pt; color: #010100;"> but can be changed by pressing the right mouse button while pointing to the Geodimeter button.</span></p>
+</td>
+</tr>
+<tr style="text-align:left;vertical-align:top;">
+<td valign="top" width="90" style="width:90px;"><p class="p_Heading1"><span class="f_Heading1">&nbsp;</span></p>
+<p class="p_Heading1"><span style="font-size: 9pt;"> </span><img src="clip0140.png" width="83" height="31" border="0" alt="clip0140"></p>
+</td>
+<td valign="top" width="596" style="width:596px;"><p class="p_Heading1"><span class="f_Heading1">&nbsp;</span></p>
+<p style="text-indent: 0px;"><span class="f_CourierFixed">Geo600</span></p>
+<p style="text-indent: 0px;"><span style="font-size: 9pt; color: #010100;">Load and reduce data in the Geodimeter fieldbook format. (<a href="utilityelectronicdataex1.htm">Example</a>) The default file extension is </span><span style="font-size: 9pt; font-weight: bold; color: #010100;">OBS</span><span style="font-size: 9pt; color: #010100;"> but can be changed by pressing the right mouse button while pointing to the GEO600 button. </span></p>
+</td>
+</tr>
+<tr style="text-align:left;vertical-align:top;">
+<td valign="top" width="90" style="width:90px;"><p class="p_Heading1"><span class="f_Heading1">&nbsp;</span></p>
+<p class="p_Heading1"><span style="font-size: 9pt;"> </span><img src="clip0142.png" width="85" height="31" border="0" alt="clip0142"></p>
+</td>
+<td valign="top" width="596" style="width:596px;"><p class="p_Heading1"><span class="f_Heading1">&nbsp;</span></p>
+<p style="text-indent: 0px;"><span class="f_CourierFixed">sCanner</span></p>
+<p style="text-indent: 0px;"><span style="font-size: 9pt; color: #010100;">Load and reduce data in the SCANNER format. (<a href="utilityelectronicdataex1.htm">Example</a>) The default file extension is </span><span style="font-size: 9pt; font-weight: bold; color: #010100;">SCN</span><span style="font-size: 9pt; color: #010100;"> but can be changed by pressing the right mouse button while pointing to the Scanner button. </span></p>
+</td>
+</tr>
+<tr style="text-align:left;vertical-align:top;">
+<td valign="top" width="90" style="width:90px;"><p class="p_Heading1"><span class="f_Heading1">&nbsp;</span></p>
+<p class="p_Heading1"><span style="font-size: 9pt;"> </span><img src="clip0143.png" width="84" height="33" border="0" alt="clip0143"></p>
+</td>
+<td valign="top" width="596" style="width:596px;"><p class="p_Heading1"><span class="f_Heading1">&nbsp;</span></p>
+<p style="text-indent: 0px;"><span class="f_CourierFixed">Rietspruit</span></p>
+<p style="text-indent: 0px;"><span style="font-size: 9pt; color: #010100;">Load and reduce data in the RIETSPRUIT format. The default file extension is </span><span style="font-size: 9pt; font-weight: bold; color: #010100;">TAC</span><span style="font-size: 9pt; color: #010100;"> but can be changed by pressing the right mouse button while pointing to the Rietspruit button. </span></p>
+</td>
+</tr>
+<tr style="text-align:left;vertical-align:top;">
+<td valign="top" width="90" style="width:90px;"><p class="p_Heading1"><span class="f_Heading1">&nbsp;</span></p>
+<p class="p_Heading1"><span style="font-size: 9pt;"> </span><img src="clip0145.png" width="87" height="31" border="0" alt="clip0145"></p>
+</td>
+<td valign="top" width="596" style="width:596px;"><p class="p_Heading1"><span class="f_Heading1">&nbsp;</span></p>
+<p class="p_Heading1"><span class="f_CourierFixed">Topcon</span></p>
+<p class="p_Heading1"><span style="font-size: 9pt;">Load and reduce data in the Topcon format. (<a href="utilityelectronicdataex1.htm">Example</a>) The default file extension is TOP but can be changed by pressing the right mouse button while pointing to the Topcon button. </span></p>
+</td>
+</tr>
+<tr style="text-align:left;vertical-align:top;">
+<td valign="top" width="90" style="width:90px;"><p class="p_Heading1"><span style="font-size: 12pt;">&nbsp;</span></p>
+<p class="p_Heading1"><span style="font-size: 12pt;"> </span><img src="clip1250.png" width="83" height="30" border="0" alt="clip1250"></p>
+</td>
+<td valign="top" width="596" style="width:596px;"><p class="p_Heading1"><span class="f_Heading1">&nbsp;</span></p>
+<p class="p_Heading1"><span class="f_CourierFixed">Multisurve </span></p>
+<p class="p_Heading1"><span style="font-size: 9pt;">Load and reduce data in the Multisurve format. (</span><a href="javascript:hhctrl_119.hhclick()">Example</a><span style="font-size: 9pt;">) The default file extension is CAP but can be changed by pressing the right mouse button while pointing to the Multisurve button. </span></p>
+</td>
+</tr>
+<tr style="text-align:left;vertical-align:top;">
+<td valign="top" width="90" style="width:90px;"><p class="p_Heading1"><span class="f_Heading1">&nbsp;</span></p>
+<p class="p_Heading1"><img src="clip1627.png" width="79" height="28" border="0" alt="clip1627"></p>
+<p class="p_Heading1"><span class="f_Heading1">&nbsp;</span></p>
+</td>
+<td valign="top" width="596" style="width:596px;"><p class="p_Heading1"><span class="f_Heading1">&nbsp;</span></p>
+<p class="p_Heading1"><span class="f_CourierFixed">Standard CSV format.</span></p>
+<p class="p_Heading1"><span class="f_CourierFixed" style="font-weight: normal;">This is a standard ASCII file format. Please read the <a href="javascript:hhctrl_120.hhclick()">example</a> for a complete description.</span></p>
+</td>
+</tr>
+</table>
+</div>
+<div style="text-align: left; text-indent: 0px; padding: 0px 0px 0px 0px; margin: 0px 0px 0px 0px;"><table cellspacing="0" cellpadding="0" border="0" style="border: none; border-spacing:0px;">
+<tr style="text-align:left;vertical-align:top;">
+<td valign="top" width="91" style="width:91px;"><p class="p_Heading1"><img src="clip1718.png" width="80" height="26" border="0" alt="clip1718"></p>
+</td>
+<td valign="top" width="598" style="width:598px;"><p style="text-indent: 0px;"><span class="f_CourierFixed">Nikon</span></p>
+<p style="text-indent: 0px;"><span style="font-size: 9pt; color: #010100;">Load and reduce data in the NIKON format. </span><span style="font-size: 9pt;"> (</span><a href="uexampleofatypicalrecmodul.htm#exampleofthenikondatafile">Example</a><span style="font-size: 9pt;">) </span><span style="font-size: 9pt; color: #010100;"> The default file extension is </span><span style="font-size: 9pt; font-weight: bold; color: #010100;">NIK</span><span style="font-size: 9pt; color: #010100;"> but can be changed by pressing the right mouse button while pointing to the Rietspruit button. </span></p>
+</td>
+</tr>
+</table>
+</div>
+<p style="text-indent: 0px;"><span style="color: #000000;">&nbsp;</span></p>
+<p style="text-indent: 0px;"><img src="embim279.png" width="86" height="25" vspace="1" hspace="1" border="0" alt=""><span style="font-weight: bold;">Survey type Xml Data  </span><span class="f_CourierFixed" style="font-weight: normal;"> Please read the <a href="javascript:hhctrl_121.hhclick()">example</a> for a complete description</span></p>
+<p style="text-indent: 0px;"><span style="color: #000000;">&nbsp;</span></p>
+<div style="text-align: left; text-indent: 0px; padding: 0px 0px 0px 0px; margin: 0px 0px 0px 0px;"><table cellspacing="0" cellpadding="1" border="0" style="border: none; border-spacing:0px;">
+<tr style="text-align:left;vertical-align:top;">
+<td valign="top" width="441" style="width:441px;"><p style="text-align: center; text-indent: 0px;"><span style="font-style: italic; font-weight: bold; color: #d10707;">Note:</span></p>
+<p style="text-align: center; text-indent: 0px;"><span style="font-size: 9pt; color: #010100;">When using a</span><span style="font-size: 9pt;"> </span><span style="font-size: 9pt; font-weight: bold;">Leica TC 605, 805 or 905</span><span style="font-size: 9pt; color: #010100;"> instrument, use the TCTOOLS program supplied with your instrument to create a booker format file. In the Model Maker program directory you will find a file, MMS.<a href="utilityelectronicdataex1.htm#frtformat">FRT</a>, which is the format definition file to use with TCTOOLS. Remember to save the output file with a .BKR extension.</span></p>
+</td>
+</tr>
+</table>
+</div>
+<p style="text-indent: 0px;"><span style="color: #000000;">&nbsp;</span></p>
+<p style="text-indent: 0px;"><span class="f_CourierFixed">Geographical data (Latitude / Longitude)</span></p>
+<p style="text-indent: 0px;"><span style="font-size: 9pt; color: #010100;">This option will read an ASCII file with latitude and longitude coordinates and convert it to the Clark (LO) system. The normal <a href="fileimport_define.htm">ASCII import</a> utility is used to allow the user to indicate the correct position of the co-ordinates within the file structure. Then the standard <a href="survey___convert_lo.htm">survey conversion</a> routine is used to convert the latitude and longitude data to Y and X co-ordinates before it is added to the Model Maker internal data base and displayed on the screen.</span></p>
+<p style="text-indent: 0px;"><span style="font-size: 9pt; color: #010100;">Three things to keep in mind.</span></p>
+<div style="text-align: left; text-indent: 0px; padding: 0px 0px 0px 0px; margin: 0px 0px 0px 1px;"><table border="0" cellpadding="0" cellspacing="0" style="line-height: normal;"><tr style="vertical-align:baseline" valign="baseline"><td width="23"><img src="_bm26.png" width="10" height="15" border="0" alt="_bm26"></td><td> &nbsp; &nbsp; &nbsp; &nbsp;<span style="font-size: 9pt; color: #010100;">The geographical coordinates must be formatted as </span><span style="font-size: 9pt; font-weight: bold; color: #010100;">degreeminutesecond.decimal seconds</span></td></tr></table></div><p style="text-indent: -23px; margin: 0px 0px 0px 24px;"><span style="color: #000000;">&nbsp;</span></p>
+<p style="text-indent: 0px;"><span style="width:24px">&nbsp;</span> &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp;<span style="font-size: 9pt; color: #010100;">EXAMPLE of GEO coordinates converted to &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp;Clarke 31</span></p>
+<p style="text-indent: 0px;"><span style="width:24px">&nbsp;</span> &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp;<span style="font-size: 9pt; color: #010100;">Lat. &nbsp;DMS &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp;Long. &nbsp;DMS. &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp;Y &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp;X &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; </span></p>
+<p style="text-indent: 0px;"><span style="width:24px">&nbsp;</span> &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp;<span style="font-size: 9pt; color: #010100;">294850.9588 &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp;303843.2817 &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp;34283.033 &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp;3299306.930</span></p>
+<p style="text-indent: 0px;"><span style="color: #000000;">&nbsp;</span></p>
+<div style="text-align: left; text-indent: 0px; padding: 0px 0px 0px 0px; margin: 0px 0px 0px 1px;"><table border="0" cellpadding="0" cellspacing="0" style="line-height: normal;"><tr style="vertical-align:baseline" valign="baseline"><td width="23"><img src="_bm26.png" width="10" height="15" border="0" alt="_bm26"></td><td> &nbsp; &nbsp; &nbsp; &nbsp;<span style="font-size: 9pt; color: #010100;">It is the responsibility of the user to specify the correct longitude of the central meridian (an odd degree value).</span></td></tr></table></div><p style="text-indent: 0px;"><img src="_bm26.png" width="10" height="15" border="0" alt="_bm26"><span style="font-size: 9pt; color: #010100;"> &nbsp; &nbsp;The APPLY sea level and scale correction option is not relevant to this conversion.</span></p>
+<p style="text-indent: 0px;"><span style="color: #000000;">&nbsp;</span></p>
+<p style="text-indent: 0px;"><span style="font-size: 9pt; color: #010100;">It is important that you check the work and ensure that the conversion has been carried out correctly.</span></p>
+<p style="text-indent: 0px;"><span style="color: #000000;">&nbsp;</span></p>
+<p style="text-indent: 0px;"><span style="font-size: 9pt; font-weight: bold; color: #010100;">A good check would be to do the following.</span></p>
+<p style="text-indent: 0px;"><img src="_bm26.png" width="10" height="15" border="0" alt="_bm26"> &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp;<span style="font-size: 9pt; font-weight: bold; color: #010100;">1)</span><span style="font-size: 9pt; color: #010100;"> After the geographical data has been loaded and converted to YX co-ordinates and displayed on the screen, use the normal <a href="survey___convert_lo.htm">survey conversion</a> routine and do the  &nbsp; &nbsp; &nbsp; &nbsp;following.</span></p>
+<p style="text-indent: 0px;"><img src="_bm26.png" width="10" height="15" border="0" alt="_bm26"> &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp;<span style="font-size: 9pt; font-weight: bold; color: #010100;">2)</span><span style="font-size: 9pt; color: #010100;"> Ensure that the  <img src="_bm1273.png" width="164" height="17" border="0" alt="_bm1273"> is checked and convert the YX (Clarke) co-ordinates back to Geo format. </span></p>
+<p style="text-indent: 0px;"><img src="_bm26.png" width="10" height="15" border="0" alt="_bm26"> &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp;<span style="font-size: 9pt; font-weight: bold; color: #010100;">3) </span><span style="font-size: 9pt; color: #010100;">The internal YX format will not be effected but the co-ordinates, along with the geographical equivalent will be displayed in the <a href="files___editor.htm">editor</a>.</span></p>
+<p style="text-indent: 0px;"><img src="_bm26.png" width="10" height="15" border="0" alt="_bm26"> &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp;<span style="font-size: 9pt; font-weight: bold; color: #010100;">4)</span><span style="font-size: 9pt; color: #010100;"> Compare these reversed co-ordinates to your originals to ensure the accuracy.</span></p>
+<p style="text-indent: 0px;"><span style="color: #000000;">&nbsp;</span></p>
+<p style="text-indent: 0px;"><span style="font-size: 9pt; font-weight: bold; color: #010100;">EXAMPLE </span><span style="font-size: 9pt; color: #010100;">of a geographical file:</span></p>
+<p style="text-indent: 0px;"><span style="width:24px">&nbsp;</span> &nbsp; &nbsp; &nbsp; &nbsp;<span style="font-size: 9pt; color: #010100;">Base Meridian for Y = Lo 28</span></p>
+<p style="text-indent: 0px;"><span style="width:24px">&nbsp;</span> &nbsp; &nbsp; &nbsp; &nbsp;<span style="font-size: 9pt; color: #010100;">Name &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp;Lat. &nbsp;D M S &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp;Long. &nbsp;D M S</span></p>
+<p style="text-indent: 0px;"><span style="width:24px">&nbsp;</span> &nbsp; &nbsp; &nbsp; &nbsp;<span style="font-size: 9pt; color: #010100;">01 &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp;2 29 44.7366 &nbsp; &nbsp; &nbsp;27 59 59.3090</span></p>
+<p style="text-indent: 0px;"><span style="width:24px">&nbsp;</span> &nbsp; &nbsp; &nbsp; &nbsp;<span style="font-size: 9pt; color: #010100;">01 &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp;2 29 44.7408 &nbsp; &nbsp; &nbsp;27 59 59.3090</span></p>
+<p style="text-indent: 0px;"><span style="width:24px">&nbsp;</span> &nbsp; &nbsp; &nbsp; &nbsp;<span style="font-size: 9pt; color: #010100;">01 &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp;2 29 44.7451 &nbsp; &nbsp; &nbsp;27 59 59.3090</span></p>
+<p style="text-indent: 0px;"><span style="color: #000000;">&nbsp;</span></p>
+<p style="text-indent: 0px;"><span style="color: #000000;">&nbsp;</span></p>
+<p style="text-indent: 0px;"><span style="color: #000000;">&nbsp;</span></p>
+<p style="text-indent: 0px;"><img src="clip1528.png" width="450" height="273" border="0" alt="clip1528"></p>
+<p style="text-indent: 0px;"><span style="font-size: 12pt; color: #010100;">To manually type data to convert, click the editor tab.</span></p>
+<p style="text-indent: 0px;"><span style="color: #000000;">&nbsp;</span></p>
+<p style="text-indent: 0px;"><span style="color: #000000;">&nbsp;</span></p>
+<p style="text-indent: 0px;"><a name="sealevelandscalecorrection"></a><span class="f_CourierFixed">Sea level and scale correction</span></p>
+<p style="text-indent: 0px;"><span style="font-size: 6pt; color: #010100;">&nbsp;</span></p>
+<p style="text-indent: 0px;"><img src="clip0144.png" width="227" height="28" border="0" alt="clip0144"></p>
+<p style="text-indent: 0px;"><span style="font-size: 5pt; color: #010100;">&nbsp;</span></p>
+<p style="text-indent: 0px;"><span style="font-size: 9pt; color: #010100;">When the sea level and scale correction check box is checked, the following formula will be used to adjust the survey reading.</span></p>
+<p style="text-indent: 0px;"><span style="color: #000000;">&nbsp;</span></p>
+<p style="text-indent: 0px;"><span style="font-size: 9pt; font-style: italic; font-weight: bold; color: #ff0000;">Note:</span><span style="font-size: 9pt; font-weight: bold; color: #010100;"> </span></p>
+<p style="text-indent: 0px;"><span style="font-size: 9pt; color: #010100;">Even if the check box is not selected, the standard Curvature and refraction formulas will still be used to calculate the horizontal distance (HD) and height difference (HE).</span></p>
+<p style="text-indent: 0px;"><span style="color: #000000;">&nbsp;</span></p>
+<p style="text-indent: 0px;"><span style="font-size: 9pt; font-weight: bold; color: #010100;">1) </span><span style="font-size: 9pt; color: #010100;">Sea level correction (SL) &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp;</span><span style="font-size: 9pt; font-family: 'Courier New'; font-weight: bold; color: #010100;">H/R*S</span></p>
+<p style="text-indent: 0px;"><span style="width:24px">&nbsp;</span> &nbsp; &nbsp; &nbsp; &nbsp;<span style="font-size: 9pt; color: #010100;">H = Elevation of survey point.</span></p>
+<p style="text-indent: 0px;"><span style="width:24px">&nbsp;</span> &nbsp; &nbsp; &nbsp; &nbsp;<span style="font-size: 9pt; color: #010100;">R = Radius of the earth as defined in <a href="utilityelectronicdatapar_.htm#defaults">defaults</a> dialog box.</span></p>
+<p style="text-indent: 0px;"><span style="width:24px">&nbsp;</span> &nbsp; &nbsp; &nbsp; &nbsp;<span style="font-size: 9pt; color: #010100;">S = Distance measured from station to surveyed point.</span></p>
+<p style="text-indent: 0px;"><span style="font-size: 9pt; color: #010100;">2) Scale correction (SC) &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp;</span><span style="font-size: 9pt; font-family: 'Courier New'; font-weight: bold; color: #010100;">Y^2/(2R^2)*S</span></p>
+<p style="text-indent: 0px;"><span style="width:24px">&nbsp;</span> &nbsp; &nbsp; &nbsp; &nbsp;<span style="font-size: 9pt; color: #010100;">Y = Y co-ordinate value of the survey station.</span></p>
+<p style="text-indent: 0px;"><span style="width:24px">&nbsp;</span> &nbsp; &nbsp; &nbsp; &nbsp;<span style="font-size: 9pt; color: #010100;">R = Radius of the earth as defined in defaults dialog box.</span></p>
+<p style="text-indent: 0px;"><span style="width:24px">&nbsp;</span> &nbsp; &nbsp; &nbsp; &nbsp;<span style="font-size: 9pt; color: #010100;">S = Distance measured from station to surveyed point.</span></p>
+<p style="text-indent: 0px;"><span style="font-size: 9pt; font-weight: bold; color: #010100;">3)</span><span style="font-size: 9pt; color: #010100;"> Temperature correction (TC) &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp;</span><span style="font-size: 9pt; font-family: 'Courier New'; font-weight: bold; color: #010100;">1+281.95-((0.75*0.58440276^(H/4500))*1015))/(T+273.15)*105.5-0.5)/1e6</span></p>
+<p style="text-indent: 0px;"><span style="width:24px">&nbsp;</span> &nbsp; &nbsp; &nbsp; &nbsp;<span style="font-size: 9pt; color: #010100;">H = The elevation of the station.</span></p>
+<p style="text-indent: 0px;"><span style="width:24px">&nbsp;</span> &nbsp; &nbsp; &nbsp; &nbsp;<span style="font-size: 9pt; color: #010100;">T = The temperature as defined in the <a href="utilityelectronicdatapar_.htm#defaults">defaults</a> dialog box.</span></p>
+<p style="text-indent: 0px;"><span style="color: #000000;">&nbsp;</span></p>
+<p style="text-indent: 0px;"><span style="font-size: 9pt; font-weight: bold; color: #010100;">4) </span><span style="font-size: 9pt; color: #010100;">Curvature and refraction</span></p>
+<p style="text-indent: 0px;"><span style="width:24px">&nbsp;</span> &nbsp; &nbsp; &nbsp; &nbsp;<span style="font-size: 9pt; color: #010100;">Horizontal distance (HD)  &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp;=</span><span style="font-size: 9pt; font-family: 'Courier New'; font-weight: bold; color: #010100;">S*sin(VA)-(1-0.142/2)/6.372e6*(S^2)*sin(VA)*cos(VA)</span></p>
+<p style="text-indent: 0px;"><span style="width:24px">&nbsp;</span> &nbsp; &nbsp; &nbsp; &nbsp;<span style="font-size: 9pt; color: #010100;">Height difference (HE) &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp;=</span><span style="font-size: 9pt; font-family: 'Courier New'; font-weight: bold; color: #010100;">S*cos(VA)+(1-0.142)/(2*6.372e6)*(S^2)*sin(VA)*sin(VA)</span></p>
+<p style="text-indent: 0px;"><span style="width:24px">&nbsp;</span> &nbsp; &nbsp; &nbsp; &nbsp;<span style="font-size: 9pt; color: #010100;">VA = Vertical Angle</span></p>
+<p style="text-indent: 0px;"><span style="width:24px">&nbsp;</span> &nbsp; &nbsp; &nbsp; &nbsp;<span style="font-size: 9pt; color: #010100;">S = Distance measured from station to surveyed point.</span></p>
+<p style="text-indent: 0px;"><span style="color: #000000;">&nbsp;</span></p>
+<p style="text-indent: 0px;"><span style="font-size: 9pt; color: #010100;">The order in which the factors are applied:</span></p>
+<p style="text-indent: 0px;"><span style="width:24px">&nbsp;</span> &nbsp; &nbsp; &nbsp; &nbsp;<span style="font-size: 9pt; color: #010100;">1) The measured slope distance between the station and surveyed point (S) is multiplied by the temperature correction (TC).</span></p>
+<p style="text-indent: 0px;"><span style="width:24px">&nbsp;</span> &nbsp; &nbsp; &nbsp; &nbsp;<span style="font-size: 9pt; color: #010100;">2) The curvature and refraction formulas are then applied to calculate HD and HE</span></p>
+<p style="text-indent: 0px;"><span style="width:24px">&nbsp;</span> &nbsp; &nbsp; &nbsp; &nbsp;<span style="font-size: 9pt; color: #010100;">3) The horizontal distance is then adjusted by adding the sea level and scale factors.</span></p>
+<p style="text-indent: 0px;"><span style="color: #000000;">&nbsp;</span></p>
+<p style="text-indent: 0px;"><span style="width:24px">&nbsp;</span> &nbsp; &nbsp; &nbsp; &nbsp;<span style="font-size: 9pt; color: #010100;">S  &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp;= S * TC</span></p>
+<p style="text-indent: 0px;"><span style="width:24px">&nbsp;</span> &nbsp; &nbsp; &nbsp; &nbsp;<span style="font-size: 9pt; color: #010100;">Curvature &amp; refraction applied. HD and HE calculated.</span></p>
+<p style="text-indent: 0px;"><span style="width:24px">&nbsp;</span> &nbsp; &nbsp; &nbsp; &nbsp;<span style="font-size: 9pt; color: #010100;">HD &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp;= HD + SL +SC</span></p>
+<p style="text-indent: 0px; margin: 0px 0px 0px 10px;"><span style="color: #000000;">&nbsp;</span></p>
+<p style="text-indent: 0px; margin: 0px 0px 0px 10px;"><span class="f_CourierFixed">Check the results</span></p>
+<p style="text-indent: 0px;"><span style="font-size: 9pt; color: #010100;">It is important that you should check the results after Model Maker has loaded and reduced the survey data, especially if it is the first time that you are importing data of a certain kind. All the formats are different and it cannot be guaranteed that any format you select is applicable to your field survey data files.</span></p>
+<p style="text-indent: 0px;"><img src="_bm26.png" width="10" height="15" border="0" alt="_bm26"> &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp;<span style="font-size: 9pt; color: #010100;">Compare the data to calculations that you have done manually.</span></p>
+<p style="text-indent: 0px;"><img src="_bm26.png" width="10" height="15" border="0" alt="_bm26"> &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp;<span style="font-size: 9pt; color: #010100;">Use a test run and load data that have been reduced in the past and compare the results.</span></p>
+<p style="text-indent: 0px;"><img src="_bm26.png" width="10" height="15" border="0" alt="_bm26"> &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp;<span style="font-size: 9pt; color: #010100;">Reduce the data once with the sea level and scale corrections active and once without the corrections. </span></p>
+<p style="text-indent: 0px;"><span style="width:24px">&nbsp;</span> &nbsp; &nbsp; &nbsp; &nbsp;<span style="font-size: 9pt; color: #010100;">Compare the results and satisfy yourself that the corrections have been applied in the desired format.</span></p>
+<p style="text-indent: 0px;"><img src="_bm26.png" width="10" height="15" border="0" alt="_bm26"> &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp;<span style="font-size: 9pt; color: #010100;">When the data is plotted on the screen, measure and compare the distances between known points.</span></p>
+<p style="text-indent: 0px;"><img src="_bm26.png" width="10" height="15" border="0" alt="_bm26"> &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp;<span style="font-size: 9pt; color: #010100;">Compare your plans to other plans of the same survey area produced by other systems.</span></p>
+<p style="text-indent: 0px;"><span style="color: #000000;">&nbsp;</span></p>
+<p style="text-indent: 0px;"><span style="color: #000000;">&nbsp;</span></p>
+<p style="text-indent: 0px;"><span style="color: #000000;">&nbsp;</span></p>
+<p style="text-indent: 0px;"><span class="f_rrelatedtopic">Related topics:</span></p>
+<p style="text-indent: 0px;"><span style="font-size: 9pt; color: #010100;"><a href="data_base.htm">Data base</a></span></p>
+<p style="text-indent: 0px;"><span style="color: #000000;">&nbsp;</span></p>
+<p style="text-indent: 0px;"><span style="color: #000000;">&nbsp;</span></p>
+
+</td></tr></table>
+
+</body>
+</html>

@@ -1,0 +1,76 @@
+<!DOCTYPE HTML PUBLIC "-//W3C//DTD HTML 4.01 Transitional//EN">
+<html>
+<head>
+   <title>Add - Polyline</title>
+   <meta name="generator" content="Help &amp; Manual" />
+   <meta name="keywords" content="ADD,DTM,Point add,Polyline" />
+   <meta http-equiv="Content-Type" content="text/html; charset=ISO-8859-1" />
+   <meta http-equiv="Content-Style-Type" content="text/css" />
+   <link type="text/css" href="default.css" rel="stylesheet" />
+
+<script type="text/javascript" src="helpman_topicinit.js"></script>
+</head>
+<body style="margin: 0px 0px 0px 0px; background: #FFFFFF;">
+
+
+<table width="100%" border="0" cellspacing="0" cellpadding="5" bgcolor="#D0D0D0">
+  <tr valign="middle">
+    <td align="left">
+      <p class="p_Heading1"><span class="f_Heading1">Add - Polyline</span></p>
+
+    </td>
+    <td align="right">
+     <span style="font-size: 9pt">
+     <a href="start_up.htm">Top</a>&nbsp;
+     <a href="pointadd_cadline.htm">Previous</a>&nbsp;
+     <a href="add_allcadlines.htm">Next</a>
+     </span>
+    </td>
+  </tr>
+</table>
+
+
+<!-- Placeholder for topic body. -->
+<table width="100%" border="0" cellspacing="0" cellpadding="5"><tr valign="top"><td align="left">
+<p class="p_Heading1"><span class="f_Heading1">&nbsp;</span></p>
+<p class="p_Heading1"><span class="f_rrelatedtopic">MENU : Pnt - Add - Poly cadline</span><span style="font-size: 6pt; color: #010100;"> </span></p>
+<p class="p_Heading1"><span style="font-size: 5pt; color: #010100;">&nbsp;</span></p>
+<p class="p_Heading1"><span style="font-size: 9pt; color: #010100;">Add DTM points to an indicated CAD polyline. The following dialog box defines the attributes of the new points.</span></p>
+<p class="p_Heading1"><span class="f_Heading1">&nbsp;</span></p>
+<p class="p_Heading1"><span style="font-size: 9pt; color: #010100;">The caption of the dialog box indicates the number of points on the polyline.</span></p>
+<p class="p_Heading1"><span class="f_Heading1">&nbsp;</span></p>
+<p class="p_Heading1"><span style="font-size: 9pt; color: #010100;">Points are often placed on poly CAD lines when importing .dxf files. These files could have been generated from contours and invariably have very short line segments. Putting DTM points on such short line lengths result in a cluster of undesirable points.</span></p>
+<p class="p_Heading1"><span class="f_Heading1">&nbsp;</span></p>
+<div style="text-align: left; text-indent: 0px; padding: 0px 0px 0px 0px; margin: 0px 0px 0px 0px;"><table cellspacing="0" cellpadding="0" border="0" style="border: none; border-spacing:0px;">
+<tr style="text-align:left;vertical-align:top;">
+<td valign="top" width="328" style="width:328px;"><p class="p_Heading1"><img src="clip2052.png" width="317" height="445" border="0" alt="clip2052"></p>
+</td>
+<td valign="top" width="499" style="width:499px;"><p class="p_Heading1"><span style="font-size: 9pt; font-weight: bold; color: #010100;">1.</span></p>
+<p class="p_Heading1"><span style="font-size: 9pt; color: #010100;">Avoid clustering by specifying a skip distance between points. Model Maker will only add a new point on the polyline if the distance between it and the previous added point is larger than the </span><span style="font-size: 9pt; font-weight: bold; color: #010100;">skip</span><span style="font-size: 9pt; color: #010100;"> distance.</span></p>
+<p class="p_Heading1"><span class="f_Heading1">&nbsp;</span></p>
+<p class="p_Heading1"><span style="font-size: 9pt; font-weight: bold; color: #010100;">2.</span></p>
+<p class="p_Heading1"><span style="font-size: 9pt; color: #010100;">This is the default elevation of the first and last point to be added to the polyline. Model Maker will interpolate the elevation of the in between points if the default Z values are not the same. Interpolation is done on the basis of distance from </span><span style="font-size: 9pt; font-weight: bold; color: #010100;">starting point / total length</span><span style="font-size: 9pt; color: #010100;"> of the polyline.</span></p>
+<p class="p_Heading1"><span class="f_Heading1">&nbsp;</span></p>
+<p class="p_Heading1"><span style="font-size: 9pt; color: #010100;">Alternative, the Z values can be </span><span style="font-size: 9pt; font-weight: bold; color: #010100;">obtained</span><span style="font-size: 9pt; color: #010100;"> from the selected polyline itself.</span></p>
+<p class="p_Heading1"><span class="f_Heading1">&nbsp;</span></p>
+<p class="p_Heading1"><span style="font-size: 9pt; font-weight: bold; color: #010100;">3.</span></p>
+<p class="p_Heading1"><span style="font-size: 9pt; color: #010100;">The new DTM points will each have a code equal to the new specified code. If the default code ends in a numeric number such as a1, and the Increment code box is checked, the codes of all the successive points will have the codes a2, a3, a4 etc.</span></p>
+<p class="p_Heading1"><span class="f_Heading1">&nbsp;</span></p>
+<p class="p_Heading1"><span style="font-size: 9pt; font-weight: bold; color: #010100;">4.</span></p>
+<p class="p_Heading1"><span style="font-size: 9pt; color: #010100;">By default, points are not placed on the ends of the line. Here you can turn that option on and off.</span></p>
+<p class="p_Heading1"><span style="font-size: 9pt; color: #010100;">Instead of placing dtm points on line connection points, dtm points can be placed on regular intervals. Set the </span><span style="font-size: 9pt; font-weight: bold; color: #010100;">interval spacing</span><span style="font-size: 9pt; color: #010100;"> here.</span></p>
+<p class="p_Heading1"><span class="f_Heading1">&nbsp;</span></p>
+</td>
+</tr>
+</table>
+</div>
+<p class="p_Heading1"><span class="f_Heading1">&nbsp;</span></p>
+<p class="p_Heading1"><span class="f_Heading1">&nbsp;</span></p>
+<p class="p_Heading1"><span class="f_Heading1">&nbsp;</span></p>
+<p class="p_Heading1"><span class="f_rrelatedtopic">Related topics:</span></p>
+<p class="p_Heading1"><span style="font-size: 9pt; color: #010100;"><a href="cad___line___add_.htm">CAD</a>lines</span></p>
+
+</td></tr></table>
+
+</body>
+</html>

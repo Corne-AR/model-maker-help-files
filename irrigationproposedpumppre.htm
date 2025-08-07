@@ -1,0 +1,89 @@
+<!DOCTYPE HTML PUBLIC "-//W3C//DTD HTML 4.01 Transitional//EN">
+<html>
+<head>
+   <title>IRRIGATION : Proposed pump pressure</title>
+   <meta name="generator" content="Help &amp; Manual" />
+   <meta name="keywords" content="" />
+   <meta http-equiv="Content-Type" content="text/html; charset=ISO-8859-1" />
+   <meta http-equiv="Content-Style-Type" content="text/css" />
+   <link type="text/css" href="default.css" rel="stylesheet" />
+
+<script type="text/javascript" src="helpman_topicinit.js"></script>
+</head>
+<body style="margin: 0px 0px 0px 0px; background: #FFFFFF;">
+
+
+<table width="100%" border="0" cellspacing="0" cellpadding="5" bgcolor="#D0D0D0">
+  <tr valign="middle">
+    <td align="left">
+      <p class="p_Heading1"><span class="f_Heading1">IRRIGATION : Proposed pump pressure</span></p>
+
+    </td>
+    <td align="right">
+     <span style="font-size: 9pt">
+     <a href="start_up.htm">Top</a>&nbsp;
+     <a href="irrigationhydraulics_size.htm">Previous</a>&nbsp;
+     <a href="irrigationhydraulics_siz2.htm">Next</a>
+     </span>
+    </td>
+  </tr>
+</table>
+
+
+<!-- Placeholder for topic body. -->
+<table width="100%" border="0" cellspacing="0" cellpadding="5"><tr valign="top"><td align="left">
+<p style="text-indent: 0px; margin: 0px 0px 0px 10px;"><img src="clip1415.png" width="778" height="445" border="0" alt="clip1415"></p>
+<p style="text-indent: 0px; margin: 0px 0px 0px 10px;"><span style="color: #000000;">&nbsp;</span></p>
+<p style="text-indent: 0px; margin: 0px 0px 0px 10px;">This dialog is used to determine the approximate pump pressure that will be needed to run the system. The proposed pump pressure is a value based on the design margins as specified by the operator, the elevation differences between the pump and various blocks and the pressure required at the block valves.</p>
+<p style="text-indent: 0px; margin: 0px 0px 0px 10px;"><span style="color: #000000;">&nbsp;</span></p>
+<p style="text-indent: 0px; margin: 0px 0px 0px 10px;">After you have selected the design margins and units, click the Calculate button. A summary of the results of all the blocks is shown in the block report. </p>
+<p style="text-indent: 0px; margin: 0px 0px 0px 10px;">The estimated pump pressure required for each block is displayed and the critical block, the one which required the highest pump pressure, is shown in the critical block summary.</p>
+<p style="text-indent: 0px; margin: 0px 0px 0px 10px;">If you want the system to assign the calculated pump pressure to the pump node, click the OK button. Irri Maker will then proceed to calculate the desired pipe diameters assuming the pump delivers the selected pressure.</p>
+<p style="text-indent: 0px; margin: 0px 0px 0px 10px;"><span style="color: #000000;">&nbsp;</span></p>
+<p style="text-indent: 0px; margin: 0px 0px 0px 10px;">For the purpose of calculating the % losses, the <span style="font-weight: bold;">initial pump</span> pressure is assumed to be the required pressure of the critical valve + the height difference between the valve and the pump.</p>
+<p style="text-indent: 0px; margin: 0px 0px 0px 10px;">In the example in the above dialog image, the initial pump pressure is 17m+38.47m = 55.47m</p>
+<p style="text-indent: 0px; margin: 0px 0px 0px 10px;"><span style="color: #000000;">&nbsp;</span></p>
+<p class="p_Heading1"><span style="font-family: 'verdana';">1)</span><span style="font-family: 'Times New Roman';"> &nbsp; &nbsp; &nbsp; </span><span style="font-family: 'verdana';">Head losses in mainline pipes</span></p>
+<p class="p_Heading1"><span style="font-family: 'Times New Roman';"> &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp;  </span><span style="font-family: 'verdana';">i.</span><span style="font-family: 'Times New Roman';"> &nbsp; &nbsp;  </span><span style="font-family: 'verdana';">% = a percentage of the initial pump pressure.</span></p>
+<p class="p_Heading1"><span style="font-family: 'Times New Roman';"> &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; </span><span style="font-family: 'verdana';">ii.</span><span style="font-family: 'Times New Roman';"> &nbsp; &nbsp;  </span><span style="font-family: 'verdana';">m = A fixed pressure value</span></p>
+<p class="p_Heading1"><span style="font-family: 'Times New Roman';"> &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp;  </span><span style="font-family: 'verdana';">iii.</span><span style="font-family: 'Times New Roman';"> &nbsp; &nbsp;  </span><span style="font-family: 'verdana';">Length = A fraction of the total pipe length between the pump and the critical valve.</span></p>
+<p class="p_Heading1"><span style="width:48px">&nbsp;</span> &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp;<span style="font-family: 'verdana';"> &nbsp; &nbsp; &nbsp;The entered value is the pressure loss in the pipe (meter) per 100m of pipe length.</span></p>
+<p class="p_Heading1"><span style="width:48px">&nbsp;</span> &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp;<span style="font-family: 'verdana';"> &nbsp; &nbsp; &nbsp;Example. Length : Pump to critical valve = 650m. &nbsp;User entered value is 2m.</span></p>
+<p class="p_Heading1"><span style="width:48px">&nbsp;</span> &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp;<span style="font-family: 'verdana';">Value used in calculation = 650/100*2 = 13m pressure loss.</span></p>
+<p class="p_Heading1"><span style="font-family: 'verdana';">b.</span><span style="font-family: 'Times New Roman';"> &nbsp; &nbsp; &nbsp; </span><span style="font-family: 'verdana';">Head losses in fittings</span></p>
+<p class="p_Heading1"><span style="font-family: 'Times New Roman';"> &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp;  </span><span style="font-family: 'verdana';">i.</span><span style="font-family: 'Times New Roman';"> &nbsp; &nbsp;  </span><span style="font-family: 'verdana';">% = a percentage of the initial pump pressure.</span></p>
+<p class="p_Heading1"><span style="font-family: 'Times New Roman';"> &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; </span><span style="font-family: 'verdana';">ii.</span><span style="font-family: 'Times New Roman';"> &nbsp; &nbsp;  </span><span style="font-family: 'verdana';">m = A fixed pressure value</span></p>
+<p class="p_Heading1"><span style="font-family: 'verdana';">c.</span><span style="font-family: 'Times New Roman';"> &nbsp; &nbsp; &nbsp; </span><span style="font-family: 'verdana';">Head losses in valves</span></p>
+<p class="p_Heading1"><span style="font-family: 'Times New Roman';"> &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp;  </span><span style="font-family: 'verdana';">i.</span><span style="font-family: 'Times New Roman';"> &nbsp; &nbsp;  </span><span style="font-family: 'verdana';">% = a percentage of the initial pump pressure.</span></p>
+<p class="p_Heading1"><span style="font-family: 'Times New Roman';"> &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; </span><span style="font-family: 'verdana';">ii.</span><span style="font-family: 'Times New Roman';"> &nbsp; &nbsp;  </span><span style="font-family: 'verdana';">m = A fixed pressure value.</span></p>
+<p class="p_Heading1"><span style="font-family: 'verdana';">d.</span><span style="font-family: 'Times New Roman';"> &nbsp; &nbsp; &nbsp; </span><span style="font-family: 'verdana';">Design Margin</span></p>
+<p class="p_Heading1"><span style="font-family: 'Times New Roman';"> &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; </span><span style="font-family: 'verdana';">i.</span><span style="font-family: 'Times New Roman';"> &nbsp; &nbsp;  </span><span style="font-family: 'verdana';">% = a percentage of the initial pump pressure.</span></p>
+<p class="p_Heading1"><span class="f_Heading1">&nbsp;</span></p>
+<p class="p_Heading1"><span class="f_Heading1">&nbsp;</span></p>
+<p class="p_Heading1"><span style="font-family: 'verdana'; font-weight: bold;">NOTE:</span></p>
+<p class="p_Heading1"><span class="f_Heading1">&nbsp;</span></p>
+<p class="p_Heading1"><span style="font-family: 'verdana';">The suggested pump pressure is based on 5 main components:</span></p>
+<p class="p_Heading1"><span class="f_Heading1">&nbsp;</span></p>
+<p class="p_Heading1"><span style="font-family: 'verdana';">Theory:</span></p>
+<p class="p_Heading1"><span style="font-family: 'verdana';">1) The required pressure in the critical valve.</span></p>
+<p class="p_Heading1"><span style="font-family: 'verdana';">2) The elevation difference between the pump and the valve.</span></p>
+<p class="p_Heading1"><span style="font-family: 'verdana';">3) The head losses in the pipes as suggested by the user. &nbsp;( % , fixed value or % of distance)</span></p>
+<p class="p_Heading1"><span style="font-family: 'verdana';">4) The head losses in the valves and fittings. (% or fixed value)</span></p>
+<p class="p_Heading1"><span style="font-family: 'verdana';">5) The design margin. (%)</span></p>
+<p class="p_Heading1"><span class="f_Heading1">&nbsp;</span></p>
+<p class="p_Heading1"><span style="font-family: 'verdana';">This in only the theory. When the system is calculated hydraulically the following elements will determine the actual head losses.</span></p>
+<p class="p_Heading1"><span class="f_Heading1">&nbsp;</span></p>
+<p class="p_Heading1"><span style="font-family: 'verdana';">Actual:</span></p>
+<p class="p_Heading1"><span style="font-family: 'verdana';">1) The valve pressures.  &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp;As required by the individual blocks.</span></p>
+<p class="p_Heading1"><span style="font-family: 'verdana';">2) The elevation differences.  &nbsp; &nbsp; &nbsp; &nbsp;As calculated between the pump and individual blocks.</span></p>
+<p class="p_Heading1"><span style="font-family: 'verdana';">3) Head losses in the pipes.  &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp;As calculated by the actual flows, pipe diameters and friction factors.</span></p>
+<p class="p_Heading1"><span style="font-family: 'verdana';">4) Head losses in the fittings.  &nbsp; &nbsp; &nbsp; &nbsp;As determined by the secondary K values associated with each node and entered in the <a href="irrigationnodedatabase.htm">node database</a>.</span></p>
+<p class="p_Heading1"><span style="width:48px">&nbsp;</span><span style="font-family: 'verdana';">Note: The secondary losses on the calculation page must be checked.  <img src="clip1416.png" width="258" height="91" border="0" alt="clip1416"></span></p>
+<p class="p_Heading1"><span class="f_Heading1">&nbsp;</span></p>
+<p class="p_Heading1">5) The design margin will be the actual difference between the valve required pressure and the actual pressure.</p>
+<p class="p_Heading1"><img src="clip1417.png" width="212" height="279" border="0" alt="clip1417"></p>
+
+</td></tr></table>
+
+</body>
+</html>

@@ -1,0 +1,115 @@
+<!DOCTYPE HTML PUBLIC "-//W3C//DTD HTML 4.01 Transitional//EN">
+<html>
+<head>
+   <title>IRRIGATION : Blocks - TramLines</title>
+   <meta name="generator" content="Help &amp; Manual" />
+   <meta name="keywords" content="" />
+   <meta http-equiv="Content-Type" content="text/html; charset=ISO-8859-1" />
+   <meta http-equiv="Content-Style-Type" content="text/css" />
+   <link type="text/css" href="default.css" rel="stylesheet" />
+
+<script type="text/javascript" src="helpman_topicinit.js"></script>
+</head>
+<body style="margin: 0px 0px 0px 0px; background: #FFFFFF;">
+
+
+
+<!-- Placeholder for topic body. -->
+<table width="100%" border="0" cellspacing="0" cellpadding="5"><tr valign="top"><td align="left">
+<p><span style="font-weight: bold;">Creating a tram line layout in a drip block.</span></p>
+<p>&nbsp;</p>
+<div style="text-align: left; text-indent: 10px; padding: 0px 0px 0px 0px; margin: 0px 0px 0px 0px;"><table cellspacing="0" cellpadding="0" border="0" style="border: none; border-spacing:0px;">
+<tr style="text-align:left;vertical-align:top;">
+<td valign="top" width="277" style="width:277px;"><p><img src="embim104.png" width="221" height="160" vspace="1" hspace="1" border="0" alt=""></p>
+</td>
+<td valign="top" width="953" style="width:953px;"><p>&nbsp;</p>
+<p>When doing a simple double line layout, the option to specify 2 lateral spacings can be enough.</p>
+<p>&nbsp;</p>
+<p>For a more complicated tram line layout, click the Tram Lines tab to access more complete features.</p>
+<p>&nbsp;</p>
+<p>0) The main lateral spacing. The laterals will be spaced by this distance and then the tram lines (see below) arranged around it.</p>
+</td>
+</tr>
+<tr style="text-align:left;vertical-align:top;">
+<td valign="top" width="277" style="width:277px;"><p>&nbsp;</p>
+<p><img src="embim105.png" width="222" height="156" vspace="1" hspace="1" border="0" alt=""></p>
+<p>&nbsp;</p>
+</td>
+<td valign="top" width="953" style="width:953px;"><p>&nbsp;</p>
+<p>1) Enter the number of tram lines in addition to the main lateral spacing (0) defined in the layout tab.</p>
+<p>&nbsp;</p>
+<p>2) Enter the offset spacing between the lines. The main lateral will always be at offset = 0 and the tramlines at offsets in relation to the lateral. </p>
+<p>&nbsp;</p>
+<p>In this example, 5 lines will be created. &nbsp;Main laterals are 10m apart and parallel to each main lateral, 4 additional ones are created and all will be 1m apart.</p>
+<p>Negative offsets are to the left, positive offset value is on the right of the lateral.</p>
+<p>&nbsp;</p>
+<p>3) Check this box if each lateral group is first connected to a cluster and the cluster then connected with a single pipe to the manifold.</p>
+<p>&nbsp;</p>
+<p>4) Press the button to start the fill action. Two dialog boxes will be shown. The first one is to select the dripline pipe and emitter and the second to select the end node type. If checkbox (3) is checked, a third dialog box (see below) will be displayed.</p>
+</td>
+</tr>
+<tr style="text-align:left;vertical-align:top;">
+<td valign="top" width="277" style="width:277px;"><p><img src="clip2164.png" width="288" height="299" border="0" alt="clip2164"></p>
+<p>&nbsp;</p>
+<p>See description below if the manifold is in the </p>
+<p>middle of the block.</p>
+</td>
+<td valign="top" width="953" style="width:953px;"><p><img src="embim106.png" width="367" height="249" vspace="1" hspace="1" border="0" alt=""></p>
+<p>1) The node used to make the cluster connection. This parts that make up the physical cluster will be associated with this node.</p>
+<p>2) The node connecting the cluster to the main manifold. The parts used for this connection (ie a saddle) will be link to this node.</p>
+<p>3) The pipe connecting the cluster to the manifold. This pipe will always be included in the layout as a manifold pipe (even if you selected it as a lateral type).</p>
+<p>The pipe's diameter will also be fixed so the correct size must be selected from the pipe database. Since the diameters is fixed, it will not be changed when pipe resizing is done on the hydraulics dialog box.</p>
+<p>4) The pipe type used to build the manifold.</p>
+<p>5) These nodes will automatically be defined as 'dummy' nodes since their only purpose is to clarify the layout and do not exist in reality.</p>
+<p>&nbsp;</p>
+<p>The image above shows the connection when the manifold is on the side of the block. </p>
+<p><span style="font-weight: bold;">Please note: </span>Before the layout is developed, a ghost image of the proposed pipes is shown allowing you to rotate and place it. The mouse cursor is connected &nbsp;to the ghost image lines on one side. (The side that controls the movement). The manifold (side of block option) will automatically be created on the side of the lines connected to the cursor.</p>
+<p>&nbsp;</p>
+</td>
+</tr>
+<tr style="text-align:left;vertical-align:top;">
+<td valign="top" width="277" style="width:277px;"><p><img src="embim107.png" width="253" height="89" vspace="1" hspace="1" border="0" alt=""></p>
+<p>&nbsp;</p>
+<p>Click OK and indicate the cadline. If the line is not yet defined, click Cancel and use the cad function to create the line.</p>
+<p>&nbsp;</p>
+</td>
+<td valign="top" width="953" style="width:953px;"><p><img src="embim108.png" width="214" height="131" vspace="1" hspace="1" border="0" alt=""> For the program to know where the manifold will be in the middle of the block, </p>
+<p>a regular cad line must exist which you need to select. This line should be a single cadline and not a polyline.</p>
+</td>
+</tr>
+<tr style="text-align:left;vertical-align:top;">
+<td valign="top" width="277" style="width:277px;"><p><img src="embim109.png" width="339" height="228" vspace="1" hspace="1" border="0" alt=""></p>
+<p>&nbsp;</p>
+</td>
+<td valign="top" width="953" style="width:953px;"><p>&nbsp;</p>
+<p>&nbsp;</p>
+<p>Just like the manifold on the side of the block, the middle manifold uses the 4 defined components to create the sub manifold.</p>
+<p>&nbsp;</p>
+<p>1) The cluster node</p>
+<p>&nbsp;</p>
+<p>2) The node on the main manifold.</p>
+<p>&nbsp;</p>
+<p>3) The cluster to manifold pipe.</p>
+<p>&nbsp;</p>
+<p>4) The actual manifold pipe.</p>
+<p>&nbsp;</p>
+<p>&nbsp;</p>
+<p>The advantage of this automatic layout function is:</p>
+<p>&nbsp;</p>
+<p>1) A cluster node exists for every group of driplines. The correct part number can be added to these node (in the BOM) and the quantities will automatically be correct.</p>
+<p>2) A unique node exists on the manifold for each group of driplines. This node knows what the manifold pipe diameter is so that the correct part number can be added.</p>
+<p>3) The correct pipe diameter can be defined for the cluster to manifold connection so it works hydraulically correct.</p>
+<p>&nbsp;</p>
+<p>4) The manifold will automatically be developed between all the nodes (3). </p>
+<p>&nbsp;</p>
+<p>The user then just have to define the valve position.</p>
+<p>&nbsp;</p>
+</td>
+</tr>
+</table>
+</div>
+
+</td></tr></table>
+
+</body>
+</html>

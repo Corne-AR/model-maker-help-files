@@ -1,0 +1,83 @@
+<!DOCTYPE HTML PUBLIC "-//W3C//DTD HTML 4.01 Transitional//EN">
+<html>
+<head>
+   <title>MINE : Strip width</title>
+   <meta name="generator" content="Help &amp; Manual" />
+   <meta name="keywords" content="Mining,Planning,Strip,VOLUMES" />
+   <meta http-equiv="Content-Type" content="text/html; charset=ISO-8859-1" />
+   <meta http-equiv="Content-Style-Type" content="text/css" />
+   <link type="text/css" href="default.css" rel="stylesheet" />
+
+<script type="text/javascript" src="helpman_topicinit.js"></script>
+</head>
+<body style="margin: 0px 0px 0px 0px; background: #FFFFFF;">
+
+
+<table width="100%" border="0" cellspacing="0" cellpadding="5" bgcolor="#D0D0D0">
+  <tr valign="middle">
+    <td align="left">
+      <p class="p_Heading1"><span class="f_Heading1">MINE : Strip width</span></p>
+
+    </td>
+    <td align="right">
+     <span style="font-size: 9pt">
+     <a href="start_up.htm">Top</a>&nbsp;
+     <a href="mine___volume.htm">Previous</a>&nbsp;
+     <a href="minesections.htm">Next</a>
+     </span>
+    </td>
+  </tr>
+</table>
+
+
+<!-- Placeholder for topic body. -->
+<table width="100%" border="0" cellspacing="0" cellpadding="5"><tr valign="top"><td align="left">
+<p class="p_Heading1"><span class="f_Heading1">&nbsp;</span></p>
+<p class="p_Heading1"><span class="f_rrelatedtopic">MENU : Min - mine_Planning - strip Width</span></p>
+<p class="p_Heading1"><span style="font-size: 5pt; color: #010100;">&nbsp;</span></p>
+<p class="p_Heading1"><span style="font-size: 9pt; color: #010100;">This function uses the mining <a href="mineload.htm">database</a> &nbsp;to calculate a strip width that will yield a user-defined volume when excavated.</span></p>
+<p class="p_Heading1"><span style="font-size: 9pt; color: #010100;">Specify the top of the two layers between which the volume will be calculated. The calculation will start from an indicated CAD line and proceed on the user-defined grid interval until the desired volume is reached. The volumes of the other layers within the same area will be reported. You may select to confine the calculations to a user defined area.</span></p>
+<p class="p_Heading1"><span class="f_Heading1">&nbsp;</span></p>
+<p class="p_Heading1"><span style="font-size: 9pt; color: #010100;">EXPLANATION OF MENU.</span></p>
+<p class="p_Heading1"><img src="_bm766.png" width="124" height="144" border="0" alt="_bm766"><span style="font-size: 9pt; color: #010100;"> The description of the loaded mine layers are displayed. Click on the one that will form the top of the 2 layers to be used for the volume calculations. In the example, '2a2' is clicked, meaning that the volume will be calculated between layer 2a2 and 3a3. The volume for layers 1a1 and 2a2 will be calculated and included in the final report. It would be irrational to click 3a3 in this example, since the controlling layer as 3a3 is the lowest layer and has nothing below it to compare against.</span></p>
+<p class="p_Heading1"><span class="f_Heading1">&nbsp;</span></p>
+<p class="p_Heading1"><img src="_bm767.png" width="122" height="55" border="0" alt="_bm767"><span style="font-size: 9pt; color: #010100;"> This grid interval regulates the accuracy of the calculations. Depending on the speed of your machine, a value of 2 would be acceptable. A to small value could take too long to calculate, while to large value would produce inaccurate results. </span></p>
+<p class="p_Heading1"><span class="f_Heading1">&nbsp;</span></p>
+<p class="p_Heading1"><img src="_bm768.png" width="123" height="40" border="0" alt="_bm768"><span style="font-size: 9pt; color: #010100;"> The calculation process will be repeated until the required volume or the end of the pit is reached. The volume required will be compared with the volume calculated between the selected top layer and the one below it.</span></p>
+<p class="p_Heading1"><span class="f_Heading1">&nbsp;</span></p>
+<p class="p_Heading1"><img src="_bm769.png" width="101" height="28" border="0" alt="_bm769"><span style="font-size: 9pt; color: #010100;"> Check this box to confine the calculations to a user-defined area.</span></p>
+<p class="p_Heading1"><span class="f_Heading1">&nbsp;</span></p>
+<p class="p_Heading1"><span style="font-size: 9pt; color: #010100;">EXAMPLE:</span></p>
+<p class="p_Heading1"><img src="_bm770.png" width="326" height="177" border="0" alt="_bm770"><span style="font-size: 9pt; color: #010100;"> An initial base CAD line must be defined.</span></p>
+<p class="p_Heading1"><span class="f_Heading1">&nbsp;</span></p>
+<p class="p_Heading1"><span style="font-size: 9pt; color: #010100;">An area is also indicated. Point to the base line on the side that the strip must be calculated. On the regular grid interval, Model Maker will calculate elevations on all the layers and constantly check the volume. The process stops when the desired volume is achieved within the new strip width. Note that the red crosses indicate the grid positions. Ensure that you are satisfied with the area that is covered. </span></p>
+<p class="p_Heading1"><span style="font-size: 9pt; color: #010100;">A new line at width can be added to the graphics. Use this line as the new base line for the next strip width.</span></p>
+<p class="p_Heading1"><span style="font-size: 9pt; color: #010100;">A summary of the volumes will be presented in the editor.</span></p>
+<p class="p_Heading1"><span style="font-size: 9pt; color: #010100;">The width and volumes between the layers are displayed.</span></p>
+<p class="p_Heading1"><span class="f_Heading1">&nbsp;</span></p>
+<p class="p_Heading1"><span style="font-size: 9pt; color: #010100;">EXAMPLE OF SUMMARY</span></p>
+<p class="p_Heading1"><span style="font-size: 9pt; color: #010100;">Width &nbsp; &nbsp; &nbsp; a1 &nbsp; &nbsp; &nbsp; a2 &nbsp; &nbsp;a3 </span></p>
+<p class="p_Heading1"><span style="font-size: 9pt; color: #010100;"> &nbsp; &nbsp;2.0 &nbsp; &nbsp; 340 &nbsp; &nbsp;408</span></p>
+<p class="p_Heading1"><span style="font-size: 9pt; color: #010100;"> &nbsp; &nbsp;4.0 &nbsp; &nbsp; 680 &nbsp; &nbsp;816</span></p>
+<p class="p_Heading1"><span style="font-size: 9pt; color: #010100;"> &nbsp; &nbsp;6.0 &nbsp;1000 &nbsp;1200</span></p>
+<p class="p_Heading1"><span style="font-size: 9pt; color: #010100;"> &nbsp; &nbsp;8.0 &nbsp;1320 &nbsp;1584</span></p>
+<p class="p_Heading1"><span style="font-size: 9pt; color: #010100;"> &nbsp;10.0 &nbsp;1640 &nbsp;1968</span></p>
+<p class="p_Heading1"><span style="font-size: 9pt; color: #010100;"> &nbsp;12.0 &nbsp;1940 &nbsp;2328</span></p>
+<p class="p_Heading1"><span style="font-size: 9pt; color: #010100;"> &nbsp;14.0 &nbsp;2240 &nbsp;2688</span></p>
+<p class="p_Heading1"><span style="font-size: 9pt; color: #010100;"> &nbsp;16.0 &nbsp;2520 &nbsp;3024</span></p>
+<p class="p_Heading1"><span class="f_Heading1">&nbsp;</span></p>
+<p class="p_Heading1"><span style="font-size: 9pt; color: #010100;">The above shows that at a width of 16m a volume of 3024m3 was calculated for the layers a2 to a3.</span></p>
+<p class="p_Heading1"><span style="font-size: 9pt; color: #010100;">The first column is the width at regular intervals. The next are the volumes for layers a1 to a2 and a2 to a3.</span></p>
+<p class="p_Heading1"><span style="font-size: 9pt; color: #010100;">Note that the column a3 is empty because only 2 sets of volumes can be calculated between 3 layers.</span></p>
+<p class="p_Heading1"><span class="f_Heading1">&nbsp;</span></p>
+<p class="p_Heading1"><span style="font-size: 9pt; color: #010100;">The purpose of the strip width definition is to determine the layout of the mine in order to achieve desired volumes within predetermined widths.</span></p>
+<p class="p_Heading1"><span class="f_Heading1">&nbsp;</span></p>
+<p class="p_Heading1"><span class="f_rrelatedtopic">Related topics:</span></p>
+<p class="p_Heading1"><span style="font-size: 9pt; color: #010100;"><a href="cad___line___add_.htm">CAD lines</a></span></p>
+<p class="p_Heading1"><span style="font-size: 9pt; color: #010100;"><a href="cad_geo_areas.htm">Geo areas</a></span></p>
+<p class="p_Heading1"><span style="font-size: 9pt; color: #010100;"><a href="mine___planning_.htm">Mine planning</a></span></p>
+
+</td></tr></table>
+
+</body>
+</html>

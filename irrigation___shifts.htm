@@ -1,0 +1,169 @@
+<!DOCTYPE HTML PUBLIC "-//W3C//DTD HTML 4.01 Transitional//EN">
+<html>
+<head>
+   <title>IRRIGATION : Shifts</title>
+   <meta name="generator" content="Help &amp; Manual" />
+   <meta name="keywords" content="Automatic,Block,Fill,Flow,Hatch,IRRIGATION,Mainline,Shift,Valve" />
+   <meta http-equiv="Content-Type" content="text/html; charset=ISO-8859-1" />
+   <meta http-equiv="Content-Style-Type" content="text/css" />
+   <link type="text/css" href="default.css" rel="stylesheet" />
+
+<script type="text/javascript" src="helpman_topicinit.js"></script>
+<object id=hhctrl_112 type="application/x-oleobject" classid="clsid:adb880a6-d8ff-11cf-9377-00aa003b7a11"><param name="Command" value="ALink"><param name="Window" value="second"><param name="Item1" value=""><param name="Item2" value="$topicid_IRRIGATION___Defaults"></object></head>
+<body style="margin: 0px 0px 0px 0px; background: #FFFFFF;">
+
+
+<table width="100%" border="0" cellspacing="0" cellpadding="5" bgcolor="#D0D0D0">
+  <tr valign="middle">
+    <td align="left">
+      <p class="p_Heading1"><span class="f_Heading1">IRRIGATION : Shifts</span></p>
+
+    </td>
+    <td align="right">
+     <span style="font-size: 9pt">
+     <a href="start_up.htm">Top</a>&nbsp;
+     <a href="irrigationglobalreports.htm">Previous</a>&nbsp;
+     <a href="irrigationshifts_auto.htm">Next</a>
+     </span>
+    </td>
+  </tr>
+</table>
+
+
+<!-- Placeholder for topic body. -->
+<table width="100%" border="0" cellspacing="0" cellpadding="5"><tr valign="top"><td align="left">
+<p class="p_Heading1"><span class="f_Heading1">&nbsp;</span></p>
+<p class="p_Heading1"><span class="f_rrelatedtopic">MENU : Irr - Shifts</span></p>
+<p class="p_Heading1"><span style="font-size: 5pt; color: #010100;">&nbsp;</span></p>
+<p class="p_Heading1"><span style="font-size: 9pt; font-weight: bold; color: #010100;">Irri Maker</span><span style="font-size: 9pt; color: #010100;"> makes extensive use of designing groups of nodes and pipes together in blocks. These blocks normally consists of sprinkler nodes, lateral pipes joining them up and are connected to the source valve by means of manifold pipes and fitting nodes. </span></p>
+<p class="p_Heading1"><span style="font-size: 9pt; color: #010100;">Most of the time, the main line source pump cannot supply enough water to the whole irrigation system to simultaneously maintain the flow to all the block. The blocks are then designated to operate in certain shifts. </span></p>
+<p class="p_Heading1"><span class="f_Heading1">&nbsp;</span></p>
+<p class="p_Heading1"><span style="font-size: 9pt; color: #010100;">Apart from grouping sprinkler in blocks, regular valves and sprinklers can also be defined to operate directly in the main line. The purpose of this in not to eliminate or substitute the blocks but to manage certain pipe layouts not associated with blocks like wind rows between the blocks.</span></p>
+<p class="p_Heading1"><span class="f_Heading1">&nbsp;</span></p>
+<p class="p_Heading1"><span class="f_CourierFixed">VALVES</span></p>
+<p class="p_Heading1"><span style="font-size: 5pt; color: #010100;">&nbsp;</span></p>
+<p class="p_Heading1"><span style="font-size: 9pt; color: #010100;">A valve node in Irri Maker can have two types of functions.</span></p>
+<p class="p_Heading1"><span style="font-size: 9pt; color: #010100;">1 : It acts as a demand node which simulates a position where water is taken out of the system</span></p>
+<p class="p_Heading1"><span style="font-size: 9pt; color: #010100;">2 : It acts as a shutoff valve to turn the flow to all the downstream pipes connected to it, on and off.</span></p>
+<p class="p_Heading1"><span class="f_Heading1">&nbsp;</span></p>
+<p class="p_Heading1"><span style="font-size: 9pt; color: #010100;">Valves defined by the blocks act as demand nodes within the main line. Other regular valves defined by the user within the main line can either be demand or shutoff valves.</span></p>
+<p class="p_Heading1"><span class="f_Heading1">&nbsp;</span></p>
+<p class="p_Heading1"><a name="blocks"></a><span class="f_CourierFixed">BLOCKS</span></p>
+<p class="p_Heading1"><span style="font-size: 5pt; color: #010100;">&nbsp;</span></p>
+<p class="p_Heading1"><span style="font-size: 9pt; color: #010100;">The difference between valves linked to blocks and regular valves is the following.</span></p>
+<p class="p_Heading1"><span class="f_Heading1">&nbsp;</span></p>
+<p class="p_Heading1"><span class="f_CourierFixed">Valves on blocks</span></p>
+<p class="p_Heading1"><span style="font-size: 5pt; color: #010100;">&nbsp;</span></p>
+<p class="p_Heading1"><span style="font-size: 9pt; color: #010100;">After creating each block boundary, a valve must be added to the block. This valve controls the main entry into the block and the flow and pressure values are determined when the hydraulics of each block is calculated. Although the valve belongs to the block, it is available to the main line to make the necessary pipes connections. The main line can only connect pipes to this node but cannot change the hydraulic properties of the valve. This can be done by first activating the block in question and then recalculating the hydraulics or by editing the valve properties manually.</span></p>
+<p class="p_Heading1"><span class="f_Heading1">&nbsp;</span></p>
+<p class="p_Heading1"><span style="font-size: 9pt; color: #010100;">These block valves act as demand nodes because on the main line, it simulates the water draw off that all the sprinkler would consume. These valves are always in an open state and cannot be used to shutoff the water flow through it to the down lines pipes.</span></p>
+<p class="p_Heading1"><span class="f_Heading1">&nbsp;</span></p>
+<p class="p_Heading1"><a name="regularvalves"></a><span class="f_CourierFixed">Regular valves</span></p>
+<p class="p_Heading1"><span style="font-size: 5pt; color: #010100;">&nbsp;</span></p>
+<p class="p_Heading1"><span style="font-size: 9pt; color: #010100;">The main line may hold any number of valves which can either be the block valves or other, user defined regular valves. </span></p>
+<p class="p_Heading1"><span style="font-size: 9pt; color: #010100;">Regular valves can be used to simulate a draw off node and/or be used to shut the water flow off to the downstream pipes. Controlling and setting the shifts in which these valves perform their duties are set by the valve grid editor.</span></p>
+<p class="p_Heading1"><span style="font-size: 9pt; color: #010100;">&nbsp;</span></p>
+<p class="p_Heading1"><span style="font-size: 5pt;"> </span><span class="f_CourierFixed">Shift block editor</span></p>
+<p class="p_Heading1"><span style="font-size: 5pt; color: #010100;">&nbsp;</span></p>
+<p class="p_Heading1"><span style="font-size: 9pt; color: #010100;">This dialog box allows you to easily assign the blocks to their respective shifts.</span></p>
+<p class="p_Heading1"><span style="font-size: 5pt; color: #010100;">&nbsp;</span></p>
+<p class="p_Heading1"><map name="map51"><area shape="rect" coords="91,355,114,379" href="irrigationshifts_auto.htm" alt=""><area shape="rect" coords="79,179,117,214" href="irrigationshifts_graphics.htm" alt=""></map><img src="irri-shifts.png" width="474" height="402" border="0" alt="irri-shifts" usemap="#map51"></p>
+<p class="p_Heading1"><span style="font-size: 5pt;">&nbsp;</span></p>
+<p class="p_Heading1"><span class="f_CourierFixed">Input grid</span></p>
+<p class="p_Heading1"><span style="font-size: 5pt; color: #010100;">&nbsp;</span></p>
+<p class="p_Heading1"><span style="font-size: 9pt; color: #010100;">This grid input box is used to assign blocks to shifts.</span></p>
+<p class="p_Heading1"><span style="font-size: 9pt; color: #010100;">Each defined block occupies a single row. Each shift occupies a column.</span></p>
+<p class="p_Heading1"><span class="f_Heading1">&nbsp;</span></p>
+<p class="p_Heading1"><span style="font-size: 9pt; color: #010100;">The first column holds all the block numbers. The first row holds all the shift numbers.</span></p>
+<p class="p_Heading1"><span style="font-size: 9pt; color: #010100;">The second column indicates the block demand.</span></p>
+<p class="p_Heading1"><span class="f_Heading1">&nbsp;</span></p>
+<p class="p_Heading1"><span style="font-size: 9pt; color: #010100;">If a block is to be activated or deactivated in a certain shift, double click on the grid at the intersection of the block row and the shift column. The '#' character is used to indicate that the block is active in a specific shift. Any one block may be active in up to <a href="irrigation___blocks.htm">4 shifts</a>.</span></p>
+<p class="p_Heading1"><span class="f_Heading1">&nbsp;</span></p>
+<p class="p_Heading1"><span style="font-size: 9pt; font-style: italic; font-weight: bold; color: #ff0000;">Note:</span><span style="font-size: 9pt; color: #010100;"> </span></p>
+<p class="p_Heading1"><span style="font-size: 9pt; color: #010100;">Blocks may also be assigned to shifts in the <a href="irrigation___blocks.htm">Block</a> page.</span></p>
+<p class="p_Heading1"><span class="f_Heading1">&nbsp;</span></p>
+<p class="p_Heading1"><span class="f_CourierFixed">Shift #</span></p>
+<p class="p_Heading1"><span style="font-size: 5pt; color: #010100;">&nbsp;</span></p>
+<p class="p_Heading1"><span style="font-size: 9pt; color: #010100;">When selecting a new shift number in the list box, the information box below will indicate the number of blocks operating in the shift and also the total demand of the shift.</span></p>
+<p class="p_Heading1"><span class="f_Heading1">&nbsp;</span></p>
+<p class="p_Heading1"><span class="f_CourierFixed">Editor</span></p>
+<p class="p_Heading1"><span style="font-size: 5pt; color: #010100;">&nbsp;</span></p>
+<p class="p_Heading1"><span style="font-size: 9pt; color: #010100;">Click on the Editor button to view a report of all the operational shifts, the blocks associated with each shift and the shift demand.</span></p>
+<p class="p_Heading1"><span class="f_Heading1">&nbsp;</span></p>
+<p class="p_Heading1"><span class="f_CourierFixed">Clear</span></p>
+<p class="p_Heading1"><span style="font-size: 5pt; color: #010100;">&nbsp;</span></p>
+<p class="p_Heading1"><span style="font-size: 9pt; color: #010100;">Removes all the shift settings. </span></p>
+<p class="p_Heading1"><span class="f_Heading1">&nbsp;</span></p>
+<p class="p_Heading1"><span class="f_CourierFixed">The % option</span></p>
+<p class="p_Heading1"><span style="font-size: 5pt; color: #010100;">&nbsp;</span></p>
+<p class="p_Heading1"><img src="_bm714.png" width="141" height="135" border="0" alt="_bm714"></p>
+<p class="p_Heading1"><span style="font-size: 5pt; color: #010100;">&nbsp;</span></p>
+<p class="p_Heading1"><span style="font-size: 9pt; color: #010100;">If the % check box is checked the blocks will be filled with a solid colour reflecting the shift in which they operate.</span></p>
+<p class="p_Heading1"><span style="font-size: 9pt; color: #010100;">The shift colours and solid fill intensity is set on the <a href="javascript:hhctrl_112.hhclick()">defaults</a> menu.</span></p>
+<p class="p_Heading1"><span class="f_Heading1">&nbsp;</span></p>
+<p class="p_Heading1"><span class="f_CourierFixed">The # option</span></p>
+<p class="p_Heading1"><span style="font-size: 5pt; color: #010100;">&nbsp;</span></p>
+<p class="p_Heading1"><span style="font-size: 9pt; color: #010100;">If this check box is checked the shift numbers will be plotted inside each block on every replot.</span></p>
+<p class="p_Heading1"><span class="f_Heading1">&nbsp;</span></p>
+<p class="p_Heading1"><a name="regularvalves"></a><span class="f_CourierFixed">REGULAR VALVES</span></p>
+<p class="p_Heading1"><span style="font-size: 5pt; color: #010100;">&nbsp;</span></p>
+<p class="p_Heading1"><span style="font-size: 9pt; color: #010100;">The operation of a regular valve can be linked to any of the defined shifts. The valve can simultaneously act as a demand node and a shutoff node in either the same shift or in different shifts. It can also be set to act in only one of the two modes or can be set to be totally inactive.</span></p>
+<p class="p_Heading1"><span class="f_Heading1">&nbsp;</span></p>
+<p class="p_Heading1"><span style="font-size: 9pt; color: #010100;">Regular valves are normally used as shutoff nodes to control the water flow to sprinklers operating in positions other than regular blocks. This can be to a pipe line irrigating the trees between blocks or to the tap in the farmer's garden.</span></p>
+<p class="p_Heading1"><span class="f_Heading1">&nbsp;</span></p>
+<p class="p_Heading1"><span style="font-size: 9pt; color: #010100;">When a regular valve is used as a shutoff node the position of the node in the pipe system is important. The following case describes the main line feeding 2 blocks and separately, the trees between the blocks.</span></p>
+<p class="p_Heading1"><span class="f_Heading1">&nbsp;</span></p>
+<p class="p_Heading1"><img src="_bm717.png" width="182" height="198" border="0" alt="_bm717"></p>
+<p class="p_Heading1"><span style="font-size: 5pt; color: #010100;">&nbsp;</span></p>
+<p class="p_Heading1"><span style="font-size: 9pt; color: #010100;">The pump supplies water to blocks 1 and 2. At position 'A' the intention is to have a regular valve regulating the flow to the sprinkler line. In the example, the valve is placed incorrectly. In the described position, valve 'A' will shutoff the flow to block 2 and also to the sprinkler line. </span></p>
+<p class="p_Heading1"><span class="f_Heading1">&nbsp;</span></p>
+<p class="p_Heading1"><span style="font-size: 9pt; color: #010100;">A better position to place valve 'A' is as follows.</span></p>
+<p class="p_Heading1"><span style="font-size: 5pt; color: #010100;">&nbsp;</span></p>
+<p class="p_Heading1"><img src="_bm718.png" width="273" height="144" border="0" alt="_bm718"></p>
+<p class="p_Heading1"><span style="font-size: 5pt; color: #010100;">&nbsp;</span></p>
+<p class="p_Heading1"><span style="font-size: 9pt; color: #010100;">Here a fitting is used to create the junction between blocks 1 and 2 and the sprinkler line. Valve 'A' is then placed on the sprinkler line and in this case will only shutoff the sprinkler line and not have any effect on the flow to block 2.</span></p>
+<p class="p_Heading1"><span class="f_Heading1">&nbsp;</span></p>
+<p class="p_Heading1"><span class="f_CourierFixed">Valve grid editor</span></p>
+<p class="p_Heading1"><span style="font-size: 5pt; color: #010100;">&nbsp;</span></p>
+<p class="p_Heading1"><img src="_bm719.png" width="297" height="176" border="0" alt="_bm719"></p>
+<p class="p_Heading1"><span style="font-size: 5pt; color: #010100;">&nbsp;</span></p>
+<p class="p_Heading1"><span style="font-size: 9pt; color: #010100;">In the example, four regular valves are displayed. Valves 'a' and 'b' will act as demands with a value of 10m3/h and will be active in shift 3 and shift 4. The pressure at which the demand is drawn off is also entered. This value will be used in the calculations of the <a href="irrigationhydraulics_size.htm">automatic pipe sizing</a> so that the pipe diameters and pump pressure can be set to supply the demand amount at the desired pressure.</span></p>
+<p class="p_Heading1"><span style="font-size: 9pt; color: #010100;">Valve 'a' is also used as a shutoff node and will only let water through during the operation of shift 4.</span></p>
+<p class="p_Heading1"><span class="f_Heading1">&nbsp;</span></p>
+<p class="p_Heading1"><span style="font-size: 9pt; color: #010100;">Valves 'c' and 'd' are used only as shutoff nodes and will be open during shift 5. For all the other shifts the flow through the valves will be closed.</span></p>
+<p class="p_Heading1"><span class="f_Heading1">&nbsp;</span></p>
+<div style="text-align: left; text-indent: 0px; padding: 0px 0px 0px 0px; margin: 0px 0px 0px 0px;"><table cellspacing="0" cellpadding="1" border="0" style="border: none; border-spacing:0px;">
+<tr style="text-align:left;vertical-align:top;">
+<td valign="top" width="368" style="width:368px;"><p style="text-align: center; text-indent: 0px;"><span style="font-size: 9pt; font-style: italic; font-weight: bold; color: #ff0000;">Note:</span></p>
+<p style="text-align: center; text-indent: 0px;"><span style="font-size: 9pt; color: #010100;">The open shift for valve 'b' is set to zero. By setting the shift number to zero the valve will be open in all the shifts. Because the demand shift for valves 'c' and 'd' is also set to zero, they will draw water out of the system during all the shifts if a demand value is specified.</span></p>
+</td>
+</tr>
+</table>
+</div>
+<p style="text-indent: 0px;"><span style="color: #000000;">&nbsp;</span></p>
+<p style="text-indent: 0px;"><span style="width:24px">&nbsp;</span></p>
+<div style="text-align: left; text-indent: 0px; padding: 0px 0px 0px 0px; margin: 0px 0px 0px 0px;"><table cellspacing="0" cellpadding="0" border="0" style="border: none; border-spacing:0px;">
+<tr style="text-align:left;vertical-align:top;">
+<td valign="top" width="79" style="width:79px;"><p style="text-indent: 0px;"><span style="font-size: 9pt; color: #010100;">Single edit</span></p>
+</td>
+<td valign="top" width="869" style="width:869px;"><p style="text-indent: 0px;"><span style="font-size: 9pt; color: #010100;">: In this mode any of the entries in the grid editor may be changed.</span></p>
+<p class="p_Heading1"><span class="f_Heading1">&nbsp;</span></p>
+</td>
+</tr>
+<tr style="text-align:left;vertical-align:top;">
+<td valign="top" width="79" style="width:79px;"><p style="text-indent: 0px;"><span style="font-size: 9pt; color: #010100;">Select range</span></p>
+</td>
+<td valign="top" width="869" style="width:869px;"><p style="text-indent: 0px;"><span style="font-size: 9pt; color: #010100;">: Click this option to globally apply changes to the selected range of valve. Select a range of cells by clicking on the first cell and while keeping the mouse button down, drag the cursor over the other cells. Click on the edit range button to apply the changes. Select what property must be changed and enter the new value. &nbsp;These values will be added to all the selected valves. Remember to recalculate the hydraulics of the main line after changes have been made.</span></p>
+</td>
+</tr>
+</table>
+</div>
+<p style="text-indent: 0px;"><span style="color: #000000;">&nbsp;</span></p>
+<p style="text-indent: 0px;"><span class="f_rrelatedtopic">Related topics:</span></p>
+<p style="text-indent: 0px;"><span style="font-size: 5pt; color: #010100;">&nbsp;</span></p>
+<p style="text-indent: 0px;"><span style="font-size: 9pt; color: #010100;"><a href="irrigation___blocks.htm">Blocks</a> </span></p>
+
+</td></tr></table>
+
+</body>
+</html>

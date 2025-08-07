@@ -1,0 +1,114 @@
+<!DOCTYPE HTML PUBLIC "-//W3C//DTD HTML 4.01 Transitional//EN">
+<html>
+<head>
+   <title>CAD : Pattern - Save</title>
+   <meta name="generator" content="Help &amp; Manual" />
+   <meta name="keywords" content="Code,Elevation,Identify,Manhole,Pattern,SAVE" />
+   <meta http-equiv="Content-Type" content="text/html; charset=ISO-8859-1" />
+   <meta http-equiv="Content-Style-Type" content="text/css" />
+   <link type="text/css" href="default.css" rel="stylesheet" />
+
+<script type="text/javascript" src="helpman_topicinit.js"></script>
+</head>
+<body style="margin: 0px 0px 0px 0px; background: #FFFFFF;">
+
+
+<table width="100%" border="0" cellspacing="0" cellpadding="5" bgcolor="#D0D0D0">
+  <tr valign="middle">
+    <td align="left">
+      <p class="p_Heading1"><span class="f_Heading1">CAD : Pattern - Save</span></p>
+
+    </td>
+    <td align="right">
+     <span style="font-size: 9pt">
+     <a href="start_up.htm">Top</a>&nbsp;
+     <a href="cadpattern_re_scale.htm">Previous</a>&nbsp;
+     <a href="cadpattern_optimize.htm">Next</a>
+     </span>
+    </td>
+  </tr>
+</table>
+
+
+<!-- Placeholder for topic body. -->
+<table width="100%" border="0" cellspacing="0" cellpadding="5"><tr valign="top"><td align="left">
+<p class="p_Heading1"><span class="f_Heading1">&nbsp;</span></p>
+<p class="p_Heading1"><span class="f_rrelatedtopic">MENU : Cad - Patt - Save</span></p>
+<p class="p_Heading1"><span style="font-size: 5pt; color: #010100;">&nbsp;</span></p>
+<p class="p_Heading1"><span style="font-size: 9pt; color: #010100;">Draw any shape, identify the elements and save it to disk as a pattern. The patterns are always saved to the subdirectory which is automatically created by Model Maker. These patterns can then be added to any drawing. A pattern is created from all the <a href="cad_identify.htm">identified</a> elements. Indicate a base point when the pattern is saved. This base point will be used when the pattern is recalled from disk and placed on the drawing.</span></p>
+<p class="p_Heading1"><span class="f_Heading1">&nbsp;</span></p>
+<p class="p_Heading1"><img src="_bm178.png" width="270" height="219" border="0" alt="_bm178"><span style="font-size: 9pt; color: #010100;"> </span></p>
+<p class="p_Heading1"><span style="font-size: 5pt; color: #010100;">&nbsp;</span></p>
+<p class="p_Heading1"><span style="font-size: 9pt; color: #010100;">In this </span><span style="font-size: 9pt; font-weight: bold; color: #010100;">example</span><span style="font-size: 9pt; color: #010100;"> a shape was first drawn on the side of the CAD drawing, identified and saved as a pattern. Then the pattern was loaded and placed at the desired positions on the plan. &nbsp;Normally one would use the center (little red circle) of the pattern as the indicated base point.</span></p>
+<p class="p_Heading1"><span class="f_Heading1">&nbsp;</span></p>
+<p class="p_Heading1"><span class="f_Heading1">&nbsp;</span></p>
+<p class="p_Heading1"><span style="font-size: 9pt; font-weight: bold; color: #010100;">Special options within a pattern:</span></p>
+<p class="p_Heading1"><span style="font-size: 11pt; font-family: 'Calibri';">The following special CAD layer names can be used in a Pattern to Intelligently pick up the DTM information and convert it to Text.</span></p>
+<p class="p_Heading1"><span style="font-size: 11pt; font-family: 'Calibri';"> </span></p>
+<p class="p_Heading1"><span style="font-size: 11pt; font-family: 'Calibri';">?DTMZ? &nbsp; &nbsp; &nbsp; &nbsp; (Elevation of the DTM Point)</span></p>
+<p class="p_Heading1"><span style="font-size: 11pt; font-family: 'Calibri';">?DTMC? &nbsp; &nbsp; &nbsp; &nbsp;(Dtm Code)</span></p>
+<p class="p_Heading1"><span style="font-size: 11pt; font-family: 'Calibri';">?DTMCV?&nbsp; &nbsp;   &nbsp; &nbsp; &nbsp; &nbsp; (Value of (dtm code) That you can use on its own) </span></p>
+<p class="p_Heading1"><span style="font-size: 11pt; font-family: 'Calibri';">?DTMZ?_?DTMCV?5 (Z+Value of the code)</span></p>
+<p class="p_Heading1"><span style="font-size: 11pt; font-family: 'Calibri';">?DTMT?  &nbsp; &nbsp; &nbsp; &nbsp;(Dtm Tag)</span></p>
+<p class="p_Heading1"><span style="font-size: 11pt; font-family: 'Calibri';">?DTMY? &nbsp; &nbsp; &nbsp; &nbsp;(The Y coordinate)</span></p>
+<p class="p_Heading1"><span style="font-size: 11pt; font-family: 'Calibri';">?DTMX? &nbsp; &nbsp; &nbsp; &nbsp;(The X coordinate)</span></p>
+<p class="p_Heading1"><span class="f_Heading1">&nbsp;</span></p>
+<p style="text-indent: 0px; line-height: 1.15; margin: 0px 0px 13px 0px;"><span style="font-size: 11pt; font-family: 'Calibri';"> </span><img src="clip2175.png" width="603" height="650" border="0" alt="clip2175"></p>
+<p class="p_Heading1"><span class="f_Heading1">&nbsp;</span></p>
+<p class="p_Heading1"><span style="font-size: 11pt; font-family: 'Calibri'; font-weight: bold; text-decoration: underline;">Example of codes &amp; elevations:</span></p>
+<p class="p_Heading1"><span style="font-size: 11pt; font-family: 'Calibri'; font-weight: bold;">Z=1264.3217</span></p>
+<p class="p_Heading1"><span style="font-size: 11pt; font-family: 'Calibri';">?DTMZ? = 1264.32 (STD 2 decimals)</span></p>
+<p class="p_Heading1"><span style="font-size: 11pt; font-family: 'Calibri';">?DTMZ?3 = 1264.322 (3 decimal places)</span></p>
+<p class="p_Heading1"><span style="font-size: 11pt; font-family: 'Calibri';"> </span></p>
+<p class="p_Heading1"><span style="font-size: 11pt; font-family: 'Calibri'; font-weight: bold;">C=ABCD-1.4896</span><span style="font-size: 11pt; font-family: 'Calibri';"> &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; </span></p>
+<p class="p_Heading1"><span style="font-size: 11pt; font-family: 'Calibri';">?DTMC? = ABCD-1.4896 (Display all text in code field) &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; </span></p>
+<p class="p_Heading1"><span style="font-size: 11pt; font-family: 'Calibri';">?DTMCV? = -1.4896 (Model Maker try to take code to value) &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; </span></p>
+<p class="p_Heading1"><span style="font-size: 11pt; font-family: 'Calibri';">?DTMCV?2 = -1.49 (Model Maker try to take code to value with specific decimal places) &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; </span></p>
+<p class="p_Heading1"><span style="font-size: 11pt; font-family: 'Calibri';"> </span></p>
+<p class="p_Heading1"><span style="font-size: 11pt; font-family: 'Calibri'; font-weight: bold;">C=ABCD,-1.4896 (Comma Added between description and Value)</span></p>
+<p class="p_Heading1"><span style="font-size: 11pt; font-family: 'Calibri';">?DTMC? = ABCD,-1.4896 (Display all text in code field)</span></p>
+<p class="p_Heading1"><span style="font-size: 11pt; font-family: 'Calibri';">?DTMCV? = -1.49 (Only numbers after comma go's to value STD 2 decimals)</span></p>
+<p class="p_Heading1"><span style="font-size: 11pt; font-family: 'Calibri';">?DTMCV?5 = -1.48960 (Only numbers after comma go's to value with specific decimal places)</span></p>
+<p class="p_Heading1"><span style="font-size: 11pt; font-family: 'Calibri';"> </span></p>
+<p class="p_Heading1"><span style="font-size: 11pt; font-family: 'Calibri'; font-weight: bold;">C=1234,-1.3683</span><span style="font-size: 11pt; font-family: 'Calibri';"> &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp;  </span></p>
+<p class="p_Heading1"><span style="font-size: 11pt; font-family: 'Calibri';">?DTMC? = 1234,-1.3683 (Display all text in code field) &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; </span></p>
+<p class="p_Heading1"><span style="font-size: 11pt; font-family: 'Calibri';">?DTMCV? = -1.37 &nbsp;(Only numbers after comma go's to value STD 2 decimals) &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; </span></p>
+<p class="p_Heading1"><span style="font-size: 11pt; font-family: 'Calibri';">?DTMCV?5 = -1.36830 (Only numbers after comma go's to value with specific decimal places)</span></p>
+<p class="p_Heading1"><span style="font-size: 11pt; font-family: 'Calibri';"> &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp;  </span></p>
+<p class="p_Heading1"><span style="font-size: 11pt; font-family: 'Calibri';"> </span></p>
+<p class="p_Heading1"><span style="font-size: 11pt; font-family: 'Calibri';">?DTMZ?_?DTMCV? = 1264.32 - 1.49 = 1262.83 (Z+Value STD 2 Decimal places)</span></p>
+<p class="p_Heading1"><span style="font-size: 11pt; font-family: 'Calibri';">?DTMZ?_?DTMCV?3 = 1264.3217 - 1.4896 = 1262.832 (Z+Value with specific decimal places)</span></p>
+<p class="p_Heading1"><span style="font-size: 11pt; font-family: 'Calibri';"> </span></p>
+<p class="p_Heading1"><span style="font-size: 11pt; font-family: 'Calibri';"> </span></p>
+<p class="p_Heading1"><span style="font-size: 11pt; font-family: 'Calibri'; font-weight: bold; text-decoration: underline;">Typical Application:</span></p>
+<p class="p_Heading1"><span style="font-size: 11pt; font-family: 'Calibri';"> </span></p>
+<p class="p_Heading1"><span style="font-size: 11pt; font-family: 'Calibri'; font-weight: bold;">Trig Beacon Pattern.</span></p>
+<p class="p_Heading1"><span style="font-size: 11pt; font-family: 'Calibri';"> </span></p>
+<p class="p_Heading1"><img src="embim23.png" width="375" height="180" vspace="1" hspace="1" border="0" alt=""></p>
+<p class="p_Heading1"><span style="font-size: 11pt; font-family: 'Calibri';"> </span></p>
+<p class="p_Heading1"><span style="font-size: 11pt; font-family: 'Calibri';">Result:</span></p>
+<p class="p_Heading1"><img src="embim24.png" width="386" height="185" vspace="1" hspace="1" border="0" alt=""></p>
+<p class="p_Heading1"><span style="font-size: 11pt; font-family: 'Calibri';"> </span></p>
+<p class="p_Heading1"><span style="font-size: 11pt; font-family: 'Calibri';"> </span></p>
+<p class="p_Heading1"><span style="font-size: 11pt; font-family: 'Calibri';"> </span></p>
+<p class="p_Heading1"><span style="font-size: 11pt; font-family: 'Calibri'; font-weight: bold;">Manhole Information Patterns:</span></p>
+<p class="p_Heading1"><span style="font-size: 11pt; font-family: 'Calibri';"> </span></p>
+<p class="p_Heading1"><span style="font-size: 11pt; font-family: 'Calibri';">The Invert depth was surveyed and entered in the code field after the comma as a negative value.</span></p>
+<p class="p_Heading1"><span style="font-size: 11pt; font-family: 'Calibri';">The cover level represents the normal elevation Z value.</span></p>
+<p class="p_Heading1"><span style="font-size: 11pt; font-family: 'Calibri';">The result is the Pattern prints the cover level from the z and calculates the Invert level 1719.222 + -3.21 =1716.012</span></p>
+<p class="p_Heading1"><span style="font-size: 11pt; font-family: 'Calibri';"> </span></p>
+<p class="p_Heading1"><img src="embim25.png" width="550" height="642" vspace="1" hspace="1" border="0" alt=""></p>
+<p style="text-indent: 0px; line-height: 1.15; margin: 0px 0px 13px 0px;"><span style="color: #000000;">&nbsp;</span></p>
+<p class="p_Heading1"><span class="f_Heading1">&nbsp;</span></p>
+<p class="p_Heading1"><span class="f_Heading1">&nbsp;</span></p>
+<p class="p_Heading1"><span class="f_Heading1">&nbsp;</span></p>
+<p class="p_Heading1"><span class="f_Heading1">&nbsp;</span></p>
+<p class="p_Heading1"><span class="f_rrelatedtopic">Related topics:</span></p>
+<p class="p_Heading1"><span style="font-size: 9pt; color: #010100;"><a href="cadpattern_load.htm">Load Pattern</a></span></p>
+<p class="p_Heading1"><span style="font-size: 9pt; color: #010100;"><a href="cadpattern_dtm.htm">Pattern : DTM</a></span></p>
+<p class="p_Heading1"><span style="font-size: 9pt; color: #010100;"><a href="cadpattern_move.htm">Move Pattern</a></span></p>
+
+</td></tr></table>
+
+</body>
+</html>

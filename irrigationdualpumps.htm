@@ -1,0 +1,112 @@
+<!DOCTYPE HTML PUBLIC "-//W3C//DTD HTML 4.01 Transitional//EN">
+<html>
+<head>
+   <title>IRRIGATION : Dual Pumps</title>
+   <meta name="generator" content="Help &amp; Manual" />
+   <meta name="keywords" content="Hydraulics,IRRIGATION,Pumps,Dual,Multiple" />
+   <meta http-equiv="Content-Type" content="text/html; charset=ISO-8859-1" />
+   <meta http-equiv="Content-Style-Type" content="text/css" />
+   <link type="text/css" href="default.css" rel="stylesheet" />
+
+<script type="text/javascript" src="helpman_topicinit.js"></script>
+</head>
+<body style="margin: 0px 0px 0px 0px; background: #FFFFFF;">
+
+
+<table width="100%" border="0" cellspacing="0" cellpadding="5" bgcolor="#D0D0D0">
+  <tr valign="middle">
+    <td align="left">
+      <p class="p_Heading1"><span class="f_Heading1">IRRIGATION : Dual Pumps</span></p>
+
+    </td>
+    <td align="right">
+     <span style="font-size: 9pt">
+     <a href="start_up.htm">Top</a>&nbsp;
+     <a href="irrigationhydraulics_siz2.htm">Previous</a>&nbsp;
+     <a href="irrigationflushingmanifold.htm">Next</a>
+     </span>
+    </td>
+  </tr>
+</table>
+
+
+<!-- Placeholder for topic body. -->
+<table width="100%" border="0" cellspacing="0" cellpadding="5"><tr valign="top"><td align="left">
+<p style="text-indent: 0px;"><span style="color: #000000;">&nbsp;</span></p>
+<p style="text-indent: 0px;"><span class="f_rrelatedtopic">MENU : Irr - Dual Pumps</span></p>
+<p style="text-indent: 0px;"><span style="font-size: 6pt; color: #010100;">&nbsp;</span></p>
+<p style="text-indent: 0px;"><span style="font-size: 9pt; color: #010100;">The hydraulics of the system is calculated by entering the water into the system through the source node. </span></p>
+<p style="text-indent: 0px;"><img src="_bm26.png" width="10" height="15" border="0" alt="_bm26"> &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp;<span style="font-size: 9pt; color: #010100;">For regular blocks the valve is the source node.</span></p>
+<p style="text-indent: 0px;"><img src="_bm26.png" width="10" height="15" border="0" alt="_bm26"> &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp;<span style="font-size: 9pt; color: #010100;">For the main line, the source node is the pump. </span></p>
+<p style="text-indent: 0px;"><img src="_bm26.png" width="10" height="15" border="0" alt="_bm26"> &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp;<span style="font-size: 9pt; color: #010100;">Irri Maker can accommodate up to 20 pumps in the main line.</span></p>
+<p style="text-indent: 0px;"><img src="_bm26.png" width="10" height="15" border="0" alt="_bm26"> &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp;<span style="font-size: 9pt; color: #010100;">The main line can be an open or looped system. </span></p>
+<p style="text-indent: 0px;"><img src="_bm26.png" width="10" height="15" border="0" alt="_bm26"> &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp;<span style="font-size: 9pt; color: #010100;">Multiple pumps can only be used in a looped system and has to be connected to the system by means of single branched pipes.</span></p>
+<p style="text-indent: 0px;"><span style="color: #000000;">&nbsp;</span></p>
+<p style="text-indent: 0px;"><img src="_bm553.png" width="302" height="199" border="0" alt="_bm553"></p>
+<p style="text-indent: 0px;"><span style="font-size: 9pt; color: #010100;">EXAMPLE: multiple pumps. Note that the valid pumps are connected to the loop by means of single pipes. The pump which is part of the loop is not allowed.</span></p>
+<p style="text-indent: 0px;"><span style="color: #000000;">&nbsp;</span></p>
+<p style="text-indent: 0px;"><span class="f_CourierFixed">Single pump</span></p>
+<p style="text-indent: 0px;"><span style="font-size: 9pt; color: #010100;">When a single pump is specified, you are required to enter the operating pump pressure when the <a href="irrigationhydraulics.htm">hydraulic</a> calculations are performed. Irri-Maker will then calculate the flow into the system based on the available pressure.</span></p>
+<p style="text-indent: 0px;"><span style="color: #000000;">&nbsp;</span></p>
+<p style="text-indent: 0px;"><span class="f_CourierFixed">Multiple Pumps</span></p>
+<p style="text-indent: 0px;"><span style="font-size: 9pt; color: #010100;">When 2 or more pumps are specified the hydraulics gets much more complicated. In this case a balance must be found between the pressure and flow of each pump.</span></p>
+<p style="text-indent: 0px;"><span style="font-size: 9pt; color: #010100;">Increasing the pressure in one pump will normally result in the other pumps contributing less water to the system.</span></p>
+<p style="text-indent: 0px;"><span style="color: #000000;">&nbsp;</span></p>
+<p style="text-indent: 0px;"><span style="font-size: 9pt; color: #010100;">Irri Maker allows you to use 2 different options when specifying the flow balance. </span></p>
+<p style="text-indent: 0px;"><span style="color: #000000;">&nbsp;</span></p>
+<p style="text-indent: 0px;"><span class="f_CourierFixed">1) Specify the main pressure and both flows.</span></p>
+<p style="text-indent: 0px;"><span style="width:24px">&nbsp;</span> &nbsp; &nbsp; &nbsp; &nbsp;</p>
+<div style="text-align: left; text-indent: 0px; padding: 0px 0px 0px 0px; margin: 0px 0px 0px 0px;"><table cellspacing="0" cellpadding="0" border="0" style="border: none; border-spacing:0px;">
+<tr style="text-align:left;vertical-align:top;">
+<td valign="top" width="317" style="width:317px;"><p class="p_Heading1"><img src="clip1274.png" width="307" height="379" border="0" alt="clip1274"></p>
+</td>
+<td valign="top" width="407" style="width:407px;"><p style="text-indent: 0px;"><span style="color: #000000;">&nbsp;</span></p>
+<p style="text-indent: 0px;"><span style="color: #000000;">&nbsp;</span></p>
+<p style="text-indent: 0px;"><span style="font-size: 9pt; color: #010100;">In this case the main pump will set the pressure in the system. </span></p>
+<p style="text-indent: 0px;"><span style="color: #000000;">&nbsp;</span></p>
+<p style="text-indent: 0px;"><span style="font-size: 9pt; color: #010100;">The pressure set in <img src="clip1275.png" width="123" height="99" border="0" alt="clip1275">this box will be that of the main pump. The pressure in the other pumps will be determined based on their contributed flow.</span></p>
+<p style="text-indent: 0px;"><span style="color: #000000;">&nbsp;</span></p>
+<p style="text-indent: 0px;"><span style="color: #000000;">&nbsp;</span></p>
+<p style="text-indent: 0px;"><span style="font-size: 9pt; color: #010100;">The combined percentages of the flows must add up to 100.</span></p>
+</td>
+</tr>
+</table>
+</div>
+<p style="text-indent: 0px;"><span style="color: #000000;">&nbsp;</span></p>
+<p style="text-indent: 0px;"><span style="color: #000000;">&nbsp;</span></p>
+<div style="text-align: left; text-indent: 0px; padding: 0px 0px 0px 0px; margin: 0px 0px 0px 0px;"><table cellspacing="0" cellpadding="1" border="0" style="border: none; border-spacing:0px;">
+<tr style="text-align:left;vertical-align:top;">
+<td valign="top" width="463" style="width:463px;"><p style="text-align: center; text-indent: 0px;"><span style="font-size: 9pt; font-weight: bold; color: #ff0000;">Note:</span><span style="font-size: 9pt; color: #010100;"> </span></p>
+<p style="text-align: center; text-indent: 0px;"><span style="font-size: 9pt; color: #010100;">Each node may be given a user defined node name. Use the <a href="irrigation___nodes.htm#editnode">node edit</a> function to assign different names to the pumps so that they can easily be identified.</span></p>
+<p style="text-align: center; text-indent: 0px;"><span style="font-size: 9pt; color: #010100;">You will also be allowed to specify the percentage of flow (contribution) that the main pump puts into the system. In the example all the pumps supply an equal percentage of the flow.</span></p>
+<p style="text-align: center; text-indent: 0px;"><span style="font-size: 9pt; color: #010100;">In the hydraulic menu you will then enter only the pressure of the main pump. Based on the main pressure and the percentage of contribution, the system will be balanced and the required pressure at the other pumps calculated.</span></p>
+</td>
+</tr>
+</table>
+</div>
+<p style="text-indent: 0px;"><span style="color: #000000;">&nbsp;</span></p>
+<div style="text-align: left; text-indent: 0px; padding: 0px 0px 0px 0px; margin: 0px 0px 0px 0px;"><table cellspacing="0" cellpadding="0" border="0" style="border: none; border-spacing:0px;">
+<tr style="text-align:left;vertical-align:top;">
+<td valign="top" width="309" style="width:309px;"><p class="p_Heading1"><img src="clip1276.png" width="290" height="167" border="0" alt="clip1276"></p>
+</td>
+<td valign="top" width="479" style="width:479px;"><p style="text-indent: 0px;"><span class="f_CourierFixed">2) Specify the pressure at each pump.</span></p>
+<p style="text-indent: 0px;"><span style="color: #000000;">&nbsp;</span></p>
+<p style="text-indent: 0px;"><span style="font-size: 9pt; color: #010100;">In this case you will enter the pressure at each pump. Irri Maker will then iterate, balance the system and calculate the flows at each pump. </span></p>
+<p style="text-indent: 0px;"><span style="font-size: 9pt; color: #010100;">Depending on the pressures and elevation differences this formation can often result in a situation where one pump actually starts to reverse another. In such a case, Irri Maker automatically assumes there is a check valve at the pump. The pump will then not contribute to the system but will also not take any water out of the system.</span></p>
+</td>
+</tr>
+</table>
+</div>
+<p style="text-indent: 0px; margin: 0px 0px 0px 10px;"><span style="color: #000000;">&nbsp;</span></p>
+<p style="text-indent: 0px; margin: 0px 0px 0px 10px;"><span style="font-weight: bold;">3) Pump Curves</span></p>
+<p style="text-indent: 0px; margin: 0px 0px 0px 10px;">The pressure against flow curve as defined for each pump in the node database will be used to balance the flow in the system.</p>
+<p style="text-indent: 0px; margin: 0px 0px 0px 10px;"><span style="color: #000000;">&nbsp;</span></p>
+<p style="text-indent: 0px; margin: 0px 0px 0px 10px;">It is therefore important that correct relevant data has been entered in the <a href="irrigationnodedatabase.htm">node database</a> for each pump. </p>
+<p style="text-indent: 0px; margin: 0px 0px 0px 10px;"><span style="color: #000000;">&nbsp;</span></p>
+<p style="text-indent: 0px; margin: 0px 0px 0px 10px;">If for some reason the system cannot balance, use one of the alternative methods and look at the flow and pressure at each pump to see if the pump's performance curve data can actually supply the needed pressure and flow.</p>
+<p style="text-indent: 0px; margin: 0px 0px 0px 10px;"><span style="color: #000000;">&nbsp;</span></p>
+
+</td></tr></table>
+
+</body>
+</html>

@@ -1,0 +1,279 @@
+<!DOCTYPE HTML PUBLIC "-//W3C//DTD HTML 4.01 Transitional//EN">
+<html>
+<head>
+   <title>FILE : Import - Define</title>
+   <meta name="generator" content="Help &amp; Manual" />
+   <meta name="keywords" content="Ascii,Files,Import" />
+   <meta http-equiv="Content-Type" content="text/html; charset=ISO-8859-1" />
+   <meta http-equiv="Content-Style-Type" content="text/css" />
+   <link type="text/css" href="default.css" rel="stylesheet" />
+
+<script type="text/javascript" src="helpman_topicinit.js"></script>
+</head>
+<body style="margin: 0px 0px 0px 0px; background: #FFFFFF;">
+
+
+<table width="100%" border="0" cellspacing="0" cellpadding="5" bgcolor="#D0D0D0">
+  <tr valign="middle">
+    <td align="left">
+      <p class="p_Heading1"><span class="f_Heading1">FILE : Import - Define</span></p>
+
+    </td>
+    <td align="right">
+     <span style="font-size: 9pt">
+     <a href="start_up.htm">Top</a>&nbsp;
+     <a href="filefind.htm">Previous</a>&nbsp;
+     <a href="file___import___dxf_.htm">Next</a>
+     </span>
+    </td>
+  </tr>
+</table>
+
+
+<!-- Placeholder for topic body. -->
+<table width="100%" border="0" cellspacing="0" cellpadding="5"><tr valign="top"><td align="left">
+<p class="p_Heading1"><span class="f_Heading1">&nbsp;</span></p>
+<p class="p_Heading1"><span class="f_rrelatedtopic">MENU : File - Import ASCII &amp; Other - Define format</span></p>
+<p class="p_Heading1"><span class="f_Heading1">&nbsp;</span></p>
+<p class="p_Heading1"><span style="font-size: 5pt; color: #010100;">&nbsp;</span></p>
+<p class="p_Heading1"><span style="font-size: 9pt; font-weight: bold; color: #010100;">Import ASCII Data allows you to load co-ordinate data from files that have a different format to that of the standard Model Maker</span><span style="font-size: 9pt; color: #010100;"> <a href="fileloadascii.htm">yxz format</a>.</span></p>
+<p class="p_Heading1"><span class="f_Heading1">&nbsp;</span></p>
+<p class="p_Heading1"><span style="font-size: 9pt; color: #010100;">These files usually have a different column sequence or has a file extension other than the normal YXZ. </span></p>
+<p class="p_Heading1"><span style="font-size: 9pt; color: #010100;">The options in this dialog box will be used to specify the specific order of the co-ordinates in the file that you load. It is important for Model Maker to know which of the characters in the file must be loaded as co-ordinates, the elevations and the code or name of each point. </span></p>
+<p class="p_Heading1"><span style="font-size: 9pt; color: #010100;">These type of files normally consist of data lines, each defining the co-ordinates of an individual survey point.</span></p>
+<p class="p_Heading1"><span style="font-size: 9pt; color: #010100;">The functions in this dialog box are also used when geographical co-ordinates are imported in the <a href="utility___electronic_data.htm">electronic</a> menu.</span></p>
+<p class="p_Heading1"><span class="f_Heading1">&nbsp;</span></p>
+<p class="p_Heading1"><span class="f_CourierFixed">Examples of an ASCII files.</span></p>
+<p class="p_Heading1"><span class="f_Heading1">&nbsp;</span></p>
+<p class="p_Heading1"><span style="font-size: 9pt; font-weight: bold; color: #010100; text-decoration: underline;">Example 1</span></p>
+<p style="text-indent: 0px;"><span style="width:24px">&nbsp;</span> &nbsp; &nbsp; &nbsp; &nbsp;<span style="font-size: 9pt; font-weight: bold; color: #010100;">0 &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; 00001 &nbsp; &nbsp; &nbsp; -3385834.053 -156131.245 &nbsp; &nbsp; 1214.950</span></p>
+<p style="text-indent: 0px;"><span style="width:24px">&nbsp;</span> &nbsp; &nbsp; &nbsp; &nbsp;<span style="font-size: 9pt; font-weight: bold; color: #010100;">0 &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; 00002 &nbsp; &nbsp; &nbsp; -3385832.145 -156127.499 &nbsp; &nbsp; 1215.160</span></p>
+<p style="text-indent: 0px;"><span style="width:24px">&nbsp;</span> &nbsp; &nbsp; &nbsp; &nbsp;<span style="font-size: 9pt; font-weight: bold; color: #010100;">0 &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; 00003 &nbsp; &nbsp; &nbsp; -3385857.061 -156125.689 &nbsp; &nbsp; 1215.050</span></p>
+<p style="text-indent: 0px;"><span style="font-size: 9pt; color: #010100;">In this example the columns in the file are separated by one or more spaces.</span></p>
+<p style="text-indent: 0px;"><span style="color: #000000;">&nbsp;</span></p>
+<p style="text-indent: 0px;"><span style="font-size: 9pt; font-weight: bold; color: #010100; text-decoration: underline;">Example 2</span></p>
+<p style="text-indent: 0px;"><span style="width:24px">&nbsp;</span> &nbsp; &nbsp; &nbsp; &nbsp;<span style="font-size: 9pt; font-weight: bold; color: #010100;">1 , 2000.000 , 2000.000 , 200.000 , B</span></p>
+<p style="text-indent: 0px;"><span style="width:24px">&nbsp;</span> &nbsp; &nbsp; &nbsp; &nbsp;<span style="font-size: 9pt; font-weight: bold; color: #010100;">2 , 2010.000 , 2000.000 , 200.000 , D</span></p>
+<p style="text-indent: 0px;"><span style="width:24px">&nbsp;</span> &nbsp; &nbsp; &nbsp; &nbsp;<span style="font-size: 9pt; font-weight: bold; color: #010100;">3 , 2002.405 , 1994.931 , 200.466 , WAL</span></p>
+<p style="text-indent: 0px;"><span style="width:24px">&nbsp;</span> &nbsp; &nbsp; &nbsp; &nbsp;<span style="font-size: 9pt; font-weight: bold; color: #010100;">4 , 1995.640 , 2013.106 , 196.676 , LAND</span></p>
+<p style="text-indent: 0px;"><span style="font-size: 9pt; color: #010100;">Commas are used to separate the columns in this example.</span></p>
+<p style="text-indent: 0px;"><span style="color: #000000;">&nbsp;</span></p>
+<p style="text-indent: 0px;"><span style="font-size: 9pt; color: #010100;">This import ASCII dialog box consists of three main panels. </span></p>
+<p style="text-indent: 0px;"><span style="font-size: 9pt; color: #010100;">The defaults panel is used to specify the column delimiter and decimal notation. Use the options on the read format panel to specify the column format and use the display part of the dialog box to view the first few lines of the ASCII file.</span></p>
+<p style="text-indent: 0px;"><span style="color: #000000;">&nbsp;</span></p>
+<p style="text-indent: 0px;"><span style="color: #000000;">&nbsp;</span></p>
+<p style="text-indent: 0px;"><span class="f_CourierFixed">Defaults</span></p>
+<p style="text-indent: 0px;"><span style="font-size: 6pt; color: #010100;">&nbsp;</span></p>
+<p style="text-indent: 0px;"><span style="font-size: 12pt; color: #010100;"> </span><img src="clip0736.png" width="597" height="145" border="0" alt="clip0736"></p>
+<p style="text-indent: 0px;"><span style="color: #000000;">&nbsp;</span></p>
+<p style="text-indent: 0px;"><span class="f_CourierFixed">Column delimiter</span></p>
+<p style="text-indent: 0px;"><span style="font-size: 9pt; color: #010100;">Click on the character used by the data that you load to separate the columns. The comma, space, and tab characters are standard formats. Use the OTHER option if the data is separated by any other type of character.</span></p>
+<p style="text-indent: 0px;"><span style="color: #000000;">&nbsp;</span></p>
+<p style="text-indent: 0px;"><span class="f_CourierFixed">Decimal notation</span></p>
+<p style="text-indent: 0px;"><span style="font-size: 9pt; color: #010100;">Click on the point or comma options. If the decimal position in the data is specified by a different character use the OTHER option and enter the character in the edit box.</span></p>
+<p style="text-indent: 0px;"><span style="font-size: 9pt; color: #010100;">This line uses a point as decimal notation.</span></p>
+<p style="text-indent: 0px;"><span style="font-size: 9pt; font-weight: bold; color: #010100;">PI48 &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp;52813.018 3388983.114 &nbsp; &nbsp; &nbsp;168.609</span></p>
+<p style="text-indent: 0px;"><span style="color: #000000;">&nbsp;</span></p>
+<p style="text-indent: 0px;"><span style="font-size: 9pt; color: #010100;">This line uses the comma as decimal notation.</span></p>
+<p style="text-indent: 0px;"><span style="font-size: 9pt; font-weight: bold; color: #010100;">CL245 &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp;52791,283 3388962,406 &nbsp; &nbsp; &nbsp;169,139</span></p>
+<p style="text-indent: 0px;"><span style="color: #000000;">&nbsp;</span></p>
+<p style="text-indent: 0px;"><span class="f_CourierFixed">Defaults</span></p>
+<p style="text-indent: 0px;"><span style="font-size: 9pt; color: #010100;">The current combination of defaults and read formats can be saved and later recalled. </span></p>
+<p style="text-indent: 0px;"><span style="font-size: 9pt; color: #010100;">To save the defaults, enter a name in the list box and click the Save button. </span></p>
+<p style="text-indent: 0px;"><span style="font-size: 9pt; color: #010100;">To load a default combination, select the name in the list box and click the open button.</span></p>
+<p style="text-indent: 0px;"><span style="color: #000000;">&nbsp;</span></p>
+<p style="text-indent: 0px;"><span class="f_CourierFixed">Original</span></p>
+<p style="text-indent: 0px;"><span style="font-size: 9pt; color: #010100;">Click this button to view the effects of the settings on data of the file.</span></p>
+<p style="text-indent: 0px;"><span style="font-size: 9pt; color: #010100;">The first 11 lines of the file are loaded and displayed on the screen. </span></p>
+<p style="text-indent: 0px;"><span style="font-size: 9pt; color: #010100;">If the button caption is 'ORIGINAL,' Model Maker will display the 11 lines in their original form. </span></p>
+<p style="text-indent: 0px;"><span style="font-size: 9pt; color: #010100;">If the button caption is 'PREVIEW,' Model Maker will display the 11 lines in the adjusted form. This means that the column delimiter will be replaced by a space character and a point will replace any other decimal notation. The preview option is a handy function to check the adjusted format of the file and to see if Model Maker interprets the format correctly.</span></p>
+<p style="text-indent: 0px;"><span style="color: #000000;">&nbsp;</span></p>
+<p style="text-indent: 0px;"><span style="font-size: 9pt; color: #010100;">An example of the most common format of an ASCII coordinate file. </span></p>
+<p style="text-indent: 0px;"><span style="width:24px">&nbsp;</span> &nbsp; &nbsp; &nbsp; &nbsp;<span style="font-size: 9pt; font-weight: bold; color: #010100;">0 &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; 00001 &nbsp; &nbsp; &nbsp; -3385834.053 -156131.245 &nbsp; &nbsp; 1214.950</span></p>
+<p style="text-indent: 0px;"><span style="font-size: 9pt; color: #010100;">The data in this file uses spaces as column separators and a point as the decimal notation. The preview option will have no effect on a file like this as the format is already in the required standard.</span></p>
+<p style="text-indent: 0px;"><span style="color: #000000;">&nbsp;</span></p>
+<p style="text-indent: 0px;"><span style="font-size: 9pt; color: #010100;">In this example commas are used to separate the columns.</span></p>
+<p style="text-indent: 0px;"><span style="width:24px">&nbsp;</span> &nbsp; &nbsp; &nbsp; &nbsp;<span style="font-size: 9pt; font-weight: bold; color: #010100;">1 , 2000.000 , 2000.000 , 200.000 , B</span></p>
+<p style="text-indent: 0px;"><span style="font-size: 9pt; color: #010100;">In the preview format this line will be displayed as:</span></p>
+<p style="text-indent: 0px;"><span style="width:24px">&nbsp;</span> &nbsp; &nbsp; &nbsp; &nbsp;<span style="font-size: 9pt; font-weight: bold; color: #010100;">1 &nbsp; 2000.000 &nbsp; 2000.000 &nbsp; 200.000 &nbsp; B</span></p>
+<p style="text-indent: 0px;"><span style="color: #000000;">&nbsp;</span></p>
+<p style="text-indent: 0px;"><span style="font-size: 9pt; color: #010100;">In this example commas are used to separate the columns and as the decimal notation. </span></p>
+<p style="text-indent: 0px;"><span style="width:24px">&nbsp;</span> &nbsp; &nbsp; &nbsp; &nbsp;<span style="font-size: 9pt; font-weight: bold; color: #010100;">4 , 1995,640 , 2013,106 , 196,676 , LAND</span></p>
+<p style="text-indent: 0px;"><span style="font-size: 9pt; color: #010100;">A file like this can be very confusing and should be read with read format 1, discussed below.</span></p>
+<p style="text-indent: 0px;"><span style="color: #000000;">&nbsp;</span></p>
+<p style="text-indent: 0px;"><span style="color: #000000;">&nbsp;</span></p>
+<p style="text-indent: 0px;"><span class="f_CourierFixed">Read format</span></p>
+<p style="text-indent: 0px;"><span style="font-size: 9pt; color: #010100;">Two different options can be used to specify the co- ordinate positions in the ASCII file. Select one of the two formats by clicking the Format button. Depending on the selected format, enter the required column positions or co-ordinate sequence.</span></p>
+<p style="text-indent: 0px;"><span style="color: #000000;">&nbsp;</span></p>
+<p style="text-indent: 0px;"><span style="font-size: 12pt; color: #010100;"> </span><img src="clip0737.png" width="595" height="147" border="0" alt="clip0737"></p>
+<p style="text-indent: 0px;"><span class="f_CourierFixed">FORMAT 1 - Columns</span></p>
+<p style="text-indent: 0px;"><span style="font-size: 9pt; color: #010100;">If this format is selected an editbox will be visible on top of the listbox that displays the first few lines of the ASCII file. Use this editbox to specify the column positions by spacing the characters in the appropriate columns.</span></p>
+<p style="text-indent: 0px;"><span style="font-size: 9pt; color: #010100;">Place 'C' characters over the characters in the columns that are used as the <a href="definitioncodetag.htm">CODE</a>.</span></p>
+<p style="text-indent: 0px;"><span style="font-size: 9pt; color: #010100;">Place 'T' characters over the characters in the columns that are used as the <a href="definitioncodetag.htm">TAG</a>.</span></p>
+<p style="text-indent: 0px;"><span style="color: #000000;">&nbsp;</span></p>
+<p style="text-indent: 0px;"><span style="font-size: 9pt; color: #010100;">When working in the southern hemisphere use 'Y' characters to indicate the Y co-ordinate and 'X' characters to indicate the X co-ordinate.</span></p>
+<p style="text-indent: 0px;"><span style="font-size: 9pt; color: #010100;">When working in the northern hemisphere use 'E' characters to indicate the Easting co-ordinate and 'N' characters to indicate the Northing co-ordinate.</span></p>
+<p style="text-indent: 0px;"><span style="font-size: 9pt; color: #010100;">When loading <a href="utility___electronic_data.htm">Geographical</a> co-ordinates use 'A' characters to indicate the lAtitude and 'O' characters to indicate the longitude value.</span></p>
+<p style="text-indent: 0px;"><span style="color: #000000;">&nbsp;</span></p>
+<p style="text-indent: 0px;"><span style="font-size: 9pt; color: #010100;">Use 'Z' characters to indicate the elevation.</span></p>
+<p style="text-indent: 0px;"><span style="color: #000000;">&nbsp;</span></p>
+<p style="text-indent: 0px;"><img src="_bm435.png" width="601" height="216" border="0" alt="_bm435"></p>
+<p style="text-indent: 0px;"><span style="color: #000000;">&nbsp;</span></p>
+<p style="text-indent: 0px;"><span style="font-size: 9pt; color: #010100;">The example illustrates how to place the characters in the edit box.</span></p>
+<p style="text-indent: 0px;"><span style="font-size: 9pt; color: #010100;">The ccccc characters indicate the <a href="definitioncodetag.htm">code</a> of the point. </span></p>
+<p style="text-indent: 0px;"><span style="font-size: 9pt; color: #010100;">The tttttt characters indicate the <a href="definitioncodetag.htm">tag</a> of the point.</span></p>
+<p style="text-indent: 0px;"><span style="font-size: 9pt; color: #010100;">Place enough yyyyy characters over the Y co-ordinates. Do the same for the X and Z co-ordinates.</span></p>
+<p style="text-indent: 0px;"><span style="color: #000000;">&nbsp;</span></p>
+<p style="text-indent: 0px;"><span style="font-style: italic; font-weight: bold; color: #d10707;">Note:</span></p>
+<p style="text-indent: 0px;"><span style="font-size: 9pt; color: #010100;">This format of reading co-ordinates can only be used if the columns in the ASCII file maintain their relative positions on all the lines.</span></p>
+<p style="text-indent: 0px;"><span style="color: #000000;">&nbsp;</span></p>
+<p style="text-indent: 0px;"><img src="_bm436.png" width="529" height="159" border="0" alt="_bm436"></p>
+<p style="text-indent: 0px;"><span style="font-size: 9pt; color: #010100;">The blue block indicates the extend of the Y characters and the red block the extend of the X characters. The black circle points to 2 text lines that do not have the same column positions as the other text lines and will be translated incorrectly or skipped. </span></p>
+<p style="text-indent: 0px;"><span style="font-size: 9pt; color: #010100;">For files that have co-ordinates in irregular column positions use the sequence format to interpret the data columns.</span></p>
+<p style="text-indent: 0px;"><span style="color: #000000;">&nbsp;</span></p>
+<p style="text-indent: 0px;"><span style="color: #000000;">&nbsp;</span></p>
+<p style="text-indent: 0px;"><span class="f_CourierFixed">FORMAT 2 - Sequence</span></p>
+<p style="text-indent: 0px;"><span style="font-size: 9pt; color: #010100;">With this format more emphasis is placed on the relative position of the column within the text line rather than the specific position of each character. </span></p>
+<p style="text-indent: 0px;"><span style="font-size: 9pt; color: #010100;">Use the edit box and specify the order of the columns. The specified combination of 'C', 'T', 'Y', 'X' and 'Z' characters in the input field is used to determine the column positions.</span></p>
+<p style="text-indent: 0px;"><span style="font-size: 9pt; color: #010100;">Note that, depending on the system settings, 'Y' is used to identify the Y co-ordinate, 'E' for the Eastings and 'A' for the lAtitude value. Use 'X' to identify the X co-ordinate, 'N' the Northing and 'O' the longitude value.</span></p>
+<p style="text-indent: 0px;"><span style="color: #000000;">&nbsp;</span></p>
+<p style="text-indent: 0px;"><span style="font-size: 9pt; color: #010100;"> </span><img src="clip0739.png" width="192" height="37" border="0" alt="clip0739"></p>
+<p style="text-indent: 0px;"><span style="font-size: 9pt; color: #010100;">Check either the Left or Right selection which indicates that the CTYXZ column indicator should be implemented starting from the front (Left) of the text line or from the end (Right) of the text line.</span></p>
+<p style="text-indent: 0px;"><span style="color: #000000;">&nbsp;</span></p>
+<p style="text-indent: 0px;"><span style="color: #000000;">&nbsp;</span></p>
+<p style="text-indent: 0px;"><span style="font-size: 9pt; font-weight: bold; color: #010100;">EXAMPLES:</span></p>
+<p style="text-indent: 0px;"><span style="color: #000000;">&nbsp;</span></p>
+<p style="text-indent: 0px;"><span style="font-size: 9pt; color: #010100;">If the Left option is used the CTYXZ combination indicates to Model Maker that the code is the first column, the tag is the second column, then follows the Y, X and Z co-ordinates.  </span></p>
+<p style="text-indent: 0px;"><span style="font-size: 9pt; font-family: 'Courier New'; font-weight: bold; color: #010100;">&gt;&gt;C &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &gt;&gt;T &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp;&gt;&gt;Y &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp;&gt;&gt;X &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp;&gt;&gt;Z</span></p>
+<p style="text-indent: 0px;"><span style="font-size: 9pt; font-family: 'Courier New'; font-weight: bold; color: #010100;">TREE &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp;00001 &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp;3385834.053 &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp;-156131.245 &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp;1214.950</span></p>
+<p style="text-indent: 0px;"><span style="color: #000000;">&nbsp;</span></p>
+<p style="text-indent: 0px;"><span style="font-size: 9pt; color: #010100;">If the Right option is used the CTYXZ combination indicates that the Z column is first when the line is scanned from the end, the X is second and so forth.</span></p>
+<p style="text-indent: 0px;"><span style="font-size: 9pt; font-family: 'Courier New'; font-weight: bold; color: #010100;">C&lt;&lt; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp;T&lt;&lt; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; Y&lt;&lt; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp;X&lt;&lt; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp;Z&lt;&lt;</span></p>
+<p style="text-indent: 0px;"><span style="font-size: 9pt; font-family: 'Courier New'; font-weight: bold; color: #010100;">TREE &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp;00001 &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp;3385834.053 &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp;-156131.245 &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp;1214.950</span></p>
+<p style="text-indent: 0px;"><span style="color: #000000;">&nbsp;</span></p>
+<p style="text-indent: 0px;"><span style="font-size: 9pt; color: #010100;">To read this line, use a CYXZT combination.</span></p>
+<p style="text-indent: 0px;"><span style="width:24px">&nbsp;</span> &nbsp; &nbsp; &nbsp; &nbsp;<span style="font-size: 9pt; font-family: 'Courier New'; font-weight: bold; color: #010100;">C &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp;Y &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp;X &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp;Z &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp;T</span></p>
+<p style="text-indent: 0px;"><span style="width:24px">&nbsp;</span> &nbsp; &nbsp; &nbsp; &nbsp;<span style="font-size: 9pt; font-family: 'Courier New'; font-weight: bold; color: #010100;">9 ,  &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp;1985.865 ,  &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp;2045.241 ,  &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp;199.347 , &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; WALL</span></p>
+<p style="text-indent: 0px;"><span style="color: #000000;">&nbsp;</span></p>
+<p style="text-indent: 0px;"><span style="font-size: 9pt; color: #010100;">When to use the Left or Right setting depends on the data format in the ASCII file and is best described by the following examples. </span></p>
+<p style="text-indent: 0px;"><span style="color: #000000;">&nbsp;</span></p>
+<p style="text-indent: 0px;"><span style="font-size: 9pt; color: #010100;">The columns in this example is more consistent from the left and the Left option should be used. Notice that line 5 has a blank tag field and would result in the 194.808 value being interpret as the tag, 2020.350 as the elevation and so on if the Right option was used. </span></p>
+<p style="text-indent: 0px;"><span style="width:24px">&nbsp;</span> &nbsp; &nbsp; &nbsp; &nbsp;<span style="font-size: 9pt; font-family: 'Courier New'; font-weight: bold; color: #010100;">3 , 2002.405 , 1994.931 , 200.466 , WALL</span></p>
+<p style="text-indent: 0px;"><span style="width:24px">&nbsp;</span> &nbsp; &nbsp; &nbsp; &nbsp;<span style="font-size: 9pt; font-family: 'Courier New'; font-weight: bold; color: #010100;">4 , 1995.640 , 2013.106 , 196.676 , LAND</span></p>
+<p style="text-indent: 0px;"><span style="width:24px">&nbsp;</span> &nbsp; &nbsp; &nbsp; &nbsp;<span style="font-size: 9pt; font-family: 'Courier New'; font-weight: bold; color: #010100;">5 , 1993.315 , 2020.350 , 194.808 </span></p>
+<p style="text-indent: 0px;"><span style="width:24px">&nbsp;</span> &nbsp; &nbsp; &nbsp; &nbsp;<span style="font-size: 9pt; font-family: 'Courier New'; font-weight: bold; color: #010100;">6 , 1991.015 , 2029.056 , 194.278 , WALL</span></p>
+<p style="text-indent: 0px;"><span style="color: #000000;">&nbsp;</span></p>
+<p style="text-indent: 0px;"><span style="font-size: 9pt; color: #010100;">If the lines in the file look like this, use the Right option. The columns in this example are not consistently on the same position but after careful investigation it is found that, if scanned from the end (Right), it always ends with the tag, the elevation is second from last and so on. </span></p>
+<p style="text-indent: 0px;"><span style="width:24px">&nbsp;</span> &nbsp; &nbsp; &nbsp; &nbsp;<span style="font-size: 9pt; font-family: 'Courier New'; font-weight: bold; color: #010100;">Setup &nbsp; &nbsp; &nbsp; &nbsp; 7 &nbsp;21990.542 &nbsp; 2033.940 &nbsp;195.144 &nbsp;WALL</span></p>
+<p style="text-indent: 0px;"><span style="width:24px">&nbsp;</span> &nbsp; &nbsp; &nbsp; &nbsp;<span style="font-size: 9pt; font-family: 'Courier New'; font-weight: bold; color: #010100;">Point 2 &nbsp; &nbsp; &nbsp; 8 &nbsp;151988.567 &nbsp; &nbsp; 2038.841 &nbsp;197.843 &nbsp;WALL</span></p>
+<p style="text-indent: 0px;"><span style="width:24px">&nbsp;</span> &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp;<span style="font-size: 9pt; font-family: 'Courier New'; font-weight: bold; color: #010100;">9 &nbsp;1985.865 &nbsp; 2045.241 &nbsp;199.347 &nbsp;WALL</span></p>
+<p style="text-indent: 0px;"><span style="width:24px">&nbsp;</span> &nbsp; &nbsp; &nbsp; &nbsp;<span style="font-size: 9pt; font-family: 'Courier New'; font-weight: bold; color: #010100;">Point 3 &nbsp; &nbsp; &nbsp; 1000 &nbsp;1983.762 &nbsp; &nbsp;2051.644 &nbsp;200.620 &nbsp;WALL </span></p>
+<p style="text-indent: 0px;"><span style="color: #000000;">&nbsp;</span></p>
+<p style="text-indent: 0px;"><span style="font-size: 9pt; color: #010100;">Another example where the Right option should be used.</span></p>
+<p style="text-indent: 0px;"><span style="width:24px">&nbsp;</span> &nbsp; &nbsp; &nbsp; &nbsp;<span style="font-size: 9pt; font-family: 'Courier New'; font-weight: bold; color: #010100;">CL247 &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp;52747.905  &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp;3388921.079 &nbsp; &nbsp; &nbsp;171.593</span></p>
+<p style="text-indent: 0px;"><span style="width:24px">&nbsp;</span> &nbsp; &nbsp; &nbsp; &nbsp;<span style="font-size: 9pt; font-family: 'Courier New'; font-weight: bold; color: #010100;">CL248 &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp;52726.297  &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp;3388900.492 &nbsp; &nbsp; &nbsp;173.560</span></p>
+<p style="text-indent: 0px;"><span style="width:24px">&nbsp;</span> &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp;<span style="font-size: 9pt; font-family: 'Courier New'; font-weight: bold; color: #010100;">52934.138  &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp;3388589.982 &nbsp; &nbsp; &nbsp;192.340</span></p>
+<p style="text-indent: 0px;"><span style="width:24px">&nbsp;</span> &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp;<span style="font-size: 9pt; font-family: 'Courier New'; font-weight: bold; color: #010100;">52902.032  &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp;3388591.926 &nbsp; &nbsp; &nbsp;192.640</span></p>
+<p style="text-indent: 0px;"><span style="width:24px">&nbsp;</span> &nbsp; &nbsp; &nbsp; &nbsp;<span style="font-size: 9pt; font-family: 'Courier New'; font-weight: bold; color: #010100;">CL250 &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp;52682.855  &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp;3388859.104 &nbsp; &nbsp; &nbsp;175.497</span></p>
+<p style="text-indent: 0px;"><span style="width:24px">&nbsp;</span> &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp;<span style="font-size: 9pt; font-family: 'Courier New'; font-weight: bold; color: #010100;">52685.404  &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp;3388964.733 &nbsp; &nbsp; &nbsp;186.071</span></p>
+<p style="text-indent: 0px;"><span style="width:24px">&nbsp;</span> &nbsp; &nbsp; &nbsp; &nbsp;<span style="font-size: 9pt; font-family: 'Courier New'; font-weight: bold; color: #010100;">SS &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp;52670.383  &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp;3388704.548 &nbsp; &nbsp; &nbsp;187.499</span></p>
+<p style="text-indent: 0px;"><span style="color: #000000;">&nbsp;</span></p>
+<p style="text-indent: 0px;"><span style="font-size: 9pt; font-weight: bold;">When to use Format 1 or Format 2</span></p>
+<p style="text-indent: 0px;"><span style="font-size: 9pt; color: #010100;">Format 1 is mostly used when the data is grouped in columns neatly below each other.</span></p>
+<p style="text-indent: 0px;"><span style="color: #000000;">&nbsp;</span></p>
+<p style="text-indent: 0px;"><span style="font-size: 9pt; color: #010100;">An example like this can only be read by format 1. </span></p>
+<p style="text-indent: 0px;"><span style="font-size: 9pt; color: #010100;">Notice, on certain lines the code on the left is not defined and on others the tag on the right is a blank.</span></p>
+<p style="text-indent: 0px;"><span style="width:24px">&nbsp;</span> &nbsp; &nbsp; &nbsp; &nbsp;<span style="font-size: 9pt; font-family: 'Courier New'; font-weight: bold; color: #010100;">CL247 &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp;52747.905  &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp;3388921.079 &nbsp; &nbsp; &nbsp;171.593 &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp;Tree</span></p>
+<p style="text-indent: 0px;"><span style="width:24px">&nbsp;</span> &nbsp; &nbsp; &nbsp; &nbsp;<span style="font-size: 9pt; font-family: 'Courier New'; font-weight: bold; color: #010100;">CL248 &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp;52726.297  &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp;3388900.492 &nbsp; &nbsp; &nbsp;173.560</span></p>
+<p style="text-indent: 0px;"><span style="width:24px">&nbsp;</span> &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp;<span style="font-size: 9pt; font-family: 'Courier New'; font-weight: bold; color: #010100;">52934.138  &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp;3388589.982 &nbsp; &nbsp; &nbsp;192.340 &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp;Rock</span></p>
+<p style="text-indent: 0px;"><span style="width:24px">&nbsp;</span> &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp;<span style="font-size: 9pt; font-family: 'Courier New'; font-weight: bold; color: #010100;">52902.032  &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp;3388591.926 &nbsp; &nbsp; &nbsp;192.640 &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp;Rock</span></p>
+<p style="text-indent: 0px;"><span style="width:24px">&nbsp;</span> &nbsp; &nbsp; &nbsp; &nbsp;<span style="font-size: 9pt; font-family: 'Courier New'; font-weight: bold; color: #010100;">CL250 &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp;52682.855  &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp;3388859.104 &nbsp; &nbsp; &nbsp;175.497</span></p>
+<p style="text-indent: 0px;"><span style="width:24px">&nbsp;</span> &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp;<span style="font-size: 9pt; font-family: 'Courier New'; font-weight: bold; color: #010100;">52685.404  &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp;3388964.733 &nbsp; &nbsp; &nbsp;186.071 &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp;Fence</span></p>
+<p style="text-indent: 0px;"><span style="width:24px">&nbsp;</span> &nbsp; &nbsp; &nbsp; &nbsp;<span style="font-size: 9pt; font-family: 'Courier New'; font-weight: bold; color: #010100;">SS &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp;52670.383  &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp;3388704.548 &nbsp; &nbsp; &nbsp;187.499 &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp;Fence</span></p>
+<p style="text-indent: 0px;"><span style="color: #000000;">&nbsp;</span></p>
+<p style="text-indent: 0px;"><span style="font-size: 9pt; color: #010100;">Use format 2 to read a file with data like this. </span></p>
+<p style="text-indent: 0px;"><span style="font-size: 9pt; color: #010100;">No constant column positions are defined and the correct items can only be extracted by scanning each line from the back.</span></p>
+<p style="text-indent: 0px;"><span style="width:24px">&nbsp;</span> &nbsp; &nbsp; &nbsp; &nbsp;<span style="font-size: 9pt; font-family: 'Courier New'; font-weight: bold; color: #010100;">Setup &nbsp; &nbsp; &nbsp; &nbsp; 7 &nbsp;21990.542 &nbsp;  &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp;2033.940   &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp;195.144   &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp;WALL</span></p>
+<p style="text-indent: 0px;"><span style="width:24px">&nbsp;</span> &nbsp; &nbsp; &nbsp; &nbsp;<span style="font-size: 9pt; font-family: 'Courier New'; font-weight: bold; color: #010100;">Point 2 &nbsp; &nbsp; &nbsp; 8 &nbsp;151988.567 &nbsp; &nbsp;  &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp;2038.841   &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp;197.843   &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp;WALL</span></p>
+<p style="text-indent: 0px;"><span style="font-size: 9pt; font-family: 'Courier New'; font-weight: bold; color: #010100;"> &nbsp;  &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp;9 &nbsp;1985.865 &nbsp;  &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp;2045.241   &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp;199.347   &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp;WALL</span></p>
+<p style="text-indent: 0px;"><span style="width:24px">&nbsp;</span> &nbsp; &nbsp; &nbsp; &nbsp;<span style="font-size: 9pt; font-family: 'Courier New'; font-weight: bold; color: #010100;">Point 3 &nbsp; &nbsp; &nbsp; 1000 &nbsp;1983.762 &nbsp;   &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp;2051.644   &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp;200.620   &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp;WALL </span></p>
+<p style="text-indent: 0px;"><span style="color: #000000;">&nbsp;</span></p>
+<p style="text-indent: 0px;"><span style="font-size: 9pt; color: #010100;">A file like this cannot be read correctly by either format 1 or format 2. </span></p>
+<p style="text-indent: 0px;"><span style="font-size: 9pt; color: #010100;">No constant column position or column sequence from either left or right is defined.</span></p>
+<p style="text-indent: 0px;"><span style="width:24px">&nbsp;</span> &nbsp; &nbsp; &nbsp; &nbsp;<span style="font-size: 9pt; font-family: 'Courier New'; font-weight: bold; color: #010100;">Setup &nbsp; &nbsp; &nbsp; &nbsp; 7 &nbsp;21990.542 &nbsp;  &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp;2033.940   &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp;195.144</span></p>
+<p style="text-indent: 0px;"><span style="width:24px">&nbsp;</span> &nbsp; &nbsp; &nbsp; &nbsp;<span style="font-size: 9pt; font-family: 'Courier New'; font-weight: bold; color: #010100;">Point 2 &nbsp; &nbsp; &nbsp; 8 &nbsp;151988.567 &nbsp; &nbsp;  &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp;2038.841   &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp;197.843</span></p>
+<p style="text-indent: 0px;"><span style="width:24px">&nbsp;</span> &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp;<span style="font-size: 9pt; font-family: 'Courier New'; font-weight: bold; color: #010100;">9 &nbsp;1985.865 &nbsp;  &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp;2045.241   &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp;199.347   &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp;WALL</span></p>
+<p style="text-indent: 0px;"><span style="width:24px">&nbsp;</span> &nbsp; &nbsp; &nbsp; &nbsp;<span style="font-size: 9pt; font-family: 'Courier New'; font-weight: bold; color: #010100;">Point 3 &nbsp; &nbsp; &nbsp; 1000 &nbsp;1983.762 &nbsp;   &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp;2051.644   &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp;200.620   &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp;WALL </span></p>
+<p style="text-indent: 0px;"><span style="color: #000000;">&nbsp;</span></p>
+<div style="text-align: left; text-indent: 0px; padding: 0px 0px 0px 0px; margin: 0px 0px 0px 1px;"><table border="0" cellpadding="0" cellspacing="0" style="line-height: normal;"><tr style="vertical-align:baseline" valign="baseline"><td width="23"><img src="_bm26.png" width="10" height="15" border="0" alt="_bm26"></td><td> &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp;<span style="font-size: 9pt; color: #010100;">Be careful with a file that looks like this. </span></td></tr></table></div><p style="text-indent: 0px;"><span style="font-size: 9pt; color: #010100;">Notice that the latitude and longitude values have spaces between the numbers to visually separate the degrees, minutes and seconds in the column.  </span></p>
+<p style="text-indent: 0px;"><span style="font-size: 9pt; color: #010100;">Using format 2 on this type of file will not work because those spaces will be interpreted as column delimiters. Use format 1.</span></p>
+<p style="text-indent: 0px;"><span style="font-size: 9pt; font-family: 'Courier New'; color: #010100;">Code &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; Y &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp;X &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp;Latitude &nbsp; &nbsp; &nbsp; &nbsp;Longitude  </span></p>
+<p style="text-indent: 0px;"><span style="font-size: 8pt; font-family: 'Courier New'; font-weight: bold; color: #010100;">01 &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; 20.839 &nbsp; &nbsp; &nbsp; 275943.572 &nbsp; &nbsp; 2 29 44.7493 &nbsp; &nbsp;27 59 59.3258</span></p>
+<p style="text-indent: 0px;"><span style="font-size: 8pt; font-family: 'Courier New'; font-weight: bold; color: #010100;">01 &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; 20.839 &nbsp; &nbsp; &nbsp; 275943.702 &nbsp; &nbsp; 2 29 44.7535 &nbsp; &nbsp;27 59 59.3258</span></p>
+<p style="text-indent: 0px;"><span style="font-size: 8pt; font-family: 'Courier New'; font-weight: bold; color: #010100;">01 &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; 20.839 &nbsp; &nbsp; &nbsp; 275943.831 &nbsp; &nbsp; 2 29 44.7577 &nbsp; &nbsp;27 59 59.3258</span></p>
+<p style="text-indent: 0px;"><span style="font-size: 8pt; font-family: 'Courier New'; font-weight: bold; color: #010100;">01 &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; 20.709 &nbsp; &nbsp; &nbsp; 275942.796 &nbsp; &nbsp; 2 29 44.7240 &nbsp; &nbsp;27 59 59.3300</span></p>
+<p style="text-indent: 0px;"><span style="color: #000000;">&nbsp;</span></p>
+<p style="text-indent: 0px;"><span class="f_CourierFixed">Trouble Shooting</span></p>
+<div style="text-align: left; text-indent: 0px; padding: 0px 0px 0px 0px; margin: 0px 0px 0px 0px;"><table cellspacing="0" cellpadding="1" border="0" style="border: none; border-spacing:0px;">
+<tr style="text-align:left;vertical-align:top;">
+<td valign="top" width="62" style="width:62px;"><p class="p_Heading1"><span class="f_Heading1">&nbsp;</span></p>
+</td>
+<td valign="top" width="628" style="width:628px;"><p style="text-indent: 0px;"><span style="font-size: 9pt; color: #010100;">After importing an ASCII file, use the <a href="plotmanipulate.htm#normal">Normal</a> plotting function to display the points on the screen. If the points are not correctly displayed on the screen, check the <a href="status.htm">Status</a> and note the number of points in the system.</span></p>
+<p style="text-indent: 0px;"><span style="font-size: 9pt; color: #010100;">If the number of points in the system look correct use the Data base, <a href="databasepoints.htm">Points</a> menu and inspect the co-ordinates of the converted points.</span></p>
+<p style="text-indent: 0px;"><span style="color: #000000;">&nbsp;</span></p>
+<p style="text-indent: 0px;"><span style="font-size: 9pt; color: #010100;">The first few lines of imported ASCII files often consist of header information. Numbers in header lines often get converted to DTM co-ordinates which is then not related to the rest of the co-ordinate list. Locate these points on the Points menu and use the <a href="databasedeletepoints.htm">Delete</a> button to eliminate them.</span></p>
+<p style="text-indent: 0px;"><span style="color: #000000;">&nbsp;</span></p>
+<p style="text-indent: 0px;"><span style="font-size: 9pt; color: #010100;">If no points were converted and loaded into Model Maker, inspect your logic when defining the read format. </span></p>
+<p style="text-indent: 0px;"><span style="font-size: 9pt; color: #010100;">Is the decimal notation correctly specified?</span></p>
+<p style="text-indent: 0px;"><span style="font-size: 9pt; color: #010100;">Is the column delimiter correctly specified when using Format 1?</span></p>
+<p style="text-indent: 0px;"><span style="font-size: 9pt; color: #010100;">Is the CYXZ sequence and the Left or Right option correct when using Format 2?</span></p>
+<p style="text-indent: 0px;"><span style="color: #000000;">&nbsp;</span></p>
+<p style="text-indent: 0px;"><span style="font-size: 9pt; color: #010100;">Model Maker only displays the first few lines in the preview panel. Check that the text format that you see on the first few lines are really maintained throughout the file. Columns may be missing on other lines further down in the ASCII file. Use Notepad or Wordpad to load and inspect the ASCII file.</span></p>
+</td>
+</tr>
+</table>
+</div>
+<p style="text-indent: 0px;"><span style="color: #000000;">&nbsp;</span></p>
+<p style="text-indent: 0px;"><span class="f_CourierFixed">Sign change</span></p>
+<p style="text-indent: 0px;"><span style="font-size: 9pt; color: #010100;">Check the relevant check box if the sign of the Y or X co-ordinate must be changed. </span></p>
+<div style="text-align: left; text-indent: 0px; padding: 0px 0px 0px 0px; margin: 0px 0px 0px 0px;"><table cellspacing="0" cellpadding="1" border="0" style="border: none; border-spacing:0px;">
+<tr style="text-align:left;vertical-align:top;">
+<td valign="top" width="194" style="width:194px;"><p class="p_Heading1"><img src="clip0741.png" width="200" height="58" border="0" alt="clip0741"></p>
+</td>
+<td valign="top" width="498" style="width:498px;"><p style="text-indent: 0px;"><span style="font-size: 9pt; color: #010100;">In this example the sign of the Y co-ordinate will be changed.</span></p>
+<p style="text-indent: 0px;"><span style="font-size: 9pt; color: #010100;">If the Y co-ordinate in the ASCII file is 123.225, it will be recorded as &nbsp;-123.225.</span></p>
+<p style="text-indent: 0px;"><span style="font-size: 9pt; color: #010100;">If the Y co-ordinate in the ASCII file is -500.225, it will be recorded as 500.225.</span></p>
+</td>
+</tr>
+</table>
+</div>
+<p style="text-indent: 0px;"><span style="color: #000000;">&nbsp;</span></p>
+<p style="text-indent: 0px;"><span class="f_CourierFixed">Add constant</span></p>
+<p style="text-indent: 0px;"><span style="font-size: 9pt; color: #010100;">Use this input and check boxes to automatically add a constant value to the imported co-ordinates.</span></p>
+<p style="text-indent: 0px;"><span style="font-size: 5pt; color: #010100;">&nbsp;</span></p>
+<div style="text-align: left; text-indent: 0px; padding: 0px 0px 0px 0px; margin: 0px 0px 0px 0px;"><table cellspacing="0" cellpadding="1" border="0" style="border: none; border-spacing:0px;">
+<tr style="text-align:left;vertical-align:top;">
+<td valign="top" width="195" style="width:195px;"><p class="p_Heading1"><img src="clip0742.png" width="200" height="62" border="0" alt="clip0742"></p>
+</td>
+<td valign="top" width="499" style="width:499px;"><p style="text-indent: 0px;"><span style="font-size: 9pt; color: #010100;">In this example 2 800 000 will be added to the X co-ordinate.</span></p>
+<p style="text-indent: 0px;"><span style="font-size: 9pt; color: #010100;">If the X co-ordinate in the ASCII file is 500.225, it will be recorded as 2 800 500.225.</span></p>
+</td>
+</tr>
+</table>
+</div>
+<p style="text-indent: 0px;"><span style="color: #000000;">&nbsp;</span></p>
+<p style="text-indent: 0px;"><span style="color: #000000;">&nbsp;</span></p>
+<p style="text-indent: 0px;"><span style="color: #000000;">&nbsp;</span></p>
+<p style="text-indent: 0px;"><span style="color: #000000;">&nbsp;</span></p>
+<p style="text-indent: 0px;"><span class="f_rrelatedtopic">Related topics:</span></p>
+<p style="text-indent: 0px;"><span style="font-size: 9pt; color: #010100;"><a href="file___import___dxf_.htm">Import DXF</a></span></p>
+<p style="text-indent: 0px;"><span style="color: #000000;">&nbsp;</span></p>
+<p style="text-indent: 0px;"><span style="color: #000000;">&nbsp;</span></p>
+<p style="text-indent: 0px;"><span style="color: #000000;">&nbsp;</span></p>
+<p style="text-indent: 0px;"><span style="color: #000000;">&nbsp;</span></p>
+<p style="text-indent: 0px;"><span style="color: #000000;">&nbsp;</span></p>
+
+</td></tr></table>
+
+</body>
+</html>

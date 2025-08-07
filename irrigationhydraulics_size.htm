@@ -1,0 +1,248 @@
+<!DOCTYPE HTML PUBLIC "-//W3C//DTD HTML 4.01 Transitional//EN">
+<html>
+<head>
+   <title>IRRIGATION : Hydraulics - Size Pipes</title>
+   <meta name="generator" content="Help &amp; Manual" />
+   <meta name="keywords" content="Cost,Flow,Hydraulics,IRRIGATION,Laterals,Losses,Mainline,Manifold,Pipe,Size,Fixed Sizes" />
+   <meta http-equiv="Content-Type" content="text/html; charset=ISO-8859-1" />
+   <meta http-equiv="Content-Style-Type" content="text/css" />
+   <link type="text/css" href="default.css" rel="stylesheet" />
+
+<script type="text/javascript" src="helpman_topicinit.js"></script>
+</head>
+<body style="margin: 0px 0px 0px 0px; background: #FFFFFF;">
+
+
+<table width="100%" border="0" cellspacing="0" cellpadding="5" bgcolor="#D0D0D0">
+  <tr valign="middle">
+    <td align="left">
+      <p class="p_Heading1"><span class="f_Heading1">IRRIGATION : Hydraulics - Size Pipes</span></p>
+
+    </td>
+    <td align="right">
+     <span style="font-size: 9pt">
+     <a href="start_up.htm">Top</a>&nbsp;
+     <a href="irrigationhydraulics_long.htm">Previous</a>&nbsp;
+     <a href="irrigationproposedpumppre.htm">Next</a>
+     </span>
+    </td>
+  </tr>
+</table>
+
+
+<!-- Placeholder for topic body. -->
+<table width="100%" border="0" cellspacing="0" cellpadding="5"><tr valign="top"><td align="left">
+<p class="p_Heading1"><span class="f_Heading1">&nbsp;</span></p>
+<p class="p_Heading1"><span class="f_rrelatedtopic">MENU : Irr </span></p>
+<p class="p_Heading1"><span style="font-size: 5pt; color: #010100;">&nbsp;</span></p>
+<p class="p_Heading1"><span style="font-size: 9pt; color: #010100;">Irri Maker assists in the correct selection of pipes for a specific application. If the active block is block 0, the main line sizing dialog boxes will be present. For the other blocks, the functions to size the laterals and manifold pipes are displayed.</span></p>
+<p class="p_Heading1"><span style="font-size: 9pt; color: #010100;">This page will not be available when calculating the hydraulics of a looped main line.</span></p>
+<p class="p_Heading1"><span class="f_Heading1">&nbsp;</span></p>
+<p class="p_Heading1"><span class="f_CourierFixed">Regular blocks</span></p>
+<p class="p_Heading1"><span style="font-size: 9pt; color: #010100;">The pipe sizing is done according to specified pressure loss tolerances.</span></p>
+<p class="p_Heading1"><span class="f_Heading1">&nbsp;</span></p>
+<p class="p_Heading1"><img src="_bm612.png" width="161" height="18" border="0" alt="_bm612"><span style="font-size: 9pt; color: #010100;"> In this dialog box, enter the percentage factor that the pressures at the lateral nodes may vary from the design value. If for example the design node pressure is 20 meters and the percentage factor above and below is 10% then the laterals will be sized to maintain the pressure at each node between 18 meters and 22 meters.</span></p>
+<p class="p_Heading1"><span class="f_Heading1">&nbsp;</span></p>
+<p class="p_Heading1"><span style="font-size: 9pt; font-weight: bold; color: #010100;">Max # of pipes</span></p>
+<p class="p_Heading1"><span style="font-size: 9pt; color: #010100;">Irri Maker will select a different pipe size when necessary. This could result in multiple size changes along a lateral. You may force the pipe sizing function to use no more than the specified different pipe sizes by setting a limit.</span></p>
+<p class="p_Heading1"><span style="font-size: 9pt; color: #010100;">Press the </span><span style="font-size: 9pt; font-weight: bold; color: #010100;">LATERALS</span><span style="font-size: 9pt; color: #010100;"> button to size the pipes.</span></p>
+<p class="p_Heading1"><span class="f_Heading1">&nbsp;</span></p>
+<p class="p_Heading1"><img src="_bm613.png" width="160" height="17" border="0" alt="_bm613"><span style="font-size: 9pt; color: #010100;"> In this dialog box, enter the percentage factor that the pressures along the manifold nodes may vary from the design value. </span></p>
+<p class="p_Heading1"><span style="font-size: 9pt; color: #010100;">Press the </span><span style="font-size: 9pt; font-weight: bold; color: #010100;">MANIFOLD</span><span style="font-size: 9pt; color: #010100;"> button to size the pipes. If the </span><span style="font-size: 9pt; font-weight: bold; color: #010100;">Lateral Also</span><span style="font-size: 9pt; color: #010100;"> box is checked, the laterals will be sized automatically after the manifold is done.</span></p>
+<p class="p_Heading1"><span style="font-size: 9pt; color: #010100;">For the manifold, also set the maximum number of different pipe sizes that may be used.</span></p>
+<p class="p_Heading1"><span class="f_Heading1">&nbsp;</span></p>
+<p class="p_Heading1"><img src="_bm614.png" width="103" height="21" border="0" alt="_bm614"><span style="font-size: 9pt; color: #010100;"> Depending on the selected tab, Irri Maker will limit the pressure differences to either a % of the design pressures or if the second tab, limit by pressure, is checked the pressure range will be controlled by the actual user defined pressure value. </span></p>
+<p class="p_Heading1"><span style="font-size: 9pt; color: #010100;">EXAMPLE : If the design pressure of the sprinklers are for instance 25 meters, then a pressure limit of 10% or 2.5 meters will result in the same pipe sizes.</span></p>
+<p class="p_Heading1"><span class="f_Heading1">&nbsp;</span></p>
+<p class="p_Heading1"><span class="f_CourierFixed">Velocity</span></p>
+<p class="p_Heading1"><span style="font-size: 9pt; color: #010100;">Use the input boxes to specify the maximum velocity in the pipes. Model Maker will first try and use the smallest pipe diameter that would satisfy the pressure requirements. If the velocity in a pipe exceeds the maximum limit, the pipe size will be increased even if it means that the pressure range cannot be maintained.</span></p>
+<p style="text-indent: 0px;"><span style="width:24px">&nbsp;</span> &nbsp; &nbsp; &nbsp; &nbsp;</p>
+<p style="text-indent: 0px;"><span style="font-size: 9pt; color: #010100;">After the pipes have been sized, return to the <a href="irrigationhydraulics.htm">RESULTS</a> page and rerun the calculations. All the information will be updated according to the new values.</span></p>
+<p style="text-indent: 0px;"><span style="color: #000000;">&nbsp;</span></p>
+<div style="text-align: left; text-indent: 0px; padding: 0px 0px 0px 0px; margin: 0px 0px 0px 0px;"><table cellspacing="0" cellpadding="0" border="0" style="border: none; border-spacing:0px;">
+<tr style="text-align:left;vertical-align:top;">
+<td valign="top" width="498" style="width:498px;"><p class="p_Heading1"><img src="clip1454.png" width="457" height="478" border="0" alt="clip1454"></p>
+</td>
+<td valign="top" width="498" style="width:498px;"><p style="text-indent: 0px;"><a name="mainline"></a><span class="f_CourierFixed">Main line</span></p>
+<p style="text-indent: 0px;"><span style="font-size: 9pt; color: #010100;">The main line is sized according to the flows in the pipes operating in certain shifts.</span></p>
+<p style="text-indent: 0px;"><span style="font-size: 9pt; color: #010100;">The dialog box to the left is displayed to assist in the design.</span></p>
+<p style="text-indent: 0px;"><span style="color: #000000;">&nbsp;</span></p>
+<p style="text-indent: 0px;"><span style="color: #000000;">&nbsp;</span></p>
+<p style="text-indent: 0px;"><span style="font-size: 9pt; color: #010100;">To use this option, enter the pump pressure <img src="_bm617.png" width="32" height="22" border="0" alt="_bm617">or click the ? update button. In the update panel, set the maximum velocity and biggest pipe size that may be used.</span></p>
+<p style="text-indent: 0px;"><span style="color: #000000;">&nbsp;</span></p>
+<p style="text-indent: 0px;"><span style="font-size: 9pt; color: #010100;">Model Maker will calculate the proposed pipe diameters and place it in the <img src="_bm618.png" width="25" height="22" border="0" alt="_bm618">proposed column.</span></p>
+<p style="text-indent: 0px;"><span style="color: #000000;">&nbsp;</span></p>
+<p style="text-indent: 0px;"><span style="font-size: 9pt; color: #010100;">If you want to formally make the current pipe diameters equal to the proposed pipe diameters, click the <img src="clip1456.png" width="27" height="23" border="0" alt="clip1456"> button.</span></p>
+<p style="text-indent: 0px;"><span style="color: #000000;">&nbsp;</span></p>
+<p style="text-indent: 0px;"><span style="font-size: 9pt; color: #010100;">To pring a report <img src="clip1465.png" width="28" height="24" border="0" alt="clip1465"></span><span style="font-size: 9pt;">click button to get a report of the main line results. </span></p>
+</td>
+</tr>
+</table>
+</div>
+<p style="text-indent: 0px; margin: 0px 0px 0px 10px;"><span style="color: #000000;">&nbsp;</span></p>
+<div style="text-align: left; text-indent: 0px; padding: 0px 0px 0px 0px; margin: 0px 0px 0px 10px;"><table cellspacing="0" cellpadding="0" border="0" style="border: none; border-spacing:0px;">
+<tr style="text-align:left;vertical-align:top;">
+<td valign="top" width="262" style="width:262px;"><p class="p_Heading1"><img src="clip1364.png" width="236" height="228" border="0" alt="clip1364"></p>
+</td>
+<td valign="top" width="498" style="width:498px;"><p style="text-indent: 0px; margin: 0px 0px 0px 10px;"><a name="fixedsizes"></a>Fixed Sizes</p>
+<p style="text-indent: 0px; margin: 0px 0px 0px 10px;"><span style="color: #000000;">&nbsp;</span></p>
+<p style="text-indent: 0px; margin: 0px 0px 0px 10px;">If the pipe has been set as a fixed diameter the line number in the first column will have a '#' and the pipe sizing will use the existing pipe diameter and not change it. </p>
+</td>
+</tr>
+</table>
+</div>
+<p style="text-indent: 0px; margin: 0px 0px 0px 10px;"><span style="color: #000000;">&nbsp;</span></p>
+<p style="text-indent: 0px;"><span style="color: #000000;">&nbsp;</span></p>
+<div style="text-align: left; text-indent: 0px; padding: 0px 0px 0px 0px; margin: 0px 0px 0px 0px;"><table cellspacing="0" cellpadding="1" border="0" style="border: none; border-spacing:0px;">
+<tr style="text-align:left;vertical-align:top;">
+<td valign="top" width="391" style="width:391px;"><p style="text-indent: 0px;"><span style="color: #000000;">&nbsp;</span></p>
+<p style="text-indent: 0px;"><span class="f_CourierFixed">The update panel</span></p>
+<p style="text-indent: 0px;"><span style="font-size: 5pt; color: #010100;">&nbsp;</span></p>
+<p class="p_Heading1"><span style="font-size: 9pt; color: #010100;"> </span><map name="map55"><area shape="rect" coords="202,13,352,121" href="irrigationhydraulics_siz2.htm#maximumpipediameter" alt=""><area shape="rect" coords="14,77,197,120" href="irrigationhydraulics_siz2.htm#velocity" alt=""><area shape="rect" coords="17,140,362,168" href="irrigationhydraulics_siz2.htm#click" alt=""></map><img src="_bm616.png" width="379" height="202" border="0" alt="_bm616" usemap="#map55"></p>
+</td>
+<td valign="top" width="564" style="width:564px;"><p class="p_Heading1"><span class="f_Heading1">&nbsp;</span></p>
+<p class="p_Heading1"><span class="f_Heading1">&nbsp;</span></p>
+<p style="text-indent: 0px;"><span style="font-size: 9pt; color: #010100;">The update panel is displayed before the actual proposed pipe sizing takes place.</span></p>
+<p style="text-indent: 0px;"><span style="font-size: 9pt; color: #010100;">On this panel, set the maximum allowable velocity in the pipes.</span></p>
+<p style="text-indent: 0px;"><span style="font-size: 9pt; color: #010100;">In the list box, select the maximum pipe size that may be used when calculating the proposed pipe set.</span></p>
+<p style="text-indent: 0px;"><span style="color: #000000;">&nbsp;</span></p>
+<p style="text-indent: 0px;"><span style="font-size: 9pt; font-weight: bold; color: #010100;">Model Maker</span><span style="font-size: 9pt; color: #010100;"> will endeavor to find a combination of smallest pipe diameters that will convey the water from the pump to the valves so that the resulting available pressure at the valves is equal or more than the design value.</span></p>
+<p style="text-indent: 0px;"><span style="font-size: 9pt; color: #010100;">After the maximum velocity and pipe diameter are set, click on the update button at the bottom.</span></p>
+<p style="text-indent: 0px;"><span style="color: #000000;">&nbsp;</span></p>
+</td>
+</tr>
+</table>
+</div>
+<p style="text-indent: 0px;"><span style="color: #000000;">&nbsp;</span></p>
+<p style="text-indent: 0px;"><span class="f_CourierFixed">New proposed sizes</span></p>
+<p style="text-indent: 0px;"><span style="font-size: 9pt; color: #010100;">To calculate new pipe sizes, two methods can be used.</span></p>
+<p style="text-indent: 0px;"><span style="color: #000000;">&nbsp;</span></p>
+<p style="text-indent: 0px;"><span class="f_CourierFixed">Pressure only</span></p>
+<p style="text-indent: 0px;"><span style="font-size: 9pt; color: #010100;">This method calculates the pipe sizes based on the user defined pressure at the pump and the desired pressure at the valves. </span></p>
+<p style="text-indent: 0px;"><span style="font-size: 9pt; color: #010100;">The method does not look at pumping costs but only at the smallest total pipe costs that is still hydraulically suitable.</span></p>
+<p style="text-indent: 0px;"><span style="color: #000000;">&nbsp;</span></p>
+<p style="text-indent: 0px; margin: 0px 0px 0px 10px;"><span style="font-style: italic;">MM determines the flows in each pipe within each shift and gets the maximum flow for each section.</span></p>
+<p style="text-indent: 0px; margin: 0px 0px 0px 10px;"><span style="font-style: italic;">The velocity limit is then applied to all the pipes and sized so it does not exceed the limit.</span></p>
+<p style="text-indent: 0px; margin: 0px 0px 0px 10px;"><span style="color: #000000;">&nbsp;</span></p>
+<p style="text-indent: 0px; margin: 0px 0px 0px 10px;"><span style="font-style: italic;">For each shift, the flow and friction losses are then calculated and the pressure at the nodes are compared to the design pressures. If any node pressure is below the required value, the route to the pump is traced and the pipe with the smallest diameter is increased. The flow and friction is again calculated, node pressures compared and pipes adjusted if needed. Once the node pressures are satisfied, the new pipe diameters are proposed.</span></p>
+<p style="text-indent: 0px; margin: 0px 0px 0px 10px;"><span style="color: #000000;">&nbsp;</span></p>
+<p style="text-indent: 0px; margin: 0px 0px 0px 10px;"><span style="font-style: italic;">If the proposed new diameters column displays ERROR then either the biggest pipe diameter was selected but still exceeded the maximum velocity limit or the biggest pipe was selected but the pump pressure was too low to provide sufficient pressure to the nodes.</span></p>
+<p style="text-indent: 0px;"><span style="color: #000000;">&nbsp;</span></p>
+<p style="text-indent: 0px;"><span class="f_CourierFixed">Pressure, pipe costs and pumping costs</span></p>
+<p style="text-indent: 0px;"><span style="font-size: 9pt; color: #010100;">This method will compare different pump pressures, applicable pipe diameters and operating costs and optimize it to propose the cheapest system that still satisfies the hydraulic parameters.</span></p>
+<p style="text-indent: 0px;"><span style="font-size: 9pt; color: #010100;">The cost component of the system comprises of the capital cost and operating costs.</span></p>
+<p style="text-indent: 0px;"><span style="color: #000000;">&nbsp;</span></p>
+<p style="text-indent: 0px;"><span class="f_CourierFixed">Capital costs</span></p>
+<p style="text-indent: 0px;"><span style="font-size: 9pt; color: #010100;">1) &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp;The cost of the pump. This value is set in the <a href="irrigationnodedatabase.htm#pumps">node data base</a>.when a part number is associated with the pump.</span></p>
+<p style="text-indent: 0px;"><span style="font-size: 9pt; color: #010100;">2) &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp;Cost of the pipes. These values are set in the <a href="irrigationpipedatabase.htm#pipedata">pipe data base</a> and defines the unit cost of each diameter.</span></p>
+<p style="text-indent: 0px;"><span style="width:24px">&nbsp;</span> &nbsp; &nbsp; &nbsp; &nbsp;</p>
+<p style="text-indent: 0px;"><span class="f_CourierFixed">Operating cost</span></p>
+<p style="text-indent: 0px;"><span style="font-size: 9pt; color: #010100;">This component takes into account the cost of the energy to run the pump at the different pressure levels.</span></p>
+<p style="text-indent: 0px;"><span style="color: #000000;">&nbsp;</span></p>
+<p style="text-indent: 0px;"><span class="f_CourierFixed">Variables</span></p>
+<p style="text-indent: 0px;"><span style="font-size: 9pt; color: #010100;">The different variables that defines the life span of the project, the interest rate, inflation rate and energy cost are defined in the following dialog boxes.</span></p>
+<p style="text-indent: 0px;"><span style="color: #000000;">&nbsp;</span></p>
+<div style="text-align: left; text-indent: 0px; padding: 0px 0px 0px 0px; margin: 0px 0px 0px 0px;"><table cellspacing="0" cellpadding="1" border="0" style="border: none; border-spacing:0px;">
+<tr style="text-align:left;vertical-align:top;">
+<td valign="top" width="288" style="width:288px;"><p style="text-indent: 0px;"><span class="f_CourierFixed"> Pump cost</span></p>
+<p class="p_Heading1"><span style="font-size: 9pt; color: #010100;"> </span><img src="_bm620.png" width="274" height="386" border="0" alt="_bm620"></p>
+</td>
+<td valign="top" width="237" style="width:237px;"><p style="text-indent: 0px;"><span style="color: #000000;">&nbsp;</span></p>
+<p style="text-indent: 0px;"><span style="font-size: 9pt; color: #010100;">The pump attributes are displayed in this dialog box. The pump description and cost are shown on the first few lines.</span></p>
+<p style="text-indent: 0px;"><span style="color: #000000;">&nbsp;</span></p>
+<p style="text-indent: 0px;"><span style="color: #000000;">&nbsp;</span></p>
+<p style="text-indent: 0px;"><span style="font-size: 9pt; color: #010100;">The pressure against flow table is also displayed. </span></p>
+<p style="text-indent: 0px;"><span style="color: #000000;">&nbsp;</span></p>
+<p style="text-indent: 0px;"><span style="color: #000000;">&nbsp;</span></p>
+<p style="text-indent: 0px;"><span style="font-size: 9pt; color: #010100;">The price of the pump and the pressure and flow range cannot be edited on this page. These values are read from the node data base.</span></p>
+<p style="text-indent: 0px;"><span style="color: #000000;">&nbsp;</span></p>
+<p style="text-indent: 0px;"><span style="color: #000000;">&nbsp;</span></p>
+<p style="text-indent: 0px;"><span style="font-size: 9pt; color: #010100;">Click the Select New Pump button if the specific pump must be changed.</span></p>
+<p style="text-indent: 0px;"><span style="color: #000000;">&nbsp;</span></p>
+<p style="text-indent: 0px;"><span style="color: #000000;">&nbsp;</span></p>
+<p style="text-indent: 0px;"><span style="font-size: 9pt; color: #010100;">To edit the values in the pump data base, exit this dialog box completely and access the nodes data base from the <a href="irrigation___nodes.htm#fullcontrolisprovidedover">main irrigation menu</a>.</span></p>
+<p class="p_Heading1"><span class="f_Heading1">&nbsp;</span></p>
+</td>
+</tr>
+</table>
+</div>
+<p style="text-indent: 0px;"><span style="color: #000000;">&nbsp;</span></p>
+<div style="text-align: left; text-indent: 0px; padding: 0px 0px 0px 0px; margin: 0px 0px 0px 0px;"><table cellspacing="0" cellpadding="1" border="0" style="border: none; border-spacing:0px;">
+<tr style="text-align:left;vertical-align:top;">
+<td valign="top" width="263" style="width:263px;"><p style="text-indent: 0px;"><span class="f_CourierFixed"> Operational variables</span></p>
+<p style="text-indent: 0px;"><span style="font-size: 9pt; color: #010100;"> </span><img src="_bm621.png" width="232" height="396" border="0" alt="_bm621"></p>
+<p style="text-indent: 0px;"><span style="font-size: 9pt; color: #010100;">Use this page to input all the system variables.</span></p>
+</td>
+<td valign="top" width="96" style="width:96px;"><p style="text-indent: 0px;"><span style="font-size: 9pt; color: #010100;">Unit of energy </span></p>
+<p style="text-indent: 0px;"><span style="color: #000000;">&nbsp;</span></p>
+<p style="text-indent: 0px;"><span style="font-size: 9pt; color: #010100;">Cost per hour</span></p>
+<p style="text-indent: 0px;"><span style="color: #000000;">&nbsp;</span></p>
+<p style="text-indent: 0px;"><span style="color: #000000;">&nbsp;</span></p>
+<p style="text-indent: 0px;"><span style="color: #000000;">&nbsp;</span></p>
+<p style="text-indent: 0px;"><span style="color: #000000;">&nbsp;</span></p>
+<p style="text-indent: 0px;"><span style="color: #000000;">&nbsp;</span></p>
+<p style="text-indent: 0px;"><span style="font-size: 9pt; color: #010100;">Inflation rate </span></p>
+<p style="text-indent: 0px;"><span style="color: #000000;">&nbsp;</span></p>
+<p style="text-indent: 0px;"><span style="font-size: 9pt; color: #010100;">Pump efficiency</span></p>
+<p style="text-indent: 0px;"><span style="color: #000000;">&nbsp;</span></p>
+<p style="text-indent: 0px;"><span style="color: #000000;">&nbsp;</span></p>
+<p style="text-indent: 0px;"><span style="color: #000000;">&nbsp;</span></p>
+<p style="text-indent: 0px;"><span style="font-size: 9pt; color: #010100;">Life span </span></p>
+<p style="text-indent: 0px;"><span style="color: #000000;">&nbsp;</span></p>
+<p style="text-indent: 0px;"><span style="font-size: 9pt; color: #010100;">Days/year</span></p>
+<p style="text-indent: 0px;"><span style="color: #000000;">&nbsp;</span></p>
+<p style="text-indent: 0px;"><span style="font-size: 9pt; color: #010100;">Hours/day </span></p>
+<p style="text-indent: 0px;"><span style="color: #000000;">&nbsp;</span></p>
+<p style="text-indent: 0px;"><span style="font-size: 9pt; color: #010100;">Interest rate</span></p>
+</td>
+<td valign="top" width="317" style="width:317px;"><p style="text-indent: 0px;"><span style="font-size: 9pt; color: #010100;">: Used to describe the energy component.</span></p>
+<p style="text-indent: 0px;"><span style="color: #000000;">&nbsp;</span></p>
+<p style="text-indent: 0px;"><span style="font-size: 9pt; color: #010100;">: Enter the value you have to pay to use one unit of energy for one hour. Note the decimal entry in this example. The 0.25 indicates for example the fraction 25/100 of </span><span style="font-size: 12pt; color: #010100;"> </span><span style="font-size: 9pt; color: #010100;">the currency unit.</span></p>
+<p style="text-indent: 0px;"><span style="color: #000000;">&nbsp;</span></p>
+<p style="text-indent: 0px;"><span style="font-size: 9pt; color: #010100;">: The percentage at which your cost per energy hour, will increase annually.</span></p>
+<p style="text-indent: 0px;"><span style="color: #000000;">&nbsp;</span></p>
+<p style="text-indent: 0px;"><span style="font-size: 9pt; color: #010100;">: Indicates how well your pump uses the energy. This is used to calculate the number of energy units needed to pump &nbsp;the water.</span></p>
+<p style="text-indent: 0px;"><span style="color: #000000;">&nbsp;</span></p>
+<p style="text-indent: 0px;"><span style="font-size: 9pt; color: #010100;">: The time over which the system will be discounted</span></p>
+<p style="text-indent: 0px;"><span style="color: #000000;">&nbsp;</span></p>
+<p style="text-indent: 0px;"><span style="font-size: 9pt; color: #010100;">: Number of days that you will irrigate.</span></p>
+<p style="text-indent: 0px;"><span style="color: #000000;">&nbsp;</span></p>
+<p style="text-indent: 0px;"><span style="font-size: 9pt; color: #010100;">: Length of operation per day.</span></p>
+<p style="text-indent: 0px;"><span style="color: #000000;">&nbsp;</span></p>
+<p style="text-indent: 0px;"><span style="font-size: 9pt; color: #010100;">: The return you would have received on a typical investment if you did not buy the pump and pipes but rather placed the equivalent amount in an interest bearing account.</span></p>
+</td>
+</tr>
+</table>
+</div>
+<p style="text-indent: 0px;"><span style="color: #000000;">&nbsp;</span></p>
+<p style="text-indent: 0px;"><span style="font-size: 9pt; color: #010100;">The unit cost - calculated as an average over the life span of the system - to pump the water.</span></p>
+<p style="text-indent: 0px;"><span style="color: #000000;">&nbsp;</span></p>
+<div style="text-align: left; text-indent: 0px; padding: 0px 0px 0px 0px; margin: 0px 0px 0px 0px;"><table cellspacing="0" cellpadding="1" border="0" style="border: none; border-spacing:0px;">
+<tr style="text-align:left;vertical-align:top;">
+<td valign="top" width="324" style="width:324px;"><p style="text-indent: 0px;"><span class="f_CourierFixed"> Finding the optimum pressure value</span></p>
+<p style="text-indent: 0px;"><span style="font-size: 9pt; color: #010100;"> </span><img src="_bm622.png" width="306" height="416" border="0" alt="_bm622"></p>
+<p style="text-indent: 0px;"><span style="font-size: 9pt; color: #010100;">This page is used to activate the interpolation process.</span></p>
+<p class="p_Heading1"><span class="f_Heading1">&nbsp;</span></p>
+</td>
+<td valign="top" width="324" style="width:324px;"><p class="p_Heading1"><span class="f_Heading1">&nbsp;</span></p>
+<p style="text-indent: 0px;"><span style="color: #000000;">&nbsp;</span></p>
+<p style="text-indent: 0px;"><span style="font-size: 9pt; font-weight: bold; color: #010100;">Click</span><span style="font-size: 9pt; color: #010100;"> on the best cost button to start the calculations. Model Maker will inspect the full pressure range of the pump and at each interval, define a set of pipes that hydraulically satisfy the system based on the pump pressure.</span></p>
+<p style="text-indent: 0px;"><span style="font-size: 9pt; color: #010100;">The pump price ( a constant value ), the cost of the pipes (for the specific input pressure) and the operating cost (to maintain the input pressure) are added up and the input pressure with the lowest total cost is then determined.</span></p>
+<p style="text-indent: 0px;"><span style="color: #000000;">&nbsp;</span></p>
+<p style="text-indent: 0px;"><span style="font-size: 9pt; font-weight: bold; color: #010100;">The</span><span style="font-size: 9pt; color: #010100;"> best pressure to operate the system at is then indicated and the specific pressure is then displayed at the bottom of the page.</span></p>
+<p style="text-indent: 0px;"><span style="color: #000000;">&nbsp;</span></p>
+<p style="text-indent: 0px;"><span style="font-size: 9pt; font-weight: bold; color: #010100;">Using</span><span style="font-size: 9pt; color: #010100;"> this optimizing process does not automatically change anything on your actual design.</span></p>
+<p style="text-indent: 0px;"><span style="font-size: 9pt; color: #010100;">If you want to apply the new pressure and associated pipe diameters to your project, click the Operate system button at the bottom. Model Maker will set your pump pressure to the calculated best pressure and also update the pipe diameters.</span></p>
+<p style="text-indent: 0px;"><span style="font-size: 9pt; color: #010100;">To view the hydraulic calculations of the changed system, click the <a href="irrigationhydraulics.htm">Calculate button</a> on the front page.</span></p>
+</td>
+</tr>
+</table>
+</div>
+<p style="text-indent: 0px;"><span style="width:24px">&nbsp;</span> &nbsp; &nbsp; &nbsp; &nbsp;</p>
+<p style="text-indent: 0px;"><span class="f_rrelatedtopic">Related topics:</span></p>
+<p style="text-indent: 0px;"><span style="font-size: 9pt; color: #010100;"><a href="irrigation___shifts.htm">Shifts</a></span></p>
+
+</td></tr></table>
+
+</body>
+</html>

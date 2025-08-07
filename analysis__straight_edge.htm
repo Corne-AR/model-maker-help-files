@@ -1,0 +1,119 @@
+<!DOCTYPE HTML PUBLIC "-//W3C//DTD HTML 4.01 Transitional//EN">
+<html>
+<head>
+   <title>ANALYSIS : Straight Edge</title>
+   <meta name="generator" content="Help &amp; Manual" />
+   <meta name="keywords" content="as build,elevation,pad,platform,ruler,straight edge,Valley" />
+   <meta http-equiv="Content-Type" content="text/html; charset=ISO-8859-1" />
+   <meta http-equiv="Content-Style-Type" content="text/css" />
+   <link type="text/css" href="default.css" rel="stylesheet" />
+
+<script type="text/javascript" src="helpman_topicinit.js"></script>
+</head>
+<body style="margin: 0px 0px 0px 0px; background: #FFFFFF;">
+
+
+<table width="100%" border="0" cellspacing="0" cellpadding="5" bgcolor="#D0D0D0">
+  <tr valign="middle">
+    <td align="left">
+      <p class="p_Heading1"><span class="f_Heading1">ANALYSIS : Straight Edge</span></p>
+
+    </td>
+    <td align="right">
+     <span style="font-size: 9pt">
+     <a href="start_up.htm">Top</a>&nbsp;
+     <a href="analysis_ponding.htm">Previous</a>&nbsp;
+     <a href="analysis__concrete_floor.htm">Next</a>
+     </span>
+    </td>
+  </tr>
+</table>
+
+
+<!-- Placeholder for topic body. -->
+<table width="100%" border="0" cellspacing="0" cellpadding="5"><tr valign="top"><td align="left">
+<p>This function will slide a straight edge over a draped GXT string and report the positions where the surface is away from the edge line.</p>
+<p>&nbsp;</p>
+<p>A typical application of this feature would be to check how even the surface of a concrete floor is.</p>
+<p>&nbsp;</p>
+<p><span style="font-weight: bold;">Explanations:</span></p>
+<p>&nbsp;</p>
+<div style="text-align: left; text-indent: 10px; padding: 0px 0px 0px 0px; margin: 0px 0px 0px 0px;"><table cellspacing="0" cellpadding="0" border="0" style="border: none; border-spacing:0px;">
+<tr style="text-align:left;vertical-align:top;">
+<td valign="top" width="620" style="width:620px;"><p><img src="clip2169.png" width="610" height="168" border="0" alt="clip2169"></p>
+</td>
+<td valign="top" width="977" style="width:977px;"><p>In this image:</p>
+<p>&nbsp;</p>
+<p>Green line : Side profile view of a string that was draped over the surface.</p>
+<p>Purple : Sample positions where the straight edge will be analyzed for depth differences.</p>
+<p>&nbsp;</p>
+<p>1) A typical scenario where the end of the straight edge is in the air when going over a high point.</p>
+<p>or</p>
+<p>2) The edged of the ruler are on the ground and the depth of the 'valley' is picked up. &nbsp; </p>
+</td>
+</tr>
+<tr style="text-align:left;vertical-align:top;">
+<td valign="top" width="620" style="width:620px;"><p> &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; <img src="embim42.png" width="290" height="210" vspace="1" hspace="1" border="0" alt=""></p>
+</td>
+<td valign="top" width="977" style="width:977px;"><p>&nbsp;</p>
+<p>&nbsp;</p>
+<p>&nbsp;</p>
+<p>a) The length of the straight edge. </p>
+<p>&nbsp;</p>
+<p>b) The maximum difference between the edge and the surface before it will be recorded as text or shown as a cross in plan.</p>
+<p>&nbsp;</p>
+<p>c) When the test is run, all deep depths will be shown as a cross. Optionally the actual depth can be added to cad as text.</p>
+<p>&nbsp;</p>
+<p>d) Option to set the correct text parameters, including the layer name, before the test is run. </p>
+</td>
+</tr>
+<tr style="text-align:left;vertical-align:top;">
+<td valign="top" width="620" style="width:620px;"><p> &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; <img src="embim43.png" width="458" height="284" vspace="1" hspace="1" border="0" alt=""></p>
+</td>
+<td valign="top" width="977" style="width:977px;"><p> &nbsp;  </p>
+<p>&nbsp;</p>
+<p>A typical output after the analysis has been done.</p>
+<p>&nbsp;</p>
+<p>Red lines : Identified GXT strings.</p>
+<p>&nbsp;</p>
+<p>Red crosses : All the positions along the string where the edge if off the surface.</p>
+<p>&nbsp;</p>
+<p>Blue text : Actual depth values as cad text</p>
+</td>
+</tr>
+<tr style="text-align:left;vertical-align:top;">
+<td valign="top" width="620" style="width:620px;"><br>
+</td>
+<td valign="top" width="977" style="width:977px;"><br>
+</td>
+</tr>
+</table>
+</div>
+<p>&nbsp;</p>
+<p><span style="font-weight: bold;">How it works:</span></p>
+<p>&nbsp;</p>
+<p>1) Draw general GXt strings across the model to form a grid. Depending on the size of the platform and how accurate you need to be, these strings can be 0.1 to 2m+ parallel to each other.</p>
+<p>Hint: Draw one string across and then use the add Parallel string option to generate the other.</p>
+<p>&nbsp;</p>
+<p>2) Once the strings are defined, Identify all the strings and use the GXT, Id, Man-id features to Drape all the strings onto the model.<img src="embim44.png" width="329" height="295" vspace="1" hspace="1" border="0" alt=""></p>
+<p>&nbsp;</p>
+<p>When doing the drape, also add nodes at slope changes. These nodes are important to measure the depths.<img src="embim45.png" width="293" height="266" vspace="1" hspace="1" border="0" alt=""></p>
+<p>&nbsp;</p>
+<p>3) After adding the strings and they are identified and draped, proceed to Analysis - Straight Edge function and let the ruler run along the strings.`</p>
+<p>&nbsp;</p>
+<p><span style="font-weight: bold;">Things to remember:</span></p>
+<p>&nbsp;</p>
+<p>GXT strings indicate the line on which the ruler is tested. These strings must be identified and draped onto the correct surface (dtm project) so the strings are an accurate representation of the surface.</p>
+<p>&nbsp;</p>
+<p>Edge length is defined in meters and the depth in mm.</p>
+<p>&nbsp;</p>
+<p>&nbsp;</p>
+<p>&nbsp;</p>
+<p>&nbsp;</p>
+<p>&nbsp;</p>
+<p>&nbsp;</p>
+
+</td></tr></table>
+
+</body>
+</html>

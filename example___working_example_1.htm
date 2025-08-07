@@ -1,0 +1,132 @@
+<!DOCTYPE HTML PUBLIC "-//W3C//DTD HTML 4.01 Transitional//EN">
+<html>
+<head>
+   <title>How to create a DTM</title>
+   <meta name="generator" content="Help &amp; Manual" />
+   <meta name="keywords" content="Contour,DTM,Examples,TRIANGLES" />
+   <meta http-equiv="Content-Type" content="text/html; charset=ISO-8859-1" />
+   <meta http-equiv="Content-Style-Type" content="text/css" />
+   <link type="text/css" href="default.css" rel="stylesheet" />
+
+<script type="text/javascript" src="helpman_topicinit.js"></script>
+</head>
+<body style="margin: 0px 0px 0px 0px; background: #FFFFFF;">
+
+
+<table width="100%" border="0" cellspacing="0" cellpadding="5" bgcolor="#D0D0D0">
+  <tr valign="middle">
+    <td align="left">
+      <p class="p_Heading1"><span class="f_Heading1">EXAMPLE : Working Example 1 (Create DTM)</span></p>
+
+    </td>
+    <td align="right">
+     <span style="font-size: 9pt">
+     <a href="start_up.htm">Top</a>&nbsp;
+     <a href="example___working_example_4.htm">Previous</a>&nbsp;
+     <a href="example___working_example_3.htm">Next</a>
+     </span>
+    </td>
+  </tr>
+</table>
+
+
+<!-- Placeholder for topic body. -->
+<table width="100%" border="0" cellspacing="0" cellpadding="5"><tr valign="top"><td align="left">
+<p style="text-indent: 0px;"><span style="color: #000000;">&nbsp;</span></p>
+<p style="text-indent: 0px;"><span class="f_CourierFixed">Object</span></p>
+<p style="text-indent: 0px;"><span style="font-size: 5pt; color: #010100;">&nbsp;</span></p>
+<p style="text-indent: 0px;"><span style="font-size: 9pt; color: #010100;">This example creates a DTM and generates a contour plan using existing data by showing you how to:</span></p>
+<p style="text-indent: 0px;"><img src="_bm26.png" width="10" height="15" border="0" alt="_bm26"> &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp;<span style="font-size: 9pt; color: #010100;">Load the survey data from a file.</span></p>
+<p style="text-indent: 0px;"><img src="_bm26.png" width="10" height="15" border="0" alt="_bm26"> &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp;<span style="font-size: 9pt; color: #010100;">Create a network of triangles.</span></p>
+<p style="text-indent: 0px;"><img src="_bm26.png" width="10" height="15" border="0" alt="_bm26"> &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp;<span style="font-size: 9pt; color: #010100;">Draw the contours.</span></p>
+<p style="text-indent: 0px;"><span style="color: #000000;">&nbsp;</span></p>
+<p style="text-indent: 0px;"><span style="font-size: 9pt; color: #010100;">Before attempting this example, please familiarize yourself with the following:</span></p>
+<div style="text-align: left; text-indent: 0px; padding: 0px 0px 0px 0px; margin: 0px 0px 0px 1px;"><table border="0" cellpadding="0" cellspacing="0" style="line-height: normal;"><tr style="vertical-align:baseline" valign="baseline"><td width="23"><img src="_bm26.png" width="10" height="15" border="0" alt="_bm26"></td><td> &nbsp; &nbsp; &nbsp; &nbsp;<span style="font-size: 9pt; color: #010100;">The general <a href="main_screen.htm">menu structure</a> to gain a good understanding of the screen layout. </span></td></tr></table></div><div style="text-align: left; text-indent: 0px; padding: 0px 0px 0px 0px; margin: 0px 0px 0px 1px;"><table border="0" cellpadding="0" cellspacing="0" style="line-height: normal;"><tr style="vertical-align:baseline" valign="baseline"><td width="23"><img src="_bm26.png" width="10" height="15" border="0" alt="_bm26"></td><td> &nbsp; &nbsp; &nbsp; &nbsp;<span style="font-size: 9pt; color: #010100;">The <a href="cursor_positioningmodes.htm">cursor control</a> keys to eventually know all the shortcuts.</span></td></tr></table></div><p style="text-indent: 0px;"><span style="color: #000000;">&nbsp;</span></p>
+<p style="text-indent: 0px;"><span style="font-size: 9pt; color: #010100;">It is also a good idea to check out the <a href="examplethetotalpicture.htm">total picture</a> example.</span></p>
+<p style="text-indent: 0px;"><span style="color: #000000;">&nbsp;</span></p>
+<p style="text-indent: 0px;"><span class="f_CourierFixed">Procedure </span></p>
+<p style="text-indent: 0px;"><span style="font-size: 5pt; color: #010100;">&nbsp;</span></p>
+<p style="text-indent: 0px;"><img src="_bm26.png" width="10" height="15" border="0" alt="_bm26"> &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp;<span style="font-size: 9pt; color: #010100;">Load DTM data from either an <a href="fileimport_define.htm">ASCII</a> file or from an existing file.</span></p>
+<p style="text-indent: 0px;"><span style="font-size: 9pt; color: #010100;">&nbsp;</span></p>
+<p style="text-indent: 0px;"><span style="width:24px">&nbsp;</span> &nbsp; &nbsp; &nbsp; &nbsp;<span style="font-size: 9pt; color: #010100;">If you do not have any survey files to use, load the ZX.MMS sample data used in the Total Picture example.</span></p>
+<p style="text-indent: 0px;"><span style="width:24px">&nbsp;</span> &nbsp; &nbsp; &nbsp; &nbsp;<span class="f_CourierFixed">File - Open (F3) -</span></p>
+<p style="text-indent: 0px;"><span style="font-size: 5pt; color: #010100;">&nbsp;</span></p>
+<p style="text-indent: 0px;"><span style="width:24px">&nbsp;</span> &nbsp; &nbsp; &nbsp; &nbsp;<img src="clip1010.png" width="538" height="399" border="0" alt="clip1010"></p>
+<p style="text-indent: 0px;"><span style="font-size: 9pt; color: #010100;">If you have to load survey co-ordinates from an ASCII file, different to the normal Model Maker format, use the import ASCII function:</span></p>
+<p style="text-indent: 0px;"><span style="width:24px">&nbsp;</span></p>
+<p style="text-indent: 0px;"><span style="width:24px">&nbsp;</span> &nbsp; &nbsp; &nbsp; &nbsp;<span class="f_CourierFixed">File - Import ASCII &amp; Other - Define format</span></p>
+<p style="text-indent: 0px;"><span style="width:24px">&nbsp;</span> &nbsp; &nbsp; &nbsp; &nbsp;<span style="font-size: 9pt; color: #010100;">If you have to input co-ordinates in another way, see the input co-ordinates <a href="inputcoordinatesmanualent.htm">example</a>.</span></p>
+<p style="text-indent: 0px;"><span style="width:24px">&nbsp;</span></p>
+<p style="text-indent: 0px;"><span style="width:24px">&nbsp;</span> &nbsp; &nbsp; &nbsp; &nbsp;<span class="f_CourierFixed">Data - DTM DATABASE - Stations</span></p>
+<p style="text-indent: 0px;"><span style="color: #000000;">&nbsp;</span></p>
+<div style="text-align: left; text-indent: 0px; padding: 0px 0px 0px 0px; margin: 0px 0px 0px 0px;"><table cellspacing="0" cellpadding="0" border="0" style="border: none; border-spacing:0px;">
+<tr style="text-align:left;vertical-align:top;">
+<td colspan="2" valign="top" width="818" style="width:818px;"><p style="text-indent: 0px;"><img src="_bm26.png" width="10" height="15" border="0" alt="_bm26"> &nbsp; &nbsp; &nbsp; &nbsp;<span style="font-size: 9pt; color: #010100;">After the file is loaded the points will be plotted on the main screen. &nbsp;To display the codes or elevations of the points, select the options in the screen dialog box on the right hand of the main screen or the GOP menu on the top of the <a href="main_screen.htm">mainscreen</a>.</span></p>
+<p class="p_Heading1"><span class="f_Heading1">&nbsp;</span></p>
+</td>
+</tr>
+<tr style="text-align:left;vertical-align:top;">
+<td valign="top" width="260" style="width:260px;"><p class="p_Heading1"><span class="f_CourierFixed" style="font-weight: normal;"> </span><img src="clip1011.png" width="161" height="225" border="0" alt="clip1011"></p>
+</td>
+<td valign="top" width="558" style="width:558px;"><p class="p_Heading1"><img src="clip1013.png" width="241" height="36" border="0" alt="clip1013"></p>
+</td>
+</tr>
+<tr style="text-align:left;vertical-align:top;">
+<td colspan="2" valign="top" width="818" style="width:818px;"><p class="p_Heading1"><span class="f_Heading1">&nbsp;</span></p>
+<p style="text-indent: 0px;"><img src="_bm26.png" width="10" height="15" border="0" alt="_bm26"> &nbsp; &nbsp; &nbsp; &nbsp;<span style="font-size: 9pt; color: #010100;">On the top left menu of the <a href="main_screen.htm">main screen</a> go to the </span><span style="font-size: 9pt; font-weight: bold; color: #010100;">Tri</span><span style="font-size: 9pt; color: #010100;">angle menu.</span></p>
+</td>
+</tr>
+<tr style="text-align:left;vertical-align:top;">
+<td valign="top" width="260" style="width:260px;"><p class="p_Heading1"><span class="f_Heading1">&nbsp;</span></p>
+<p class="p_Heading1"><span style="font-size: 9pt;"> </span><img src="clip1015.png" width="55" height="118" border="0" alt="clip1015"></p>
+<p class="p_Heading1"><span class="f_Heading1">&nbsp;</span></p>
+</td>
+<td valign="top" width="558" style="width:558px;"><p class="p_Heading1"><span class="f_Heading1">&nbsp;</span></p>
+<p class="p_Heading1"><span style="font-size: 9pt; color: #010100;">The triangle options will appear in the menu at the bottom of the <a href="main_screen.htm">main screen</a>.  </span></p>
+</td>
+</tr>
+<tr style="text-align:left;vertical-align:top;">
+<td valign="top" width="260" style="width:260px;"><p style="text-indent: 0px;"><img src="_bm26.png" width="10" height="15" border="0" alt="_bm26"> &nbsp; &nbsp; &nbsp; &nbsp;<span style="font-size: 9pt; color: #010100;">Select the <a href="triangle___csearch.htm">Csearch</a> option.</span></p>
+</td>
+<td valign="top" width="558" style="width:558px;"><p class="p_Heading1"><span style="font-size: 9pt;"> </span><img src="clip1016.png" width="327" height="31" border="0" alt="clip1016"></p>
+</td>
+</tr>
+<tr style="text-align:left;vertical-align:top;">
+<td valign="top" width="260" style="width:260px;"><p style="text-indent: 0px;"><span style="color: #000000;">&nbsp;</span></p>
+<p style="text-indent: 0px;"><img src="_bm26.png" width="10" height="15" border="0" alt="_bm26"> &nbsp; &nbsp; &nbsp; &nbsp;<span style="font-size: 9pt; color: #010100;">From the second dialog box select the option <a href="trianglequicksearch.htm">Quick Search</a>. </span></p>
+<p style="text-indent: 0px;"><span style="color: #000000;">&nbsp;</span></p>
+<p style="text-indent: 0px;"><span style="font-size: 9pt; color: #010100;">The triangle network will be created between the points. After the triangle search is completed, draw the triangles and contours.</span></p>
+</td>
+<td valign="top" width="558" style="width:558px;"><p class="p_Heading1"><span style="font-size: 9pt;">&nbsp;</span></p>
+<p class="p_Heading1"><img src="clip1018.png" width="225" height="120" border="0" alt="clip1018"></p>
+</td>
+</tr>
+<tr style="text-align:left;vertical-align:top;">
+<td valign="top" width="260" style="width:260px;"><p style="text-indent: 0px;"><span style="color: #000000;">&nbsp;</span></p>
+<p style="text-indent: 0px;"><img src="_bm26.png" width="10" height="15" border="0" alt="_bm26"> &nbsp; &nbsp; &nbsp; &nbsp;<span style="font-size: 9pt; color: #010100;">Choose the </span><span style="font-size: 9pt; font-weight: bold; color: #010100;">Tri </span><span style="font-size: 9pt; color: #010100;">option on the main menu at the top of the main screen to draw the triangles.</span></p>
+</td>
+<td valign="top" width="558" style="width:558px;"><p class="p_Heading1"><span style="font-size: 9pt;">  </span></p>
+<p class="p_Heading1"><span style="font-size: 9pt;"> </span><img src="clip1020.png" width="228" height="36" border="0" alt="clip1020"></p>
+</td>
+</tr>
+<tr style="text-align:left;vertical-align:top;">
+<td valign="top" width="260" style="width:260px;"><p class="p_Heading1"><span class="f_Heading1">&nbsp;</span></p>
+<p style="text-indent: 0px;"><img src="_bm26.png" width="10" height="15" border="0" alt="_bm26"> &nbsp; &nbsp; &nbsp; &nbsp;<span style="font-size: 9pt; color: #010100;">Select the </span><span style="font-size: 9pt; font-weight: bold; color: #010100;">Quick</span><span style="font-size: 9pt; color: #010100;"> option on the main menu at the top of the main screen to draw the contours.</span></p>
+</td>
+<td valign="top" width="558" style="width:558px;"><p class="p_Heading1"><span style="font-size: 9pt;">&nbsp;</span></p>
+<p class="p_Heading1"><span style="font-size: 9pt;"> </span><img src="clip1024.png" width="223" height="36" border="0" alt="clip1024"></p>
+</td>
+</tr>
+</table>
+</div>
+<p style="text-indent: 0px;"><span style="color: #000000;">&nbsp;</span></p>
+<p style="text-indent: 0px;"><span class="f_rrelatedtopic">Related topics:</span></p>
+<p style="text-indent: 0px;"><span style="font-size: 9pt; color: #010100;"><a href="examplememoryissues.htm">Memory issues</a>:</span></p>
+<p style="text-indent: 0px;"><span style="font-size: 9pt; color: #010100;"><a href="examplegettingstarted.htm">Where do I start?</a></span></p>
+<p style="text-indent: 0px;"><span style="font-size: 9pt; color: #010100;"><a href="trianglemodelingdata.htm">Modeling Data (Triangles)</a></span></p>
+<p style="text-indent: 0px;"><span style="font-size: 9pt; color: #010100;"><a href="exampleprojects.htm">Projects</a></span></p>
+
+</td></tr></table>
+
+</body>
+</html>

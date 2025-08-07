@@ -1,0 +1,106 @@
+<!DOCTYPE HTML PUBLIC "-//W3C//DTD HTML 4.01 Transitional//EN">
+<html>
+<head>
+   <title>VOLUME : Dam volume</title>
+   <meta name="generator" content="Help &amp; Manual" />
+   <meta name="keywords" content="Contour,Dam,TERRACE,VOLUMES" />
+   <meta http-equiv="Content-Type" content="text/html; charset=ISO-8859-1" />
+   <meta http-equiv="Content-Style-Type" content="text/css" />
+   <link type="text/css" href="default.css" rel="stylesheet" />
+
+<script type="text/javascript" src="helpman_topicinit.js"></script>
+<object id=hhctrl_96 type="application/x-oleobject" classid="clsid:adb880a6-d8ff-11cf-9377-00aa003b7a11"><param name="Command" value="ALink"><param name="Window" value="second"><param name="Item1" value=""><param name="Item2" value="$topicid_popup_vol_damvol"></object></head>
+<body style="margin: 0px 0px 0px 0px; background: #FFFFFF;">
+
+
+<table width="100%" border="0" cellspacing="0" cellpadding="5" bgcolor="#D0D0D0">
+  <tr valign="middle">
+    <td align="left">
+      <p class="p_Heading1"><span class="f_Heading1">VOLUME : Dam volume</span></p>
+<p class="p_Heading1"><span class="f_purpose"><a href="javascript:hhctrl_96.hhclick()">Show me how to get there</a></span></p>
+
+    </td>
+    <td align="right">
+     <span style="font-size: 9pt">
+     <a href="start_up.htm">Top</a>&nbsp;
+     <a href="volume___contours_.htm">Previous</a>&nbsp;
+     <a href="volume___sections.htm">Next</a>
+     </span>
+    </td>
+  </tr>
+</table>
+
+
+<!-- Placeholder for topic body. -->
+<table width="100%" border="0" cellspacing="0" cellpadding="5"><tr valign="top"><td align="left">
+<p style="text-indent: 0px;"><span style="font-weight: bold; color: #000080;">&nbsp;</span></p>
+<p style="text-indent: 0px;"><span class="f_rrelatedtopic">MENU : Vol - Damvol &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp;</span></p>
+<p style="text-indent: 0px;"><span style="color: #000000;">&nbsp;</span></p>
+<p style="text-indent: 0px;"><span style="font-size: 9pt; color: #010100;">Calculate the volume of a mine dump by calculating the area of all the contours and then applying the end area method to determine the volume. Calculating the volume of a dam is done in the same manner. However, a dam has a full capacity level and the contours should not be calculated above that value.</span></p>
+<p style="text-indent: 0px;"><span style="color: #000000;">&nbsp;</span></p>
+<p style="text-indent: 0px;"><span style="font-size: 9pt; color: #010100;">This function is modified to allow you to supply the over flow level. All the contours below that level will be calculated and the surface area at the full water mark will be added. A cumulative report of the area of all the contours will be printed to the <a href="files___editor.htm">editor</a>.</span></p>
+<p style="text-indent: 0px;"><span style="color: #000000;">&nbsp;</span></p>
+<p style="text-indent: 0px;"><span style="font-size: 9pt; color: #010100;">Note that this method adds up the areas of all the contours and cannot determine whether a contour holds water or not. It is your responsibility to manipulate the triangle model to obtain the desired result.</span></p>
+<p style="text-indent: 0px;"><span style="color: #000000;">&nbsp;</span></p>
+<p style="text-indent: 0px;"><span class="f_CourierFixed">1) Down stream</span></p>
+<p style="text-indent: 0px;"><span style="font-size: 9pt; color: #010100;">If the dam is in a valley, make sure that the triangles at the down stream side of the dam wall are deleted. The triangles modeling this part of the wall are not part of the water surface and must not be used.</span></p>
+<p style="text-indent: 0px;"><span style="color: #000000;">&nbsp;</span></p>
+<p style="text-indent: 0px;"><span class="f_CourierFixed">EXAMPLE:</span></p>
+<p style="text-indent: 0px;"><img src="_bm1285.png" width="246" height="143" border="0" alt="_bm1285"><span style="font-size: 9pt; color: #010100;"> </span></p>
+<p style="text-indent: 0px;"><span style="font-size: 9pt; color: #010100;">A contour plan of a dam in a natural valley. The contours on the down stream side of the dam wall are not removed. This would yield an invalid volume.</span></p>
+<p style="text-indent: 0px;"><span style="color: #000000;">&nbsp;</span></p>
+<p style="text-indent: 0px;"><img src="_bm1286.png" width="245" height="149" border="0" alt="_bm1286"><span style="font-size: 9pt; color: #010100;"> </span></p>
+<p style="text-indent: 0px;"><span style="font-size: 9pt; color: #010100;">The same model with the undesired triangles removed. The <a href="triangle___wipeout.htm">wipeout</a> functions were used to obtain the result. This model will calculate the correct answer.</span></p>
+<p style="text-indent: 0px;"><span style="font-size: 9pt; color: #010100;">The same principal applies to any dam that has triangles to the outside of the dam wall.</span></p>
+<p style="text-indent: 0px;"><span style="color: #000000;">&nbsp;</span></p>
+<p style="text-indent: 0px;"><span class="f_CourierFixed">2) Islands</span></p>
+<p style="text-indent: 0px;"><span style="font-size: 9pt; color: #010100;">This function is not suitable to calculate a volume of a dam if it has any islands within the water surface area. To obtain the correct result, the area of these islands should be subtracted from the total water volume. This function is not designed to distinguish between regular contours and contours modeling an island and as such will yield a too high water volume.</span></p>
+<p style="text-indent: 0px;"><span style="color: #000000;">&nbsp;</span></p>
+<p style="text-indent: 0px;"><span style="font-size: 9pt; color: #010100;">The correct way to calculate complicated models like that would be to use the <a href="terrace___volumes___cut___fill.htm">TERRACE</a> functions.</span></p>
+<p style="text-indent: 0px;"><span style="color: #000000;">&nbsp;</span></p>
+<p style="text-indent: 0px;"><span style="font-size: 9pt; color: #010100;">Load the regular model of the dam in <a href="projectsselectingtheactiv.htm">project</a> # 1. Create a dummy model in project #2 with 4 <a href="pnt_add.htm">points</a>. The elevations of these points should be exactly at the full water mark level. The 4 points should also be placed far enough apart for the triangles formed between them to cover the dam model in total. </span></p>
+<p style="text-indent: 0px;"><span style="color: #000000;">&nbsp;</span></p>
+<p style="text-indent: 0px;"><span style="font-size: 9pt; color: #010100;">Alternatively, use the flat surface option in the Terrace to simulate the full water mark.</span></p>
+<p style="text-indent: 0px;"><span style="width:24px">&nbsp;</span> &nbsp; &nbsp; &nbsp; &nbsp;</p>
+<p style="text-indent: 0px;"><span style="font-size: 9pt; color: #010100;">If a Terrace Grid volume is calculated between the 2 models Model Maker will calculate the cut &amp; fill volume. Islands in the water will not add to the fill volume and islands higher than the water level will be calculated as a cut volume.</span></p>
+<p style="text-indent: 0px;"><span style="width:24px">&nbsp;</span> &nbsp; &nbsp; &nbsp; &nbsp;</p>
+<p style="text-indent: 0px;"><span style="font-size: 9pt; color: #010100;">The water capacity of the dam will then be determined by the fill volume of the calculation.</span></p>
+<p style="text-indent: 0px;"><span style="color: #000000;">&nbsp;</span></p>
+<p style="text-indent: 0px;"><span style="font-size: 9pt; color: #010100;">EXAMPLE:</span></p>
+<p style="text-indent: 0px;"><img src="_bm1287.png" width="373" height="231" border="0" alt="_bm1287"><span style="font-size: 9pt; color: #010100;"> Figure 1</span></p>
+<p style="text-indent: 0px;"><span style="font-size: 9pt; color: #010100;">In the figure above, a dam with an island is modeled. The position of the dam wall is shown as well the position of a long section (profile) through the island, basin and wall.</span></p>
+<p style="text-indent: 0px;"><span style="font-size: 9pt; color: #010100;">Points a,b,c,d are the 4 points added to project 2 and represent the surface area and level of the water. </span></p>
+<p style="text-indent: 0px;"><span style="font-size: 9pt; color: #010100;">Note that points b and d are strategically placed over the dam wall so as not to generate any fill volume below the dam wall.</span></p>
+<p style="text-indent: 0px;"><span style="color: #000000;">&nbsp;</span></p>
+<p style="text-indent: 0px;"><img src="_bm1288.png" width="217" height="108" border="0" alt="_bm1288"><span style="font-size: 9pt; color: #010100;"> Side view of the profile. </span></p>
+<p style="text-indent: 0px;"><span style="font-size: 9pt; color: #010100;">Note the cut areas above the water level. The fill area indicates where the water will be.</span></p>
+<p style="text-indent: 0px;"><span style="color: #000000;">&nbsp;</span></p>
+<p style="text-indent: 0px;"><img src="_bm1289.png" width="324" height="185" border="0" alt="_bm1289"><span style="font-size: 9pt; color: #010100;"> Plan view showing fill in WHITE and cut in RED</span></p>
+<p style="text-indent: 0px;"><span style="font-size: 9pt; color: #010100;">Note the tip of the island above the water is calculated as cut. Also the surrounding ground surface above the water level is regarded as a cut volume. The white crosses show the fill area and the fill volume would be the amount of water the dam can hold.</span></p>
+<p style="text-indent: 0px;"><span style="color: #000000;">&nbsp;</span></p>
+<p style="text-indent: 0px;"><span class="f_CourierFixed">EXTRACT FROM VOLUME PRINTOUT</span></p>
+<p style="text-indent: 0px;"><span style="font-size: 5pt; color: #804000;">&nbsp;</span></p>
+<p style="text-indent: 0px;"><span style="font-size: 9pt; font-weight: bold; color: #804000;"> </span><span style="font-size: 9pt; font-weight: bold; color: #010100;"> &nbsp; DEPTH m &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; CUT m3 &nbsp; &nbsp; &nbsp;FILL m3</span></p>
+<p style="text-indent: 0px;"><span style="font-size: 9pt; font-weight: bold; color: #010100;"> &nbsp; &nbsp;0.00 to &nbsp;1.00 &nbsp; : &nbsp; &nbsp;1359.99 &nbsp; &nbsp; &nbsp; &nbsp;1998.86</span></p>
+<p style="text-indent: 0px;"><span style="font-size: 9pt; font-weight: bold; color: #010100;"> &nbsp; &nbsp;1.00 to &nbsp;2.00 &nbsp; : &nbsp; &nbsp; 619.54 &nbsp; &nbsp; &nbsp; &nbsp; 1047.82</span></p>
+<p style="text-indent: 0px;"><span style="font-size: 9pt; font-weight: bold; color: #010100;"> &nbsp; &nbsp;2.00 to &nbsp;3.00 &nbsp; : &nbsp; &nbsp; &nbsp;96.38 &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; 383.42</span></p>
+<p style="text-indent: 0px;"><span style="font-size: 9pt; font-weight: bold; color: #010100;"> &nbsp; &nbsp;3.00 to &nbsp;4.00 &nbsp; : &nbsp; &nbsp; &nbsp; 0.69 &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; 31.42</span></p>
+<p style="text-indent: 0px;"><span style="font-size: 9pt; font-weight: bold; color: #010100;">&nbsp;</span></p>
+<p style="text-indent: 0px;"><span style="font-size: 9pt; font-weight: bold; color: #010100;">FINAL CUT &nbsp;AREA : &nbsp;1788.00m2 &nbsp;| &nbsp;CUT &nbsp;VOLUME : &nbsp;2076.59m3</span></p>
+<p style="text-indent: 0px;"><span style="font-size: 9pt; font-weight: bold; color: #010100;">FINAL FILL AREA : &nbsp;2512.00m2 &nbsp; | &nbsp;FILL VOLUME : &nbsp;3461.51m3</span></p>
+<p style="text-indent: 0px;"><span style="color: #000000;">&nbsp;</span></p>
+<p style="text-indent: 0px;"><span style="font-size: 9pt; color: #010100;">The table of depth intervals relates to the amount of volume taken in horizontal slices from the design surface (water level) downwards.</span></p>
+<p style="text-indent: 0px;"><span style="font-size: 9pt; color: #010100;">The cut volume must be ignored in total as it refers to the surface of the model above the water level.</span></p>
+<p style="text-indent: 0px;"><span style="font-size: 9pt; color: #010100;">The fill volume is equivalent to the water volume.</span></p>
+<p style="text-indent: 0px;"><span style="color: #000000;">&nbsp;</span></p>
+<p style="text-indent: 0px;"><img src="_bm1290.png" width="262" height="36" border="0" alt="_bm1290"></p>
+<p style="text-indent: 0px;"><span style="font-size: 9pt; color: #010100;">Once the volume is calculated, Model Maker can print a report of the cumulative volumes per contour elevation. Use this printout to determine the dam capacity at different stages.</span></p>
+<p style="text-indent: 0px;"><span style="color: #000000;">&nbsp;</span></p>
+<p style="text-indent: 0px;"><span class="f_rrelatedtopic">Related Topics</span></p>
+<p style="text-indent: 0px;"><span style="font-size: 9pt; color: #010100;"><a href="string_utility_quick_dam.htm">Quick dam</a></span></p>
+<p style="text-indent: 0px;"><span style="font-size: 9pt; color: #010100;"><a href="terrace___volumes___cut___fill.htm">Terrace</a></span></p>
+
+</td></tr></table>
+
+</body>
+</html>

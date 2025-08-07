@@ -1,0 +1,79 @@
+<!DOCTYPE HTML PUBLIC "-//W3C//DTD HTML 4.01 Transitional//EN">
+<html>
+<head>
+   <title>ANALYSIS : Slope Area</title>
+   <meta name="generator" content="Help &amp; Manual" />
+   <meta name="keywords" content="Area,Polygon,Slope,Surface,Topsoil" />
+   <meta http-equiv="Content-Type" content="text/html; charset=ISO-8859-1" />
+   <meta http-equiv="Content-Style-Type" content="text/css" />
+   <link type="text/css" href="default.css" rel="stylesheet" />
+
+<script type="text/javascript" src="helpman_topicinit.js"></script>
+<object id=hhctrl_102 type="application/x-oleobject" classid="clsid:adb880a6-d8ff-11cf-9377-00aa003b7a11"><param name="Command" value="ALink"><param name="Window" value="second"><param name="Item1" value=""><param name="Item2" value="$topicid_popupanasarea"></object></head>
+<body style="margin: 0px 0px 0px 0px; background: #FFFFFF;">
+
+
+<table width="100%" border="0" cellspacing="0" cellpadding="5" bgcolor="#D0D0D0">
+  <tr valign="middle">
+    <td align="left">
+      <p class="p_Heading1"><span class="f_Heading1">ANALYSIS : Slope Area </span></p>
+<p class="p_Heading1"><span class="f_purpose"><a href="javascript:hhctrl_102.hhclick()">Show me how to get there</a></span></p>
+
+    </td>
+    <td align="right">
+     <span style="font-size: 9pt">
+     <a href="start_up.htm">Top</a>&nbsp;
+     <a href="analysispolarea.htm">Previous</a>&nbsp;
+     <a href="analysis___network.htm">Next</a>
+     </span>
+    </td>
+  </tr>
+</table>
+
+
+<!-- Placeholder for topic body. -->
+<table width="100%" border="0" cellspacing="0" cellpadding="5"><tr valign="top"><td align="left">
+<p style="text-indent: 0px;"><span style="color: #000000;">&nbsp;</span></p>
+<p style="text-indent: 0px;"><span class="f_rrelatedtopic">MENU : Ana - sArea &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp;</span></p>
+<p style="text-indent: 0px;"><span style="font-size: 5pt; color: #010100;">&nbsp;</span></p>
+<p style="text-indent: 0px;"><span style="font-size: 9pt; color: #010100;">This function calculates the surface area of the model within a defined area. </span></p>
+<p style="text-indent: 0px;"><span style="font-size: 9pt; font-weight: bold; color: #010100;">Model Maker</span><span style="font-size: 9pt; color: #010100;"> uses a method whereby the area is internally divided into little squares. The slope at the centre of each square is determined from the triangle model and the slope area of each block is then calculated. The slope areas of all the squares are accumulated to calculate the slope area of the defined area. </span></p>
+<p style="text-indent: 0px;"><span style="font-size: 9pt; color: #010100;">The grid points are plotted while the function is in progress allowing you to see the distribution of points and determine if the selected interval is satisfactory.</span></p>
+<p style="text-indent: 0px;"><span style="font-size: 9pt; color: #010100;">For accurate results choose a small square interval.</span></p>
+<p style="text-indent: 0px;"><span style="color: #000000;">&nbsp;</span></p>
+<p style="text-indent: 0px;"><span style="font-size: 9pt; color: #010100;">This function is normally used to calculate the slope area of a landscape terrain allowing you to determine the amount of topsoil or grass that must be planted.</span></p>
+<p style="text-indent: 0px;"><span style="color: #000000;">&nbsp;</span></p>
+<p class="p_Heading1"><span class="f_rrelatedtopic">EXAMPLE</span></p>
+<p style="text-indent: 0px;"><span style="font-size: 9pt; color: #010100;"> <img src="clip1395.png" width="351" height="423" border="0" alt="clip1395"></span></p>
+<p style="text-indent: 0px;"><span style="font-size: 9pt; color: #010100;">This method has the following assumption. </span></p>
+<p style="text-indent: 0px;"><span style="font-size: 9pt; color: #010100;">1) The grid interval is small enough so that the slope value at the grid point is representative of the full grid block size.</span></p>
+<p style="text-indent: 0px;"><span style="font-size: 9pt; color: #010100;">2) That the areas not covered by short blocks (light blue dots) are balanced out by the over areas (red dots)</span></p>
+<p style="text-indent: 0px;"><span style="color: #000000;">&nbsp;</span></p>
+<p style="text-indent: 0px;"><span style="font-size: 9pt; color: #010100;">The 2 assumptions are therefore very related to the grid size.</span></p>
+<p style="text-indent: 0px;"><span style="color: #000000;">&nbsp;</span></p>
+<p style="text-indent: 0px;"><span style="font-size: 9pt; color: #010100;">Based on the shape of the area in the above example it seems like there are more over areas (red) than under areas (blue). It is therefore necessary to use a relative small grid interval to minimize any potential assumption errors.</span></p>
+<p style="text-indent: 0px;"><span style="color: #000000;">&nbsp;</span></p>
+<p style="text-indent: 0px;"><span style="color: #000000;">&nbsp;</span></p>
+<p style="text-indent: 0px;"><span style="color: #000000;">&nbsp;</span></p>
+<p style="text-indent: 0px;"><span style="font-size: 9pt; font-weight: bold; color: #010100;">EXAMPLE:</span></p>
+<p style="text-indent: 0px;"><span style="font-size: 12pt; color: #010100;"> </span><img src="clip0345.png" width="476" height="426" border="0" alt="clip0345"></p>
+<p style="text-indent: 0px;"><span style="color: #000000;">&nbsp;</span></p>
+<p style="text-indent: 0px;"><span style="font-size: 9pt; color: #010100;">This function calculates the surface area of the complete <a href="definitiontriangles.htm">model</a>of the active project. The process traverses through all the triangles, calculating the slope and slope area of each one. The total of the triangle slope area is the slope area of the whole model.</span></p>
+<p style="text-indent: 0px;"><span style="color: #000000;">&nbsp;</span></p>
+<div style="text-align: left; text-indent: 0px; padding: 0px 0px 0px 0px; margin: 0px 0px 0px 0px;"><table cellspacing="0" cellpadding="1" border="0" style="border: none; border-spacing:0px;">
+<tr style="text-align:left;vertical-align:top;">
+<td valign="top" width="405" style="width:405px;"><p style="text-align: center; text-indent: 0px;"><span style="font-style: italic; font-weight: bold; color: #d10707; text-decoration: underline;">Hints:</span></p>
+<p style="text-align: center; text-indent: 0px;"><span style="font-size: 9pt; color: #010100;">Use the triangle <a href="triangleedit_aftermodel.htm">editing</a> routines to prepare the triangle model before the area is calculated. Apply the <a href="triangle___side_.htm">SIDE</a> option to make sure that the area covered by the triangles is correct.</span></p>
+</td>
+</tr>
+</table>
+</div>
+<p style="text-indent: 0px;"><span style="color: #000000;">&nbsp;</span></p>
+<p style="text-indent: 0px;"><span style="color: #000000;">&nbsp;</span></p>
+<p style="text-indent: 0px;"><span style="color: #000000;">&nbsp;</span></p>
+<p style="text-indent: 0px;"><span style="color: #000000;">&nbsp;</span></p>
+
+</td></tr></table>
+
+</body>
+</html>

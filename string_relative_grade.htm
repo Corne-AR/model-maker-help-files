@@ -1,0 +1,125 @@
+<!DOCTYPE HTML PUBLIC "-//W3C//DTD HTML 4.01 Transitional//EN">
+<html>
+<head>
+   <title>STRING : Vert - Relative grade</title>
+   <meta name="generator" content="Help &amp; Manual" />
+   <meta name="keywords" content="Elevation,Grade,Slope,STRINGS" />
+   <meta http-equiv="Content-Type" content="text/html; charset=ISO-8859-1" />
+   <meta http-equiv="Content-Style-Type" content="text/css" />
+   <link type="text/css" href="default.css" rel="stylesheet" />
+
+<script type="text/javascript" src="helpman_topicinit.js"></script>
+</head>
+<body style="margin: 0px 0px 0px 0px; background: #FFFFFF;">
+
+
+<table width="100%" border="0" cellspacing="0" cellpadding="5" bgcolor="#D0D0D0">
+  <tr valign="middle">
+    <td align="left">
+      <p class="p_Heading1"><span class="f_Heading1">STRING : Vert - Relative grade</span></p>
+
+    </td>
+    <td align="right">
+     <span style="font-size: 9pt">
+     <a href="start_up.htm">Top</a>&nbsp;
+     <a href="stringvert_copycad.htm">Previous</a>&nbsp;
+     <a href="stringeditz.htm">Next</a>
+     </span>
+    </td>
+  </tr>
+</table>
+
+
+<!-- Placeholder for topic body. -->
+<table width="100%" border="0" cellspacing="0" cellpadding="5"><tr valign="top"><td align="left">
+<p style="text-indent: 0px;"><span style="color: #000000;">&nbsp;</span></p>
+<p style="text-indent: 0px;"><span class="f_rrelatedtopic">MENU : gXt - Vert - Rel_grade </span></p>
+<p style="text-indent: 0px;"><span style="font-size: 6pt; color: #010100;">&nbsp;</span></p>
+<p style="text-indent: 0px;"><span style="font-size: 12pt; color: #010100;"> </span><img src="clip0461.png" width="405" height="269" border="0" alt="clip0461"></p>
+<p style="text-indent: 0px;"><span style="color: #000000;">&nbsp;</span></p>
+<p style="text-indent: 0px;"><span style="font-size: 9pt; color: #010100;">Functions that would regrade or change the elevation of a string based on the position and elevation of an indicated base (controlling) string.</span></p>
+<div style="text-align: left; text-indent: 0px; padding: 0px 0px 0px 0px; margin: 0px 0px 0px 0px;"><table cellspacing="0" cellpadding="1" border="0" style="border: none; border-spacing:0px;">
+<tr style="text-align:left;vertical-align:top;">
+<td valign="top" width="133" style="width:133px;"><p class="p_Heading1"><img src="clip0454.png" width="100" height="25" border="0" alt="clip0454"></p>
+</td>
+<td valign="top" width="646" style="width:646px;"><p style="text-indent: 0px;"><span style="font-size: 9pt; color: #010100;">1) &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; </span></p>
+<p style="text-indent: 0px;"><span style="font-size: 9pt; color: #010100;">Recalculate the elevations of the indicated string based on its position relative to the base string. Each node on the indicated string will find the elevation on the base string directly opposite its own position. The elevation of the node will changed based on the base string and the method used.</span></p>
+</td>
+</tr>
+<tr style="text-align:left;vertical-align:top;">
+<td valign="top" width="133" style="width:133px;"><p class="p_Heading1"><span class="f_Heading1">&nbsp;</span></p>
+<p class="p_Heading1"><span style="font-size: 9pt;"> </span><img src="clip0455.png" width="115" height="22" border="0" alt="clip0455"></p>
+</td>
+<td valign="top" width="646" style="width:646px;"><p style="text-indent: 0px;"><span style="color: #000000;">&nbsp;</span></p>
+<p style="text-indent: 0px;"><span style="font-size: 9pt; color: #010100;">1A) &nbsp; The node elevation will be equal to the base string node +- the difference specified.</span></p>
+</td>
+</tr>
+<tr style="text-align:left;vertical-align:top;">
+<td valign="top" width="133" style="width:133px;"><p class="p_Heading1"><span class="f_Heading1">&nbsp;</span></p>
+<p class="p_Heading1"><span style="font-size: 9pt;"> </span><img src="clip0456.png" width="119" height="20" border="0" alt="clip0456"></p>
+</td>
+<td valign="top" width="646" style="width:646px;"><p style="text-indent: 0px;"><span style="color: #000000;">&nbsp;</span></p>
+<p style="text-indent: 0px;"><span style="font-size: 9pt; color: #010100;">1B) &nbsp; Calculate the distance between the node and the base string. The new elevation will equal the base elevation +- the distance between the strings * the % / 100.</span></p>
+<p class="p_Heading1"><span class="f_Heading1">&nbsp;</span></p>
+</td>
+</tr>
+<tr style="text-align:left;vertical-align:top;">
+<td valign="top" width="133" style="width:133px;"><p class="p_Heading1"><span class="f_Heading1">&nbsp;</span></p>
+<p class="p_Heading1"><span style="font-size: 9pt;"> </span><img src="clip0457.png" width="100" height="25" border="0" alt="clip0457"></p>
+</td>
+<td valign="top" width="646" style="width:646px;"><p class="p_Heading1"><span class="f_Heading1">&nbsp;</span></p>
+<p style="text-indent: 0px;"><span style="font-size: 9pt; color: #010100;">2) &nbsp;The same formula above is applied to an indicated section of the string.</span></p>
+</td>
+</tr>
+<tr style="text-align:left;vertical-align:top;">
+<td valign="top" width="133" style="width:133px;"><p class="p_Heading1"><span style="font-size: 9pt;">&nbsp;</span></p>
+<p class="p_Heading1"><span style="font-size: 9pt;"> </span><img src="clip0458.png" width="100" height="25" border="0" alt="clip0458"></p>
+</td>
+<td valign="top" width="646" style="width:646px;"><p class="p_Heading1"><span class="f_Heading1">&nbsp;</span></p>
+<p style="text-indent: 0px;"><span style="font-size: 9pt; color: #010100;">3) &nbsp;Model Maker will calculate an imaginary surface between the 2 base strings. The string will then be related to the imaginary surface and re-elevated accordingly.</span></p>
+</td>
+</tr>
+<tr style="text-align:left;vertical-align:top;">
+<td valign="top" width="133" style="width:133px;"><p class="p_Heading1"><span class="f_Heading1">&nbsp;</span></p>
+</td>
+<td valign="top" width="646" style="width:646px;"><p class="p_Heading1"><span class="f_Heading1">&nbsp;</span></p>
+</td>
+</tr>
+</table>
+</div>
+<p style="text-indent: 0px;"><span style="font-size: 9pt; color: #010100;">Updating elevations based on position or elevation.</span></p>
+<p style="text-indent: 0px;"><span style="font-size: 5pt; color: #010100;">&nbsp;</span></p>
+<p style="text-indent: 0px;"><span style="font-size: 9pt; color: #010100;"> <img src="clip0459.png" width="157" height="47" border="0" alt="clip0459"></span></p>
+<p style="text-indent: 0px;"><span style="font-size: 9pt; color: #010100;">The 3 formats described above will update the elevation of the string based on the selection made in this dialog box and the selections of either 1A or 1B.</span></p>
+<p style="text-indent: 0px;"><span style="color: #000000;">&nbsp;</span></p>
+<p style="text-indent: 0px;"><span style="width:24px">&nbsp;</span> &nbsp; &nbsp; &nbsp; &nbsp;<span style="font-size: 9pt; color: #010100;">1A</span></p>
+<p style="text-indent: 0px;"><img src="_bm1086.png" width="242" height="90" border="0" alt="_bm1086"></p>
+<p style="text-indent: 0px;"><span style="font-size: 9pt; color: #010100;">Section showing base string (A) and indicated string (B) to be regraded with 1A (Height difference).</span></p>
+<p style="text-indent: 0px;"><span style="font-size: 9pt; color: #010100;">The new elevation will be determined from A + H:</span></p>
+<p style="text-indent: 0px;"><span style="font-size: 9pt; color: #010100;">Keep elevation constant : B will move along arrow P until it meets the new elevation.</span></p>
+<p style="text-indent: 0px;"><span style="font-size: 9pt; color: #010100;">Keep position constant : B will remain on the same position but the elevation will move along arrow Z until it meets the new elevation.</span></p>
+<p style="text-indent: 0px;"><span style="color: #000000;">&nbsp;</span></p>
+<p style="text-indent: 0px;"><span style="width:24px">&nbsp;</span> &nbsp; &nbsp; &nbsp; &nbsp;<span style="font-size: 9pt; color: #010100;">1B</span></p>
+<p style="text-indent: 0px;"><img src="_bm1087.png" width="166" height="134" border="0" alt="_bm1087"><span style="font-size: 9pt; color: #010100;"> </span></p>
+<p style="text-indent: 0px;"><span style="font-size: 9pt; color: #010100;">Section showing base string (A) and indicated string (B) to be regraded with 1B (Slope percentage).</span></p>
+<p style="text-indent: 0px;"><span style="font-size: 9pt; color: #010100;">The slope will be determined from A:</span></p>
+<p style="text-indent: 0px;"><span style="font-size: 9pt; color: #010100;">Keep elevation constant : B will move along arrow P until it meets the slope.</span></p>
+<p style="text-indent: 0px;"><span style="font-size: 9pt; color: #010100;">Keep position constant : B will remain on the same position but the elevation will move along arrow Z until it meets the slope.</span></p>
+<p style="text-indent: 0px;"><span style="color: #000000;">&nbsp;</span></p>
+<p style="text-indent: 0px;"><span style="color: #000000;">&nbsp;</span></p>
+<p style="text-indent: 0px;"><span style="font-size: 9pt; color: #010100;">4) &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp;</span><img src="clip0460.png" width="100" height="25" border="0" alt="clip0460"></p>
+<p style="text-indent: 0px;"><span style="font-size: 9pt; color: #010100;">This option will not really regrade a string, but rather add a constant to all the Z values of a string. The constant by which the original values are changed is calculated as follows. </span></p>
+<p style="text-indent: 0px;"><span style="width:24px">&nbsp;</span> &nbsp; &nbsp; &nbsp; &nbsp;<span style="font-size: 9pt; color: #010100;">1. The base string is indicated. </span></p>
+<p style="text-indent: 0px;"><span style="width:24px">&nbsp;</span> &nbsp; &nbsp; &nbsp; &nbsp;<span style="font-size: 9pt; color: #010100;">2. The regrade string is indicated. </span></p>
+<p style="text-indent: 0px;"><span style="width:24px">&nbsp;</span> &nbsp; &nbsp; &nbsp; &nbsp;<span style="font-size: 9pt; color: #010100;">3. The base node of the regrade string is indicated. </span></p>
+<p style="text-indent: 0px;"><span style="width:24px">&nbsp;</span> &nbsp; &nbsp; &nbsp; &nbsp;<span style="font-size: 9pt; color: #010100;">4. An elevation on the base string is calculated for the base node of the regrade string. </span></p>
+<p style="text-indent: 0px;"><span style="width:24px">&nbsp;</span> &nbsp; &nbsp; &nbsp; &nbsp;<span style="font-size: 9pt; color: #010100;">5. The difference between the elevation of the base node and the new elevation on the base string is calculated. </span></p>
+<p style="text-indent: 0px;"><span style="width:24px">&nbsp;</span> &nbsp; &nbsp; &nbsp; &nbsp;<span style="font-size: 9pt; color: #010100;">6. This difference is then applied to all the nodes of the regrade string. &nbsp; </span></p>
+<p style="text-indent: 0px;"><span style="color: #000000;">&nbsp;</span></p>
+<p style="text-indent: 0px;"><span class="f_rrelatedtopic">Related topics:</span></p>
+<p style="text-indent: 0px;"><span style="font-size: 9pt; color: #000080;"><a href="strings__gxt_.htm">Strings</a></span></p>
+
+</td></tr></table>
+
+</body>
+</html>

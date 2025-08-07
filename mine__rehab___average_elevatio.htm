@@ -1,0 +1,177 @@
+<!DOCTYPE HTML PUBLIC "-//W3C//DTD HTML 4.01 Transitional//EN">
+<html>
+<head>
+   <title>MINE : Rehab - Average elevation</title>
+   <meta name="generator" content="Help &amp; Manual" />
+   <meta name="keywords" content="" />
+   <meta http-equiv="Content-Type" content="text/html; charset=ISO-8859-1" />
+   <meta http-equiv="Content-Style-Type" content="text/css" />
+   <link type="text/css" href="default.css" rel="stylesheet" />
+
+<script type="text/javascript" src="helpman_topicinit.js"></script>
+</head>
+<body style="margin: 0px 0px 0px 0px; background: #FFFFFF;">
+
+
+<table width="100%" border="0" cellspacing="0" cellpadding="5" bgcolor="#D0D0D0">
+  <tr valign="middle">
+    <td align="left">
+      <p class="p_Heading1"><a name="minerehab-averageelevation"></a><span class="f_Heading1">MINE : Rehab - Average elevation</span></p>
+
+    </td>
+    <td align="right">
+     <span style="font-size: 9pt">
+     <a href="start_up.htm">Top</a>&nbsp;
+     <a href="minerehab_idstring.htm">Previous</a>&nbsp;
+     <a href="minemovevolume.htm">Next</a>
+     </span>
+    </td>
+  </tr>
+</table>
+
+
+<!-- Placeholder for topic body. -->
+<table width="100%" border="0" cellspacing="0" cellpadding="5"><tr valign="top"><td align="left">
+<p style="text-indent: 0px; margin: 32px 0px 0px 0px;"><span style="color: #000000;">&nbsp;</span></p>
+<p style="text-indent: 0px; margin: 0px 0px 13px 0px;"><span style="font-size: 11pt; font-family: 'Calibri';">Average elevation is used to rehab an area based on the elevations of the grid points and not the slope of the triangles like most of the other rehab functions. A percentage of volume could be specified to move from the high to the low points. The High and low points are defined based on an average elevation of the points determined with the &quot;Grid Volume&quot; method, in the Volume calculation of Model Maker.</span></p>
+<p style="text-indent: 0px; margin: 0px 0px 13px 0px;"><span style="font-size: 11pt; font-family: 'Calibri';">Grid Volume method:</span></p>
+<p style="text-indent: 0px; margin: 0px 0px 13px 0px;"><span style="font-size: 11pt; font-family: 'Calibri';">The Grid Volume is calculated based on this method. </span></p>
+<div style="text-align: left; text-indent: 10px; padding: 0px 0px 0px 0px; margin: 0px 0px 0px 0px;"><table cellspacing="0" cellpadding="0" border="0" style="border: none; border-spacing:0px;">
+<tr style="text-align:left;vertical-align:top;">
+<td valign="top" width="823" style="width:823px;"><p style="text-indent: 0px; margin: 0px 0px 13px 0px;"><span style="color: #000000;">&nbsp;</span></p>
+<p style="text-indent: 0px;"><img src="embim67.png" width="264" height="410" vspace="1" hspace="1" border="0" alt=""></p>
+<p style="text-indent: 0px; margin: 0px 0px 13px 0px;"><span style="font-size: 11pt; font-family: 'Calibri';"> For each grid point, radials are used to determine the shortest distance between the coordinates of the grid point and the perimeter of the model.</span></p>
+<p style="text-indent: 0px; margin: 0px 0px 13px 0px;"><span style="font-size: 11pt; font-family: 'Calibri';"> In this example the radial (Red circles) gives the shortest distance between the grid point and the opposite model perimeter.</span></p>
+<p style="text-indent: 0px; margin: 0px 0px 13px 0px;"><span style="font-size: 11pt; font-family: 'Calibri';">Based on the elevations where the radial intersects with the perimeter, an elevation is interpolated at the grid point.</span></p>
+<p style="text-indent: 0px;"><img src="embim68.png" width="315" height="141" vspace="1" hspace="1" border="0" alt=""></p>
+<p style="text-indent: 0px; margin: 0px 0px 13px 0px;"><span style="font-size: 11pt; font-family: 'Calibri';">The difference between the elevation on the model and the interpolated point from the perimeter lines is then used to calculate the volume.</span></p>
+</td>
+</tr>
+</table>
+</div>
+<p style="text-indent: 0px; margin: 0px 0px 13px 0px;"><span style="font-size: 11pt; font-family: 'Calibri';"> </span></p>
+<p style="text-indent: 0px; margin: 0px 0px 13px 0px;"><span style="font-size: 11pt; font-family: 'Calibri';">The differences between the model elevation and the interpolated elevation are then accumulated to determine the dump volume.</span></p>
+<p style="text-indent: 0px; margin: 0px 0px 13px 0px;"><span style="font-size: 11pt; font-family: 'Calibri';">This will be the method we use to determine a base of the Average Elevation method in the rehab.</span></p>
+<p style="text-indent: 0px; margin: 0px 0px 13px 0px;"><span style="color: #000000;">&nbsp;</span></p>
+<div style="text-align: left; text-indent: 0px; padding: 0px 0px 0px 0px; margin: 0px 0px 13px 26px;"><table border="0" cellpadding="0" cellspacing="0" style="line-height: normal;"><tr style="vertical-align:baseline" valign="baseline"><td width="24"><span style="font-size: 11pt; font-family: 'Calibri'; color: #000000;">1.</span></td><td><span style="font-size: 11pt; font-family: 'Calibri';">What the program does is it rotates the model on the elevation of the average of the grid points on the base of an Area that you put a string around.</span></td></tr></table></div><p style="text-indent: 0px; margin: 0px 0px 13px 50px;"><img src="embim69.png" width="512" height="224" vspace="1" hspace="1" border="0" alt=""></p>
+<div style="text-align: left; text-indent: 0px; padding: 0px 0px 0px 0px; margin: 0px 0px 13px 26px;"><table border="0" cellpadding="0" cellspacing="0" style="line-height: normal;"><tr style="vertical-align:baseline" valign="baseline"><td width="24"><span style="font-size: 11pt; font-family: 'Calibri'; color: #000000;">2.</span></td><td><span style="font-size: 11pt; font-family: 'Calibri';"> Then the difference between the average and model grid points on the Base is Calculated The&quot; X&quot; value above image.</span></td></tr></table></div><p style="text-indent: 0px; margin: 0px 0px 13px 50px;"><img src="embim70.png" width="521" height="219" vspace="1" hspace="1" border="0" alt=""></p>
+<div style="text-align: left; text-indent: 0px; padding: 0px 0px 0px 0px; margin: 0px 0px 13px 26px;"><table border="0" cellpadding="0" cellspacing="0" style="line-height: normal;"><tr style="vertical-align:baseline" valign="baseline"><td width="24"><span style="font-size: 11pt; font-family: 'Calibri'; color: #000000;">3.</span></td><td><span style="font-size: 11pt; font-family: 'Calibri';">Now we use the Grid points of the model and incorporate the &quot;X&quot; points to get a value &quot;Y&quot;</span></td></tr></table></div><div style="text-align: left; text-indent: 0px; padding: 0px 0px 0px 0px; margin: 0px 0px 13px 26px;"><table border="0" cellpadding="0" cellspacing="0" style="line-height: normal;"><tr style="vertical-align:baseline" valign="baseline"><td width="24"><span style="font-size: 11pt; font-family: 'Calibri'; color: #000000;">4.</span></td><td><span style="font-size: 11pt; font-family: 'Calibri';">Now we determine the average of the new model, based on the &quot;Y&quot; points above, which will be the &quot;Z&quot; value.</span></td></tr></table></div><div style="text-align: left; text-indent: 0px; padding: 0px 0px 0px 0px; margin: 0px 0px 13px 26px;"><table border="0" cellpadding="0" cellspacing="0" style="line-height: normal;"><tr style="vertical-align:baseline" valign="baseline"><td width="24"><span style="font-size: 11pt; font-family: 'Calibri'; color: #000000;">5.</span></td><td><span style="font-size: 11pt; font-family: 'Calibri';">The difference between Y and the &nbsp;Z = Q</span></td></tr></table></div><p style="text-indent: 0px; margin: 0px 0px 13px 50px;"><img src="embim71.png" width="530" height="226" vspace="1" hspace="1" border="0" alt=""></p>
+<p style="text-indent: 0px; margin: 0px 0px 13px 50px;"><img src="embim72.png" width="202" height="120" vspace="1" hspace="1" border="0" alt=""></p>
+<p style="text-indent: -24px; margin: 0px 0px 13px 50px;"><span style="font-size: 11pt; font-family: 'Calibri';">6. &nbsp;On the Q value we now apply a percentage of volume we want to move, this becomes the &quot;L&quot; Value.</span></p>
+<p style="text-indent: 0px; margin: 0px 0px 13px 50px;"><span style="font-size: 11pt; font-family: 'Calibri';">70% of Q = L. The 70% will then be applied on all the point elevations. The high points will be 70% lower and the low points 70% higher.</span></p>
+<p style="text-indent: -24px; margin: 0px 0px 13px 50px;"><span style="font-size: 11pt; font-family: 'Calibri';">7. &nbsp;Once this elevation is calculated all the elevations are brought back to be in relation with the normal models elevation, by incorporating the &quot;X&quot; and &quot;Y&quot; values above, on the new elevation that the percentage calculation was done on.</span></p>
+<p style="text-indent: -24px; margin: 0px 0px 13px 50px;"><span style="font-size: 11pt; font-family: 'Calibri';">8. &nbsp;The Program will then prompt you with volumes of witch the above percentages was used for the calculation.</span></p>
+<p style="text-indent: 0px; margin: 0px 0px 13px 38px;"><img src="embim73.png" width="230" height="220" vspace="1" hspace="1" border="0" alt=""></p>
+<p style="text-indent: 0px; margin: 0px 0px 13px 0px;"><span style="color: #000000;">&nbsp;</span></p>
+<p style="text-indent: 0px; margin: 0px 0px 13px 38px;"><img src="embim74.png" width="230" height="32" vspace="1" hspace="1" border="0" alt=""><span style="font-size: 11pt; font-family: 'Calibri';"> </span></p>
+<p style="text-indent: 0px; margin: 0px 0px 13px 0px;"><span style="font-size: 11pt; font-family: 'Calibri';">This option will give the result based on the initial percentage value of 70%</span></p>
+<p style="text-indent: 0px; margin: 0px 0px 13px 0px;"><span style="font-size: 11pt; font-family: 'Calibri';">The cut volume is based on 70% of the total cut and the fill volume is based on 70% of the total fill.</span></p>
+<p style="text-indent: 0px; margin: 0px 0px 13px 38px;"><img src="embim75.png" width="403" height="167" vspace="1" hspace="1" border="0" alt=""></p>
+<p style="text-indent: 0px; margin: 0px 0px 13px 50px;"><span style="font-size: 11pt; font-family: 'Calibri';">End result. 30% of total cut and 30% of total fill remains.</span></p>
+<p style="text-indent: 0px; margin: 0px 0px 13px 38px;"><img src="embim76.png" width="429" height="93" vspace="1" hspace="1" border="0" alt=""></p>
+<p style="text-indent: 0px; margin: 0px 0px 13px 38px;"><img src="embim77.png" width="228" height="30" vspace="1" hspace="1" border="0" alt=""><span style="font-size: 11pt; font-family: 'Calibri';"> </span></p>
+<p style="text-indent: 0px; margin: 0px 0px 13px 0px;"><span style="font-size: 11pt; font-family: 'Calibri';">This option will Balance the volume. This function will always use the least volume either cut or fill to balance. </span></p>
+<p style="text-indent: 0px; margin: 0px 0px 13px 38px;"><img src="embim78.png" width="429" height="178" vspace="1" hspace="1" border="0" alt=""></p>
+<p style="text-indent: 0px; margin: 0px 0px 13px 38px;"><span style="font-size: 11pt; font-family: 'Calibri';">End result. 70% of the void will be fill and that volume will be subtracted from the cut volume.</span></p>
+<p style="text-indent: 0px; margin: 0px 0px 13px 38px;"><img src="embim79.png" width="439" height="107" vspace="1" hspace="1" border="0" alt=""></p>
+<p style="text-indent: 0px; margin: 0px 0px 13px 38px;"><span style="color: #000000;">&nbsp;</span></p>
+<p style="text-indent: 0px; margin: 0px 0px 13px 38px;"><span style="font-size: 11pt; font-family: 'Calibri'; font-weight: bold;">Example 1</span></p>
+<div style="text-align: left; text-indent: 0px; padding: 0px 0px 0px 0px; margin: 0px 0px 13px 50px;"><table cellspacing="0" cellpadding="0" border="0" style="border: none; border-spacing:0px;">
+<tr style="text-align:left;vertical-align:top;">
+<td valign="top" width="373" style="width:373px;"><p style="text-indent: 0px;"><img src="embim80.png" width="339" height="336" vspace="1" hspace="1" border="0" alt=""></p>
+</td>
+<td valign="top" width="464" style="width:464px;"><p>&nbsp;</p>
+<p>&nbsp;</p>
+<p>&nbsp;</p>
+<p>&nbsp;</p>
+<p>&nbsp;</p>
+<p>&nbsp;</p>
+<p style="text-indent: 0px; line-height: 1.15; margin: 0px 0px 13px 0px;"><span style="color: #000000;">&nbsp;</span></p>
+<p style="text-indent: 0px; line-height: 1.15; margin: 0px 0px 13px 0px;"><span style="font-size: 11pt; font-family: 'Calibri';">Draw a strings Around the Areas you want to use. In the example the Dump must be placed in the Void.We have a string around the Dump and a string around the void. Now you need to ID the strings you want to use for one calculation or select a single string you want to use.</span></p>
+</td>
+</tr>
+</table>
+</div>
+<p style="text-indent: 0px;"><span style="color: #000000;">&nbsp;</span></p>
+<p style="text-indent: 0px; line-height: 1.15; margin: 0px 0px 13px 0px;"><span style="font-size: 11pt; font-family: 'Calibri';">Select the Average Elevation button in the Mining &gt; Rehab menu. </span><img src="embim81.png" width="136" height="31" vspace="1" hspace="1" border="0" alt=""></p>
+<div style="text-align: left; text-indent: 0px; line-height: 1.15; padding: 0px 0px 0px 0px; margin: 0px 0px 13px 0px;"><table cellspacing="0" cellpadding="0" border="0" style="border: none; border-spacing:0px;">
+<tr style="text-align:left;vertical-align:top;">
+<td valign="top" width="419" style="width:419px;"><p style="text-indent: 0px; line-height: 1.15; margin: 0px 0px 13px 0px;"><img src="embim82.png" width="212" height="117" vspace="1" hspace="1" border="0" alt=""></p>
+</td>
+<td valign="top" width="467" style="width:467px;"><p style="text-indent: 0px; line-height: 1.15; margin: 0px 0px 13px 0px;"><span style="color: #000000;">&nbsp;</span></p>
+<p style="text-indent: 0px; line-height: 1.15; margin: 0px 0px 13px 0px;"><img src="embim83.png" width="237" height="19" vspace="1" hspace="1" border="0" alt=""><span style="font-size: 11pt; font-family: 'Calibri';"> If you did not ID a string just indicate it with your cursor.</span></p>
+</td>
+</tr>
+<tr style="text-align:left;vertical-align:top;">
+<td valign="top" width="419" style="width:419px;"><p><img src="embim84.png" width="254" height="104" vspace="1" hspace="1" border="0" alt=""></p>
+</td>
+<td valign="top" width="467" style="width:467px;"><p>&nbsp;</p>
+<p>&nbsp;</p>
+<p><span style="font-size: 11pt; font-family: 'Calibri';">If you Use ID strings select the Identified strings button.</span></p>
+</td>
+</tr>
+<tr style="text-align:left;vertical-align:top;">
+<td valign="top" width="419" style="width:419px;"><p>&nbsp;</p>
+<p><img src="embim85.png" width="200" height="119" vspace="1" hspace="1" border="0" alt=""></p>
+</td>
+<td valign="top" width="467" style="width:467px;"><p>&nbsp;</p>
+<p>&nbsp;</p>
+<p>&nbsp;</p>
+<p style="text-indent: 0px; line-height: 1.15; margin: 0px 0px 13px 0px;"><span style="font-size: 11pt; font-family: 'Calibri';">Enter the % value you want to use for the calculation.</span></p>
+</td>
+</tr>
+<tr style="text-align:left;vertical-align:top;">
+<td valign="top" width="419" style="width:419px;"><p style="text-indent: 0px; line-height: 1.15; margin: 0px 0px 13px 0px;"><span style="color: #000000;">&nbsp;</span></p>
+<p style="text-indent: 0px; line-height: 1.15; margin: 0px 0px 13px 0px;"><span style="font-size: 11pt; font-family: 'Calibri';">The Program will do the calculation and &nbsp;popup this menu:</span></p>
+<p style="text-indent: 0px;"><img src="embim86.png" width="220" height="212" vspace="1" hspace="1" border="0" alt=""></p>
+</td>
+<td valign="top" width="467" style="width:467px;"><p>&nbsp;</p>
+<p>&nbsp;</p>
+<div style="text-align: left; text-indent: 0px; padding: 0px 0px 0px 0px; margin: 0px 0px 13px 26px;"><table border="0" cellpadding="0" cellspacing="0" style="line-height: 1.15;"><tr style="vertical-align:baseline" valign="baseline"><td width="24"><span style="font-size: 11pt; font-family: 'Calibri'; color: #000000;">1.</span></td><td><span style="font-size: 11pt; font-family: 'Calibri';">Proceed with these volumes: This will then cut and fill the volumes indicated on the dump and void respectively with the indicated volumes.</span></td></tr></table></div><div style="text-align: left; text-indent: 0px; padding: 0px 0px 0px 0px; margin: 0px 0px 13px 26px;"><table border="0" cellpadding="0" cellspacing="0" style="line-height: 1.15;"><tr style="vertical-align:baseline" valign="baseline"><td width="24"><span style="font-size: 11pt; font-family: 'Calibri'; color: #000000;">2.</span></td><td><span style="font-size: 11pt; font-family: 'Calibri';">Proceed with balanced volumes: Use this option to take the complete dump and fill the void with that volume. This means the void will have a shortage of material.</span></td></tr></table></div><p style="text-indent: 0px; line-height: 1.15; margin: 0px 0px 13px 50px;"><span style="font-size: 11pt; font-family: 'Calibri';">91911m&sup3; - 69628m&sup3; = 22283m&sup3;</span></p>
+</td>
+</tr>
+<tr style="text-align:left;vertical-align:top;">
+<td valign="top" width="419" style="width:419px;"><p><img src="embim87.png" width="435" height="225" vspace="1" hspace="1" border="0" alt=""></p>
+</td>
+<td valign="top" width="467" style="width:467px;"><p>&nbsp;</p>
+<p>&nbsp;</p>
+<p>&nbsp;</p>
+<p>&nbsp;</p>
+<p><span style="font-size: 11pt; font-family: 'Calibri';">The result in section: </span></p>
+</td>
+</tr>
+<tr style="text-align:left;vertical-align:top;">
+<td valign="top" width="419" style="width:419px;"><br>
+</td>
+<td valign="top" width="467" style="width:467px;"><br>
+</td>
+</tr>
+</table>
+</div>
+<p style="text-indent: 0px; line-height: 1.15; margin: 0px 0px 13px 0px;"><span style="color: #000000;">&nbsp;</span></p>
+<p style="text-indent: 0px; line-height: 1.15; margin: 0px 0px 13px 0px;"><span style="font-size: 11pt; font-family: 'Calibri'; font-weight: bold;">Example 2:</span></p>
+<p style="text-indent: 0px; line-height: 1.15; margin: 0px 0px 13px 0px;"><span style="font-size: 11pt; font-family: 'Calibri';">This is done the same as Example 1 but not with 100% but 66%</span></p>
+<p style="text-indent: 0px; line-height: 1.15; margin: 0px 0px 13px 0px;"><img src="embim88.png" width="214" height="130" vspace="1" hspace="1" border="0" alt=""></p>
+<div style="text-align: left; text-indent: 0px; line-height: 1.15; padding: 0px 0px 0px 0px; margin: 0px 0px 13px 0px;"><table cellspacing="0" cellpadding="0" border="0" style="border: none; border-spacing:0px;">
+<tr style="text-align:left;vertical-align:top;">
+<td valign="top" width="335" style="width:335px;"><p style="text-indent: 0px;"><img src="embim89.png" width="252" height="242" vspace="1" hspace="1" border="0" alt=""></p>
+</td>
+<td valign="top" width="1072" style="width:1072px;"><p style="text-indent: 0px; line-height: 1.15; margin: 0px 0px 13px 0px;"><span style="font-size: 11pt; font-family: 'Calibri';">All the volumes are now based on 66%</span></p>
+<p style="text-indent: 0px; line-height: 1.15; margin: 0px 0px 13px 0px;"><span style="color: #000000;">&nbsp;</span></p>
+<p style="text-indent: 0px; line-height: 1.15; margin: 0px 0px 13px 0px;"><span style="font-size: 11pt; font-family: 'Calibri';">The cut and fill volume will be only 66% of the full volume.</span></p>
+<p style="text-indent: 0px; line-height: 1.15; margin: 0px 0px 13px 0px;"><span style="color: #000000;">&nbsp;</span></p>
+<p style="text-indent: -24px; line-height: 1.15; margin: 0px 0px 13px 50px;"><span style="font-size: 11pt; font-family: 'Calibri';">3. &nbsp;This results in the void being filled with 66% of the full volume. The dump will be cut 66% of the full volume</span></p>
+<p style="text-indent: -24px; line-height: 1.15; margin: 0px 0px 13px 50px;"><span style="font-size: 11pt; font-family: 'Calibri';">4. &nbsp;This results in the void being filled with the 66% that was cut from the dump.</span></p>
+<p style="text-indent: 0px; line-height: 1.15; margin: 0px 0px 13px 0px;"><span style="color: #000000;">&nbsp;</span></p>
+</td>
+</tr>
+</table>
+</div>
+<p style="text-indent: 0px; line-height: 1.15; margin: 0px 0px 13px 0px;"><span style="color: #000000;">&nbsp;</span></p>
+<p style="text-indent: 0px; line-height: 1.15; margin: 0px 0px 13px 0px;"><span style="font-size: 11pt; font-family: 'Calibri';">The result in section:</span></p>
+<p style="text-indent: 0px; line-height: 1.15; margin: 0px 0px 13px 0px;"><img src="embim90.png" width="469" height="274" vspace="1" hspace="1" border="0" alt=""></p>
+
+</td></tr></table>
+
+</body>
+</html>

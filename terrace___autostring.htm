@@ -1,0 +1,184 @@
+<!DOCTYPE HTML PUBLIC "-//W3C//DTD HTML 4.01 Transitional//EN">
+<html>
+<head>
+   <title>TERRACE : Autostring</title>
+   <meta name="generator" content="Help &amp; Manual" />
+   <meta name="keywords" content="Automatic,Balance,STRINGS,TERRACE,VOLUMES" />
+   <meta http-equiv="Content-Type" content="text/html; charset=ISO-8859-1" />
+   <meta http-equiv="Content-Style-Type" content="text/css" />
+   <link type="text/css" href="default.css" rel="stylesheet" />
+
+<script type="text/javascript" src="helpman_topicinit.js"></script>
+</head>
+<body style="margin: 0px 0px 0px 0px; background: #FFFFFF;">
+
+
+<table width="100%" border="0" cellspacing="0" cellpadding="5" bgcolor="#D0D0D0">
+  <tr valign="middle">
+    <td align="left">
+      <p class="p_Heading1"><span class="f_Heading1">TERRACE : Autostring</span></p>
+
+    </td>
+    <td align="right">
+     <span style="font-size: 9pt">
+     <a href="start_up.htm">Top</a>&nbsp;
+     <a href="terracehatchcut_fill.htm">Previous</a>&nbsp;
+     <a href="terracecross_sections.htm">Next</a>
+     </span>
+    </td>
+  </tr>
+</table>
+
+
+<!-- Placeholder for topic body. -->
+<table width="100%" border="0" cellspacing="0" cellpadding="5"><tr valign="top"><td align="left">
+<p class="p_Heading1"><span class="f_Heading1">&nbsp;</span></p>
+<p class="p_Heading1"><span class="f_rrelatedtopic">MENU : teR - Autostring</span></p>
+<p class="p_Heading1"><span style="font-size: 12pt; color: #010100;"> </span><map name="map40"><area shape="rect" coords="254,119,345,143" href="terraceparameters.htm" alt=""></map><img src="clip0586.png" width="474" height="452" border="0" alt="clip0586" usemap="#map40"></p>
+<p class="p_Heading1"><span style="font-size: 5pt; color: #010100;">&nbsp;</span></p>
+<p class="p_Heading1"><span style="font-size: 9pt; color: #010100;">This quite unique function provides for an elegant solution to a very repetitive exercise by stringing a few existing &nbsp;functions together. </span></p>
+<p class="p_Heading1"><span style="font-size: 9pt; color: #010100;">Model Maker is equipped to produce platforms, update the elevations to get a balanced cut&amp;fill excavation volume, create toe lines and generate a final platform model. Although different functions must be utilized to create the desired result, it is easy to do if only a few platforms need to be used. </span></p>
+<p class="p_Heading1"><span style="font-size: 9pt; color: #010100;">The AUTOSTRING function was designed to do all these tasks automatically.</span></p>
+<p class="p_Heading1"><span style="font-size: 9pt; color: #010100;">If you have purchase the TERRACE (Module 4) and STRINGS (Module 11) modules, the Autostring function will be available.</span></p>
+<p class="p_Heading1"><span class="f_Heading1">&nbsp;</span></p>
+<p class="p_Heading1"><span class="f_CourierFixed">Back ground</span></p>
+<p class="p_Heading1"><span style="font-size: 9pt; color: #010100;">This function requires that the model with the original ground surface be loaded in <a href="projectsuseofprojects.htm">Project</a> #1.</span></p>
+<p class="p_Heading1"><span style="font-size: 9pt; color: #010100;">Project#2 accumulates all the designed platform models. </span></p>
+<p class="p_Heading1"><span style="font-size: 9pt; color: #010100;">Project#3 develops each individual platform before it is added to Project#2. Because Project#3 is used for this purpose, it will be cleared of any existing data when the exercise begins. Ensure that Project#3 is <a href="file___new.htm">cleared</a> of any data or that the data in that project is not important and may be deleted by the system. </span></p>
+<p class="p_Heading1"><span class="f_Heading1">&nbsp;</span></p>
+<p class="p_Heading1"><span style="font-size: 9pt; color: #010100;">The outline of the platforms is placed in position by using the <a href="strings__gxt_.htm">Strings</a> functions. The best approach in developing a typical string is to first draw the platform using regular CAD <a href="cad___line___add_.htm">lines</a> and cad functions. Then add a <a href="stringadd.htm">general</a> string on top of the drawn cad platform. </span></p>
+<p class="p_Heading1"><span style="font-size: 9pt; color: #010100;">Usually most of the platforms will be same shape. <a href="stringadd_copy.htm">Copy</a> the first string to all the other locations using the Page up &amp; down and other <a href="shortcutkeys.htm">cursor</a> functions to position it correctly. </span></p>
+<p class="p_Heading1"><span style="font-size: 9pt; color: #010100;">Once all the strings are in position, activate the Autostring function.</span></p>
+<p class="p_Heading1"><span class="f_Heading1">&nbsp;</span></p>
+<p class="p_Heading1"><img src="_bm1131.png" width="134" height="22" border="0" alt="_bm1131"></p>
+<p class="p_Heading1"><span style="font-size: 9pt; color: #010100;">The dialog box consists of three pages and will always display the DEFAULT page on activation unless there are no points or triangles in project #1. In this case, the third warning page will be displayed. If the warning page is displayed, exit the dialog box and get the correct surface model in project #1.</span></p>
+<p class="p_Heading1"><span style="font-size: 9pt; color: #010100;">The default page contains all the settings used when the platforms are generated.</span></p>
+<p class="p_Heading1"><span class="f_Heading1">&nbsp;</span></p>
+<p class="p_Heading1"><img src="clip0569.png" width="212" height="15" border="0" alt="clip0569"></p>
+<p class="p_Heading1"><span style="font-size: 9pt; color: #010100;">A string by itself cannot generate new triangles. New DTM points will be added to project#3 at all the nodes of the string. These DTM points will then be used to generate the triangles and the platform. </span></p>
+<p class="p_Heading1"><span style="font-size: 9pt; color: #010100;">The new points added to the DTM will have a standard code and tag. These codes are very functional and used to identify the points and are essential attributes when setting out the points. </span></p>
+<p class="p_Heading1"><span style="font-size: 9pt; color: #010100;">Enter the code to identify the points. Check the  <img src="clip0570.png" width="87" height="17" border="0" alt="clip0570"> box if the points must each be coded individually.</span></p>
+<p class="p_Heading1"><span style="font-size: 9pt; color: #010100;">Remember to enter a base code that ends in a numeric if the codes are to be incremented, eg., Plat1 or Top100. </span></p>
+<p style="text-indent: 0px;"><span style="width:24px">&nbsp;</span> &nbsp; &nbsp; &nbsp; &nbsp;</p>
+<p style="text-indent: 0px;"><img src="clip0571.png" width="212" height="36" border="0" alt="clip0571"></p>
+<p style="text-indent: 0px;"><span style="font-size: 9pt; color: #010100;">As explained above, each platform is first developed in project#3. Check this box if each developed platform must be added to project#2 where a combined model of all the platforms will be maintained. This process involves the automatic usage of the Project <a href="projects___copy_data_between_p.htm">Copy</a> function.</span></p>
+<p style="text-indent: 0px;"><span style="color: #000000;">&nbsp;</span></p>
+<p style="text-indent: 0px;"><img src="clip0572.png" width="212" height="22" border="0" alt="clip0572"></p>
+<p style="text-indent: 0px;"><span style="font-size: 9pt; color: #010100;">This option will, after the toe lines have been generated around the platform, <a href="string_utility_embankment.htm">hatch</a> the space between the edge of the platform and the toe line with regular CAD lines.</span></p>
+<p style="text-indent: 0px;"><span style="color: #000000;">&nbsp;</span></p>
+<p style="text-indent: 0px;"><img src="_bm1136.png" width="140" height="88" border="0" alt="_bm1136"><span style="font-size: 9pt; color: #010100;"> </span></p>
+<p style="text-indent: 0px;"><span class="f_CourierFixed">EXAMPLE</span><span style="font-size: 9pt; color: #010100;">: embankment hatching.</span></p>
+<p style="text-indent: 0px;"><span style="color: #000000;">&nbsp;</span></p>
+<p style="text-indent: 0px;"><img src="clip0573.png" width="212" height="17" border="0" alt="clip0573"></p>
+<p style="text-indent: 0px;"><span style="font-size: 9pt; color: #010100;">This option will place a CAD <a href="cad___text_add.htm">text</a> string with the platform number right in the centre of the platform. This is useful as the platform number is also displayed in the volume calculation report. &nbsp;Any platform in question can then easily be identified by locating the number on the drawing. Also specify the starting number for the first platform.</span></p>
+<p style="text-indent: 0px;"><span style="color: #000000;">&nbsp;</span></p>
+<p style="text-indent: 0px;"><img src="clip0574.png" width="212" height="20" border="0" alt="clip0574"></p>
+<p style="text-indent: 0px;"><span style="font-size: 9pt; color: #010100;">This is an important option. As explained above, the starting point for each platform is its defining string. Strings are 3 dimensional entities and can be defined with a well-defined elevation. When Model Maker defines new DTM points at the nodes of the string, the elevations of these points are taken to be that of the string itself. If the <a href="terrace___volumes___cut___fill.htm">BALANCE</a> box is not checked, the platform will be calculated - (volumes &amp; toe lines) - using the string elevation values.</span></p>
+<p style="text-indent: 0px;"><span style="font-size: 9pt; color: #010100;">By selecting the balance option, an average elevation based on the platform position in relation to the surface of the model in project#1 will be calculated and a new relative elevation determined. All the elevations on the platform will be adjusted by a constant value and a first run volume amount will be determined. A few iterations using the grid volume method will be conducted and a new elevation will be determined to yield a balanced - within 5% - cut &amp; fill excavation amount.</span></p>
+<p style="text-indent: 0px;"><span style="font-size: 9pt; color: #010100;">Notice that the initial elevation of the DTM points are taken from the defining string. If all the elevations of the string are the same (a flat string in terms of the vertical component) a flat platform (horizontal) will result. If the string had nodes with different elevations, then the resulting DTM points will also have the same height differences. If the platform is balanced and, for example, a constant of 1 meter must be added to all the elevations to balance it, the meter will be added to each point individually. The platform will have a different elevation to that when it was defined, but the height differences between the points will be preserved.</span></p>
+<p style="text-indent: 0px;"><span style="color: #000000;">&nbsp;</span></p>
+<p style="text-indent: 0px;"><img src="clip0575.png" width="212" height="17" border="0" alt="clip0575"></p>
+<p style="text-indent: 0px;"><span style="font-size: 9pt; color: #010100;">House keeping will delete any triangles that extend beyond the limits of the defining string. This may happen if the platform is designed in a L shape. Triangles are normally generated between the 2 legs &nbsp;These triangles are mostly not applicable and the house keeping process will eliminate them. Only be in extreme situations would this box be left unchecked.</span></p>
+<p style="text-indent: 0px;"><span style="color: #000000;">&nbsp;</span></p>
+<p style="text-indent: 0px;"><span style="color: #000000;">&nbsp;</span></p>
+<p style="text-indent: 0px;"><img src="clip1295.png" width="155" height="24" border="0" alt="clip1295"></p>
+<p style="text-indent: 0px;"><span style="font-size: 9pt; color: #010100;">The final elevation of the terrace will be written in the centre of the area as regular cad text.</span></p>
+<p style="text-indent: 0px;"><span style="color: #000000;">&nbsp;</span></p>
+<p style="text-indent: 0px;"><img src="clip1294.png" width="288" height="87" border="0" alt="clip1294"></p>
+<p style="text-indent: 0px;"><span style="font-size: 9pt; color: #010100;">The cut and fill points will be added to project 4. This is normally done if you want to use the hatch option to <a href="terracehatchcut_fill.htm">hatch the cut and fill </a>areas after the autoterrace option is completed.</span></p>
+<p style="text-indent: 0px;"><span style="color: #000000;">&nbsp;</span></p>
+<p style="text-indent: 0px;"><span style="color: #000000;">&nbsp;</span></p>
+<p style="text-indent: 0px;"><span style="color: #000000;">&nbsp;</span></p>
+<p style="text-indent: 0px;"><span style="color: #000000;">&nbsp;</span></p>
+<p style="text-indent: 0px;"><span class="f_CourierFixed">Parameters</span></p>
+<div style="text-align: left; text-indent: 0px; padding: 0px 0px 0px 0px; margin: 0px 0px 0px 0px;"><table cellspacing="0" cellpadding="1" border="0" style="border: none; border-spacing:0px;">
+<tr style="text-align:left;vertical-align:top;">
+<td valign="top" width="99" style="width:99px;"><p class="p_Heading1"><img src="clip0576.png" width="90" height="25" border="0" alt="clip0576"></p>
+</td>
+<td valign="top" width="624" style="width:624px;"><p style="text-indent: 0px;"><span style="font-size: 9pt; color: #010100;">This button will lead you to the terrace dialog box. Here you can specify the grid size used to calculate the platform volumes. In the regular Terrace cut&amp;fill option, you can output the results as line, text or circles. This option is not available in the automated process. Run the regular <a href="terrace___volumes___cut___fill.htm">Terrace</a> option between projects 2 &amp; 1 again after the automated process is completed if you want to generate the output results.</span></p>
+<p class="p_Heading1"><span class="f_Heading1">&nbsp;</span></p>
+</td>
+</tr>
+<tr style="text-align:left;vertical-align:top;">
+<td valign="top" width="99" style="width:99px;"><p class="p_Heading1"><img src="clip0577.png" width="90" height="25" border="0" alt="clip0577"></p>
+</td>
+<td valign="top" width="624" style="width:624px;"><p style="text-indent: 0px;"><span style="font-size: 9pt; color: #010100;">The search radius used to search for new triangles to the toepoints is defined in this menu.</span></p>
+<p style="text-indent: 0px;"><span style="font-size: 9pt; color: #010100;">Note that Model Maker uses the normal continue <a href="triangle___search___normal.htm">search</a> triangulation method when new triangles are added to the toepoints after the platform is balanced. This format of searching is based on the search radius set in the <a href="triangle___parameters.htm">parameters</a> menu. Check that the specified radius is large enough to be able to find triangles to the toepoints. The radius should be equal or greater than the longest side of the design platform.</span></p>
+</td>
+</tr>
+<tr style="text-align:left;vertical-align:top;">
+<td valign="top" width="99" style="width:99px;"><p class="p_Heading1"><img src="clip0579.png" width="90" height="25" border="0" alt="clip0579"></p>
+</td>
+<td valign="top" width="624" style="width:624px;"><p style="text-indent: 0px;"><span style="font-size: 9pt; color: #010100;">Define the parameters that control the embankment lines (hatching).</span></p>
+</td>
+</tr>
+<tr style="text-align:left;vertical-align:top;">
+<td valign="top" width="99" style="width:99px;"><p class="p_Heading1"><span style="font-size: 6pt;">&nbsp;</span></p>
+<p class="p_Heading1"><img src="clip0578.png" width="90" height="25" border="0" alt="clip0578"></p>
+</td>
+<td valign="top" width="624" style="width:624px;"><p style="text-indent: 0px;"><span style="font-size: 5pt; color: #010100;">&nbsp;</span></p>
+<p style="text-indent: 0px;"><span style="font-size: 9pt; color: #010100;">Change the <a href="toepoint___slope_parameters_.htm">toe line</a> parameters in this menu. The toe line parameters control the number of points and the embankment slopes. You can specify the cut and fill batter slopes ( ie Cut 1:1.5 and Fill 1:2)</span></p>
+</td>
+</tr>
+</table>
+</div>
+<p style="text-indent: 0px;"><span style="width:24px">&nbsp;</span></p>
+<p style="text-indent: 0px;"><span class="f_CourierFixed">Strings</span></p>
+<div style="text-align: left; text-indent: 0px; padding: 0px 0px 0px 0px; margin: 0px 0px 0px 0px;"><table cellspacing="0" cellpadding="1" border="0" style="border: none; border-spacing:0px;">
+<tr style="text-align:left;vertical-align:top;">
+<td valign="top" width="99" style="width:99px;"><p class="p_Heading1"><span style="font-size: 5pt;">&nbsp;</span></p>
+<p class="p_Heading1"><img src="clip0585.png" width="90" height="25" border="0" alt="clip0585"></p>
+</td>
+<td valign="top" width="625" style="width:625px;"><p style="text-indent: 0px;"><span style="font-size: 5pt; color: #010100;">&nbsp;</span></p>
+<p style="text-indent: 0px;"><span style="font-size: 9pt; color: #010100;">The three buttons in the frame start the automation process.</span></p>
+</td>
+</tr>
+<tr style="text-align:left;vertical-align:top;">
+<td valign="top" width="99" style="width:99px;"><p class="p_Heading1"><span style="font-size: 5pt;">&nbsp;</span></p>
+<p class="p_Heading1"><img src="clip0584.png" width="90" height="25" border="0" alt="clip0584"></p>
+</td>
+<td valign="top" width="625" style="width:625px;"><p style="text-indent: 0px;"><span style="font-size: 5pt; color: #010100;">&nbsp;</span></p>
+<p style="text-indent: 0px;"><span style="font-size: 9pt; color: #010100;">A platform will be designed based on a single indicated string.</span></p>
+</td>
+</tr>
+<tr style="text-align:left;vertical-align:top;">
+<td valign="top" width="99" style="width:99px;"><p class="p_Heading1"><span style="font-size: 5pt;">&nbsp;</span></p>
+<p class="p_Heading1"><img src="clip0583.png" width="90" height="25" border="0" alt="clip0583"></p>
+</td>
+<td valign="top" width="625" style="width:625px;"><p style="text-indent: 0px;"><span style="font-size: 5pt; color: #010100;">&nbsp;</span></p>
+<p style="text-indent: 0px;"><span style="font-size: 9pt; color: #010100;">All the strings will be inspected and platforms generated. If you want to abort the process while Model Maker is busy with the strings, hit the Escape key a few times. This is a very involved process and the program may take a while to exit the routines.</span></p>
+</td>
+</tr>
+</table>
+</div>
+<p style="text-indent: 0px;"><span style="width:24px">&nbsp;</span></p>
+<p style="text-indent: 0px;"><span style="font-size: 9pt; color: #010100;">Platforms will be built on all the strings with the defined name.</span></p>
+<p style="text-indent: 0px;"><span style="color: #000000;">&nbsp;</span></p>
+<div style="text-align: left; text-indent: 0px; padding: 0px 0px 0px 0px; margin: 0px 0px 0px 0px;"><table cellspacing="0" cellpadding="1" border="0" style="border: none; border-spacing:0px;">
+<tr style="text-align:left;vertical-align:top;">
+<td valign="top" width="426" style="width:426px;"><p style="text-align: center; text-indent: 0px;"><span style="font-size: 9pt; font-style: italic; font-weight: bold; color: #ff0000; text-decoration: underline;">Hints:</span></p>
+<p style="text-align: center; text-indent: 0px;"><span style="font-size: 9pt; color: #010100;">When the process is completed, a report of all the calculated volumes is presented in the Editor. The center co-ordinate of the platform is also displayed. If the original string was flat (all the same elevations) the new designed elevation will be printed. If not all the nodes of the original string were on the same level, the word VARIES will be printed.</span></p>
+<p style="text-align: center; text-indent: 0px;"><span style="color: #000000;">&nbsp;</span></p>
+<p style="text-align: center; text-indent: 0px;"><span style="font-size: 9pt; color: #010100;">If a combined contour plan is to be made of the new designed platforms and the original ground model, use the Project Copy function and copy the data of project#2 down onto project#1</span></p>
+<p style="text-align: center; text-indent: 0px;"><span style="color: #000000;">&nbsp;</span></p>
+<p style="text-align: center; text-indent: 0px;"><span style="font-size: 9pt; font-style: italic; font-weight: bold; color: #ff0000;">Note: </span></p>
+<p style="text-align: center; text-indent: 0px;"><span style="font-size: 9pt; color: #010100;">This is an automated process based on defined parameters and should, under normal conditions, produce the desired results. It is still important to closely inspect the new platforms and be satisfied that the model covers the intended area.</span></p>
+<p style="text-align: center; text-indent: 0px;"><span style="font-size: 9pt; color: #010100;">Activate project#2 and use the <a href="triangle___side_.htm">Side</a> option to see the extend of the triangles.</span></p>
+<p style="text-align: center; text-indent: 0px;"><span style="font-size: 9pt; color: #010100;">If in doubt, do a trial run on a few platforms and first inspect the output before tackling a major exercise.</span></p>
+</td>
+</tr>
+</table>
+</div>
+<p style="text-indent: 0px;"><span style="color: #000000;">&nbsp;</span></p>
+<p style="text-indent: 0px;"><span class="f_rrelatedtopic">Related topics:</span></p>
+<p style="text-indent: 0px;"><span style="font-size: 9pt; color: #010100;"><a href="strings__gxt_.htm">Strings</a></span></p>
+<p style="text-indent: 0px;"><span style="font-size: 9pt; color: #010100;"><a href="terrace___volumes___cut___fill.htm">Terrace</a></span></p>
+<p style="text-indent: 0px;"><span style="color: #000000;">&nbsp;</span></p>
+<p style="text-indent: 0px;"><span style="color: #000000;">&nbsp;</span></p>
+<p style="text-indent: 0px;"><span style="color: #000000;">&nbsp;</span></p>
+<p style="text-indent: 0px;"><span style="color: #000000;">&nbsp;</span></p>
+
+</td></tr></table>
+
+</body>
+</html>

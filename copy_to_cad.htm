@@ -1,0 +1,160 @@
+<!DOCTYPE HTML PUBLIC "-//W3C//DTD HTML 4.01 Transitional//EN">
+<html>
+<head>
+   <title>COPY TO CAD</title>
+   <meta name="generator" content="Help &amp; Manual" />
+   <meta name="keywords" content="" />
+   <meta http-equiv="Content-Type" content="text/html; charset=ISO-8859-1" />
+   <meta http-equiv="Content-Style-Type" content="text/css" />
+   <link type="text/css" href="default.css" rel="stylesheet" />
+
+<script type="text/javascript" src="helpman_topicinit.js"></script>
+</head>
+<body style="margin: 0px 0px 0px 0px; background: #FFFFFF;">
+
+
+<table width="100%" border="0" cellspacing="0" cellpadding="5" bgcolor="#D0D0D0">
+  <tr valign="middle">
+    <td align="left">
+      <p class="p_Heading1"><span class="f_Heading1">COPY TO CAD</span></p>
+
+    </td>
+    <td align="right">
+     <span style="font-size: 9pt">
+     <a href="start_up.htm">Top</a>&nbsp;
+     <a href="cadblocks.htm">Previous</a>&nbsp;
+     <a href="cadline.htm">Next</a>
+     </span>
+    </td>
+  </tr>
+</table>
+
+
+<!-- Placeholder for topic body. -->
+<table width="100%" border="0" cellspacing="0" cellpadding="5"><tr valign="top"><td align="left">
+<p><img src="embim6.png" width="312" height="289" vspace="1" hspace="1" border="0" alt=""> Copy the grid contents to the cad as cad text in a list.</p>
+<p>&nbsp;</p>
+<p><span style="width:48px">&nbsp;</span> &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp;</p>
+<div style="text-align: left; text-indent: 10px; padding: 0px 0px 0px 0px; margin: 0px 0px 0px 0px;"><table cellspacing="0" cellpadding="0" border="0" style="border: none; border-spacing:0px;">
+<tr style="text-align:left;vertical-align:top;">
+<td valign="top" width="588" style="width:588px;"><p><img src="embim7.png" width="555" height="491" vspace="1" hspace="1" border="0" alt=""></p>
+</td>
+<td valign="top" width="892" style="width:892px;"><p>&nbsp;</p>
+<p>&nbsp;</p>
+<p>&nbsp;</p>
+<p>A) There are 2 ways to copy the grid to cad. </p>
+<p> &nbsp; &nbsp; Quick copy copies each grid row of text to cad as regular text. The row height and column spacing are automatically controlled by the default cad text parameters.</p>
+<p> &nbsp; &nbsp; Pattern Copy. This is a more comprehensive method and uses a pre-defined Cad Pattern to specify the layout of the lists.</p>
+<p>Please see below the complete explanation of how the pattern must be defined.</p>
+<p>&nbsp;</p>
+<p>B) The name of the pattern to be used as a framework. Use the Select option to load the file.</p>
+<p>&nbsp;</p>
+<p>C) Fixed Columns : The pattern is static horizontally and does not change column size. Only grows vertically.</p>
+<p> &nbsp; &nbsp;Variable Columns : The pattern is defined to change column sizes and also the height.</p>
+<p>&nbsp;</p>
+<p>D) For variable columns this is the definition of the column headers and sizes.</p>
+<p>&nbsp;</p>
+<p>E) When the text in the grid rows is copied to the cad, specify if you want lines or spaces between the list rows. Also set at how many rows must the line or space be repeated.</p>
+<p>&nbsp;</p>
+<p>F) All the grid rows can be placed in a single cad list or the list can be limited to a maximum number of rows. If a limit is specified then a new list to the right of the previous will be generated each time.</p>
+<p>Specify the distance in millimeters between each subsequent list.</p>
+<p>&nbsp;</p>
+<p>The elements on the lists can all be placed on one cad block or each list may be on its own block.</p>
+<p>If all are on one block then all the lists can be moved as one entity. If each list is on a separate block then you can easily rearrange them individually.</p>
+<p>&nbsp;</p>
+<p>G) The pattern may have text entities on layers ?Header1,2,3 &nbsp;These text entities will be replaced by the text in (G)</p>
+</td>
+</tr>
+<tr style="text-align:left;vertical-align:top;">
+<td valign="top" width="588" style="width:588px;"><p>&nbsp;</p>
+<p><img src="embim8.png" width="665" height="477" vspace="1" hspace="1" border="0" alt=""></p>
+<p>&nbsp;</p>
+<p>If you do not need vertical lines or a bottom frame line then D and E is not needed.</p>
+<p>&nbsp;</p>
+<p>Lines on layer ?VERTICAL can be of any length in the pattern, the list will grow them accordingly.</p>
+<p>Line ?LASTLINE should be the width of the list but can be at any vertical position, the list will move it to the bottom.</p>
+<p>&nbsp;</p>
+<p>&nbsp;</p>
+</td>
+<td valign="top" width="892" style="width:892px;"><p>&nbsp;</p>
+<p><span style="font-weight: bold;">FIXED COLUMN LIST</span></p>
+<p>&nbsp;</p>
+<p>Here is how a pattern must be defined to correctly manage the list layout.</p>
+<p>&nbsp;</p>
+<p>The pattern can be defined with any number of text or lines. However, entities on certain layers will be used to format the list correctly.</p>
+<p>&nbsp;</p>
+<p>In the example, the 3 header text and 5 column headers are just regular text and not required. They can be on any layer or absent in total.</p>
+<p>The first 3 horizontal yellow lines are also optional. They are present in this example just to show how the user can set up his own header info for a list.</p>
+<p>&nbsp;</p>
+<p>A) This horizontal line is required and must be on a layer called <span style="font-weight: bold;">?LINE0</span> &nbsp;The line serves as the starting point for the list entries and will normally run from the left to the right side of the list.</p>
+<p>&nbsp;</p>
+<p>B) This line must be on layer <span style="font-weight: bold;">?LINE1 </span>and is below ?LINE0. The vertical distance between the lines is used to determine the spacing between the list rows.</p>
+<p>&nbsp;</p>
+<p>C) This is a line of text and will serve as blueprint for the column text. The sample text must be on layers called <span style="font-weight: bold;">?A &nbsp;?B  </span></p>
+<p><span style="font-weight: bold;">?C </span>etc. &nbsp;When the grid text is copied to the cad list, the sample text will be replaced by the first row of the grid and the following rows will create new entries in the list using the same text attributes. </p>
+<p>When defining the pattern the user therefore has full control of the lorg, pen, font and size of each column text. By default, the sample text also defines the spacing between the columns.</p>
+<p>&nbsp;</p>
+<p>D) These are vertical lines and will grow longer or shorter depending on the height of the list. For a vertical line to adjust its length to that of the list, place the line on a layer called <span style="font-weight: bold;">?VERTICAL</span></p>
+<p>These lines must also be defined from top to bottom. &nbsp;The second point (bottom) of the line will grow according to the list size.</p>
+<p>&nbsp;</p>
+<p>E) This is the bottom line of the frame and must be on layer <span style="font-weight: bold;">?LASTLINE</span> and all ?VERTICAL lines will be trimmed to it.</p>
+<p>&nbsp;</p>
+<p>Summary: </p>
+<p>elements for A,B,C must be present in the pattern.</p>
+<p>The 2 lines on <span style="font-weight: bold;">?LINE0 and ?LINE1</span> are required and so is the text on layers <span style="font-weight: bold;">?A &nbsp;?B &nbsp;etc.</span></p>
+<p>Without those 2 lines the list would not know what the row spacing must be.</p>
+<p>Without the first row of sample text, the list would not know where the grid columns must be and also not what the text attributes are. </p>
+<p>&nbsp;</p>
+<p>&nbsp;</p>
+<p>&nbsp;</p>
+</td>
+</tr>
+<tr style="text-align:left;vertical-align:top;">
+<td valign="top" width="588" style="width:588px;"><p>&nbsp;</p>
+<p><img src="clip2193.png" width="498" height="123" border="0" alt="clip2193"></p>
+<p>&nbsp;</p>
+<p><img src="embim9.png" width="568" height="300" vspace="1" hspace="1" border="0" alt=""></p>
+</td>
+<td valign="top" width="892" style="width:892px;"><p><span style="font-weight: bold;">VARIABLE COLUMNS</span></p>
+<p>&nbsp;</p>
+<p>This format requires a pattern with some additional information.</p>
+<p>&nbsp;</p>
+<p>Column Definition:</p>
+<p>This is a user defined string describing the column header text and column width in millimeters.</p>
+<p>eg &nbsp; A=CODE+15</p>
+<p>Relates to column A, &nbsp;the header of this column is CODE and is 15mm wide</p>
+<p>The other columns are defined in the same way. </p>
+<p>Note there is a , (comma) between the definitions in the string.</p>
+<p>&nbsp;</p>
+<p>For the columns to change width and header text, the layer of vertical lines must be defined:</p>
+<p>&nbsp;</p>
+<p>A) left line of the frame on layer &nbsp;  <span style="font-weight: bold;">?VERTICAL_LEFT</span></p>
+<p>&nbsp;</p>
+<p>B) lines between the columns on layer <span style="font-weight: bold;">?VERTICAL_A &nbsp;?VERTICAL_B &nbsp;etc</span></p>
+<p>&nbsp;</p>
+<p>C) right line of the frame on layer &nbsp;  <span style="font-weight: bold;">?VERTICAL_RIGHT</span></p>
+<p>&nbsp;</p>
+<p>D) the header text to be replaced by the header definition in the column definition string must be on layer <span style="font-weight: bold;">?H_A &nbsp;?H_B  </span>etc.</p>
+<p>&nbsp;</p>
+<p>E) text replaced by headers 1 to 3 must be on <span style="font-weight: bold;">?HEADER1 ?HEADER2 and ?HEADER3</span></p>
+<p>&nbsp;</p>
+<p>The actual list text must be on layer <span style="font-weight: bold;">?A &nbsp;?B</span> &nbsp;etc.</p>
+<p>&nbsp;</p>
+<p>Summary:</p>
+<p>Define a pattern with frame lines on layers ?VERTICAL_LEFT &nbsp;?VERTICAL_RIGHT and ?LASTLINE</p>
+<p>Define columns with header text on ?H_A ?H_B etc and divider lines on ?VERTICAL_A etc.</p>
+<p>Define one row of text (sample column text) on layers ?A &nbsp;?B etc.</p>
+<p>Define header text if needed.</p>
+<p>&nbsp;</p>
+<p>The column widths and headers are defined by the Column definition string. The total width of the list is calculated and adjusted by the number of columns used and their widths.</p>
+<p>The column text and headers are spaced accordingly.</p>
+<p>&nbsp;</p>
+</td>
+</tr>
+</table>
+</div>
+
+</td></tr></table>
+
+</body>
+</html>

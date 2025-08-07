@@ -1,0 +1,139 @@
+<!DOCTYPE HTML PUBLIC "-//W3C//DTD HTML 4.01 Transitional//EN">
+<html>
+<head>
+   <title>Optimize-Solar</title>
+   <meta name="generator" content="Help &amp; Manual" />
+   <meta name="keywords" content="optimize,platform,slope,solar" />
+   <meta http-equiv="Content-Type" content="text/html; charset=ISO-8859-1" />
+   <meta http-equiv="Content-Style-Type" content="text/css" />
+   <link type="text/css" href="default.css" rel="stylesheet" />
+
+<script type="text/javascript" src="helpman_topicinit.js"></script>
+</head>
+<body style="margin: 0px 0px 0px 0px; background: #FFFFFF;">
+
+
+<table width="100%" border="0" cellspacing="0" cellpadding="5" bgcolor="#D0D0D0">
+  <tr valign="middle">
+    <td align="left">
+      <p class="p_Heading1"><span class="f_Heading1">Optimize-Solar</span></p>
+
+    </td>
+    <td align="right">
+     <span style="font-size: 9pt">
+     <a href="start_up.htm">Top</a>&nbsp;
+     <a href="terrace__optimize.htm">Previous</a>&nbsp;
+     <a href="newitem2.htm">Next</a>
+     </span>
+    </td>
+  </tr>
+</table>
+
+
+<!-- Placeholder for topic body. -->
+<table width="100%" border="0" cellspacing="0" cellpadding="5"><tr valign="top"><td align="left">
+<p style="text-indent: 0px; margin: 7px 0px 7px 0px;"><span style="font-size: 12pt; font-family: 'Times New Roman';">This function will take a platform with 4 corner points and change it's elevation and slope so that the pole lengths (represented as nodes on strings) fall within set lower and upper limits.</span></p>
+<p style="text-indent: 0px; margin: 7px 0px 7px 0px;"><span style="color: #000000;">&nbsp;</span></p>
+<p style="text-indent: 0px; margin: 7px 0px 7px 0px;"><span style="font-size: 12pt; font-family: 'Times New Roman'; font-weight: bold;">Please note: &nbsp;In addition to the Basic modules (1 &amp; 2) you also need the Platform module (4), Cad module (6), GXT strings module (11) and the Optimize Terrace module (14) to run this option. </span></p>
+<p style="text-indent: 0px; margin: 7px 0px 7px 0px;"><span style="font-size: 12pt; font-family: 'Times New Roman'; font-weight: bold;">Modules needed. : </span><span style="font-size: 12pt; font-family: 'Times New Roman';"> </span><span style="font-size: 12pt; font-family: 'Times New Roman'; font-weight: bold;">Mod 1,2,4,6,11,14. &nbsp;(6 modules)</span></p>
+<p style="text-indent: 0px; margin: 7px 0px 7px 0px;"><span style="font-size: 12pt; font-family: 'Times New Roman'; font-weight: bold;">To access the function go to (teR) Cut &amp; Fill &gt; Optimize &gt; optimize_Solar or use the shortcut key on the left.</span></p>
+<p style="text-indent: 0px; margin: 7px 0px 7px 0px;"><span style="font-size: 12pt; font-family: 'Times New Roman';"> </span><img src="embim54.gif" width="120" height="197" vspace="1" hspace="1" border="0" alt=""></p>
+<p style="text-indent: 0px; margin: 7px 0px 7px 0px;"><span style="font-size: 12pt; font-family: 'Times New Roman'; font-weight: bold;">The following items are needed to run the process.</span></p>
+<p style="text-indent: 0px; margin: 7px 0px 7px 0px;"><span style="font-size: 12pt; font-family: 'Times New Roman';"> </span></p>
+<p style="text-indent: 0px; margin: 7px 0px 7px 0px;"><span style="font-size: 12pt; font-family: 'Times New Roman';">1) The ground model on which the poles will be placed.</span></p>
+<p style="text-indent: 0px; margin: 7px 0px 7px 0px;"><span style="font-size: 12pt; font-family: 'Times New Roman';">2) The platform model having 4 corner points and 2 triangles between them, </span><span style="font-size: 12pt; font-family: 'Times New Roman'; color: #ff0000;">or select the virtual platform</span></p>
+<p style="text-indent: 0px; margin: 7px 0px 7px 0px;"><span style="font-size: 12pt; font-family: 'Times New Roman';">3) General strings that represent the solar lines. The nodes represent the position where poles will be planted.</span></p>
+<p style="text-indent: 0px; margin: 7px 0px 7px 0px;"><span style="width:48px">&nbsp;</span><span style="font-size: 12pt; font-family: 'Times New Roman'; color: #ff0000;">We suggest you draw these strings with a pen number higher than 20, the function use pen 1-20</span></p>
+<div style="text-align: left; text-indent: 10px; padding: 0px 0px 0px 0px; margin: 0px 0px 0px 0px;"><table cellspacing="0" cellpadding="0" border="0" style="border: none; border-spacing:0px;">
+<tr style="text-align:left;vertical-align:top;">
+<td valign="top" width="228" style="width:228px;"><p style="text-indent: 0px; margin: 7px 0px 7px 0px;"><span style="color: #000000;">&nbsp;</span></p>
+<p style="text-indent: 0px;"><img src="embim55.png" width="123" height="208" vspace="1" hspace="1" border="0" alt=""></p>
+<p style="text-indent: 0px; margin: 7px 0px 7px 0px;"><span style="color: #000000;">&nbsp;</span></p>
+<p style="text-indent: 0px;"><img src="embim56.png" width="198" height="103" vspace="1" hspace="1" border="0" alt=""></p>
+<p style="text-indent: 0px; margin: 7px 0px 7px 0px;"><span style="color: #000000;">&nbsp;</span></p>
+</td>
+<td valign="top" width="492" style="width:492px;"><p style="text-indent: 0px; margin: 7px 0px 7px 0px;"><span style="font-size: 12pt; font-family: 'Times New Roman';">This is a typical image of a solar field on a platform with 4 corner points.</span></p>
+<p style="text-indent: 0px; margin: 7px 0px 7px 0px;"><span style="font-size: 12pt; font-family: 'Times New Roman';">The yellow dots represent poles that are shorter than the spec.</span></p>
+<p style="text-indent: 0px; margin: 7px 0px 7px 0px;"><span style="font-size: 12pt; font-family: 'Times New Roman';">Red dots are poles longer than the specs.</span></p>
+<p style="text-indent: 0px; margin: 7px 0px 7px 0px;"><span style="font-size: 12pt; font-family: 'Times New Roman';">Green dots are poles within the specs.</span></p>
+<p style="text-indent: 0px; margin: 7px 0px 7px 0px;"><span style="font-size: 12pt; font-family: 'Times New Roman';">The single blue dot is at the average position of all the long poles.</span></p>
+<p style="text-indent: 0px; margin: 7px 0px 7px 0px;"><span style="font-size: 12pt; font-family: 'Times New Roman';">The single white dot is at the average coordinate of all the short poles.</span></p>
+<p style="text-indent: 0px; margin: 7px 0px 7px 0px;"><span style="font-size: 12pt; font-family: 'Times New Roman';">The red Circle is the Highest Pole.</span></p>
+<p style="text-indent: 0px; margin: 7px 0px 7px 0px;"><span style="font-size: 12pt; font-family: 'Times New Roman';">The Yellow Circle is the Lowest Pole.</span></p>
+<p style="text-indent: 0px; margin: 7px 0px 7px 0px;"><span style="font-size: 12pt; font-family: 'Times New Roman';">The purpose is to have all the poles to be green, within the specs.</span></p>
+<p style="text-indent: 0px; margin: 7px 0px 7px 0px;"><span style="font-size: 12pt; font-family: 'Times New Roman';">The action would thus be to lower the platform on the side of red poles and raise it on the yellow side.</span></p>
+</td>
+</tr>
+<tr style="text-align:left;vertical-align:top;">
+<td valign="top" width="228" style="width:228px;"><p style="text-indent: 0px; margin: 7px 0px 7px 0px;"><span style="font-size: 12pt; font-family: 'Times New Roman';"> </span></p>
+<p style="text-indent: 0px; margin: 7px 0px 7px 0px;"><span style="color: #000000;">&nbsp;</span></p>
+<p style="text-indent: 0px;"><img src="clip2181.zoom99.png" width="450" height="662" border="0" alt="clip2181"></p>
+<p style="text-indent: 0px; margin: 7px 0px 7px 0px;"><span style="color: #000000;">&nbsp;</span></p>
+<p style="text-indent: 0px; margin: 7px 0px 7px 0px;"><span style="color: #000000;">&nbsp;</span></p>
+<p style="text-indent: 0px; margin: 7px 0px 7px 0px;"><span style="color: #000000;">&nbsp;</span></p>
+<p style="text-indent: 0px; margin: 7px 0px 7px 0px;"><span style="color: #000000;">&nbsp;</span></p>
+<p style="text-indent: 0px; margin: 7px 0px 7px 0px;"><span style="color: #000000;">&nbsp;</span></p>
+<p style="text-indent: 0px; margin: 7px 0px 7px 0px;"><span style="color: #000000;">&nbsp;</span></p>
+<p style="text-indent: 0px;"><img src="clip2182.png" width="455" height="426" border="0" alt="clip2182"></p>
+<p style="text-indent: 0px; margin: 7px 0px 7px 0px;"><span style="color: #000000;">&nbsp;</span></p>
+<p style="text-indent: 0px;"><img src="clip2183.png" width="452" height="645" border="0" alt="clip2183"></p>
+<p style="text-indent: 0px; margin: 7px 0px 7px 0px;"><span style="font-size: 12pt; font-family: 'Times New Roman';">  &nbsp; &nbsp; &nbsp; &nbsp; </span></p>
+</td>
+<td valign="top" width="492" style="width:492px;"><p style="text-indent: 0px; margin: 7px 0px 7px 0px;"><span style="font-size: 12pt; font-family: 'Times New Roman';"> </span></p>
+<p style="text-indent: 0px; margin: 7px 0px 7px 0px;"><span style="color: #000000;">&nbsp;</span></p>
+<p style="text-indent: 0px; margin: 7px 0px 7px 0px;"><span style="color: #000000;">&nbsp;</span></p>
+<p style="text-indent: 0px; margin: 7px 0px 7px 0px;"><span style="color: #000000;">&nbsp;</span></p>
+<p style="text-indent: 0px; margin: 7px 0px 7px 0px;"><span style="font-size: 12pt; font-family: 'Times New Roman'; font-weight: bold;">Setup:</span></p>
+<p style="text-indent: 0px; margin: 7px 0px 7px 0px;"><span style="font-size: 12pt; font-family: 'Times New Roman';">1) The pole lines are represented by GXT strings. The strings must be in a straight line running north south or east west. The number of identified strings display here.</span></p>
+<p style="text-indent: 0px; margin: 7px 0px 7px 0px;"><span style="font-size: 12pt; font-family: 'Times New Roman';">2) The strings related to this design must be identified. Use the Id Strings button to open the DoId function to id strings as needed.</span></p>
+<p style="text-indent: 0px; margin: 7px 0px 7px 0px;"><span style="font-size: 12pt; font-family: 'Times New Roman';">3) Use the “Id by Line” Function to do the same as point 2 with these added benefits. Functions you would normally select in sequence.</span></p>
+<div style="text-align: left; text-indent: 0px; padding: 0px 0px 0px 0px; margin: 7px 0px 7px 24px;"><table border="0" cellpadding="0" cellspacing="0" style="line-height: 1.15;"><tr style="vertical-align:baseline" valign="baseline"><td width="24"><span style="font-size: 12pt; font-family: 'Symbol'; font-style: normal; color: #000000; text-decoration: none;">&#183;</span></td><td><span style="font-size: 12pt; font-family: 'Times New Roman';">Change snap mode to Free</span></td></tr></table></div><div style="text-align: left; text-indent: 0px; padding: 0px 0px 0px 0px; margin: 7px 0px 7px 24px;"><table border="0" cellpadding="0" cellspacing="0" style="line-height: 1.15;"><tr style="vertical-align:baseline" valign="baseline"><td width="24"><span style="font-size: 12pt; font-family: 'Symbol'; font-style: normal; color: #000000; text-decoration: none;">&#183;</span></td><td><span style="font-size: 12pt; font-family: 'Times New Roman';">ID New</span></td></tr></table></div><div style="text-align: left; text-indent: 0px; padding: 0px 0px 0px 0px; margin: 7px 0px 7px 24px;"><table border="0" cellpadding="0" cellspacing="0" style="line-height: 1.15;"><tr style="vertical-align:baseline" valign="baseline"><td width="24"><span style="font-size: 12pt; font-family: 'Symbol'; font-style: normal; color: #000000; text-decoration: none;">&#183;</span></td><td><span style="font-size: 12pt; font-family: 'Times New Roman';">Id by Line</span></td></tr></table></div><div style="text-align: left; text-indent: 0px; padding: 0px 0px 0px 0px; margin: 7px 0px 7px 24px;"><table border="0" cellpadding="0" cellspacing="0" style="line-height: 1.15;"><tr style="vertical-align:baseline" valign="baseline"><td width="24"><span style="font-size: 12pt; font-family: 'Symbol'; font-style: normal; color: #000000; text-decoration: none;">&#183;</span></td><td><span style="font-size: 12pt; font-family: 'Times New Roman';">Zoom to Id Strings</span></td></tr></table></div><div style="text-align: left; text-indent: 0px; padding: 0px 0px 0px 0px; margin: 7px 0px 7px 24px;"><table border="0" cellpadding="0" cellspacing="0" style="line-height: 1.15;"><tr style="vertical-align:baseline" valign="baseline"><td width="24"><span style="font-size: 12pt; font-family: 'Symbol'; font-style: normal; color: #000000; text-decoration: none;">&#183;</span></td><td><span style="font-size: 12pt; font-family: 'Times New Roman';">Open Project List popup</span></td></tr></table></div><p style="text-indent: 0px; margin: 7px 0px 7px 0px;"><span style="font-size: 12pt; font-family: 'Times New Roman';">All you need to do is draw the line through the applicable strings.</span></p>
+<p style="text-indent: 0px; margin: 7px 0px 7px 0px;"><span style="font-size: 12pt; font-family: 'Times New Roman';">4) While the strings are identified you may zoom to them point 3 above does the same.</span></p>
+<p style="text-indent: 0px; margin: 7px 0px 7px 0px;"><span style="font-size: 12pt; font-family: 'Times New Roman';">5) A user defined prefix can be added to to all the nodes. Helpful to name the nodes of this design to something else.</span></p>
+<p style="text-indent: 0px; margin: 7px 0px 7px 0px;"><span style="font-size: 12pt; font-family: 'Times New Roman';">6) You need to specify the ogl project that needs to cover the area below the strings with triangulation done between the points.</span></p>
+<p style="text-indent: 0px; margin: 7px 0px 7px 0px;"><span style="color: #000000;">&nbsp;</span></p>
+<p style="text-indent: 0px; margin: 7px 0px 7px 0px;"><span style="color: #000000;">&nbsp;</span></p>
+<p style="text-indent: 0px; margin: 7px 0px 7px 0px;"><span style="font-size: 12pt; font-family: 'Times New Roman';">7) Design dtm project numbers. The Ogl will normally always be project 1 but the design platform will change from one field to another. If the background is highlighted red, that means the virtual option is active.</span></p>
+<p style="text-indent: 0px; margin: 7px 0px 7px 0px;"><span style="font-size: 12pt; font-family: 'Times New Roman';">A red warning will show if the design project does not have exactly 4 points.</span></p>
+<p style="text-indent: 0px; margin: 7px 0px 7px 0px;"><span style="font-size: 12pt; font-family: 'Times New Roman';">Another red warning will show if the 4 points are not in a perfect square east west and north south.</span></p>
+<p style="text-indent: 0px; margin: 7px 0px 7px 0px;"><span style="font-size: 12pt; font-family: 'Times New Roman';">Ensure that the platform (4 point &amp; 2 triangles) is big enough so all the nodes will be on a triangle. Remember, changes are made to the 4 corner points, the elevations of the string nodes are then interpolated onto the platform and then compared to the ogl surface to calculate the pole lengths.</span></p>
+<p style="text-indent: 0px; margin: 7px 0px 7px 0px;"><span style="color: #000000;">&nbsp;</span></p>
+<p style="text-indent: 0px; margin: 7px 0px 7px 0px;"><span style="color: #000000;">&nbsp;</span></p>
+<p style="text-indent: 0px; margin: 7px 0px 7px 0px;"><span style="font-size: 12pt; font-family: 'Times New Roman';"> 8) Project List displays all the Projects in the Solar Project selector.</span></p>
+<div style="text-align: left; text-indent: 0px; padding: 0px 0px 0px 0px; margin: 7px 0px 7px 28px;"><table border="0" cellpadding="0" cellspacing="0" style="line-height: 1.15;"><tr style="vertical-align:baseline" valign="baseline"><td width="24"><span style="font-size: 12pt; font-family: 'Times New Roman'; color: #000000;">A.</span></td><td><span style="font-size: 12pt; font-family: 'Times New Roman';">The OK will be next to the project that covers the area of the Identified strings. Only projects with an Ok can be selected for the function to work. The selected project becomes the Design Platform Project.</span></td></tr></table></div><div style="text-align: left; text-indent: 0px; padding: 0px 0px 0px 0px; margin: 7px 0px 7px 28px;"><table border="0" cellpadding="0" cellspacing="0" style="line-height: 1.15;"><tr style="vertical-align:baseline" valign="baseline"><td width="24"><span style="font-size: 12pt; font-family: 'Times New Roman'; color: #000000;">B.</span></td><td><span style="font-size: 12pt; font-family: 'Times New Roman';">“Use this project as virtual platform&quot; allows you to highlight/select any project to become the virtual calculation project.</span></td></tr></table></div><p style="text-indent: 0px; line-height: 1.15; margin: 7px 0px 7px 52px;"><span style="font-size: 12pt; font-family: 'Times New Roman';">The function will automatically add 4 points below the area of the Identified strings and you do not need to create platforms beforehand. Each time you ID new strings it will create 4 new points and Triangles.</span></p>
+<p style="text-indent: 0px; line-height: 1.15; margin: 7px 0px 7px 52px;"><span style="color: #000000;">&nbsp;</span></p>
+<div style="text-align: left; text-indent: 0px; padding: 0px 0px 0px 0px; margin: 7px 0px 7px 28px;"><table border="0" cellpadding="0" cellspacing="0" style="line-height: 1.15;"><tr style="vertical-align:baseline" valign="baseline"><td width="24"><span style="font-size: 12pt; font-family: 'Times New Roman'; color: #000000;">C.</span></td><td><span style="font-size: 12pt; font-family: 'Times New Roman';">“After running the Excel report also create dtm points” allows you to convert all the nodes on the Identified strings to DTM points.</span></td></tr></table></div><p style="text-indent: 0px; margin: 7px 0px 7px 28px;"><img src="clip2184.png" width="285" height="137" border="0" alt="clip2184"></p>
+<p style="text-indent: 0px; margin: 7px 0px 7px 28px;"><span style="font-size: 12pt; font-family: 'Times New Roman';">Input the project to add the points to.</span></p>
+<p style="text-indent: 0px; margin: 7px 0px 7px 28px;"><span style="font-size: 12pt; font-family: 'Times New Roman';">The Z value will be the Pole Height and the Code will be empty if correct and Low and High if out of tolerance.</span></p>
+<p style="text-indent: 0px; margin: 7px 0px 7px 28px;"><span style="font-size: 12pt; font-family: 'Times New Roman';">Turn your Codes and elevation Display on, to see where you already added points to the selected project.</span></p>
+<div style="text-align: left; text-indent: 0px; padding: 0px 0px 0px 0px; margin: 7px 0px 7px 28px;"><table border="0" cellpadding="0" cellspacing="0" style="line-height: 1.15;"><tr style="vertical-align:baseline" valign="baseline"><td width="24"><span style="font-size: 12pt; font-family: 'Times New Roman'; color: #000000;">D.</span></td><td><span style="font-size: 12pt; font-family: 'Times New Roman';">“After running the Excel report also change color of the ID strings” changes the color in sequence from pen 1 to 20 and then repeats the sequence. Because of this best practice would be to draw the original strings in a pen number other than pen 1-20.</span></td></tr></table></div><p style="text-indent: 0px; line-height: 1.15; margin: 7px 0px 7px 52px;"><span style="font-size: 12pt; font-family: 'Times New Roman';">Also make sure the Cad display is below the strings display or turn the Cad display off. </span></p>
+<p style="text-indent: 0px; margin: 7px 0px 7px 0px;"><span style="color: #000000;">&nbsp;</span></p>
+<p style="text-indent: 0px; margin: 7px 0px 7px 0px;"><span style="font-size: 12pt; font-family: 'Times New Roman';">9) You may enter the maximum slopes in the 2 directions. MM does not use that for any limits, it is just for the user's own reference. Below the Current% column, the actual platform slopes are displayed. This will change actively as the platform is tilted for a better fit. Once the best fit is achieved, the user should check that the current % is less than the specified maximums. The value will change to red if it is outside the limit. </span></p>
+<p style="text-indent: 0px; margin: 7px 0px 7px 0px;"><span style="font-size: 12pt; font-family: 'Times New Roman'; font-weight: bold;">Note:</span><span style="font-size: 12pt; font-family: 'Times New Roman';"> The program does not use the maximums as limits.</span></p>
+<p style="text-indent: 0px; margin: 7px 0px 7px 0px;"><span style="font-size: 12pt; font-family: 'Times New Roman';">10) The user may add or subtract elevations from the 4 corner points by using the options in (11). The amount of the elevations change is specified in (10).</span></p>
+<p style="text-indent: 0px; margin: 7px 0px 7px 0px;"><span style="font-size: 12pt; font-family: 'Times New Roman';">11) Elevations of the 4 sides or all 4 points in total can be changed up or down by these 2 buttons. Select which points (sides) must be affected, set the value in (10) and press up or down. The 4 platform points will be adjusted, and the strings re-draped onto the new platform elevations. The string nodes will then be compared to the ogl and assigned the yellow, green or red colors.</span></p>
+<p style="text-indent: 0px; margin: 7px 0px 7px 0px;"><span style="font-size: 12pt; font-family: 'Times New Roman'; font-weight: bold;">Results:</span></p>
+<p style="text-indent: 0px; margin: 7px 0px 7px 0px;"><span style="font-size: 12pt; font-family: 'Times New Roman';">12) In plan, the string nodes will have one of these 3 colors. The aim is to make them all green, within low and high limits. Poles less than the low limit are yellow and those above are red.</span></p>
+<p style="text-indent: 0px; margin: 7px 0px 7px 0px;"><span style="font-size: 12pt; font-family: 'Times New Roman';">13) Once changes are made to any of the settings, the report is run and the system analyzed. The report has 6 lines containing all the info.</span></p>
+<p style="text-indent: 0px; margin: 7px 0px 7px 0px;"><span style="font-size: 12pt; font-family: 'Times New Roman';">The last line, total pole lengths, is the accumulative length of all the poles, with an average of the pole Hight next to it. (Total Pole Length/#off Poles)</span></p>
+<p style="text-indent: 0px; margin: 7px 0px 7px 0px;"><span style="font-size: 12pt; font-family: 'Times New Roman';">The best design would be where all the poles are green and the total pole length is a minimum.</span></p>
+<p style="text-indent: 0px; margin: 7px 0px 7px 0px;"><span style="color: #000000;">&nbsp;</span></p>
+<p style="text-indent: 0px;"><img src="clip2185.png" width="888" height="581" border="0" alt="clip2185"></p>
+<p style="text-indent: 0px; margin: 7px 0px 7px 0px;"><span style="font-size: 12pt; font-family: 'Times New Roman';">14) “Create CSV file, dtm and color” will execute the selection of point 8 B,C and D. The report will also allow you to save a .csv to open in Excel &nbsp;a.txt file or to copy the contents to clipboard.</span></p>
+<p style="text-indent: 0px; margin: 7px 0px 7px 0px;"><span style="color: #000000;">&nbsp;</span></p>
+<p style="text-indent: 0px; margin: 7px 0px 7px 0px;"><span style="font-size: 12pt; font-family: 'Times New Roman';">The Report includes all the relevant information including:</span></p>
+<div style="text-align: left; text-indent: 0px; padding: 0px 0px 0px 0px; margin: 7px 0px 7px 24px;"><table border="0" cellpadding="0" cellspacing="0" style="line-height: 1.15;"><tr style="vertical-align:baseline" valign="baseline"><td width="24"><span style="font-size: 12pt; font-family: 'Symbol'; font-style: normal; color: #000000; text-decoration: none;">&#183;</span></td><td><span style="font-size: 12pt; font-family: 'Times New Roman';">The Node Names and Coordinates</span></td></tr></table></div><div style="text-align: left; text-indent: 0px; padding: 0px 0px 0px 0px; margin: 7px 0px 7px 24px;"><table border="0" cellpadding="0" cellspacing="0" style="line-height: 1.15;"><tr style="vertical-align:baseline" valign="baseline"><td width="24"><span style="font-size: 12pt; font-family: 'Symbol'; font-style: normal; color: #000000; text-decoration: none;">&#183;</span></td><td><span style="font-size: 12pt; font-family: 'Times New Roman';">The Ground Level , Top of Pole, Height Above and Depth.</span></td></tr></table></div><div style="text-align: left; text-indent: 0px; padding: 0px 0px 0px 0px; margin: 7px 0px 7px 24px;"><table border="0" cellpadding="0" cellspacing="0" style="line-height: 1.15;"><tr style="vertical-align:baseline" valign="baseline"><td width="24"><span style="font-size: 12pt; font-family: 'Symbol'; font-style: normal; color: #000000; text-decoration: none;">&#183;</span></td><td><span style="font-size: 12pt; font-family: 'Times New Roman';">The Position corners with its Direction like SE (South East)</span></td></tr></table></div><div style="text-align: left; text-indent: 0px; padding: 0px 0px 0px 0px; margin: 7px 0px 7px 24px;"><table border="0" cellpadding="0" cellspacing="0" style="line-height: 1.15;"><tr style="vertical-align:baseline" valign="baseline"><td width="24"><span style="font-size: 12pt; font-family: 'Symbol'; font-style: normal; color: #000000; text-decoration: none;">&#183;</span></td><td><span style="font-size: 12pt; font-family: 'Times New Roman';">The Status of each pole Low = out side of tolerance Low*= Lowest pole in selection. High= outside of tolerance and High*= Highest point in selection.</span></td></tr></table></div><p style="text-indent: 0px; margin: 7px 0px 7px 0px;"><span style="font-size: 12pt; font-family: 'Times New Roman';">15) The auto function will internally run through different platform slopes and elevation to try and optimize the design. The auto function will stop when it reaches the maximum number of green points with the lowest elevation. This feature is very handy to get close to the best slope and elevation. </span></p>
+<p style="text-indent: 0px; margin: 7px 0px 7px 0px;"><span style="font-size: 12pt; font-family: 'Times New Roman';">The user can then still try to improve on the results by manually changing the platform slope or height by using options (10) and (11). </span></p>
+<p style="text-indent: 0px; margin: 7px 0px 7px 0px;"><span style="font-size: 12pt; font-family: 'Times New Roman';">16) This information is linked to the report and used to determine if the results are acceptable before proceeding.</span></p>
+<p style="text-indent: 0px; margin: 7px 0px 7px 0px;"><span style="font-size: 12pt; font-family: 'Times New Roman';">17) The Legend displays the legend click on it again to close.</span></p>
+<p style="text-indent: 0px; margin: 7px 0px 7px 0px;"><span style="font-size: 12pt; font-family: 'Times New Roman';">18) The String display to help you choose your display options to set your view the way you want it.</span></p>
+</td>
+</tr>
+</table>
+</div>
+<p style="text-indent: 0px;"><span style="color: #000000;">&nbsp;</span></p>
+
+</td></tr></table>
+
+</body>
+</html>

@@ -1,0 +1,154 @@
+<!DOCTYPE HTML PUBLIC "-//W3C//DTD HTML 4.01 Transitional//EN">
+<html>
+<head>
+   <title>IRRIGATION : Flushing Manifolds</title>
+   <meta name="generator" content="Help &amp; Manual" />
+   <meta name="keywords" content="Flushing,Hydraulics,Irrigation,Manifolds" />
+   <meta http-equiv="Content-Type" content="text/html; charset=ISO-8859-1" />
+   <meta http-equiv="Content-Style-Type" content="text/css" />
+   <link type="text/css" href="default.css" rel="stylesheet" />
+
+<script type="text/javascript" src="helpman_topicinit.js"></script>
+</head>
+<body style="margin: 0px 0px 0px 0px; background: #FFFFFF;">
+
+
+<table width="100%" border="0" cellspacing="0" cellpadding="5" bgcolor="#D0D0D0">
+  <tr valign="middle">
+    <td align="left">
+      <p class="p_Heading1"><span class="f_Heading1">IRRIGATION : Flushing Manifolds</span></p>
+
+    </td>
+    <td align="right">
+     <span style="font-size: 9pt">
+     <a href="start_up.htm">Top</a>&nbsp;
+     <a href="irrigationdualpumps.htm">Previous</a>&nbsp;
+     <a href="irrigation__vsd_variable_press.htm">Next</a>
+     </span>
+    </td>
+  </tr>
+</table>
+
+
+<!-- Placeholder for topic body. -->
+<table width="100%" border="0" cellspacing="0" cellpadding="5"><tr valign="top"><td align="left">
+<p style="text-indent: 0px; margin: 0px 0px 0px 10px;">This function allows you to simulate the flushing of dripline laterals. </p>
+<p style="text-indent: 0px; margin: 0px 0px 0px 10px;"><span style="color: #000000;">&nbsp;</span></p>
+<p style="text-indent: 0px; margin: 0px 0px 0px 10px;">Under normal circumstances the laterals are all calculated as being closed at the outer ends. For the purpose of flushing, these laterals are not really closed but connected to a flushing manifold which in turns have a valve that controls the flushing action. </p>
+<p style="text-indent: 0px; margin: 0px 0px 0px 10px;">For the program to exactly calculate the hydraulics, including the flow in the flushing manifold, one has to make use of loops (or closed circuits) which the program cannot do in a block situation. (Loops can only be simulated in the main line.)</p>
+<p style="text-indent: 0px; margin: 0px 0px 0px 10px;"><span style="color: #000000;">&nbsp;</span></p>
+<p style="text-indent: 0px; margin: 0px 0px 0px 10px;">A simplified approach is presented here that avoids the use of loops for the actual hydraulic calculations but is still able to give the designer all the necessary information to make intelligent decisions.</p>
+<p style="text-indent: 0px; margin: 0px 0px 0px 10px;"><span style="color: #000000;">&nbsp;</span></p>
+<p style="text-indent: 0px; margin: 0px 0px 0px 10px;">The basis of this analysis is that the designer wants to calculate the flow in the block under normal operations and also the flow when all or some of the flushing manifolds are open. The additional flow in each lateral is calculated by taking the pipe diameter and minimum flow velocity (in the lateral) into account and thereby determine the flow in each lateral that passes through it, into the flushing manifold.</p>
+<p style="text-indent: 0px; margin: 0px 0px 0px 10px;"><span style="color: #000000;">&nbsp;</span></p>
+<p style="text-indent: 0px; margin: 0px 0px 0px 10px;">This additional flow is created by placing a unique fitting node, called FLUSH VALVE at the end of each lateral. These FLUSH VALVES are then assigned to groups and can either be opened, demanding the additional flow through the lateral or closed. In the closed state the lateral is calculated normally without any water emitted at the end.</p>
+<p style="text-indent: 0px; margin: 0px 0px 0px 10px;"><span style="color: #000000;">&nbsp;</span></p>
+<p style="text-indent: 0px; margin: 0px 0px 0px 10px;">The group association options are used to allocate and assign these unique FLUSH VALVE fitting nodes to the end of the laterals.</p>
+<p style="text-indent: 0px; margin: 0px 0px 0px 10px;"><span style="color: #000000;">&nbsp;</span></p>
+<p style="text-indent: 0px; margin: 0px 0px 0px 10px;"><img src="clip1309.png" width="255" height="181" border="0" alt="clip1309"></p>
+<p style="text-indent: 0px; margin: 0px 0px 0px 10px;"><span style="color: #000000;">&nbsp;</span></p>
+<p style="text-indent: 0px; margin: 0px 0px 0px 10px;">First set the current group number. The assign options will assign this number to the FLUSH VALVE nodes so they all open or close simultaneously. </p>
+<p style="text-indent: 0px; margin: 0px 0px 0px 10px;"><span style="color: #000000;">&nbsp;</span></p>
+<p style="text-indent: 0px; margin: 0px 0px 0px 10px;"><img src="clip1260.png" width="190" height="28" border="0" alt="clip1260"> Use this option to select individual laterals that must flush in the current group. Do not point to the actual lateral but rather point to the flush manifold node that the lateral is connected to.</p>
+<p style="text-indent: 0px; margin: 0px 0px 0px 10px;"><span style="color: #000000;">&nbsp;</span></p>
+<p style="text-indent: 0px; margin: 0px 0px 0px 10px;"><img src="clip1261.png" width="189" height="28" border="0" alt="clip1261"> Use this option to assign multiple laterals to a group number. Use the cursor and draw a temporary line over the selected laterals. All the laterals being crossed by the temporary line will have their end nodes changed to the unique fitting node type called FLUSH VALVE and they will also be assigned the current group number.</p>
+<p style="text-indent: 0px; margin: 0px 0px 0px 10px;"><span style="color: #000000;">&nbsp;</span></p>
+<p style="text-indent: 0px; margin: 0px 0px 0px 10px;"><img src="clip1311.png" width="189" height="27" border="0" alt="clip1311"> If you have added flushing manifold pipes to the end of the laterals (see the pipes marked by 1 and 3) you may point to the flushing manifold and all the laterals that connect to the indicated flushing manifold pipes will be assigned to the current group.</p>
+<p style="text-indent: 0px; margin: 0px 0px 0px 10px;">In the image below, </p>
+<p style="text-indent: 0px; margin: 0px 0px 0px 10px;">1 indicates the flushing manifold on the one end, </p>
+<p style="text-indent: 0px; margin: 0px 0px 0px 10px;">3 those on the other end and </p>
+<p style="text-indent: 0px; margin: 0px 0px 0px 10px;">2 the regular manifold that supplies water into the block.</p>
+<p style="text-indent: 0px; margin: 0px 0px 0px 10px;">If the flushing manifold at 1 is pointed to, all the laterals as marked by 4, will be assigned to the active group.</p>
+<p style="text-indent: 0px; margin: 0px 0px 0px 10px;"><img src="clip1310.png" width="559" height="285" border="0" alt="clip1310"></p>
+<p style="text-indent: 0px; margin: 0px 0px 0px 10px;"><span style="color: #000000;">&nbsp;</span></p>
+<p style="text-indent: 0px; margin: 0px 0px 0px 10px;"><span style="color: #000000;">&nbsp;</span></p>
+<p style="text-indent: 0px; margin: 0px 0px 0px 10px;"><span style="color: #000000;">&nbsp;</span></p>
+<p style="text-indent: 0px; margin: 0px 0px 0px 10px;"><img src="clip1273.png" width="386" height="226" border="0" alt="clip1273"> The USER NAME variable is used to hold the group number of the flushing nodes.</p>
+<p style="text-indent: 0px; margin: 0px 0px 0px 10px;"><span style="color: #000000;">&nbsp;</span></p>
+<p style="text-indent: 0px; margin: 0px 0px 0px 10px;"><span style="color: #000000;">&nbsp;</span></p>
+<p style="text-indent: 0px; margin: 0px 0px 0px 10px;"><img src="clip1262.png" width="206" height="247" border="0" alt="clip1262">The <span style="font-weight: bold;">display assigned groups</span> will show the laterals of the different groups in different colors.</p>
+<p style="text-indent: 0px; margin: 0px 0px 0px 10px;">Odd numbered groups are displayed in yellow and even numbered ones in cyan. The current active group is shown in red.</p>
+<p style="text-indent: 0px; margin: 0px 0px 0px 10px;"><span style="color: #000000;">&nbsp;</span></p>
+<p style="text-indent: 0px; margin: 0px 0px 0px 10px;">After the laterals you intend to flush have been assigned group numbers, set the calculation variables so the effect of the flushing can be simulated when doing <img src="clip1264.png" width="123" height="45" border="0" alt="clip1264">.</p>
+<p style="text-indent: 0px; margin: 0px 0px 0px 10px;">&nbsp;</p>
+<p style="text-indent: 0px; margin: 0px 0px 0px 10px;"><img src="clip1263.png" width="406" height="173" border="0" alt="clip1263"></p>
+<p style="text-indent: 0px; margin: 0px 0px 0px 10px;"><span style="color: #000000;">&nbsp;</span></p>
+<p style="text-indent: 0px; margin: 0px 0px 0px 10px;"> <img src="clip1265.png" width="301" height="24" border="0" alt="clip1265"> If you want the program to do the hydraulic calculations as if the laterals are being flushed, check this box. If this box is not checked, Model Maker will do the hydraulics as if all the laterals are closed at the ends (normal system) even if the laterals are assigned to group numbers.</p>
+<p style="text-indent: 0px; margin: 0px 0px 0px 10px;"><span style="color: #000000;">&nbsp;</span></p>
+<p style="text-indent: 0px; margin: 0px 0px 0px 10px;">Set the minimum velocity you want to maintain at the end of the laterals when the flushing is being done. This velocity in conjunction with the pipe diameter will determine the additional flow needed to flush the line.</p>
+<p style="text-indent: 0px; margin: 0px 0px 0px 10px;"><span style="color: #000000;">&nbsp;</span></p>
+<p style="text-indent: 0px; margin: 0px 0px 0px 10px;">Set the maximum velocity in the flushing manifold. One should note at this time that the flushing manifold, the pipe connecting all the laterals to a flushing valve, does not really exist in the system as a regular pipe element. The velocity is just used to report a theoretical pipe size. This is the pipe that should be able to handle all the flow of the laterals of the same group.</p>
+<p style="text-indent: 0px; margin: 0px 0px 0px 10px;"><span style="color: #000000;">&nbsp;</span></p>
+<p style="text-indent: 0px; margin: 0px 0px 0px 10px;">Please note: If the flushing manifold was really part of the system as regular pipe segments the system resulted in a looped analysis. For that reason it is just assumed that all the laterals assigned the same group number will eventually drain into this theoretical, reported flushing manifold.</p>
+<p style="text-indent: 0px; margin: 0px 0px 0px 10px;"><span style="color: #000000;">&nbsp;</span></p>
+<p style="text-indent: 0px; margin: 0px 0px 0px 10px;">Click the REPORT button to see how many laterals are assigned to each group, what the total flow is and the theoretical flushing manifold pipe diameter.</p>
+<p style="text-indent: 0px; margin: 0px 0px 0px 10px;"><span style="color: #000000;">&nbsp;</span></p>
+<p style="text-indent: 0px; margin: 0px 0px 0px 10px;"><img src="clip1267.png" width="503" height="150" border="0" alt="clip1267">In this example, this is the result when the <img src="clip1268.png" width="126" height="41" border="0" alt="clip1268"></p>
+<p style="text-indent: 0px; margin: 0px 0px 0px 10px;">button is pressed. Notice that all the laterals are assigned to 4 different groups. </p>
+<p style="text-indent: 0px; margin: 0px 0px 0px 10px;"><span style="color: #000000;">&nbsp;</span></p>
+<p style="text-indent: 0px; margin: 0px 0px 0px 10px;"><img src="clip1266.png" width="71" height="92" border="0" alt="clip1266">Use this list to select the groups to be active when the Calc Flow is done. Even though the laterals are assigned to 4 groups, in this example the active selection specifies that only groups 1 and 3 will be active then the Calc flow is performed.</p>
+<p style="text-indent: 0px; margin: 0px 0px 0px 10px;"><span style="color: #000000;">&nbsp;</span></p>
+<p style="text-indent: 0px; margin: 0px 0px 0px 10px;">The hydraulic gradient when flushing groups 1 and 3 are included in the flows.</p>
+<p style="text-indent: 0px; margin: 0px 0px 0px 10px;"><img src="clip1269.png" width="751" height="180" border="0" alt="clip1269"></p>
+<p style="text-indent: 0px; margin: 0px 0px 0px 10px;">Notice that the warning <span style="font-weight: bold;">Calculations include flushing manifolds</span> is shown when <img src="clip1270.png" width="303" height="19" border="0" alt="clip1270"> is selected.</p>
+<p style="text-indent: 0px; margin: 0px 0px 0px 10px;"><span style="color: #000000;">&nbsp;</span></p>
+<p style="text-indent: 0px; margin: 0px 0px 0px 10px;">After the calculations are done, move back to the  <img src="clip1271.png" width="387" height="53" border="0" alt="clip1271">tab and view the calculation results in the report window.</p>
+<p style="text-indent: 0px; margin: 0px 0px 0px 10px;"><span style="color: #000000;">&nbsp;</span></p>
+<p style="text-indent: 0px; margin: 0px 0px 0px 10px;"><img src="clip1272.png" width="657" height="219" border="0" alt="clip1272"></p>
+<p style="text-indent: 0px; margin: 0px 0px 0px 10px;">In this report the pressure, flow and velocity in each lateral is shown. A summary of the actual combined additional flow and suggested manifold diameter is also shown.</p>
+<p style="text-indent: 0px; margin: 0px 0px 0px 10px;"><span style="color: #000000;">&nbsp;</span></p>
+<p style="text-indent: 0px; margin: 0px 0px 0px 10px;">What does this feature allow the user to do?</p>
+<p style="text-indent: 0px; margin: 0px 0px 0px 10px;"><span style="width:38px">&nbsp;</span>Calculate the hydraulics under normal flow and also when the laterals are flushed.</p>
+<p style="text-indent: 0px; margin: 0px 0px 0px 10px;"><span style="width:38px">&nbsp;</span>Determine how many laterals can be grouped together and serviced by a flushing manifold.</p>
+<p style="text-indent: 0px; margin: 0px 0px 0px 10px;"><span style="width:38px">&nbsp;</span>What the size of the flushing manifold should be.</p>
+<p style="text-indent: 0px; margin: 0px 0px 0px 10px;"><span style="width:38px">&nbsp;</span>The overall pressure drop in the system and also the additional flow when flushing is being done.</p>
+<p style="text-indent: 0px; margin: 0px 0px 0px 10px;"><span style="width:38px">&nbsp;</span>Calculate flushing without the need to actually incorporate flushing manifolds in the layout. Optionally, you may add flushing manifolds to the design so they may be shown on plan and listed in the bill of materials. </p>
+<p style="text-indent: 0px; margin: 0px 0px 0px 10px;"><span style="color: #000000;">&nbsp;</span></p>
+<p style="text-indent: 0px; margin: 0px 0px 0px 10px;"><span style="font-weight: bold;">Note:</span> Flushing the laterals can be calculated whether flushing manifold pipes have been added to the system or not.</p>
+<p style="text-indent: 0px; margin: 0px 0px 0px 10px;"><img src="clip1313.png" width="469" height="59" border="0" alt="clip1313"></p>
+<p style="text-indent: 0px; margin: 0px 0px 0px 10px;"><span style="width:38px">&nbsp;</span>Since the flushing manifold pipes are not really part of the system they do not effect the hydraulics.</p>
+<p style="text-indent: 0px; margin: 0px 0px 0px 10px;"><span style="width:38px">&nbsp;</span></p>
+<p style="text-indent: 0px; margin: 0px 0px 0px 10px;"><span style="color: #000000;">&nbsp;</span></p>
+<p style="text-indent: 0px; margin: 0px 0px 0px 10px;"><span style="font-weight: bold;">Additional Information</span></p>
+<p style="text-indent: 0px; margin: 0px 0px 0px 10px;"><span style="color: #000000;">&nbsp;</span></p>
+<div style="text-align: left; text-indent: 0px; padding: 0px 0px 0px 0px; margin: 0px 0px 0px 10px;"><table cellspacing="0" cellpadding="0" border="0" style="border: none; border-spacing:0px;">
+<tr style="text-align:left;vertical-align:top;">
+<td valign="top" width="742" style="width:742px;"><p class="p_Heading1"><img src="clip1462.png" width="667" height="144" border="0" alt="clip1462"></p>
+</td>
+<td valign="top" width="280" style="width:280px;"><p class="p_Heading1"><span class="f_Heading1">&nbsp;</span></p>
+</td>
+</tr>
+</table>
+</div>
+<p class="p_Heading1"><span class="f_CourierFixed" style="font-weight: normal;"> &nbsp;A) If you have assigned laterals to flushing zones and the calculate option is checked and the zones to include is selected on the number list</span></p>
+<p class="p_Heading1"><span class="f_Heading1">&nbsp;</span></p>
+<p style="text-indent: 0px; margin: 0px 0px 0px 10px;"><span class="f_CourierFixed" style="font-weight: normal;">ALL the hydraulics are done with the flushing being active.</span></p>
+<p style="text-indent: 0px; margin: 0px 0px 0px 10px;"><span style="color: #000000;">&nbsp;</span></p>
+<p style="text-indent: 0px; margin: 0px 0px 0px 10px;"><span style="color: #000000;">&nbsp;</span></p>
+<div style="text-align: left; text-indent: 0px; padding: 0px 0px 0px 0px; margin: 0px 0px 0px 10px;"><table cellspacing="0" cellpadding="0" border="0" style="border: none; border-spacing:0px;">
+<tr style="text-align:left;vertical-align:top;">
+<td valign="top" width="738" style="width:738px;"><p class="p_Heading1"><img src="clip1463.png" width="725" height="270" border="0" alt="clip1463"></p>
+</td>
+<td valign="top" width="498" style="width:498px;"><p class="p_Heading1"><span class="f_Heading1">&nbsp;</span></p>
+<p class="p_Heading1"><span class="f_Heading1">&nbsp;</span></p>
+</td>
+</tr>
+</table>
+</div>
+<p style="text-indent: 0px; margin: 0px 0px 0px 10px;"><span class="f_CourierFixed" style="font-weight: normal;">B)The normal calcs include the flushing flows.</span></p>
+<p style="text-indent: 0px; margin: 0px 0px 0px 10px;"><span style="color: #000000;">&nbsp;</span></p>
+<p style="text-indent: 0px; margin: 0px 0px 0px 10px;"><span style="color: #000000;">&nbsp;</span></p>
+<div style="text-align: left; text-indent: 0px; padding: 0px 0px 0px 0px; margin: 0px 0px 0px 10px;"><table cellspacing="0" cellpadding="0" border="0" style="border: none; border-spacing:0px;">
+<tr style="text-align:left;vertical-align:top;">
+<td valign="top" width="233" style="width:233px;"><p class="p_Heading1"><img src="clip1464.png" width="223" height="218" border="0" alt="clip1464"></p>
+</td>
+<td valign="top" width="498" style="width:498px;"><p class="p_Heading1"><span class="f_CourierFixed" style="font-weight: normal;">C) The pipe sizing of the manifold (when done after the flushing values have been set) will be done including the new friction values</span></p>
+</td>
+</tr>
+</table>
+</div>
+
+</td></tr></table>
+
+</body>
+</html>

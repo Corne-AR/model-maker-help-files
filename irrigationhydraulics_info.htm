@@ -1,0 +1,167 @@
+<!DOCTYPE HTML PUBLIC "-//W3C//DTD HTML 4.01 Transitional//EN">
+<html>
+<head>
+   <title>IRRIGATION : Hydraulics - Info</title>
+   <meta name="generator" content="Help &amp; Manual" />
+   <meta name="keywords" content="Contour,Copy,DTM,Fill,Flow,Hydraulics,Info,IRRIGATION,Node,Pipe,Pressure,Report,Time,Velocity" />
+   <meta http-equiv="Content-Type" content="text/html; charset=ISO-8859-1" />
+   <meta http-equiv="Content-Style-Type" content="text/css" />
+   <link type="text/css" href="default.css" rel="stylesheet" />
+
+<script type="text/javascript" src="helpman_topicinit.js"></script>
+</head>
+<body style="margin: 0px 0px 0px 0px; background: #FFFFFF;">
+
+
+<table width="100%" border="0" cellspacing="0" cellpadding="5" bgcolor="#D0D0D0">
+  <tr valign="middle">
+    <td align="left">
+      <p class="p_Heading1"><span class="f_Heading1">IRRIGATION : Hydraulics - Info</span></p>
+
+    </td>
+    <td align="right">
+     <span style="font-size: 9pt">
+     <a href="start_up.htm">Top</a>&nbsp;
+     <a href="pipelengths.htm">Previous</a>&nbsp;
+     <a href="irrigationglobalreports_2.htm">Next</a>
+     </span>
+    </td>
+  </tr>
+</table>
+
+
+<!-- Placeholder for topic body. -->
+<table width="100%" border="0" cellspacing="0" cellpadding="5"><tr valign="top"><td align="left">
+<p class="p_Heading1"><span class="f_Heading1">&nbsp;</span></p>
+<p class="p_Heading1"><span class="f_rrelatedtopic">MENU : Irr</span><span style="font-size: 9pt; font-weight: bold; color: #000080;"> </span></p>
+<p class="p_Heading1"><span style="font-size: 5pt; color: #010100;">&nbsp;</span></p>
+<p class="p_Heading1"><span style="font-size: 9pt; color: #010100;">This page is designed to assist in the </span><span style="font-size: 9pt; font-weight: bold; color: #010100;">evaluation </span><span style="font-size: 9pt; color: #010100;">of the project. You can determine which </span><span style="font-size: 9pt; font-weight: bold; color: #010100;">nodes</span><span style="font-size: 9pt; color: #010100;"> and </span><span style="font-size: 9pt; font-weight: bold; color: #010100;">pipes</span><span style="font-size: 9pt; color: #010100;"> do not comply to the design standards, check the average performance and even copy the information to the DTM part of </span><span style="font-size: 9pt; font-weight: bold; color: #010100;">Model Maker</span><span style="font-size: 9pt; color: #010100;"> where it can be modeled by means of triangles and contours and 3D's of the relative information can be drawn.</span></p>
+<p class="p_Heading1"><span style="font-size: 9pt; color: #010100;">The</span><span style="font-size: 9pt; font-weight: bold; color: #010100;"> info page</span><span style="font-size: 9pt; color: #010100;"> will only be active after the <a href="irrigationhydraulics.htm">calculations</a> on the result page has been performed.</span></p>
+<p class="p_Heading1"><span class="f_Heading1">&nbsp;</span></p>
+<p class="p_Heading1"><span class="f_Heading1">&nbsp;</span></p>
+<p class="p_Heading1"><span class="f_rrelatedtopic">Time to fill</span></p>
+<p class="p_Heading1"><img src="clip1258.png" width="632" height="32" border="0" alt="clip1258"></p>
+<p class="p_Heading1"><span style="font-size: 9pt; color: #010100;">This information banner is shown when the hydraulics of a regular block is calculated.</span></p>
+<p class="p_Heading1"><span class="f_Heading1">&nbsp;</span></p>
+<p class="p_Heading1"><span style="font-size: 9pt; font-weight: bold; color: #010100;">Velocity &nbsp; &nbsp; &nbsp; &nbsp;</span><span style="font-size: 9pt; color: #010100;">: This time is calculated based on the flow velocity in all the pipes. </span></p>
+<p class="p_Heading1"><span style="font-size: 9pt; color: #010100;">The route between the valve and the furthest node is determined and based on the length of each pipe segment and the flow velocity in the segments, the total time it will take a drop of water to travel from the valve to the last node, is determined.  </span></p>
+<p class="p_Heading1"><span style="font-size: 9pt; color: #010100;">This value can sometimes be a bit misleading. Since it looks at the flow velocity in all the segments from the valve to the last node, if any segment is oversized, for example a manifold pipe feeding only a few laterals, the velocity in the manifold segment can be very low resulting in an abnormal long time to fill that specific branch of pipes. </span></p>
+<p class="p_Heading1"><span class="f_Heading1">&nbsp;</span></p>
+<p class="p_Heading1"><span style="font-size: 9pt; font-weight: bold; color: #010100;">Volume &nbsp; &nbsp; &nbsp; &nbsp;</span><span style="font-size: 9pt; color: #010100;">: Here the total volume of all the pipes are calculated and based on the regular flow volume through the valve into the system, a time to theoretically fill all the pipes is calculated.</span></p>
+<p class="p_Heading1"><span class="f_Heading1">&nbsp;</span></p>
+<p class="p_Heading1"><span style="font-size: 9pt; color: #010100;">Looking at the above 2 methods to calculate the fill time of the block one would consider the velocity method to be very conservative and the volume method to be very optimistic. Based on your needs you might pick one of the 2 methods or even an average.</span></p>
+<p class="p_Heading1"><span class="f_Heading1">&nbsp;</span></p>
+<p class="p_Heading1"><span class="f_Heading1">&nbsp;</span></p>
+<div style="text-align: left; text-indent: 0px; padding: 0px 0px 0px 0px; margin: 0px 0px 0px 0px;"><table cellspacing="0" cellpadding="1" border="0" style="border: none; border-spacing:0px;">
+<tr style="text-align:left;vertical-align:top;">
+<td valign="top" width="398" style="width:398px;"><p style="text-align: center; text-indent: 0px;"><span style="color: #000000;">&nbsp;</span></p>
+<p style="text-align: center; text-indent: 0px;"><span style="font-size: 9pt; color: #010100;">Use this dialog box to specify the </span><span style="font-size: 9pt; font-weight: bold; color: #010100;">attributes</span><span style="font-size: 9pt; color: #010100;"> and </span><span style="font-size: 9pt; font-weight: bold; color: #010100;">parameters</span><span style="font-size: 9pt; color: #010100;"> against which the elements must be checked.</span></p>
+<p style="text-align: center; text-indent: 0px;"><span style="color: #000000;">&nbsp;</span></p>
+<p style="text-align: center; text-indent: 0px;"><span style="font-size: 9pt; color: #010100;">Five options need to be set before the result is displayed.</span></p>
+<p class="p_Heading1"><span class="f_Heading1">&nbsp;</span></p>
+<p class="p_Heading1"><img src="clip0215.png" width="382" height="334" border="0" alt="clip0215"></p>
+</td>
+<td valign="top" width="333" style="width:333px;"><p class="p_Heading1"><span class="f_Heading1">&nbsp;</span></p>
+<p class="p_Heading1"><span class="f_Heading1">&nbsp;</span></p>
+<p class="p_Heading1"><span class="f_Heading1">&nbsp;</span></p>
+<p class="p_Heading1"><span class="f_Heading1">&nbsp;</span></p>
+<p class="p_Heading1"><span class="f_Heading1">&nbsp;</span></p>
+<p class="p_Heading1"><span class="f_Heading1">&nbsp;</span></p>
+<p class="p_Heading1"><span style="font-size: 9pt; color: #010100;">1) In the </span><span style="font-size: 9pt; font-weight: bold; color: #010100;">ITEM</span><span style="font-size: 9pt; color: #010100;"> box, select if the nodes or pipes must be checked.</span></p>
+<p class="p_Heading1"><span class="f_Heading1">&nbsp;</span></p>
+<p class="p_Heading1"><span style="font-size: 9pt; color: #010100;">2) In the </span><span style="font-size: 9pt; font-weight: bold; color: #010100;">CHECK</span><span style="font-size: 9pt; color: #010100;"> box choose the attribute that must be checked.</span></p>
+<p class="p_Heading1"><span class="f_Heading1">&nbsp;</span></p>
+<p style="text-indent: 0px;"><span style="font-size: 9pt; font-weight: bold; color: #010100;">For the nodes you may look at:</span></p>
+<p style="text-indent: 0px;"><span style="font-size: 9pt; color: #010100;"> &nbsp; &nbsp; &nbsp; &nbsp; Flow &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; - &nbsp; &nbsp;The amount of water being released by &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; the node. (Valves / Sprinkler)</span></p>
+<p style="text-indent: 0px;"><span style="font-size: 9pt; color: #010100;"> &nbsp; &nbsp; &nbsp; &nbsp; Pressure &nbsp; - &nbsp; &nbsp;The available pressure at the node.</span></p>
+<p style="text-indent: 0px;"><span style="font-size: 9pt; color: #010100;"> &nbsp; &nbsp; &nbsp; &nbsp; Radius &nbsp; &nbsp; &nbsp; - &nbsp; &nbsp;For the sprinkler nodes, the spray &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; distance from the node.</span></p>
+<p style="text-indent: 0px;"><span style="color: #000000;">&nbsp;</span></p>
+<p style="text-indent: 0px;"><span style="font-size: 9pt; font-weight: bold; color: #010100;">For the pipes the following can be checked:</span></p>
+<p style="text-indent: 0px;"><span style="width:24px">&nbsp;</span><span style="font-size: 9pt; color: #010100;">Flow &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp;- &nbsp; &nbsp;The amount of water being conveyed by &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; the pipe.</span></p>
+<p style="text-indent: 0px;"><span style="width:24px">&nbsp;</span><span style="font-size: 9pt; color: #010100;">Pressure &nbsp; &nbsp;- &nbsp; The maximum pressure in the pipe..</span></p>
+<p style="text-indent: 0px;"><span style="width:24px">&nbsp;</span><span style="font-size: 9pt; color: #010100;">Velocity &nbsp; &nbsp; &nbsp; - &nbsp; The speed of the water moving through the &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; pipe.</span></p>
+<p style="text-indent: 0px;"><span style="color: #000000;">&nbsp;</span></p>
+<p style="text-indent: 0px;"><span style="font-size: 9pt; color: #010100;">3)  </span><span style="font-size: 9pt; font-weight: bold; color: #010100;">SELECTION</span></p>
+<p style="text-indent: 0px;"><span style="font-size: 9pt; color: #010100;">First select the standard. You may either set the standard equal to the value that the element has been design for or enter your own value.</span></p>
+<p style="text-indent: 0px;"><span style="font-size: 9pt; color: #010100;">Note that pipes do not have design standards for flow and velocity. In this case, the only option is to input your own standard in the </span><span style="font-size: 9pt; font-weight: bold; color: #010100;">Value</span><span style="font-size: 9pt; color: #010100;"> box. </span></p>
+<p style="text-indent: 0px;"><span style="color: #000000;">&nbsp;</span></p>
+</td>
+</tr>
+<tr style="text-align:left;vertical-align:top;">
+<td valign="top" width="398" style="width:398px;"><p style="text-indent: 0px;"><span style="font-size: 9pt; color: #010100;">4) </span><span style="font-size: 9pt; font-weight: bold; color: #010100;">CRITERIA</span></p>
+<p style="text-indent: 0px;"><span style="font-size: 9pt; color: #010100;">After having set the item and attribute to be checked based on the selection value, you must now specify the range to be displayed. Irri Maker will process all the items complying to the criteria specification.</span></p>
+<p style="text-indent: 0px;"><span style="color: #000000;">&nbsp;</span></p>
+</td>
+<td valign="top" width="333" style="width:333px;"><p class="p_Heading1"><span class="f_Heading1">&nbsp;</span></p>
+</td>
+</tr>
+<tr style="text-align:left;vertical-align:top;">
+<td valign="top" width="398" style="width:398px;"><p style="text-indent: 0px;"><span style="font-size: 9pt; color: #010100;">5a) </span><span style="font-size: 9pt; font-weight: bold; color: #010100;">DISPLAY</span></p>
+<p style="text-indent: 0px;"><span style="font-size: 9pt; color: #010100;">Based on the above selection, Irri Maker will scan all the items and display the items complying to the parameters, in the standard <a href="settings___colors.htm">ID colour</a>. (See Settings - Colours - Other colours)</span></p>
+<p style="text-indent: 0px;"><span style="color: #000000;">&nbsp;</span></p>
+<p style="text-indent: 0px;"><span style="font-size: 9pt; color: #010100;">5b) </span><span style="font-size: 9pt; font-weight: bold; color: #010100;">REPORT</span></p>
+<p style="text-indent: 0px;"><span style="font-size: 9pt; color: #010100;">This command will also check all the criteria and print the results into the <a href="files___editor.htm">editor</a>. Select if all the data or only the ones complying to the selection must be reported. You can also specify that the data must be reported in a sorted format.</span></p>
+<p style="text-indent: 0px;"><span style="color: #000000;">&nbsp;</span></p>
+<p style="text-indent: 0px;"><span style="font-size: 9pt; color: #010100;">Example: To see which of the nodes do not fall within 10% of their design pressure. &nbsp;On the Items select Nodes. In Check, set Pressure. Set the SELECTION to Design and the CRITERIA percentage to 10%. Now check the WITHIN radio button.</span></p>
+</td>
+<td valign="top" width="333" style="width:333px;"><p class="p_Heading1"><span class="f_Heading1">&nbsp;</span></p>
+</td>
+</tr>
+</table>
+</div>
+<p class="p_Heading1"><span class="f_Heading1">&nbsp;</span></p>
+<p class="p_Heading1"><span class="f_CourierFixed">Only active elements:  </span></p>
+<p class="p_Comment"><span class="f_Comment">If this is checked, only elements that are part of the active water path will be displayed.</span></p>
+<p class="p_Heading1"><span class="f_Heading1">&nbsp;</span></p>
+<p class="p_Heading1"><span class="f_Heading1">&nbsp;</span></p>
+<p style="text-indent: 0px; margin: 0px 0px 0px 13px;"><span style="font-size: 9pt; font-weight: bold; color: #010100;">When regular irrigation blocks are calculated this menu is shown. </span></p>
+<p style="text-indent: 0px; margin: 0px 0px 0px 13px;"><span style="color: #000000;">&nbsp;</span></p>
+<p class="p_Heading1"><img src="clip1221.png" width="505" height="241" border="0" alt="clip1221"></p>
+<p style="text-indent: 0px; margin: 0px 0px 0px 13px;"><span style="font-size: 9pt; font-weight: bold; color: #010100;">When the mainline is calculated this menu is shown. </span></p>
+<p style="text-indent: 0px; margin: 0px 0px 0px 13px;"><span style="color: #000000;">&nbsp;</span></p>
+<p class="p_Heading1"><map name="map54"><area shape="rect" coords="4,33,371,55" href="irrigationhydraulics_long.htm" alt=""><area shape="rect" coords="2,2,369,24" href="irrigationhydraulics_tot.htm" alt=""></map><img src="clip1226.png" width="378" height="66" border="0" alt="clip1226" usemap="#map54"></p>
+<p class="p_Heading1"><span style="font-size: 9pt; color: #010100;">&nbsp;</span></p>
+<p class="p_Heading1"><span class="f_Heading1">&nbsp;</span></p>
+<p class="p_Heading1"><span class="f_Heading1">&nbsp;</span></p>
+<div style="text-align: left; text-indent: 0px; padding: 0px 0px 0px 0px; margin: 0px 0px 0px 0px;"><table cellspacing="0" cellpadding="1" border="0" style="border: none; border-spacing:0px;">
+<tr style="text-align:left;vertical-align:top;">
+<td valign="top" width="173" style="width:173px;"><p class="p_Heading1"><span class="f_Heading1">&nbsp;</span></p>
+<p class="p_Heading1"><span style="font-size: 9pt;"> </span><img src="clip0217.png" width="166" height="268" border="0" alt="clip0217"></p>
+</td>
+<td valign="top" width="391" style="width:391px;"><p style="text-indent: 0px;"><span style="color: #000000;">&nbsp;</span></p>
+<p style="text-indent: 0px;"><span class="f_CourierFixed"> DTM points</span></p>
+<p style="text-indent: 0px;"><span style="font-size: 9pt; color: #010100;">The command in this box will copy the items as selected in the ITEM and CHECK boxes to the DTM.</span></p>
+<p style="text-indent: 0px;"><span style="font-size: 9pt; color: #010100;">EXAMPLE: To draw contours of the pressure values of all the nodes. &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp;</span></p>
+<p style="text-indent: 0px;"><span style="font-size: 9pt; color: #010100;">Set the ITEMS to Nodes and the CHECK to Pressure. Irri Maker will generate new dtm points in the selected project (1,2 or 3). The elevation of these points will have the pressure at the node as value. Once the points have been copied, use the regular DTM functions (<a href="triangle___creating___automati.htm">Triangle</a>, <a href="plotmanipulate.htm">contours</a>) to display the data. A <a href="3d___grid.htm">3D</a> can also be produced of the model.</span></p>
+<p class="p_Heading1"><span class="f_Heading1">&nbsp;</span></p>
+</td>
+</tr>
+</table>
+</div>
+<p style="text-indent: 0px;"><span style="color: #000000;">&nbsp;</span></p>
+<p style="text-indent: 0px;"><span class="f_rrelatedtopic">EU and DU</span></p>
+<p style="text-indent: 0px;"><span style="color: #000000;">&nbsp;</span></p>
+<p style="text-indent: 0px;"><img src="clip1244.png" width="249" height="135" border="0" alt="clip1244"></p>
+<p style="text-indent: 0px;"><span class="f_rrelatedtopic">Three values related to the eu and du are displayed.</span></p>
+<p style="text-indent: 0px;"><span style="color: #000000;">&nbsp;</span></p>
+<p style="text-indent: 0px;"><span style="font-size: 9pt; color: #000080;">The first eu value uses the following formula</span></p>
+<p style="text-indent: 0px;"><span style="width:24px">&nbsp;</span><span class="f_CourierFixed">EU% = 50*((Ave/Max)+(Min/Ave))</span></p>
+<p style="text-indent: 0px;"><span style="width:24px">&nbsp;</span><span style="font-size: 9pt; color: #000080;">The discharge of each emitter is determined and an average is calculated. The emitter with the lowest flow is calculated and so also for the highest flow.</span></p>
+<p style="text-indent: 0px;"><span style="width:24px">&nbsp;</span><span style="font-size: 9pt; color: #000080;">The formula then calculates the EU as (average flow/maximum flow) + (minimum flow/average flow).  </span></p>
+<p style="text-indent: 0px;"><span style="color: #000000;">&nbsp;</span></p>
+<p style="text-indent: 0px;"><span style="font-size: 9pt; color: #000080;">The du is calculated as follows.</span></p>
+<p style="text-indent: 0px;"><span style="width:24px">&nbsp;</span><span class="f_CourierFixed">DU% = &nbsp;(qavlq/qav)*100 </span></p>
+<p style="text-indent: 0px;"><span style="width:24px">&nbsp;</span> &nbsp; &nbsp; &nbsp; &nbsp;<span style="font-size: 9pt; color: #000080;">qavlq  &nbsp; &nbsp; &nbsp; &nbsp;= average discharge of emitters in the lowest quarter.</span></p>
+<p style="text-indent: 0px;"><span style="width:24px">&nbsp;</span> &nbsp; &nbsp; &nbsp; &nbsp;<span style="font-size: 9pt; color: #000080;">qav &nbsp; &nbsp; &nbsp; &nbsp;= average of all the flows.</span></p>
+<p style="text-indent: 0px;"><span style="color: #000000;">&nbsp;</span></p>
+<p style="text-indent: 0px;"><span style="font-size: 9pt; color: #000080;">The second eu calculation is more comprehensive and takes the number of plants and manufacturers cv value into account.</span></p>
+<p style="text-indent: 0px;"><span style="width:24px">&nbsp;</span><span class="f_CourierFixed">EU% = {1-(1.27*Cv/n^.5)}*qavlq/qav </span></p>
+<p style="text-indent: 0px;"><span style="width:24px">&nbsp;</span><span style="font-size: 9pt; color: #000080;">This is similar to the du calculation above except that the answer is modified by the number of plants and cv value in the formula.</span></p>
+<p style="text-indent: 0px;"><span style="color: #000000;">&nbsp;</span></p>
+<p style="text-indent: 0px;"><span class="f_rrelatedtopic">Related topics:</span></p>
+<p style="text-indent: 0px;"><span style="font-size: 9pt; color: #010100;"><a href="definitiondtm.htm">DTM</a></span></p>
+
+</td></tr></table>
+
+</body>
+</html>

@@ -1,0 +1,76 @@
+<!DOCTYPE HTML PUBLIC "-//W3C//DTD HTML 4.01 Transitional//EN">
+<html>
+<head>
+   <title>IRRIGATION - Roll back</title>
+   <meta name="generator" content="Help &amp; Manual" />
+   <meta name="keywords" content="back,redo,Roll,Undo" />
+   <meta http-equiv="Content-Type" content="text/html; charset=ISO-8859-1" />
+   <meta http-equiv="Content-Style-Type" content="text/css" />
+   <link type="text/css" href="default.css" rel="stylesheet" />
+
+<script type="text/javascript" src="helpman_topicinit.js"></script>
+</head>
+<body style="margin: 0px 0px 0px 0px; background: #FFFFFF;">
+
+
+<table width="100%" border="0" cellspacing="0" cellpadding="5" bgcolor="#D0D0D0">
+  <tr valign="middle">
+    <td align="left">
+      <p class="p_Heading1"><span class="f_Heading1">IRRIGATION - Roll back</span></p>
+
+    </td>
+    <td align="right">
+     <span style="font-size: 9pt">
+     <a href="start_up.htm">Top</a>&nbsp;
+     <a href="irrigation_projects.htm">Previous</a>&nbsp;
+     <a href="irrigation_project.htm">Next</a>
+     </span>
+    </td>
+  </tr>
+</table>
+
+
+<!-- Placeholder for topic body. -->
+<table width="100%" border="0" cellspacing="0" cellpadding="5"><tr valign="top"><td align="left">
+<p>The feature to roll back the irrigation project to previous stages is described here.</p>
+<p>&nbsp;</p>
+<p>&nbsp;</p>
+<p>The button to activate the roll back (undo) features is located at the top of the main irrigation dialog box.</p>
+<p><img src="embim95.png" width="448" height="76" vspace="1" hspace="1" border="0" alt=""></p>
+<p>&nbsp;</p>
+<p>&nbsp;</p>
+<p>When the Roll back button is pressed, the following dialog box is shown. (this is just an example the actual contents will look different)</p>
+<p><img src="embim96.png" width="608" height="326" vspace="1" hspace="1" border="0" alt=""></p>
+<p>&nbsp;</p>
+<p>The time at which the stages were recorded is shown along with the number of seconds since it was last saved.</p>
+<p>Each stage is recorded before a new function is executed. A description of what the action was that initiated the recording of the stage, is also shown.</p>
+<p>The number of the active block (when the action occurred) is also shown.</p>
+<p>&nbsp;</p>
+<p><span style="font-weight: bold;">How it works:</span></p>
+<p>&nbsp;</p>
+<p>A copy of the current irrigation project is saved in the roll back list when a function is pressed on the main irrigation dialog box. The roll back entry records the time when it was done and also a description of the function that made the entry.</p>
+<p>Each time a function is pressed, a new roll back is saved. A maximum of 10 roll backs will be saved with the newest action at stage 1 and the oldest at stage 10. When all 10 stages are occupied, the program will drop the tenth stage (cannot be retrieved again), stages 9 to 1 move down one and the latest roll back is placed on the top line.</p>
+<p>&nbsp;</p>
+<p>This is not a full fledged UNDO system for the following reasons:</p>
+<div style="text-align: left; text-indent: 0px; padding: 0px 0px 0px 0px; margin: 0px 0px 0px 10px;"><table border="0" cellpadding="0" cellspacing="0" style="line-height: normal;"><tr style="vertical-align:baseline" valign="baseline"><td width="13"><span style="font-size: 10pt; font-family: 'Symbol'; font-style: normal; color: #000000; text-decoration: none;">&#183;</span></td><td>A roll back entry is created at the stage when the function is selected. If for instance the function is to add pipes and 21 pipes are added and afterwards a roll back is done then all 21 new pipes will be removed.</td></tr></table></div><div style="text-align: left; text-indent: 0px; padding: 0px 0px 0px 0px; margin: 0px 0px 0px 10px;"><table border="0" cellpadding="0" cellspacing="0" style="line-height: normal;"><tr style="vertical-align:baseline" valign="baseline"><td width="13"><span style="font-size: 10pt; font-family: 'Symbol'; font-style: normal; color: #000000; text-decoration: none;">&#183;</span></td><td>A regular UNDO would have been able to undo each individual action after a function is started. The roll back reverts back to what the system was before the function started. It does not check for each individual action within the function.</td></tr></table></div><div style="text-align: left; text-indent: 0px; padding: 0px 0px 0px 0px; margin: 0px 0px 0px 10px;"><table border="0" cellpadding="0" cellspacing="0" style="line-height: normal;"><tr style="vertical-align:baseline" valign="baseline"><td width="13"><span style="font-size: 10pt; font-family: 'Symbol'; font-style: normal; color: #000000; text-decoration: none;">&#183;</span></td><td>A regular UNDO/REDO would undo the actions in a chronological order. The roll back shows you all the roll back entries and you can select to which one you want to revert to.</td></tr></table></div><div style="text-align: left; text-indent: 0px; padding: 0px 0px 0px 0px; margin: 0px 0px 0px 10px;"><table border="0" cellpadding="0" cellspacing="0" style="line-height: normal;"><tr style="vertical-align:baseline" valign="baseline"><td width="13"><span style="font-size: 10pt; font-family: 'Symbol'; font-style: normal; color: #000000; text-decoration: none;">&#183;</span></td><td>The roll back system operates more like a backup system rather than a true undo/redo option.</td></tr></table></div><p>&nbsp;</p>
+<p><span style="font-weight: bold;">Undo roll back:</span></p>
+<p>&nbsp;</p>
+<p>When the roll back dialog box is opened and the project is rolled back to another stage, MM first makes an image of the current project and this button then becomes available.</p>
+<p><img src="embim97.png" width="593" height="83" vspace="1" hspace="1" border="0" alt=""></p>
+<p>This allows you to select any of the roll back stages and in the end, if you do not want to commit to any of them, just press Undo roll back and the system will be restored to what it was when the Roll back button was pressed on the main irrigation dialog box.</p>
+<p>&nbsp;</p>
+<p>Note: The roll back images are all kept in memory and all the stages are lost when you exit MM or a crash occurs. The roll back functionality is intended to undo unintended actions not to replace the benefit of the general MM backup system.</p>
+<p>&nbsp;</p>
+<p>&nbsp;</p>
+<p>&nbsp;</p>
+<p>&nbsp;</p>
+<p>&nbsp;</p>
+<p>&nbsp;</p>
+<p>&nbsp;</p>
+<p>&nbsp;</p>
+<p>&nbsp;</p>
+
+</td></tr></table>
+
+</body>
+</html>

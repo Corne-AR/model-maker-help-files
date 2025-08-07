@@ -1,0 +1,143 @@
+<!DOCTYPE HTML PUBLIC "-//W3C//DTD HTML 4.01 Transitional//EN">
+<html>
+<head>
+   <title>Pivot : Spans</title>
+   <meta name="generator" content="Help &amp; Manual" />
+   <meta name="keywords" content="Length,Oem,Pivot,Spans" />
+   <meta http-equiv="Content-Type" content="text/html; charset=ISO-8859-1" />
+   <meta http-equiv="Content-Style-Type" content="text/css" />
+   <link type="text/css" href="default.css" rel="stylesheet" />
+
+<script type="text/javascript" src="helpman_topicinit.js"></script>
+</head>
+<body style="margin: 0px 0px 0px 0px; background: #FFFFFF;">
+
+
+<table width="100%" border="0" cellspacing="0" cellpadding="5" bgcolor="#D0D0D0">
+  <tr valign="middle">
+    <td align="left">
+      <p class="p_Heading1"><span class="f_Heading1">Pivot : Spans</span></p>
+
+    </td>
+    <td align="right">
+     <span style="font-size: 9pt">
+     <a href="start_up.htm">Top</a>&nbsp;
+     <a href="irrigationclearance_2.htm">Previous</a>&nbsp;
+     <a href="pivot__manufacturers.htm">Next</a>
+     </span>
+    </td>
+  </tr>
+</table>
+
+
+<!-- Placeholder for topic body. -->
+<table width="100%" border="0" cellspacing="0" cellpadding="5"><tr valign="top"><td align="left">
+<p><span class="f_CourierFixed">How to manage the pivot spans.</span></p>
+<div style="text-align: left; text-indent: 10px; padding: 0px 0px 0px 0px; margin: 0px 0px 0px 0px;"><table cellspacing="0" cellpadding="0" border="0" style="border: none; border-spacing:0px;">
+<tr style="text-align:left;vertical-align:top;">
+<td valign="top" width="303" style="width:303px;"><p>&nbsp;</p>
+<p>&nbsp;</p>
+<p><img src="embim187.png" width="208" height="248" vspace="1" hspace="1" border="0" alt=""></p>
+<p>&nbsp;</p>
+<p>&nbsp;</p>
+<p><span style="font-weight: bold;">The spans dialog.</span></p>
+<p>&nbsp;</p>
+</td>
+<td valign="top" width="1061" style="width:1061px;"><p>&nbsp;</p>
+<p>&nbsp;</p>
+<p>&nbsp;</p>
+<p>&nbsp;</p>
+<p>Since version 16.01 the management of pivot spans has changed.</p>
+<p>&nbsp;</p>
+<p>In the past, the user would have used this list box to manually enter the span length and number of spans.</p>
+<p>&nbsp;</p>
+<p>The Add/Edit Spans option is now used to open the span management dialog box. In this new dialog box</p>
+<p> you can still enter the span lengths manually but you now also have the option of selecting them from</p>
+<p> a database.</p>
+<p>&nbsp;</p>
+<p>&nbsp;</p>
+<p>Clicking the Add/Edit button will open the following dialog.</p>
+</td>
+</tr>
+<tr style="text-align:left;vertical-align:top;">
+<td valign="top" width="303" style="width:303px;"><p><img src="embim188.png" width="736" height="333" vspace="1" hspace="1" border="0" alt=""></p>
+<p>&nbsp;</p>
+</td>
+<td valign="top" width="1061" style="width:1061px;"><p>&nbsp;</p>
+<p>1) The list of spans for this pivot</p>
+<p>&nbsp;</p>
+<p>2) The OEM name. If a database is linked to this name, it will be shown in the</p>
+<p> &nbsp; &nbsp;DBASE list (5)</p>
+<p>&nbsp;</p>
+<p>3) If an OEM is linked, use this drop down to only show certain models in grid (5)</p>
+<p>&nbsp;</p>
+<p>4) The units that the database was defined in. If the database is defined in English units (a typical Sennpaq span file) and you work in metric units, the values in the list will be converted to metric.</p>
+<p>&nbsp;</p>
+<p>5) The spans as defined in the linked database. These spans can be used to define the pivot.</p>
+<p>&nbsp;</p>
+<p>6) <a href="pivot__manufacturers.htm">Click Manufacturers to open the OEM database manager</a>.</p>
+<p>There you can assign OEM databases to use. </p>
+<p>There is also an option where the program can create a basic database for you. You can then use that database to manually enter your own span information as basis when selecting spans for your pivot.</p>
+<p>&nbsp;</p>
+<p>7) Use these 2 buttons to insert or delete existing spans in the pivot.</p>
+<p>&nbsp;</p>
+<p>8) To make use of a span in (5), click the span, then click (1) the span number that you want to use from the </p>
+<p> &nbsp; &nbsp;databasis. Now the system knows which database span must be copied to the selected pivot span.</p>
+<p> &nbsp; Click COPY TO SPAN #.</p>
+<p>9) If the last span in the list has an O for type, MM will assume it is an overhang and automatically define the <img src="embim189.png" width="180" height="95" vspace="1" hspace="1" border="0" alt=""> overhang length as such.</p>
+<p>&nbsp;</p>
+</td>
+</tr>
+<tr style="text-align:left;vertical-align:top;">
+<td valign="top" width="303" style="width:303px;"><p><span class="f_CourierFixed">NOTE:</span></p>
+</td>
+<td valign="top" width="1061" style="width:1061px;"><br>
+</td>
+</tr>
+</table>
+</div>
+<div style="text-align: left; text-indent: 10px; padding: 0px 0px 0px 0px; margin: 0px 0px 0px 0px;"><table cellspacing="0" cellpadding="0" border="0" style="border: none; border-spacing:0px;">
+<tr style="text-align:left;vertical-align:top;">
+<td valign="top" width="578" style="width:578px;"><p>&nbsp;</p>
+<p>The option to use an OEM (or self generated database) is optional. The most basic way of adding spans would be to click on a span number in (1) and just enter the span length manually.  </p>
+<p>&nbsp;</p>
+<p><span style="font-weight: bold;">The ID#, diameter, number of Outlets and spacing are purely informational and not used by the program at this time. The span length is used by the program.</span></p>
+<p>&nbsp;</p>
+<p><span style="font-weight: bold;">If the actual pipe Diameter is defined in the list, it will then be used to automatically populate the span diameters on this <a href="irrigation__pivot_pressure_and.htm#pipediameters">page</a>.</span></p>
+<p>&nbsp;</p>
+<p><span style="font-weight: bold;">If the Type of the last span is O &nbsp;(Overhang), the length of that span will be assigned to the overhang length.</span></p>
+<p>&nbsp;</p>
+<p>&nbsp;</p>
+<p>&nbsp;</p>
+<p>This is an example of spans entered by typing the lengths. Notice that all the other parameters can be blank or zero.</p>
+<p>&nbsp;</p>
+<p>&nbsp;</p>
+</td>
+<td valign="top" width="675" style="width:675px;"><p><img src="embim190.png" width="421" height="230" vspace="1" hspace="1" border="0" alt=""></p>
+<p>&nbsp;</p>
+</td>
+</tr>
+<tr style="text-align:left;vertical-align:top;">
+<td valign="top" width="578" style="width:578px;"><br>
+</td>
+<td valign="top" width="675" style="width:675px;"><br>
+</td>
+</tr>
+<tr style="text-align:left;vertical-align:top;">
+<td valign="top" width="578" style="width:578px;"><p>&nbsp;</p>
+<p>&nbsp;</p>
+<p>&nbsp;</p>
+<p>&nbsp;</p>
+<p>&nbsp;</p>
+<p>This is what the summary of the 7 spans would look like in the list.</p>
+</td>
+<td valign="top" width="675" style="width:675px;"><p><img src="embim191.png" width="203" height="243" vspace="1" hspace="1" border="0" alt=""></p>
+</td>
+</tr>
+</table>
+</div>
+
+</td></tr></table>
+
+</body>
+</html>

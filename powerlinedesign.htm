@@ -1,0 +1,260 @@
+<!DOCTYPE HTML PUBLIC "-//W3C//DTD HTML 4.01 Transitional//EN">
+<html>
+<head>
+   <title>POWER LINE DESIGN</title>
+   <meta name="generator" content="Help &amp; Manual" />
+   <meta name="keywords" content="Power line design,STRINGS" />
+   <meta http-equiv="Content-Type" content="text/html; charset=ISO-8859-1" />
+   <meta http-equiv="Content-Style-Type" content="text/css" />
+   <link type="text/css" href="default.css" rel="stylesheet" />
+
+<script type="text/javascript" src="helpman_topicinit.js"></script>
+</head>
+<body style="margin: 0px 0px 0px 0px; background: #FFFFFF;">
+
+
+<table width="100%" border="0" cellspacing="0" cellpadding="5" bgcolor="#D0D0D0">
+  <tr valign="middle">
+    <td align="left">
+      <p class="p_Heading1"><span class="f_Heading1">POWER LINE DESIGN</span></p>
+
+    </td>
+    <td align="right">
+     <span style="font-size: 9pt">
+     <a href="start_up.htm">Top</a>&nbsp;
+     <a href="stringidentify_manid_co.htm">Previous</a>&nbsp;
+     <a href="powerlinesconductors.htm">Next</a>
+     </span>
+    </td>
+  </tr>
+</table>
+
+
+<!-- Placeholder for topic body. -->
+<table width="100%" border="0" cellspacing="0" cellpadding="5"><tr valign="top"><td align="left">
+<p class="p_Heading1"><span class="f_Heading1">&nbsp;</span></p>
+<p class="p_Heading1"><span class="f_CourierFixed">MODEL MAKER POWER LINES</span></p>
+<p class="p_Heading1"><span style="font-size: 5pt; color: #010100;">&nbsp;</span></p>
+<p class="p_Heading1"><span style="font-size: 9pt; color: #010100;">Model Maker assists in the designing of rural power lines by using the strings module.</span></p>
+<p class="p_Heading1"><span class="f_Heading1">&nbsp;</span></p>
+<p class="p_Heading1"><span style="font-size: 9pt; color: #010100;">Modules necessary to use this function are - &nbsp; &nbsp; &nbsp; &nbsp; Modules 1,2,6,11,15</span></p>
+<p class="p_Heading1"><span class="f_Heading1">&nbsp;</span></p>
+<p class="p_Heading1"><span style="font-size: 9pt; color: #010100;">The <a href="strings__gxt_.htm">strings</a> module manipulates data like long sections and other line applications in both plan and vertical mode, making it ideal for power line design.</span></p>
+<p class="p_Heading1"><span class="f_Heading1">&nbsp;</span></p>
+<p class="p_Heading1"><span class="f_CourierFixed">Approach to line design</span></p>
+<p class="p_Heading1"><span class="f_Heading1">&nbsp;</span></p>
+<p class="p_Heading1"><span class="f_CourierFixed">The elements needed to design power lines are:</span></p>
+<p class="p_Heading1"><span class="f_Heading1">&nbsp;</span></p>
+<p class="p_Heading1"><span style="font-size: 9pt; color: #010100;">1) The ground data to produce the long section as a starting basis for the power line.</span></p>
+<p class="p_Heading1"><span style="font-size: 9pt; color: #010100;">2) The design string holding the plan positions and design elevations of the poles. (nodes)</span></p>
+<p class="p_Heading1"><span style="font-size: 9pt; color: #010100;">3) The dialog box holding the definition of the pole types.</span></p>
+<p class="p_Heading1"><span style="font-size: 9pt; color: #010100;">4) The SPT file with the conductor characteristics</span></p>
+<p class="p_Heading1"><span class="f_Heading1">&nbsp;</span></p>
+<p class="p_Heading1"><span class="f_CourierFixed">1) Ground data</span></p>
+<p class="p_Heading1"><span style="font-size: 9pt; color: #010100;">The DTM data that will create an original ground profile must be in the <a href="projectsactiveproject.htm">active</a> project at the time that the power line is designed. This data can be loaded into the <a href="data_base.htm">data base</a> through any of the data <a href="example___working_example_1.htm">input</a> means and can consist of surveyed data or <a href="fileimport_define.htm">imported</a> ASCII co-ordinates.</span></p>
+<p class="p_Heading1"><span class="f_Heading1">&nbsp;</span></p>
+<p class="p_Heading1"><span style="font-size: 9pt; color: #010100;">This model may be a strip survey or a single line survey exactly on, or within a reasonable distance from, the center line. </span></p>
+<p class="p_Heading1"><span style="font-size: 9pt; color: #010100;">If the surveyed model consists of a single line of points along the alignment of the profile, you do not need to create triangles on the model. When the profile is displayed in section format, Model Maker will extract a temporary section from the DTM points by inspecting the alignment and locate the DTM points that are within the selected strip width from the center line. Intersections with the center line will be calculated and chainage distances determined.</span></p>
+<p style="text-indent: 0px;"><span style="color: #000000;">&nbsp;</span></p>
+<p style="text-indent: 0px;"><span class="f_CourierFixed">2) Line design</span></p>
+<p style="text-indent: 0px;"><span style="font-size: 9pt; color: #010100;">After the survey data is modeled as a DTM in Model Maker, the powerline option will use the <a href="stringadd.htm">string</a> module to design the line.</span></p>
+<div style="text-align: left; text-indent: 0px; padding: 0px 0px 0px 0px; margin: 0px 0px 0px 0px;"><table cellspacing="0" cellpadding="0" border="0" style="border: none; border-spacing:0px;">
+<tr style="text-align:left;vertical-align:top;">
+<td rowspan="9" valign="top" width="450" style="width:450px;"><p class="p_Heading1"><img src="powerline.png" width="444" height="508" border="0" alt="powerline"></p>
+</td>
+<td valign="top" width="989" style="width:989px;"><p style="text-indent: 0px;"><span class="f_CourierFixed" style="font-size: 12pt; color: #ffffff; background-color: #ff9900;">&nbsp;1&nbsp;</span><span style="font-size: 9pt;"> </span></p>
+<p style="text-indent: 0px;"><span style="font-size: 9pt;">Description of the powerline project</span></p>
+<p style="text-indent: 0px;"><span style="color: #000000;">&nbsp;</span></p>
+</td>
+</tr>
+<tr style="text-align:left;vertical-align:top;">
+<td valign="top" width="989" style="width:989px;"><p style="text-indent: 0px;"><span class="f_CourierFixed" style="font-size: 12pt; color: #ffffff; background-color: #ff9900;">&nbsp;2&nbsp;</span><span style="font-size: 9pt;"> </span></p>
+<p style="text-indent: 0px;"><span style="font-size: 9pt;">Power lines are regular strings defined as powerlines.</span></p>
+<p class="p_Heading1"><span style="font-size: 9pt;">A regular string is assumed to define a powerline if the layer name starts with the letters PWR_...... and then the conductor type.</span></p>
+<p class="p_Heading1"><span class="f_Heading1">&nbsp;</span></p>
+</td>
+</tr>
+<tr style="text-align:left;vertical-align:top;">
+<td valign="top" width="989" style="width:989px;"><p style="text-indent: 0px;"><span class="f_CourierFixed" style="font-size: 12pt; color: #ffffff; background-color: #ff9900;">&nbsp;3&nbsp;</span><span style="font-size: 9pt;"> </span></p>
+<p style="text-indent: 0px;"><span style="font-size: 9pt;">When the Add powerline button is pressed, a powerline with the defined conductor type is created and the New string dialog box is shown.</span></p>
+<p style="text-indent: 0px;"><span style="font-size: 9pt;">1) The layer name is automatically populated with the powerline type.</span></p>
+<p style="text-indent: 0px;"><span style="font-size: 9pt;">2) The string type is set to General string.</span></p>
+<p style="text-indent: 0px;"><span style="font-size: 9pt;">3) The INDICATE function will normally be used to develop the string.</span></p>
+<p style="text-indent: 0px;"><span style="font-size: 9pt;">4) The node names of the powerline is managed by using the Node Name and Increment code options.</span></p>
+<p style="text-indent: 0px;"><img src="embim92.png" width="262" height="314" vspace="1" hspace="1" border="0" alt=""></p>
+</td>
+</tr>
+<tr style="text-align:left;vertical-align:top;">
+<td valign="top" width="989" style="width:989px;"><p style="text-indent: 0px;"><span class="f_CourierFixed" style="font-size: 12pt; color: #ffffff; background-color: #ff9900;">&nbsp;4&nbsp;</span><span style="font-size: 9pt;"> </span></p>
+<p style="text-indent: 0px;"><span style="font-size: 9pt;">The name of the specific powerline. </span></p>
+<p class="p_Heading1"><span class="f_Heading1">&nbsp;</span></p>
+</td>
+</tr>
+<tr style="text-align:left;vertical-align:top;">
+<td valign="top" width="989" style="width:989px;"><p style="text-indent: 0px;"><span class="f_CourierFixed" style="font-size: 12pt; color: #ffffff; background-color: #ff9900;">&nbsp;5&nbsp;</span><span style="font-size: 9pt;"> </span></p>
+<p style="text-indent: 0px;"><span style="font-size: 9pt;">Typical powerline information</span></p>
+<p style="text-indent: 0px;"><img src="embim93.png" width="371" height="221" vspace="1" hspace="1" border="0" alt=""></p>
+<p style="text-indent: 0px;"><span style="color: #000000;">&nbsp;</span></p>
+</td>
+</tr>
+<tr style="text-align:left;vertical-align:top;">
+<td valign="top" width="989" style="width:989px;"><p style="text-indent: 0px;"><span class="f_CourierFixed" style="font-size: 12pt; color: #ffffff; background-color: #ff9900;">&nbsp;6&nbsp;</span><span style="font-size: 9pt;"> </span></p>
+<p style="text-indent: 0px;"><span style="font-size: 9pt;">Typical powerline coordinates</span></p>
+<p style="text-indent: 0px;"><img src="clip1904.png" width="406" height="258" border="0" alt="clip1904"></p>
+<p class="p_Heading1"><span class="f_Heading1">&nbsp;</span></p>
+</td>
+</tr>
+<tr style="text-align:left;vertical-align:top;">
+<td valign="top" width="989" style="width:989px;"><p style="text-indent: 0px;"><span class="f_CourierFixed" style="font-size: 12pt; color: #ffffff; background-color: #ff9900;">&nbsp;7&nbsp;</span><span style="font-size: 9pt;"> </span></p>
+<p class="p_Heading1"><span style="font-size: 9pt;"><a href="string___vert.htm">Profile view</a>.</span></p>
+<p class="p_Heading1"><span class="f_Heading1">&nbsp;</span></p>
+</td>
+</tr>
+<tr style="text-align:left;vertical-align:top;">
+<td valign="top" width="989" style="width:989px;"><p style="text-indent: 0px;"><span class="f_CourierFixed" style="font-size: 12pt; color: #ffffff; background-color: #ff9900;">&nbsp;8&nbsp;</span><span style="font-size: 9pt;">  </span></p>
+<p class="p_Heading1"><span style="font-size: 9pt;">Edit functions</span></p>
+<p class="p_Heading1"><img src="clip1905.png" width="306" height="230" border="0" alt="clip1905"></p>
+<p class="p_Heading1"><span class="f_Heading1">&nbsp;</span></p>
+</td>
+</tr>
+<tr style="text-align:left;vertical-align:top;">
+<td valign="top" width="989" style="width:989px;"><p style="text-indent: 0px;"><span class="f_CourierFixed" style="font-size: 12pt; color: #ffffff; background-color: #ff9900;">&nbsp;9&nbsp;</span><span style="font-size: 9pt;"> </span></p>
+<p style="text-indent: 0px;"><span style="font-size: 9pt;">Display Options</span></p>
+<p class="p_Heading1"><span style="font-size: 9pt;"> <img src="clip1906.png" width="328" height="216" border="0" alt="clip1906"></span></p>
+</td>
+</tr>
+</table>
+</div>
+<p style="text-indent: 0px;"><span style="color: #000000;">&nbsp;</span></p>
+<p style="text-indent: 0px;"><span style="color: #000000;">&nbsp;</span></p>
+<p style="text-indent: 0px;"><span style="font-size: 9pt; color: #010100;">Below is a brief explanation of a power line string. </span></p>
+<p style="text-indent: 0px;"><span style="font-size: 9pt; font-weight: bold; color: #010100;">Please note, the new menu dialog (above) automatically does the correct definition when a power line is added.</span></p>
+<p style="text-indent: 0px;"><span style="font-size: 9pt; color: #010100;">The explanation (below) is only shown a reference.</span></p>
+<p style="text-indent: 0px;"><span style="color: #000000;">&nbsp;</span></p>
+<p style="text-indent: 0px;"><span style="font-size: 9pt; font-style: italic; color: #010100;">Strings have many different uses. To identify the string as a rural power line you need to adhere to the following.</span></p>
+<p style="text-indent: 0px;"><span style="font-size: 9pt; font-style: italic; color: #010100;">The <a href="settingslinetextinfo.htm">layer</a> name of the string must be in the format:  &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp;ESKOM_***** &nbsp; or &nbsp;PWR_*******</span></p>
+<p style="text-indent: 0px;"><span style="width:24px">&nbsp;</span> &nbsp; &nbsp; &nbsp; &nbsp;<span style="font-size: 9pt; font-style: italic; color: #010100;">The ***** stands for the different types of line. ie.</span></p>
+<p style="text-indent: 0px;"><span style="width:24px">&nbsp;</span> &nbsp; &nbsp; &nbsp; &nbsp;<span style="font-size: 9pt; font-style: italic; color: #010100;">FOX MINK HARE FIR PINE &amp; OAK.</span></p>
+<p style="text-indent: 0px;"><span style="width:24px">&nbsp;</span> &nbsp; &nbsp; &nbsp; &nbsp;<span style="font-size: 9pt; font-style: italic; color: #010100;">A fox line will thus have an ESKOM_FOX layer name or PWR_FOX layer name.</span></p>
+<p style="text-indent: 0px;"><span style="width:24px">&nbsp;</span> &nbsp; &nbsp; &nbsp; &nbsp;<span style="font-size: 9pt; font-style: italic; color: #010100;">The layer name is defined in the default <a href="penattributes.htm">pen</a> menu or may be changed in the GXT <a href="string___info.htm">INFO</a> menu.</span></p>
+<p style="text-indent: 0px;"><span style="color: #000000;">&nbsp;</span></p>
+<p style="text-indent: 0px;"><span class="f_CourierFixed">3) Poles</span></p>
+<p style="text-indent: 0px;"><span style="font-size: 9pt; color: #010100;">The <a href="powerlinespoledata.htm">poles</a> are defined using the Edit Pole Database option.</span></p>
+<p style="text-indent: 0px;"><span style="color: #000000;">&nbsp;</span></p>
+<p style="text-indent: 0px;"><img src="clip0158.png" width="869" height="330" border="0" alt="clip0158"></p>
+<p style="text-indent: 0px;"><span style="color: #000000;">&nbsp;</span></p>
+<p style="text-indent: 0px;"><span style="font-size: 9pt; color: #010100;">The POWERL folder are the standard folder where the default pole, shortlist and SPT files are. If there are any subfolders inside POWERL, they will be displayed as options so the MM can read the pole, shortlist and SPT out of them. </span></p>
+<p style="text-indent: 0px;"><span style="font-size: 9pt; color: #010100;">There are no limit on the amount of sub folders. Each subfolder should contain complete pole information.</span></p>
+<p style="text-indent: 0px;"><span style="color: #000000;">&nbsp;</span></p>
+<p style="text-indent: 0px;"><span style="font-size: 9pt; color: #010100;">When adding a pole to the database, the first entry is the pole name.</span></p>
+<p style="text-indent: 0px;"><span style="font-size: 9pt; color: #010100;">This may be 10 characters long and is used to identify the pole.</span></p>
+<p style="text-indent: 0px;"><span style="font-size: 9pt; color: #010100;">Plan and vertical pattern names may be defined. These present the pole in plan mode and in vertical mode.</span></p>
+<p style="text-indent: 0px;"><span style="font-size: 9pt; color: #010100;">Define the pole <a href="cadpattern_save.htm">patterns</a> in the normal manner in the CAD.</span></p>
+<p style="text-indent: 0px;"><span style="font-size: 9pt; color: #010100;">After defining the pole, enter the maximum wind span, weight span and attachment height values for each type of line.</span></p>
+<p style="text-indent: 0px;"><span style="color: #000000;">&nbsp;</span></p>
+<p style="text-indent: 0px;"><span class="f_CourierFixed">4) SPT data</span></p>
+<p style="text-indent: 0px;"><span style="font-size: 9pt; color: #010100;">The conductor types and their controlling SPT files are defined using the Edit Conductor Database option.</span></p>
+<p style="text-indent: 0px;"><span style="color: #000000;">&nbsp;</span></p>
+<p style="text-indent: 0px;"><span class="f_CourierFixed">Step by step</span></p>
+<p style="text-indent: 0px;"><span style="font-size: 9pt; color: #010100;">After the DTM data is loaded, use the mining &nbsp;string. Use the Manipulate Lines tab in the mining dialog box. Use pen&amp;linetype button to set the layer name of the new string to correct format. </span></p>
+<p style="text-indent: 0px;"><span style="color: #000000;">&nbsp;</span></p>
+<p style="text-indent: 0px;"><span style="font-size: 9pt; color: #010100;">Enter the string. First define the start position, turn (deflection) points and end position of the power line. The string must be a <a href="stringadd.htm">General</a> string. </span></p>
+<p style="text-indent: 0px;"><span style="font-size: 9pt; color: #010100;">It is advisable that DTM points already exist at the positions where the initial string nodes are placed. Then the <a href="cursor_positioningmodes.htm">Tacpoint</a> cursor snap mode can be used and the string will get its startup elevations from the surveyed points.</span></p>
+<p style="text-indent: 0px;"><span style="color: #000000;">&nbsp;</span></p>
+<p style="text-indent: 0px;"><span class="f_CourierFixed">A note on string node names</span></p>
+<p style="text-indent: 0px;"><span style="font-size: 9pt; color: #010100;">The node name identifies the type of pole that it represents.</span></p>
+<p style="text-indent: 0px;"><span style="font-size: 9pt; color: #010100;">The node name and pole name as defined in the list of poles in the default <a href="powerlinespoledata.htm">Pole</a> menu, are the same.</span></p>
+<p style="text-indent: 0px;"><span style="font-size: 9pt; color: #010100;">The ! character is used to identify a fixed (strain) pole. &nbsp; ie. &nbsp;!11wood.</span></p>
+<p style="text-indent: 0px;"><span style="font-size: 9pt; color: #010100;">Any one of the defined poles may be used as either an angle, strain or suspension pole. Putting the </span><span style="font-size: 14pt; font-weight: bold; color: #ff0000;">!</span><span style="font-size: 9pt; color: #010100;"> in front of the name makes it a fixed pole.</span></p>
+<p style="text-indent: 0px;"><span style="font-size: 9pt; color: #010100;">The EL (Equivalent Length) is calculated between the strain poles. Model Maker assumes that the first and last pole of the line are strain poles.</span></p>
+<p style="text-indent: 0px;"><span style="color: #000000;">&nbsp;</span></p>
+<p style="text-indent: 0px;"><span style="font-size: 9pt; color: #010100;">After the line is defined in plan with nodes for the start, end and any other horizontal deflection points, use the <a href="string___vert.htm">Vert</a> option to view the string as a vertical long-section..</span></p>
+<p style="text-indent: 0px;"><span style="font-size: 9pt; color: #010100;">The ground line may be <a href="string___vert.htm">viewed</a> with the design line(string). If triangles exist in the DTM model, Model Maker will automatically extract a ground long section from the model on the alignment as defined by the string.</span></p>
+<p style="text-indent: 0px;"><span style="font-size: 9pt; color: #010100;">If no triangles exist Model Maker uses the surveyed points as they are and temporarily produces a ground long section by calculating chainages for every DTM point along the string within the user specified strip width.</span></p>
+<p style="text-indent: 0px;"><span style="color: #000000;">&nbsp;</span></p>
+<p style="text-indent: 0px;"><span style="font-size: 9pt; color: #010100;">The design string will be plotted on the height as defined by the elevations of the nodes. The node will have a zero elevation if none was defined at the <a href="stringadd.htm">design</a> stage.</span></p>
+<p style="text-indent: 0px;"><span style="color: #000000;">&nbsp;</span></p>
+<p style="text-indent: 0px;"><span class="f_CourierFixed">Use the <a href="powerlinesverticaldesign.htm">Special Power</a> functions to plant the poles</span></p>
+<p style="text-indent: 0px;"><span style="font-size: 9pt; color: #010100;">The elevation of every node of the design line will be changed based on the following.</span></p>
+<p style="text-indent: 0px;"><span style="font-size: 9pt; color: #010100;">1) The elevation on the ground line at the specific chainage is calculated. The bottom attachment height for the pole and line type is taken from the <a href="powerlinespoledata.htm">database</a> and added to the ground elevation.</span></p>
+<p style="text-indent: 0px;"><span style="font-size: 9pt; color: #010100;">The string is thus placed along the bottom attachment heights of the poles.</span></p>
+<p style="text-indent: 0px;"><span style="font-size: 9pt; color: #010100;">2) The node elevation will not be updated if no ground line exists at the specific chainage.</span></p>
+<p style="text-indent: 0px;"><span style="color: #000000;">&nbsp;</span></p>
+<p style="text-indent: 0px;"><span class="f_CourierFixed">Adding more poles</span></p>
+<p style="text-indent: 0px;"><span style="font-size: 9pt; color: #010100;">Other poles may now be added between the fixed poles. Use the <a href="stringvert_nodeadd.htm">add node</a> function to add individual poles or use the multiple add function in the <a href="powerlinesverticaldesign.htm">Power</a> menu. Use the pole info option to check the weights and names of the poles.</span></p>
+<p style="text-indent: 0px;"><span style="color: #000000;">&nbsp;</span></p>
+<p style="text-indent: 0px;"><span style="font-size: 9pt; color: #010100;">Use the <a href="powerlinesverticaldesign.htm">tower loading</a> option to print a standard line report. Model Maker will check all the spans and weights of each pole against the maximum values for the particular line type and alert you if any maximum value is exceeded.</span></p>
+<p style="text-indent: 0px;"><span style="color: #000000;">&nbsp;</span></p>
+<p style="text-indent: 0px;"><span style="font-size: 9pt; color: #010100;">The <a href="powerlinesverticaldesign.htm">low points</a> option will graphically display the lowest point on each span. Use the dump graphics option to produce a picture of the line on a printer. Use the Copy to CAD function to produce a detailed drawing of the long section in Model Maker CAD.</span></p>
+<p style="text-indent: 0px;"><span style="color: #000000;">&nbsp;</span></p>
+<p style="text-indent: 0px;"><span class="f_CourierFixed">SPT files</span></p>
+<p style="text-indent: 0px;"><span style="font-size: 9pt; color: #010100;">The parabolic shape of the power line is determined by the standard profiling templates as specified in the SPT files. These files reside in the subdirectory. (The directory where the program is installed)</span></p>
+<p style="text-indent: 0px;"><span style="font-size: 9pt; color: #010100;">Model Maker will automatically create the POWER subdirectory the first time it is run and the Power Line module is active.</span></p>
+<p style="text-indent: 0px;"><span style="color: #000000;">&nbsp;</span></p>
+<p style="text-indent: 0px;"><span style="font-size: 9pt; color: #010100;">Create Up to 40 different SPT files. One each for every different type of line</span></p>
+<p style="text-indent: 0px;"><span style="font-size: 9pt; color: #010100;">ie. &nbsp;FOX MINK HARE FIR PINE &amp; OAK.</span></p>
+<p style="text-indent: 0px;"><span style="color: #000000;">&nbsp;</span></p>
+<p style="text-indent: 0px;"><span style="font-size: 9pt; color: #010100;">Below is an example of the FUR.SPT file.</span></p>
+<p style="text-indent: 0px;"><span style="font-size: 9pt; color: #010100;">The first line contains the word 'hot'. The following lines consist of the | template constant | start range | end range |</span></p>
+<p style="text-indent: 0px;"><span style="font-size: 9pt; color: #010100;">The word 'cold' starts the range of cold values.</span></p>
+<p style="text-indent: 0px;"><span style="color: #000000;">&nbsp;</span></p>
+<p style="text-indent: 0px;"><img src="clip1515.png" width="195" height="393" border="0" alt="clip1515"></p>
+<p style="text-indent: 0px;"><img src="clip1516.png" width="195" height="223" border="0" alt="clip1516"></p>
+<p style="text-indent: 0px;"><span style="color: #000000;">&nbsp;</span></p>
+<p style="text-indent: 0px;"><span style="color: #000000;">&nbsp;</span></p>
+<p style="text-indent: 0px;"><span class="f_CourierFixed">Crossing services</span></p>
+<p style="text-indent: 0px;"><span style="font-size: 9pt; color: #010100;">Define any other services like roads, telephone lines, etc , crossing the design line with additional strings. The name of the crossing string identifies the type of service. To obtain the correct elevation between the main string and the crossing service string, the service string must be defined with the correct elevations at the node points. Normally the <a href="cursor_positioningmodes.htm">tacpoint</a> option will be used for the string to get the elevation from the surveyed point.</span></p>
+<p style="text-indent: 0px;"><span style="color: #000000;">&nbsp;</span></p>
+<p style="text-indent: 0px;"><span style="font-size: 9pt; color: #010100;">Model Maker can calculate the chainages of these crossings and display it on the vertical section. Use the Name function on the <a href="powerlinesverticaldesign.htm">power</a> menu to display the service name.</span></p>
+<p style="text-indent: 0px;"><span style="color: #000000;">&nbsp;</span></p>
+<p style="text-indent: 0px;"><span style="font-size: 9pt; color: #010100;">If service data is displayed on the section, Model Maker will add another option on the <a href="powerlinesverticaldesign.htm">Power</a> menu called Service. This option will produce a report of all the chainages and relevant elevations at the service crossings.</span></p>
+<p style="text-indent: 0px;"><span style="color: #000000;">&nbsp;</span></p>
+<p style="text-indent: 0px;"><span style="font-size: 9pt; color: #010100;">Save the string data with the files option in the GXT menu or <a href="file___open___save_menu.htm">FILE - SAVE</a> .</span></p>
+<p style="text-indent: 0px;"><span style="color: #000000;">&nbsp;</span></p>
+<p style="text-indent: 0px;"><span class="f_CourierFixed">Defaults</span></p>
+<p style="text-indent: 0px;"><span style="color: #000000;">&nbsp;</span></p>
+<div style="text-align: left; text-indent: 0px; padding: 0px 0px 0px 0px; margin: 0px 0px 0px 0px;"><table cellspacing="0" cellpadding="0" border="0" style="border: none; border-spacing:0px;">
+<tr style="text-align:left;vertical-align:top;">
+<td valign="top" width="391" style="width:391px;"><p><img src="embim94.png" width="365" height="271" vspace="1" hspace="1" border="0" alt=""></p>
+</td>
+<td valign="top" width="944" style="width:944px;"><p>Plotting in vertical mode:</p>
+<p>&nbsp;</p>
+<p>Set the minimum clearance value. A warning will show if the clearance is lower.</p>
+<p>&nbsp;</p>
+<p>When working with poles, the poles can automatically be planted and the low points can be shown.</p>
+<p>&nbsp;</p>
+<p>The patterns can be shown in full which could slow down the plotting or as quick lines only.</p>
+<p>&nbsp;</p>
+<p>General defaults:</p>
+<p>&nbsp;</p>
+<p>The starting pole number refers to any option where the pole numbers must be displayed. Notice that pole number is different to pole (node) names which is user definable when the nodes are defined.</p>
+<p>&nbsp;</p>
+<p>The default folder where MM will look for the pattern names.</p>
+<p>&nbsp;</p>
+<p>Model Maker checks for crossing strings and treat them as services. Here you can specify single DTM points to also act as crossing services.</p>
+<p>&nbsp;</p>
+<p>When plotting the profile in vertical mode, select if both the hot and cold profiles must be shown.</p>
+</td>
+</tr>
+</table>
+</div>
+<p style="text-indent: 0px;"><span style="color: #000000;">&nbsp;</span></p>
+<p style="text-indent: 0px;"><span style="color: #000000;">&nbsp;</span></p>
+<p style="text-indent: 0px;"><span class="f_CourierFixed">Output</span></p>
+<p style="text-indent: 0px;"><span style="font-size: 9pt; color: #010100;">Obtain information from the design string in the following formats.</span></p>
+<p style="text-indent: 0px;"><span style="color: #000000;">&nbsp;</span></p>
+<p style="text-indent: 0px;"><span style="font-size: 9pt; color: #010100;">1) Output the profile to CAD. Use the gXt Vert Special Copy CAD function.</span></p>
+<p style="text-indent: 0px;"><span style="color: #000000;">&nbsp;</span></p>
+<p style="text-indent: 0px;"><img src="_bm905.png" width="224" height="130" border="0" alt="_bm905"><span style="font-size: 9pt; color: #010100;"> </span><span class="f_CourierFixed">EXAMPLE: </span><span style="font-size: 9pt; color: #010100;">profile plotted to CAD.</span></p>
+<p style="text-indent: 0px;"><span style="color: #000000;">&nbsp;</span></p>
+<p style="text-indent: 0px;"><span style="font-size: 9pt; color: #010100;">2) Plan detail to CAD. Use the GXT <a href="powerlinesdefaults.htm">Power</a> Copy to CAD function.</span></p>
+<p style="text-indent: 0px;"><span style="color: #000000;">&nbsp;</span></p>
+<p style="text-indent: 0px;"><span style="font-size: 9pt; color: #010100;">3) Report of all the load. Use the Vert <a href="powerlinesverticaldesign.htm">Special Power</a> functions.</span></p>
+<p style="text-indent: 0px;"><span style="color: #000000;">&nbsp;</span></p>
+<p style="text-indent: 0px;"><span class="f_rrelatedtopic">Related topics:</span></p>
+<p style="text-indent: 0px;"><span style="font-size: 9pt; color: #010100;"><a href="strings__gxt_.htm">STRINGS</a></span></p>
+
+</td></tr></table>
+
+</body>
+</html>

@@ -1,0 +1,119 @@
+<!DOCTYPE HTML PUBLIC "-//W3C//DTD HTML 4.01 Transitional//EN">
+<html>
+<head>
+   <title>POINT : Identify - Duplicate</title>
+   <meta name="generator" content="Help &amp; Manual" />
+   <meta name="keywords" content="Duplicate,Identify,TRIANGLES" />
+   <meta http-equiv="Content-Type" content="text/html; charset=ISO-8859-1" />
+   <meta http-equiv="Content-Style-Type" content="text/css" />
+   <link type="text/css" href="default.css" rel="stylesheet" />
+
+<script type="text/javascript" src="helpman_topicinit.js"></script>
+<object id=hhctrl_1 type="application/x-oleobject" classid="clsid:adb880a6-d8ff-11cf-9377-00aa003b7a11"><param name="Command" value="ALink"><param name="Window" value="second"><param name="Item1" value=""><param name="Item2" value="$topicid_popuppntduplicate"></object></head>
+<body style="margin: 0px 0px 0px 0px; background: #FFFFFF;">
+
+
+<table width="100%" border="0" cellspacing="0" cellpadding="5" bgcolor="#D0D0D0">
+  <tr valign="middle">
+    <td align="left">
+      <p class="p_Heading1"><span class="f_Heading1">POINT : Identify - Duplicate</span></p>
+<p class="p_Heading1"><span class="f_purpose"><a href="javascript:hhctrl_1.hhclick()">Show me how to get there</a></span><span class="f_Heading1"> </span></p>
+
+    </td>
+    <td align="right">
+     <span style="font-size: 9pt">
+     <a href="start_up.htm">Top</a>&nbsp;
+     <a href="pointidentify_cutorfill.htm">Previous</a>&nbsp;
+     <a href="pointidentify_interpolate.htm">Next</a>
+     </span>
+    </td>
+  </tr>
+</table>
+
+
+<!-- Placeholder for topic body. -->
+<table width="100%" border="0" cellspacing="0" cellpadding="5"><tr valign="top"><td align="left">
+<p style="text-indent: 0px;"><span style="color: #000000;">&nbsp;</span></p>
+<p style="text-indent: 0px;"><span class="f_rrelatedtopic">MENU : Pnt - Id - do_Id - Duplicated  &nbsp; &nbsp; &nbsp; &nbsp;</span></p>
+<p style="text-indent: 0px;"><span style="color: #000000;">&nbsp;</span></p>
+<p style="text-indent: 0px;"><span style="color: #000000;">&nbsp;</span></p>
+<p>Before the the duplicate points are identified, the code dialog is displayed so the user can choose if all the duplicate points must be identified or only those with certain codes.</p>
+<p>&nbsp;</p>
+<p>The <a href="point___code_select.htm">code select option</a> will be displayed and the points within the duplicate parameters will be identified.</p>
+<p style="text-indent: 0px;"><span style="width:24px">&nbsp;</span> &nbsp; &nbsp; &nbsp; &nbsp;</p>
+<p style="text-indent: 0px;"><span style="color: #000000;">&nbsp;</span></p>
+<p style="text-indent: 0px;"><span class="f_CourierFixed">General</span></p>
+<p style="text-indent: 0px;"><span style="font-size: 5pt; color: #010100;">&nbsp;</span></p>
+<p style="text-indent: 0px;"><span style="font-size: 9pt; color: #010100;">The process of looking for duplicated points will scan the whole database and present the above dialog box each time a duplication is found. Click the OK button if you want the selected point to be identified, click the CANCEL button if the point must be skipped. To break out of the loop in total click the ABORT button.</span></p>
+<p style="text-indent: 0px;"><span style="color: #000000;">&nbsp;</span></p>
+<p style="text-indent: 0px;"><span style="font-size: 9pt; color: #010100;">The DTM points of the active project will be scanned and duplicate points identified.</span></p>
+<p style="text-indent: 0px;"><span style="color: #000000;">&nbsp;</span></p>
+<p style="text-indent: 0px;"><img src="clip2163.png" width="456" height="229" border="0" alt="clip2163"></p>
+<p style="text-indent: 0px;"><span style="color: #000000;">&nbsp;</span></p>
+<p style="text-indent: 0px;"><span style="color: #000000;">&nbsp;</span></p>
+<p style="text-indent: 0px;"><span class="f_CourierFixed">First point</span></p>
+<p style="text-indent: 0px;"><span style="font-size: 5pt; color: #010100;">&nbsp;</span></p>
+<p style="text-indent: 0px;"><span style="font-size: 9pt; color: #010100;">If 2 points are found to be closer than the specified radius, Model Maker will identify the first of the 2 points. The points are scanned in the order they were entered in the database. The first point will have the smaller database number.</span></p>
+<p style="text-indent: 0px;"><span style="color: #000000;">&nbsp;</span></p>
+<p style="text-indent: 0px;"><span class="f_CourierFixed">Second point</span></p>
+<p style="text-indent: 0px;"><span style="font-size: 5pt; color: #010100;">&nbsp;</span></p>
+<p style="text-indent: 0px;"><span style="font-size: 9pt; color: #010100;">The same as above, but now the second point will be identified.</span></p>
+<p style="text-indent: 0px;"><span style="color: #000000;">&nbsp;</span></p>
+<p style="text-indent: 0px;"><span class="f_CourierFixed">User selected point</span></p>
+<p style="text-indent: 0px;"><span style="font-size: 5pt; color: #010100;">&nbsp;</span></p>
+<p style="text-indent: 0px;"><span style="font-size: 9pt; color: #010100;">Model Maker will stop when duplicated points are found. Using the dialog box, indicate which point is be identified.</span></p>
+<p style="text-indent: 0px;"><span style="color: #000000;">&nbsp;</span></p>
+<p style="text-indent: 0px;"><span class="f_CourierFixed">Radius or exact duplicated</span></p>
+<p style="text-indent: 0px;"><span style="font-size: 5pt; color: #010100;">&nbsp;</span></p>
+<p style="text-indent: 0px;"><span style="font-size: 9pt; color: #010100;">Enter a radius value which Model Maker will use to find points. Check the EXACT duplicated box or set the radius to zero if you only want points to be identified that have the same plan co-ordinates irrelevant of the elevation differences</span></p>
+<p style="text-indent: 0px;"><span style="color: #000000;">&nbsp;</span></p>
+<p style="text-indent: 0px;"><span class="f_CourierFixed">Elevation differences</span></p>
+<p style="text-indent: 0px;"><span style="color: #000000;">&nbsp;</span></p>
+<p>If consider elevation differences is selected, the user need to enter the maximum value and only duplicate points with elevations within the maximum difference will be identified.</p>
+<p style="text-indent: 0px;"><span style="color: #000000;">&nbsp;</span></p>
+<p style="text-indent: 0px;"><span style="width:24px">&nbsp;</span></p>
+<p style="text-indent: 0px;"><span style="font-size: 6pt; color: #010100;">&nbsp;</span></p>
+<p style="text-indent: 0px;"><span style="font-size: 9pt; color: #010100;">This dialog box is displayed when Model Maker is scanning the DTM points for duplications. &nbsp;A duplication is found and the user chose to identified a user selected point.</span></p>
+<p style="text-indent: 0px;"><span style="color: #000000;">&nbsp;</span></p>
+<div style="text-align: left; text-indent: 0px; padding: 0px 0px 0px 0px; margin: 0px 0px 0px 0px;"><table cellspacing="0" cellpadding="1" border="0" style="border: none; border-spacing:0px;">
+<tr style="text-align:left;vertical-align:top;">
+<td valign="top" width="344" style="width:344px;"><p class="p_Heading1"><span class="f_Heading1">&nbsp;</span></p>
+<p class="p_Heading1"><span style="font-size: 12pt;"> </span><img src="clip0332.png" width="335" height="334" border="0" alt="clip0332"></p>
+<p class="p_Heading1"><span class="f_Heading1">&nbsp;</span></p>
+<p style="text-indent: 0px;"><span class="f_CourierFixed">Select point</span></p>
+<p style="text-indent: 0px;"><span style="font-size: 5pt; color: #010100;">&nbsp;</span></p>
+<p style="text-indent: 0px;"><span style="font-size: 9pt; color: #010100;">Check either #1 or #2 to indicate which of the points must be identified.</span></p>
+</td>
+<td valign="top" width="346" style="width:346px;"><p style="text-indent: 0px;"><span style="color: #000000;">&nbsp;</span></p>
+<p style="text-indent: 0px;"><span class="f_CourierFixed">Y &amp; X values</span><span style="font-size: 9pt; font-weight: bold; color: #804000;"> </span></p>
+<p style="text-indent: 0px;"><span style="font-size: 9pt; color: #010100;">The position of the points.</span></p>
+<p style="text-indent: 0px;"><span style="color: #000000;">&nbsp;</span></p>
+<p style="text-indent: 0px;"><span class="f_CourierFixed">Number</span></p>
+<p style="text-indent: 0px;"><span style="font-size: 9pt; color: #010100;">The database points numbers of point 1 &amp; 2</span></p>
+<p style="text-indent: 0px;"><span style="color: #000000;">&nbsp;</span></p>
+<p style="text-indent: 0px;"><span class="f_CourierFixed">Code, Tag</span></p>
+<p style="text-indent: 0px;"><span style="font-size: 9pt; color: #010100;">The information of both points.</span></p>
+<p style="text-indent: 0px;"><span style="color: #000000;">&nbsp;</span></p>
+<p style="text-indent: 0px;"><span class="f_CourierFixed">Elevation</span></p>
+<p style="text-indent: 0px;"><span style="font-size: 9pt; color: #010100;">The Z value of both points.</span></p>
+<p style="text-indent: 0px;"><span style="color: #000000;">&nbsp;</span></p>
+<p style="text-indent: 0px;"><a name="ind5s98th"></a><span class="f_CourierFixed">Triangle</span></p>
+<p style="text-indent: 0px;"><span style="font-size: 9pt; color: #010100;">This feature allows you to instruct Model Maker to change the triangles from one point to the other. In the example, the <img src="clip0334.png" width="26" height="16" border="0" alt="clip0334"> icon indicates that there are triangles connected to point number 681 and that point 1669 is going to be identified. If you would rather connect the triangles to point 1669, click on <img src="clip0333.png" width="51" height="16" border="0" alt="clip0333">. </span></p>
+<p style="text-indent: 0px;"><span style="font-size: 9pt; font-weight: bold; color: #010100;"> &nbsp;Model Maker </span><span style="font-size: 9pt; color: #010100;">will update the database so that all the triangles previously connected to point 681, will now use point 1669 as the dtm point. You would normally use this option to move the <a href="definitiontriangles.htm">triangles</a> away from the identified point if the you intended to delete the identified points later on. </span></p>
+<p style="text-indent: 0px;"><span style="font-size: 9pt; color: #010100;">The SWAP button will be inactive if the distance between the 2 points is greater than 0.01. You are not allowed to swap triangles between points further apart from each other as the chances of creating overlapping triangles are then a real problem. </span></p>
+</td>
+</tr>
+</table>
+</div>
+<p style="text-indent: 0px;"><span style="color: #000000;">&nbsp;</span></p>
+<p style="text-indent: 0px;"><span style="color: #000000;">&nbsp;</span></p>
+<p style="text-indent: 0px;"><span style="color: #000000;">&nbsp;</span></p>
+<p style="text-indent: 0px;"><span class="f_rrelatedtopic">Related topics.</span></p>
+<p style="text-indent: 0px;"><span style="font-size: 9pt; color: #010100;"><a href="databaseaudit.htm">Audit</a></span></p>
+<p style="text-indent: 0px;"><span style="font-size: 9pt; color: #010100;"><a href="data_base.htm">Data base</a></span></p>
+<p style="text-indent: 0px;"><span style="color: #000000;">&nbsp;</span></p>
+
+</td></tr></table>
+
+</body>
+</html>

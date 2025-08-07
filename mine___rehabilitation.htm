@@ -1,0 +1,135 @@
+<!DOCTYPE HTML PUBLIC "-//W3C//DTD HTML 4.01 Transitional//EN">
+<html>
+<head>
+   <title>MINE : Rehabilitation</title>
+   <meta name="generator" content="Help &amp; Manual" />
+   <meta name="keywords" content="Mining,Rehabilitation" />
+   <meta http-equiv="Content-Type" content="text/html; charset=ISO-8859-1" />
+   <meta http-equiv="Content-Style-Type" content="text/css" />
+   <link type="text/css" href="default.css" rel="stylesheet" />
+
+<script type="text/javascript" src="helpman_topicinit.js"></script>
+</head>
+<body style="margin: 0px 0px 0px 0px; background: #FFFFFF;">
+
+
+<table width="100%" border="0" cellspacing="0" cellpadding="5" bgcolor="#D0D0D0">
+  <tr valign="middle">
+    <td align="left">
+      <p class="p_Heading1"><span class="f_Heading1">MINE : MINE : Rehabilitation</span></p>
+
+    </td>
+    <td align="right">
+     <span style="font-size: 9pt">
+     <a href="start_up.htm">Top</a>&nbsp;
+     <a href="mine__blast_grid.htm">Previous</a>&nbsp;
+     <a href="minerehab_string1.htm">Next</a>
+     </span>
+    </td>
+  </tr>
+</table>
+
+
+<!-- Placeholder for topic body. -->
+<table width="100%" border="0" cellspacing="0" cellpadding="5"><tr valign="top"><td align="left">
+<p class="p_Heading1"><span class="f_Heading1">&nbsp;</span></p>
+<p class="p_Heading1"><span class="f_rrelatedtopic">MENU : Min - Rehabilitation</span></p>
+<p class="p_Heading1"><span style="font-size: 5pt; color: #010100;">&nbsp;</span></p>
+<p class="p_Heading1"><span style="font-size: 9pt; color: #010100;">Rehabilitate original models to set slopes or to strings as defined in the <a href="strings__gxt_.htm">string</a> module. These options should only be applied to gridded data files. This data can be generated from any triangular model with the <a href="menu3d.htm">3D</a> functions. Use a relevant grid interval and save the data in ASCII format. <a href="fileloadascii.htm">Load</a> this gridded file as the design project and apply the rehab functions. &nbsp; </span></p>
+<p class="p_Heading1"><span class="f_Heading1">&nbsp;</span></p>
+<p class="p_Heading1"><a name="rehaball"></a><span class="f_CourierFixed">Rehab All</span></p>
+<p class="p_Heading1"><span style="font-size: 9pt; color: #010100;">Rehabilitation of a gridded model is done according to a set maximum slope. Every grid point will be inspected and slopes calculated to all its adjacent points. If any slope is steeper than the set maximum the higher point, it will be lowered and the low point lifted with half of the height needed to bring the slope to within the maximum value. This process pushes the material down hill. The crest of the dump will be lowered and the toe line will move outwards. This process will be repeated until all the slopes comply to the maximum. &nbsp; </span></p>
+<p style="text-indent: 0px;"><span style="color: #000000;">&nbsp;</span></p>
+<p style="text-indent: 0px;"><a name="reshapebydualslopes"></a><span class="f_CourierFixed">Reshape by dual slopes</span></p>
+<p style="text-indent: 0px;"><span style="font-size: 9pt; color: #010100;">A gridded model will be reshaped to the limits set by the minimum and maximum slope values in two directions. This is normally used to gradually level a terrain so that the direction and velocity of the runoff water can be controlled.</span></p>
+<p style="text-indent: 0px;"><span style="color: #000000;">&nbsp;</span></p>
+<p style="text-indent: 0px;"><img src="_bm762.png" width="212" height="216" border="0" alt="_bm762"><span style="font-size: 9pt; color: #010100;">This picture shows a gridded layout that must be shaped. The arrows indicate the downhill direction of the 2 controlling slopes.</span></p>
+<p style="text-indent: 0px;"><span style="color: #000000;">&nbsp;</span></p>
+<p style="text-indent: 0px;"><span style="color: #000000;">&nbsp;</span></p>
+<p style="text-indent: 0px;"><span style="color: #000000;">&nbsp;</span></p>
+<p style="text-indent: 0px;"><span style="font-size: 9pt; color: #010100;">Figure A</span></p>
+<p style="text-indent: 0px;"><img src="_bm763.png" width="213" height="205" border="0" alt="_bm763"><span style="font-size: 9pt; color: #010100;"> &nbsp; &nbsp;Figure 1 &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; <img src="_bm764.png" width="206" height="209" border="0" alt="_bm764"> &nbsp; &nbsp;Figure 2</span></p>
+<p style="text-indent: 0px;"><span style="color: #000000;">&nbsp;</span></p>
+<div style="text-align: left; text-indent: 0px; padding: 0px 0px 0px 0px; margin: 0px 0px 0px 1px;"><table border="0" cellpadding="0" cellspacing="0" style="line-height: normal;"><tr style="vertical-align:baseline" valign="baseline"><td width="23"><img src="_bm26.png" width="10" height="15" border="0" alt="_bm26"></td><td> &nbsp; &nbsp; &nbsp; &nbsp;<span style="font-size: 9pt; color: #010100;">Figure A &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp;: The original gridded survey points with arrows indicating the intended design slope directions.</span></td></tr></table></div><div style="text-align: left; text-indent: 0px; padding: 0px 0px 0px 0px; margin: 0px 0px 0px 1px;"><table border="0" cellpadding="0" cellspacing="0" style="line-height: normal;"><tr style="vertical-align:baseline" valign="baseline"><td width="23"><img src="_bm26.png" width="10" height="15" border="0" alt="_bm26"></td><td> &nbsp; &nbsp; &nbsp; &nbsp;<span style="font-size: 9pt; color: #010100;">Figure 1 &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp;: The original contours.</span></td></tr></table></div><div style="text-align: left; text-indent: 0px; padding: 0px 0px 0px 0px; margin: 0px 0px 0px 1px;"><table border="0" cellpadding="0" cellspacing="0" style="line-height: normal;"><tr style="vertical-align:baseline" valign="baseline"><td width="23"><img src="_bm26.png" width="10" height="15" border="0" alt="_bm26"></td><td> &nbsp; &nbsp; &nbsp; &nbsp;<span style="font-size: 9pt; color: #010100;">Figure 2 &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp;: The contours after the model has been shaped to certain slope constraints.</span></td></tr></table></div><p style="text-indent: 0px;"><span style="color: #000000;">&nbsp;</span></p>
+<p style="text-indent: 0px;"><span style="font-size: 9pt; color: #010100;">For Model Maker to know what the two slope directions and ranges are, the following dialog box is displayed.</span></p>
+<p style="text-indent: 0px;"><span style="color: #000000;">&nbsp;</span></p>
+<p style="text-indent: 0px;"><img src="_bm765.png" width="311" height="284" border="0" alt="_bm765"><span style="font-size: 9pt; color: #010100;">In both the slope#1 and slope#2 panels, enter the controlling values.</span></p>
+<p style="text-indent: 0px;"><span style="color: #000000;">&nbsp;</span></p>
+<p style="text-indent: 0px;"><span style="font-size: 9pt; color: #010100;">The slope direction indicates the downhill direction.</span></p>
+<p style="text-indent: 0px;"><span style="color: #000000;">&nbsp;</span></p>
+<p style="text-indent: 0px;"><span style="font-size: 9pt; color: #010100;">The minimum and maximum values indicate the range that the slope may vary in the set direction.</span></p>
+<p style="text-indent: 0px;"><span style="font-size: 9pt; color: #010100;">In this example, the model will be shaped that in the set direction, the surface will not have a downhill slope flatter than 1% and not steeper than 10%.</span></p>
+<p style="text-indent: 0px;"><span style="color: #000000;">&nbsp;</span></p>
+<p style="text-indent: 0px;"><span style="font-size: 9pt; color: #010100;">The values for slope#2 ranges from -2% to 2%. That means, in the set direction, the surface slope can be anything from uphill 2% to completely flat to downhill 2%.</span></p>
+<p style="text-indent: 0px;"><span style="color: #000000;">&nbsp;</span></p>
+<p style="text-indent: 0px;"><span style="font-size: 9pt; color: #010100;">Check the defined area box if the reshaping must only be done in a certain area.</span></p>
+<p style="text-indent: 0px;"><span style="color: #000000;">&nbsp;</span></p>
+<p style="text-indent: 0px;"><span style="font-size: 9pt; color: #010100;">Use the measure buttons to access the <a href="measuremenu.htm">measure</a> dialog box.</span></p>
+<p style="text-indent: 0px;"><span style="color: #000000;">&nbsp;</span></p>
+<div style="text-align: left; text-indent: 0px; padding: 0px 0px 0px 0px; margin: 0px 0px 0px 1px;"><table cellspacing="0" cellpadding="1" border="0" style="border: none; border-spacing:0px;">
+<tr style="text-align:left;vertical-align:top;">
+<td valign="top" width="725" style="width:725px;"><p style="text-align: center; text-indent: 0px;"><span style="font-style: italic; font-weight: bold; color: #d10707; text-decoration: underline;">Hints:</span></p>
+<div style="text-align: center; text-indent: 0px; padding: 0px 0px 0px 0px; margin: 0px 0px 0px 1px;"><table border="0" cellpadding="0" cellspacing="0" style="line-height: normal;"><tr style="vertical-align:baseline" valign="baseline"><td width="23"><img src="_bm26.png" width="10" height="15" border="0" alt="_bm26" style="margin:0 auto;margin:0px;"></td><td> &nbsp; &nbsp; &nbsp; &nbsp;<span style="font-size: 9pt; color: #010100;">Use this function to produce a surface that is suitable for flood irrigation purposes.</span></td></tr></table></div><div style="text-align: center; text-indent: 0px; padding: 0px 0px 0px 0px; margin: 0px 0px 0px 1px;"><table border="0" cellpadding="0" cellspacing="0" style="line-height: normal;"><tr style="vertical-align:baseline" valign="baseline"><td width="23"><img src="_bm26.png" width="10" height="15" border="0" alt="_bm26" style="margin:0 auto;margin:0px;"></td><td> &nbsp; &nbsp; &nbsp; &nbsp;<span style="font-size: 9pt; color: #010100;">This method will shape the model to the required limits with the least amount of volume movement.</span></td></tr></table></div><div style="text-align: center; text-indent: 0px; padding: 0px 0px 0px 0px; margin: 0px 0px 0px 1px;"><table border="0" cellpadding="0" cellspacing="0" style="line-height: normal;"><tr style="vertical-align:baseline" valign="baseline"><td width="23"><img src="_bm26.png" width="10" height="15" border="0" alt="_bm26" style="margin:0 auto;margin:0px;"></td><td> &nbsp; &nbsp; &nbsp; &nbsp;<span style="font-size: 9pt; color: #010100;">Use the Terrace, <a href="terrace___volumes___cut___fill.htm">cut and fill</a> option to calculate the actual volume between the original and new design model.</span></td></tr></table></div><div style="text-align: center; text-indent: 0px; padding: 0px 0px 0px 0px; margin: 0px 0px 0px 1px;"><table border="0" cellpadding="0" cellspacing="0" style="line-height: normal;"><tr style="vertical-align:baseline" valign="baseline"><td width="23"><img src="_bm26.png" width="10" height="15" border="0" alt="_bm26" style="margin:0 auto;margin:0px;"></td><td> &nbsp; &nbsp; &nbsp; &nbsp;<span style="font-size: 9pt; color: #010100;">Use the <a href="3d___grid.htm">3D grid</a> option to produce a gridded surface of any random survey data.</span></td></tr></table></div></td>
+</tr>
+</table>
+</div>
+<p style="text-indent: -23px; margin: 0px 0px 0px 24px;"><span style="color: #000000;">&nbsp;</span></p>
+<p style="text-indent: 0px;"><a name="dumpmaterial"></a><span class="f_CourierFixed">Dump Material</span></p>
+<p style="text-indent: 0px;"><span style="font-size: 9pt; color: #010100;">This functions takes a defined area and a user specified amount of material to be dumped in the area. Model Maker will inspect all the points and any hollow area - a point that has surrounding points higher than itself - will be filled in. This function will not build a dump as such only smooth out an area by filling the low spots.</span></p>
+<p style="text-indent: 0px;"><span style="color: #000000;">&nbsp;</span></p>
+<p style="text-indent: 0px;"><a name="rehabstring"></a><span class="f_CourierFixed">Rehab String</span></p>
+<p style="text-indent: 0px;"><span style="font-size: 9pt; color: #010100;">Use strings to manipulate the shape of a design surface. </span></p>
+<p style="text-indent: 0px;"><span style="font-size: 9pt; color: #010100;">Use the string functions and place general strings onto the model. The design model must be a gridded data project. (Use the 3D option to put the original surface into a gridded ASCII file). </span></p>
+<p style="text-indent: 0px;"><span style="font-size: 9pt; color: #010100;">The general strings must be designed so that if the gridded data comply to the elevations of the string nodes, the model will satisfy the design criteria. </span></p>
+<p style="text-indent: 0px;"><span style="color: #000000;">&nbsp;</span></p>
+<p style="text-indent: 0px;"><span style="font-size: 9pt; color: #010100;">If the result is not what you require, make changes to the strings via the string module and re-run this option. </span></p>
+<p style="text-indent: 0px;"><span style="color: #000000;">&nbsp;</span></p>
+<p style="text-indent: 0px;"><span style="font-size: 9pt; color: #010100;">The difference between this function and the general rehab option on this same menu is that you can force your own design onto the model via the strings where the general rehab's only criteria is the maximum slope. The strings used for the design must be <a href="stringidentify.htm">identified</a>.</span></p>
+<p style="text-indent: 0px;"><span style="color: #000000;">&nbsp;</span></p>
+<p style="text-indent: 0px;"><span style="font-size: 9pt; color: #010100;">A <a href="minerehab_string1.htm">single string</a> or the <a href="minerehab_string2.htm">identified strings</a> may be used as the design.</span></p>
+<p style="text-indent: 0px;"><span style="color: #000000;">&nbsp;</span></p>
+<div style="text-align: left; text-indent: 0px; padding: 0px 0px 0px 0px; margin: 0px 0px 0px 0px;"><table cellspacing="0" cellpadding="0" border="0" style="border: none; border-spacing:0px;">
+<tr style="text-align:left;vertical-align:top;">
+<td valign="top" width="478" style="width:478px;"><p class="p_Heading1"><img src="clip1559.png" width="406" height="157" border="0" alt="clip1559"><span style="font-size: 9pt;"> </span></p>
+<p class="p_Heading1"><span style="font-size: 9pt;">Vertical section of a rehab string through the OGL.</span></p>
+<p class="p_Heading1"><span class="f_Heading1">&nbsp;</span></p>
+</td>
+<td valign="top" width="596" style="width:596px;"><p class="p_Heading1"><img src="clip1562.png" width="299" height="167" border="0" alt="clip1562"></p>
+<p class="p_Heading1"><span style="font-size: 9pt;">The profile parameters. The entities of the profile are similar to that of a road cross section. </span></p>
+</td>
+</tr>
+<tr style="text-align:left;vertical-align:top;">
+<td valign="top" width="478" style="width:478px;"><p class="p_Heading1"><img src="clip1561.png" width="520" height="266" border="0" alt="clip1561"></p>
+<p class="p_Heading1"><span style="font-size: 9pt;">A typical result after the rehab was done based on the string position, vertical elevations and profile parameters.</span></p>
+</td>
+<td valign="top" width="596" style="width:596px;"><p class="p_Heading1"><img src="clip1563.png" width="464" height="198" border="0" alt="clip1563"></p>
+<p class="p_Heading1"><span style="font-size: 9pt;">Typical Section.</span></p>
+<p class="p_Heading1"><span style="font-size: 9pt;">Yellow - The original ground profile.</span></p>
+<p class="p_Heading1"><span style="font-size: 9pt;">Green - the new proposed rehab profile based on the widths, cambers and batter slopes.</span></p>
+</td>
+</tr>
+</table>
+</div>
+<p style="text-indent: 0px;"><span style="color: #000000;">&nbsp;</span></p>
+<p style="text-indent: 0px;"><span style="font-size: 12pt; font-weight: bold;"><a href="mine__rehab___average_elevatio.htm">Rehab : Average Elevation.</a>  </span></p>
+<p style="text-indent: 0px;"><span style="color: #000000;">&nbsp;</span></p>
+<p style="text-indent: 0px;"><span class="f_CourierFixed">Update Model</span></p>
+<p style="text-indent: 0px;"><span style="font-size: 9pt; color: #010100;">Model Maker has calculated new elevations for the design points based on the layout and design of the strings. These new elevations are temporary.</span></p>
+<p style="text-indent: 0px;"><span style="color: #000000;">&nbsp;</span></p>
+<p style="text-indent: 0px;"><span style="font-size: 9pt; color: #010100;"> Do not update. </span></p>
+<p style="text-indent: 0px;"><span style="font-size: 9pt; color: #010100;">If this option is used, Model Maker will exit this routine and will not apply the new elevations to the database. The whole exercise is for inspection purposes. </span></p>
+<p style="text-indent: 0px;"><span style="color: #000000;">&nbsp;</span></p>
+<p style="text-indent: 0px;"><span style="font-size: 9pt; color: #010100;">Update all</span></p>
+<p style="text-indent: 0px;"><span style="font-size: 9pt; color: #010100;">The new recalculated elevations will be applied to the dtm data and the database updated accordingly.</span></p>
+<p style="text-indent: 0px;"><span style="color: #000000;">&nbsp;</span></p>
+<p style="text-indent: 0px;"><span style="font-size: 9pt; color: #010100;">Update part</span></p>
+<p style="text-indent: 0px;"><span style="font-size: 9pt; color: #010100;">The new calculated elevations will not be applied to the database. However, you can redo the whole exercise with only a certain percentage of volume to be moved. &nbsp; </span></p>
+<p style="text-indent: 0px;"><span style="color: #000000;">&nbsp;</span></p>
+<p style="text-indent: 0px;"><span class="f_rrelatedtopic">Related topics:</span></p>
+<p style="text-indent: 0px;"><span style="font-size: 9pt; color: #010100;"><a href="strings__gxt_.htm">Strings</a></span></p>
+<p style="text-indent: 0px;"><span style="font-size: 9pt; color: #010100;"><a href="exampleminerehabdump.htm">Example</a></span></p>
+
+</td></tr></table>
+
+</body>
+</html>

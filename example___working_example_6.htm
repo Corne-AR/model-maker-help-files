@@ -1,0 +1,138 @@
+<!DOCTYPE HTML PUBLIC "-//W3C//DTD HTML 4.01 Transitional//EN">
+<html>
+<head>
+   <title>How to calculate cut &amp; fill volume </title>
+   <meta name="generator" content="Help &amp; Manual" />
+   <meta name="keywords" content="Calculations,Cut&amp;fill,Examples,Platform,VOLUMES" />
+   <meta http-equiv="Content-Type" content="text/html; charset=ISO-8859-1" />
+   <meta http-equiv="Content-Style-Type" content="text/css" />
+   <link type="text/css" href="default.css" rel="stylesheet" />
+
+<script type="text/javascript" src="helpman_topicinit.js"></script>
+</head>
+<body style="margin: 0px 0px 0px 0px; background: #FFFFFF;">
+
+
+<table width="100%" border="0" cellspacing="0" cellpadding="5" bgcolor="#D0D0D0">
+  <tr valign="middle">
+    <td align="left">
+      <p class="p_Heading1"><span class="f_Heading1">EXAMPLE : Working Example 6 (Terrace cut &amp; fill)</span></p>
+
+    </td>
+    <td align="right">
+     <span style="font-size: 9pt">
+     <a href="start_up.htm">Top</a>&nbsp;
+     <a href="exampletitleblocks.htm">Previous</a>&nbsp;
+     <a href="example___working_example_4.htm">Next</a>
+     </span>
+    </td>
+  </tr>
+</table>
+
+
+<!-- Placeholder for topic body. -->
+<table width="100%" border="0" cellspacing="0" cellpadding="5"><tr valign="top"><td align="left">
+<p class="p_Heading1"><span class="f_Heading1">&nbsp;</span></p>
+<p class="p_Heading1"><span class="f_rrelatedtopic">MENU : File - Open (F3) </span></p>
+<p class="p_Heading1"><span class="f_Heading1">&nbsp;</span></p>
+<p class="p_Heading1"><span class="f_CourierFixed">Object</span></p>
+<p class="p_Heading1"><span style="font-size: 5pt; color: #010100;">&nbsp;</span></p>
+<p class="p_Heading1"><span style="font-size: 9pt; color: #010100;">This example shows you how to calculate the cut and fill earthworks volume between DTM surfaces. </span></p>
+<p class="p_Heading1"><span class="f_Heading1">&nbsp;</span></p>
+<p class="p_Heading1"><span style="font-size: 9pt; color: #010100;">A DTM surface in Model Maker consists of the survey points and the triangle network created between the points. This example does not show you in depth how to <a href="example___working_example_1.htm">create a DTM surface</a>. The two surfaces used is already on disk and have been copied to disk as demonstration data at the time when Model Maker was installed.</span></p>
+<p class="p_Heading1"><span class="f_Heading1">&nbsp;</span></p>
+<p class="p_Heading1"><span class="f_CourierFixed">Procedure</span></p>
+<p class="p_Heading1"><span style="font-size: 5pt; color: #010100;">&nbsp;</span></p>
+<p class="p_Heading1"><span style="font-size: 9pt; color: #010100;">The points and triangles of both surfaces will be loaded from disk. These files called PLATNGL and PLATTOP can be found in the default Model Maker directory at . If you have installed Model Maker into a directory different to the standard folder, use the <a href="filefind.htm">find file</a> option to locate the files on your computer.</span></p>
+<p class="p_Heading1"><span style="font-size: 9pt; color: #010100;">Also note that the data is going to be loaded into different <a href="projectsactiveproject.htm">DTM project</a> numbers. The original surface, PLATNGL will be loaded into project #1 and the newer surface, PLATTOP is loaded into project #2.</span></p>
+<p class="p_Heading1"><span class="f_Heading1">&nbsp;</span></p>
+<p class="p_Heading1"><span class="f_Heading1">&nbsp;</span></p>
+<p class="p_Heading1"><a name="step1readinggroundandtri"></a><span class="f_CourierFixed">STEP 1: Reading ground and triangle data into project 1 </span></p>
+<p class="p_Heading1"><span style="font-size: 5pt; color: #010100;">&nbsp;</span></p>
+<p class="p_Heading1"><span style="font-size: 9pt; color: #010100;">Use the standard file open routines to load the data into project #1.</span></p>
+<p class="p_Heading1"><span style="font-size: 9pt; color: #010100;">Click on the </span><span style="font-size: 9pt; font-weight: bold; color: #010100; text-decoration: underline;">F</span><span style="font-size: 9pt; font-weight: bold; color: #010100;">ile</span><span style="font-size: 9pt; color: #010100;">, </span><span style="font-size: 9pt; font-weight: bold; color: #010100; text-decoration: underline;">O</span><span style="font-size: 9pt; font-weight: bold; color: #010100;">pen</span><span style="font-size: 9pt; color: #010100;"> function.</span></p>
+<p class="p_Heading1"><span style="font-size: 5pt; color: #010100;">&nbsp;</span></p>
+<p class="p_Heading1"><span style="font-size: 9pt; color: #010100;"> </span><img src="clip0934.png" width="158" height="170" border="0" alt="clip0934"></p>
+<p class="p_Heading1"><span style="font-size: 9pt; color: #010100;">In the file dialog box, make sure that the </span><span style="font-size: 9pt; font-weight: bold; color: #010100;">MMS</span><span style="font-size: 9pt; color: #010100;"> button is selected and in the folder window, select the </span><span style="font-size: 9pt; font-weight: bold; color: #010100;">mms</span><span style="font-size: 9pt; color: #010100;">folder.</span></p>
+<p class="p_Heading1"><span style="font-size: 6pt; color: #010100;">&nbsp;</span></p>
+<p style="text-indent: 0px; margin: 0px 0px 0px 6px;"><img src="clip0933.png" width="538" height="399" border="0" alt="clip0933"></p>
+<p class="p_Heading1"><span class="f_Heading1">&nbsp;</span></p>
+<p style="text-indent: 0px; margin: 0px 0px 0px 6px;"><img src="clip0935.png" width="283" height="196" border="0" alt="clip0935"></p>
+<p class="p_Heading1"><span style="font-size: 5pt; color: #010100;">&nbsp;</span></p>
+<p class="p_Heading1"><span style="font-size: 9pt; color: #010100;">After the </span><span style="font-size: 9pt; font-weight: bold; color: #010100;">Open Selection</span><span style="font-size: 9pt; color: #010100;"> button is pressed, the points and triangles from the </span><span style="font-size: 9pt; font-weight: bold; color: #010100;">PLATNGL.MMS</span><span style="font-size: 9pt; color: #010100;"> file will be loaded into </span><span style="font-size: 9pt; font-weight: bold; color: #010100;">project #1</span><span style="font-size: 9pt; color: #010100;">.</span></p>
+<p class="p_Heading1"><span style="font-size: 9pt; color: #010100;">Use the </span><span style="font-size: 9pt; font-weight: bold; color: #010100;">Tri</span><span style="font-size: 9pt; color: #010100;"> and </span><span style="font-size: 9pt; font-weight: bold; color: #010100;">Quick</span><span style="font-size: 9pt; color: #010100;"> &nbsp;functions on the top menu to view your data.</span></p>
+<p class="p_Heading1"><span style="font-size: 9pt; color: #010100;">You should see a picture similar to this one.</span></p>
+<p class="p_Heading1"><span style="font-size: 9pt; color: #010100;">The colours on your screen could look different to this example.</span></p>
+<p class="p_Heading1"><span class="f_Heading1">&nbsp;</span></p>
+<p class="p_Heading1"><span class="f_Heading1">&nbsp;</span></p>
+<p class="p_Heading1"><span class="f_CourierFixed">STEP 2: Reading platform design and triangle data into project 2 </span></p>
+<p class="p_Heading1"><span style="font-size: 5pt; color: #010100;">&nbsp;</span></p>
+<p class="p_Heading1"><span style="font-size: 9pt; color: #010100;">Click on the </span><span style="font-size: 9pt; font-weight: bold; color: #010100; text-decoration: underline;">F</span><span style="font-size: 9pt; font-weight: bold; color: #010100;">ile</span><span style="font-size: 9pt; color: #010100;">, </span><span style="font-size: 9pt; font-weight: bold; color: #010100; text-decoration: underline;">O</span><span style="font-size: 9pt; font-weight: bold; color: #010100;">pen</span><span style="font-size: 9pt; color: #010100;"> function.</span></p>
+<p class="p_Heading1"><span style="font-size: 5pt; color: #010100;">&nbsp;</span></p>
+<p class="p_Heading1"><span style="font-size: 9pt; color: #010100;"> </span><img src="clip0934.png" width="158" height="170" border="0" alt="clip0934"></p>
+<p class="p_Heading1"><span style="font-size: 9pt; color: #010100;">In the file dialog box, the </span><span style="font-size: 9pt; font-weight: bold; color: #010100;">MMS</span><span style="font-size: 9pt; color: #010100;"> button should still be selected and the folder window pointing to the </span><span style="font-size: 9pt; font-weight: bold; color: #010100;">mms</span><span style="font-size: 9pt; color: #010100;">folder.</span></p>
+<p class="p_Heading1"><span style="font-size: 9pt; color: #010100;">Two things must be done.</span></p>
+<p style="text-indent: 0px;"><span style="width:24px">&nbsp;</span> &nbsp; &nbsp; &nbsp; &nbsp;<span style="font-size: 9pt; color: #010100;">Click on the </span><span style="font-size: 9pt; font-weight: bold; color: #010100;">Plattop.MMS</span><span style="font-size: 9pt; color: #010100;"> file name and</span></p>
+<p style="text-indent: 0px;"><span style="width:24px">&nbsp;</span> &nbsp; &nbsp; &nbsp; &nbsp;<span style="font-size: 9pt; color: #010100;">Select </span><span style="font-size: 9pt; font-weight: bold; color: #010100;">project #2</span><span style="font-size: 9pt; color: #010100;"> in the project list box.</span></p>
+<p style="text-indent: 0px;"><span style="color: #000000;">&nbsp;</span></p>
+<p style="text-indent: 0px; margin: 0px 0px 0px 6px;"><img src="clip0937.png" width="538" height="398" border="0" alt="clip0937"></p>
+<p style="text-indent: 0px;"><span style="color: #000000;">&nbsp;</span></p>
+<p style="text-indent: 0px; margin: 0px 0px 0px 6px;"><img src="clip0938.png" width="269" height="193" border="0" alt="clip0938"></p>
+<p style="text-indent: 0px;"><span style="font-size: 9pt; color: #010100;">Press the </span><span style="font-size: 9pt; font-weight: bold; color: #010100;">Open Selection</span><span style="font-size: 9pt; color: #010100;"> button to load the points and triangles of the </span><span style="font-size: 9pt; font-weight: bold; color: #010100;">Plattop.MMS</span><span style="font-size: 9pt; color: #010100;"> file into </span><span style="font-size: 9pt; font-weight: bold; color: #010100;">project #2</span><span style="font-size: 9pt; color: #010100;">.</span></p>
+<p style="text-indent: 0px;"><span style="font-size: 9pt; color: #010100;">Use the </span><span style="font-size: 9pt; font-weight: bold; color: #010100;">Tri</span><span style="font-size: 9pt; color: #010100;"> and </span><span style="font-size: 9pt; font-weight: bold; color: #010100;">Quick</span><span style="font-size: 9pt; color: #010100;"> &nbsp;functions on the top menu to view your data.</span></p>
+<p style="text-indent: 0px;"><span style="font-size: 9pt; color: #010100;">You should see a picture similar to this one.</span></p>
+<p style="text-indent: 0px;"><span style="font-size: 9pt; color: #010100;">The colours on your screen could look different to this example </span></p>
+<p style="text-indent: 0px;"><span style="color: #000000;">&nbsp;</span></p>
+<p style="text-indent: 0px;"><span style="color: #000000;">&nbsp;</span></p>
+<p style="text-indent: 0px;"><a name="step3projectrelationship"></a><span class="f_CourierFixed">STEP 3: Project relationship</span></p>
+<p style="text-indent: 0px;"><span style="font-size: 9pt; color: #010100;">To calculate the volumes between project 1 and 2, select the </span><span style="font-size: 9pt; font-weight: bold; color: #010100;">teR</span><span style="font-size: 9pt; color: #010100;"> </span><img src="clip0939.png" width="54" height="75" border="0" alt="clip0939"><span style="font-size: 9pt; color: #010100;"> option on the <a href="menuleft.htm">left menu</a> and define the relationship (ground/design) between the projects.</span></p>
+<p style="text-indent: 0px;"><span style="color: #000000;">&nbsp;</span></p>
+<p style="text-indent: 0px;"><span style="font-size: 9pt; color: #010100;">On the <a href="menubottom.htm">bottom menu</a>, select the </span><span style="font-size: 9pt; font-weight: bold; color: #010100;">deFault</span><span style="font-size: 9pt; color: #010100;"> button </span><img src="clip0942.png" width="192" height="31" border="0" alt="clip0942"><span style="font-size: 9pt; color: #010100;"> and set the following values in the </span><span style="font-size: 9pt; font-weight: bold; color: #010100;">Status of DTM, CAD &amp; STRINGS </span><span style="font-size: 9pt; color: #010100;">dialog box. </span></p>
+<p style="text-indent: 0px;"><span style="color: #000000;">&nbsp;</span></p>
+<p style="text-indent: 0px; margin: 0px 0px 0px 6px;"><img src="clip0944.png" width="505" height="403" border="0" alt="clip0944"></p>
+<p style="text-indent: 0px;"><span style="color: #000000;">&nbsp;</span></p>
+<p style="text-indent: 0px;"><span style="font-size: 9pt; color: #010100;">In this menu, check that the </span><span style="font-size: 9pt; font-weight: bold; color: #010100;">(Ground Triangles)</span><span style="font-size: 9pt; color: #010100;"> are selected as </span><span style="font-size: 9pt; font-weight: bold; color: #010100;">project #1</span><span style="font-size: 9pt; color: #010100;"> and that the </span><span style="font-size: 9pt; font-weight: bold; color: #010100;">(Design Triangles)</span><span style="font-size: 9pt; color: #010100;"> are selected as</span><span style="font-size: 9pt; font-weight: bold; color: #010100;"> project #2</span><span style="font-size: 9pt; color: #010100;">. </span></p>
+<p style="text-indent: 0px;"><span style="color: #000000;">&nbsp;</span></p>
+<p style="text-indent: 0px;"><span style="color: #000000;">&nbsp;</span></p>
+<p style="text-indent: 0px;"><span class="f_CourierFixed">STEP 4: Calculate the volumes</span></p>
+<p style="text-indent: 0px;"><span style="font-size: 5pt; color: #010100;">&nbsp;</span></p>
+<p style="text-indent: 0px;"><span style="font-size: 9pt; color: #010100;"> </span><img src="clip0946.png" width="191" height="31" border="0" alt="clip0946"></p>
+<p style="text-indent: 0px;"><span style="font-size: 9pt; color: #010100;">Click the <a href="terrace___volumes___cut___fill.htm">Cut&amp;fill</a> button on the bottom menu.</span></p>
+<p style="text-indent: 0px;"><span style="color: #000000;">&nbsp;</span></p>
+<p style="text-indent: 0px; margin: 0px 0px 0px 6px;"><img src="clip0949.png" width="376" height="302" border="0" alt="clip0949"></p>
+<p style="text-indent: 0px;"><span style="font-size: 9pt; color: #010100;">In this dialog box notice that the </span><span style="font-size: 9pt; font-weight: bold; color: #010100;">GROUND PROJECT</span><span style="font-size: 9pt; color: #010100;"> is set to </span><span style="font-size: 9pt; font-weight: bold; color: #010100;">#1</span><span style="font-size: 9pt; color: #010100;"> and the </span><span style="font-size: 9pt; font-weight: bold; color: #010100;">DESIGN PROJECT</span><span style="font-size: 9pt; color: #010100;"> to #</span><span style="font-size: 9pt; font-weight: bold; color: #010100;">2</span><span style="font-size: 9pt; color: #010100;">. &nbsp; Make sure that the </span><span style="font-size: 9pt; font-weight: bold; color: #010100;">flat surface</span><span style="font-size: 9pt; color: #010100;"> checkbox is </span><span style="font-size: 9pt; color: #010100; text-decoration: underline;">not</span><span style="font-size: 9pt; color: #010100;"> selected.</span></p>
+<p style="text-indent: 0px;"><span style="color: #000000;">&nbsp;</span></p>
+<p style="text-indent: 0px;"><span style="font-size: 9pt; color: #010100;">Click the </span><span style="font-size: 9pt; font-weight: bold; color: #010100;">Grid</span><span style="font-size: 9pt; color: #010100;"> button to proceed to calculate the volumes.</span></p>
+<p style="text-indent: 0px;"><span style="color: #000000;">&nbsp;</span></p>
+<p style="text-indent: 0px;"><span style="font-size: 9pt; color: #010100;">After the </span><span style="font-size: 9pt; font-weight: bold; color: #010100;">Grid</span><span style="font-size: 9pt; color: #010100;"> button is pressed the following dialog is displayed.</span></p>
+<p style="text-indent: 0px;"><span style="color: #000000;">&nbsp;</span></p>
+<p style="text-indent: 0px; margin: 0px 0px 0px 6px;"><img src="clip0950.png" width="329" height="307" border="0" alt="clip0950"></p>
+<p style="text-indent: 0px; margin: 0px 0px 0px 6px;"><span style="font-size: 9pt; color: #010100;">In this specific example the </span><span style="font-size: 9pt; font-weight: bold; color: #010100;">Suggested interval</span><span style="font-size: 9pt; color: #010100;"> is </span><span style="font-size: 9pt; font-weight: bold; color: #010100;">1.6</span><span style="font-size: 9pt; color: #010100;">. For other model sizes the suggested grid interval will be different.</span></p>
+<p style="text-indent: 0px;"><span style="font-size: 9pt; color: #010100;">Set the </span><span style="font-size: 9pt; font-weight: bold; color: #010100;">Grid Interval</span><span style="font-size: 9pt; color: #010100;"> to </span><span style="font-size: 9pt; font-weight: bold; color: #010100;">2.0</span><span style="font-size: 9pt; color: #010100;">. &nbsp;Again, on other models this size can be different and should be inspected each time.</span></p>
+<p style="text-indent: 0px;"><span style="font-size: 9pt; color: #010100;">Click the </span><span style="font-size: 9pt; font-weight: bold; color: #010100;">OK</span><span style="font-size: 9pt; color: #010100;"> button to start the calculation process. </span></p>
+<p style="text-indent: 0px;"><span style="color: #000000;">&nbsp;</span></p>
+<p style="text-indent: 0px;"><span style="font-size: 9pt; color: #010100;">The volume will be calculated and the result displayed in the <a href="files___editor.htm">editor</a> box.</span></p>
+<p style="text-indent: 0px;"><span style="color: #000000;">&nbsp;</span></p>
+<p style="text-indent: 0px; margin: 0px 0px 0px 6px;"><img src="clip0951.png" width="637" height="399" border="0" alt="clip0951"></p>
+<p style="text-indent: 0px;"><span style="color: #000000;">&nbsp;</span></p>
+<div style="text-align: left; text-indent: 0px; padding: 0px 0px 0px 0px; margin: 0px 0px 0px 0px;"><table cellspacing="0" cellpadding="0" border="0" style="border: none; border-spacing:0px;">
+<tr style="text-align:left;vertical-align:top;">
+<td valign="top" width="345" style="width:345px;"><p style="text-align: center; text-indent: 0px;"><span style="font-style: italic; font-weight: bold; color: #ff0000; text-decoration: underline;">Hint:</span></p>
+<p style="text-align: center; text-indent: 0px;"><span style="font-size: 9pt; color: #010100;">This example uses projects 1 and 2 to hold the two DTM surface models. In real life any of the 21 projects can be used to hold either of the surfaces.</span></p>
+</td>
+</tr>
+</table>
+</div>
+<p style="text-indent: 0px;"><span style="color: #000000;">&nbsp;</span></p>
+<p style="text-indent: 0px;"><span class="f_rrelatedtopic">Related Topics:</span></p>
+<p style="text-indent: 0px;"><span style="font-size: 9pt; color: #010100;"><a href="terracecross_sections.htm">X-sections</a></span></p>
+<p style="text-indent: 0px;"><span style="font-size: 9pt; color: #010100;"><a href="terrace___volumes___cut___fill.htm">Grid</a></span></p>
+<p style="text-indent: 0px;"><span style="font-size: 9pt; color: #010100;"><a href="terrace___volumes___cut___fill.htm">Grid Area</a></span></p>
+<p style="text-indent: 0px;"><span style="color: #000000;">&nbsp;</span></p>
+<p style="text-indent: 0px;"><span style="color: #000000;">&nbsp;</span></p>
+<p style="text-indent: 0px;"><span style="color: #000000;">&nbsp;</span></p>
+
+</td></tr></table>
+
+</body>
+</html>

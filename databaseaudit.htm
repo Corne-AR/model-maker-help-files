@@ -1,0 +1,108 @@
+<!DOCTYPE HTML PUBLIC "-//W3C//DTD HTML 4.01 Transitional//EN">
+<html>
+<head>
+   <title>DATA BASE : Audit</title>
+   <meta name="generator" content="Help &amp; Manual" />
+   <meta name="keywords" content="Audit,Data,Duplicate" />
+   <meta http-equiv="Content-Type" content="text/html; charset=ISO-8859-1" />
+   <meta http-equiv="Content-Style-Type" content="text/css" />
+   <link type="text/css" href="default.css" rel="stylesheet" />
+
+<script type="text/javascript" src="helpman_topicinit.js"></script>
+</head>
+<body style="margin: 0px 0px 0px 0px; background: #FFFFFF;">
+
+
+<table width="100%" border="0" cellspacing="0" cellpadding="5" bgcolor="#D0D0D0">
+  <tr valign="middle">
+    <td align="left">
+      <p class="p_Heading1"><span class="f_Heading1">DATA BASE : Audit </span></p>
+
+    </td>
+    <td align="right">
+     <span style="font-size: 9pt">
+     <a href="start_up.htm">Top</a>&nbsp;
+     <a href="stationconfiguration.htm">Previous</a>&nbsp;
+     <a href="databasegeneral.htm">Next</a>
+     </span>
+    </td>
+  </tr>
+</table>
+
+
+<!-- Placeholder for topic body. -->
+<table width="100%" border="0" cellspacing="0" cellpadding="5"><tr valign="top"><td align="left">
+<p style="text-indent: 0px;"><span style="color: #000000;">&nbsp;</span></p>
+<p style="text-indent: 0px;"><span class="f_rrelatedtopic">MENU : dB - data base-Gen</span></p>
+<p style="text-indent: 0px;"><span style="color: #000000;">&nbsp;</span></p>
+<p style="text-indent: 0px;"><span style="font-size: 5pt; color: #010100;">&nbsp;</span></p>
+<p style="text-indent: 0px;"><span style="font-size: 9pt; font-weight: bold; color: #010100;">The functions on the general data editing dialog box are used to do the following:</span></p>
+<p style="text-indent: 0px;"><img src="_bm26.png" width="10" height="15" border="0" alt="_bm26"> &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp;<span style="font-size: 9pt; color: #010100;">Audit the survey data by marking points within a certain radius from each other.</span></p>
+<p style="text-indent: 0px;"><img src="_bm26.png" width="10" height="15" border="0" alt="_bm26"> &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp;<span style="font-size: 9pt; color: #010100;">Delete the points marked with the *.* code.</span></p>
+<p style="text-indent: 0px;"><img src="_bm26.png" width="10" height="15" border="0" alt="_bm26"> &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp;<span style="font-size: 9pt; color: #010100;">Copy points from one station to another.</span></p>
+<p style="text-indent: 0px;"><span style="color: #000000;">&nbsp;</span></p>
+<p style="text-indent: 0px;"><span style="font-size: 9pt; color: #010100;"> </span><map name="map80"><area shape="rect" coords="205,77,335,222" href="databasedeletepoints.htm" alt=""><area shape="rect" coords="17,30,117,55" href="databaseconstant.htm" alt=""></map><img src="clip0339.png" width="650" height="364" border="0" alt="clip0339" usemap="#map80"></p>
+<p style="text-indent: 0px;"><span style="color: #000000;">&nbsp;</span></p>
+<p style="text-indent: 0px;"><span style="color: #000000;">&nbsp;</span></p>
+<p style="text-indent: 0px;"><span class="f_CourierFixed">Audit DTM data</span></p>
+<p style="text-indent: 0px;"><span style="font-size: 5pt; color: #010100;">&nbsp;</span></p>
+<p style="text-indent: 0px;"><span style="font-size: 9pt; font-weight: bold; color: #0000ff;">Model Maker</span><span style="font-size: 9pt; color: #010100;"> will not generate triangles automatically if any of the survey points are duplicated. The AUDIT menu is designed to check for and de-activate duplicated points. The function can also be used to filter out some survey points. </span></p>
+<p style="text-indent: 0px;"><span style="font-size: 9pt; color: #010100;">Aerial surveyed DTM's often generate massive amounts of unnecessary points not needed to model simple terrains. </span></p>
+<p style="text-indent: 0px;"><span style="font-size: 9pt; color: #010100;">To delete some of the points that are very close to each other, use the AUDIT function and specify a radius and elevation limit of 5 meters and 0.2 meters respectively. All the points falling within a distance of 5 meters and having an elevation difference of not more than 0.2 meters will be marked as deleted.</span></p>
+<p style="text-indent: 0px;"><span style="color: #000000;">&nbsp;</span></p>
+<p style="text-indent: 0px;"><span style="font-size: 9pt; font-weight: bold; color: #010100;">The audit function will automatically de-activate points within a specified radius of each other and is commonly used to:</span></p>
+<p style="text-indent: 0px;"><img src="_bm26.png" width="10" height="15" border="0" alt="_bm26"> &nbsp; &nbsp; &nbsp; &nbsp;<span style="font-size: 9pt; color: #010100;">Weed out survey points that are unnecessarily too close to each other.</span></p>
+<p style="text-indent: 0px;"><img src="_bm26.png" width="10" height="15" border="0" alt="_bm26"> &nbsp; &nbsp; &nbsp; &nbsp;<span style="font-size: 9pt; color: #010100;">Check for points that are exactly duplicated or virtually on top of each other.</span></p>
+<p style="text-indent: 0px;"><img src="_bm26.png" width="10" height="15" border="0" alt="_bm26"> &nbsp; &nbsp; &nbsp; &nbsp;<span style="font-size: 9pt; color: #010100;">Remove points from a survey that consists of too many points to be handled practically.</span></p>
+<p style="text-indent: 0px;"><span style="color: #000000;">&nbsp;</span></p>
+<p style="text-indent: 0px;"><span class="f_CourierFixed">Radius</span></p>
+<p style="text-indent: 0px;"><span style="font-size: 9pt; color: #010100;">Specify the minimum distance between points.</span></p>
+<p style="text-indent: 0px;"><img src="_bm26.png" width="10" height="15" border="0" alt="_bm26"> &nbsp; &nbsp; &nbsp; &nbsp;<span style="font-size: 9pt; color: #010100;">Specify a zero radius if only points duplicated exactly must be marked as deleted.</span></p>
+<p style="text-indent: 0px;"><img src="_bm26.png" width="10" height="15" border="0" alt="_bm26"> &nbsp; &nbsp; &nbsp; &nbsp;<span style="font-size: 9pt; color: #010100;">Specify a distance larger than zero to relate each point to all the others within that radius area.</span></p>
+<p style="text-indent: 0px;"><span style="color: #000000;">&nbsp;</span></p>
+<p style="text-indent: 0px;"><span style="color: #000000;">&nbsp;</span></p>
+<p style="text-indent: 0px;"><span class="f_CourierFixed">Elevation</span></p>
+<p style="text-indent: 0px;"><span style="font-size: 9pt; color: #010100;">Specify the maximum allowable height difference between points.</span></p>
+<p style="text-indent: 0px;"><img src="_bm26.png" width="10" height="15" border="0" alt="_bm26"> &nbsp; &nbsp; &nbsp; &nbsp;<span style="font-size: 9pt; color: #010100;">Specify a zero elevation difference if the points may only have the same elevation.</span></p>
+<p style="text-indent: 0px;"><img src="_bm26.png" width="10" height="15" border="0" alt="_bm26"> &nbsp; &nbsp; &nbsp; &nbsp;<span style="font-size: 9pt; color: #010100;">Specify a big value like 1000 if the elevation factor is not important.</span></p>
+<p style="text-indent: 0px;"><span style="color: #000000;">&nbsp;</span></p>
+<p style="text-indent: 0px;"><span style="color: #000000;">&nbsp;</span></p>
+<p style="text-indent: 0px;"><span style="font-size: 9pt; font-weight: bold; color: #010100;">Press the Audit button to start.</span></p>
+<p style="text-indent: 0px;"><img src="_bm26.png" width="10" height="15" border="0" alt="_bm26"> &nbsp; &nbsp; &nbsp; &nbsp;<span style="font-size: 9pt; color: #010100;">It may be necessary to repeat this operation a few times in order to mark all unwanted spots is many points fall within the parameters. </span></p>
+<p style="text-indent: 0px;"><img src="_bm26.png" width="10" height="15" border="0" alt="_bm26"> &nbsp; &nbsp; &nbsp; &nbsp;<span style="font-size: 9pt; color: #010100;">A point will only be marked for deletion if it is within the given radius and height difference relative to another point.</span></p>
+<p style="text-indent: 0px;"><img src="_bm26.png" width="10" height="15" border="0" alt="_bm26"> &nbsp; &nbsp; &nbsp; &nbsp;<span style="font-size: 9pt; color: #010100;">The audited points are only marked with the *.* code. Use the delete function to physically remove them.</span></p>
+<div style="text-align: left; text-indent: 0px; padding: 0px 0px 0px 0px; margin: 0px 0px 0px 1px;"><table border="0" cellpadding="0" cellspacing="0" style="line-height: normal;"><tr style="vertical-align:baseline" valign="baseline"><td width="23"><img src="_bm26.png" width="10" height="15" border="0" alt="_bm26"></td><td><span style="font-size: 9pt; color: #010100;">A function similar to the audit function is available in the point <a href="pointidentify_duplicate.htm">identify</a> menu</span></td></tr></table></div><p style="text-indent: -23px; margin: 0px 0px 0px 24px;"><span style="color: #000000;">&nbsp;</span></p>
+<p style="text-indent: 0px;"><span style="color: #000000;">&nbsp;</span></p>
+<p style="text-indent: 0px;"><span class="f_CourierFixed">Delete Points</span></p>
+<p style="text-indent: 0px;"><span style="font-size: 9pt; color: #010100;">Use the REMOVE button to <a href="databasedeletepoints.htm">delete</a> the points marked with code *.*.</span></p>
+<p style="text-indent: 0px;"><span style="color: #000000;">&nbsp;</span></p>
+<p style="text-indent: 0px;"><span class="f_CourierFixed">Copy from</span></p>
+<p style="text-indent: 0px;"><img src="_bm26.png" width="10" height="15" border="0" alt="_bm26"> &nbsp; &nbsp; &nbsp; &nbsp;<span style="font-size: 9pt; color: #010100;">Enter the station's number, the start number, and the end </span><span style="font-size: 9pt; font-weight: bold; color: #010100;">spot</span><span style="font-size: 9pt; color: #010100;"> number.</span></p>
+<p style="text-indent: 0px;"><span style="width:24px">&nbsp;</span><span style="font-size: 9pt; color: #010100;">Note : The spot number refers to the relative number of the point within the station, ie. first spot number 1 and not the combined point number.</span></p>
+<div style="text-align: left; text-indent: 0px; padding: 0px 0px 0px 0px; margin: 0px 0px 0px 1px;"><table border="0" cellpadding="0" cellspacing="0" style="line-height: normal;"><tr style="vertical-align:baseline" valign="baseline"><td width="23"><img src="_bm26.png" width="10" height="15" border="0" alt="_bm26"></td><td><span style="font-size: 9pt; color: #010100;">See the <a href="databasepoints.htm">Spot/Pnt</a> numbering system on the points page.</span></td></tr></table></div><p style="text-indent: -23px; margin: 0px 0px 0px 24px;"><span style="color: #000000;">&nbsp;</span></p>
+<p style="text-indent: 0px;"><span class="f_CourierFixed">Copy to</span></p>
+<div style="text-align: left; text-indent: 0px; padding: 0px 0px 0px 0px; margin: 0px 0px 0px 1px;"><table border="0" cellpadding="0" cellspacing="0" style="line-height: normal;"><tr style="vertical-align:baseline" valign="baseline"><td width="23"><img src="_bm26.png" width="10" height="15" border="0" alt="_bm26"></td><td><span style="font-size: 9pt; color: #010100;">Enter the new station number.</span></td></tr></table></div><p style="text-indent: 0px;"><span style="color: #000000;">&nbsp;</span></p>
+<p style="text-indent: 0px;"><span style="font-size: 9pt; color: #010100;">Press the COPY SPOTS button to do the copying.</span></p>
+<p style="text-indent: 0px;"><span style="color: #000000;">&nbsp;</span></p>
+<p style="text-indent: 0px;"><span style="color: #000000;">&nbsp;</span></p>
+<p style="text-indent: 0px;"><span class="f_rrelatedtopic">Related topics:</span></p>
+<p style="text-indent: 0px;"><span style="font-size: 9pt; color: #010100;"><a href="data_base.htm">Data Base</a></span></p>
+<p style="text-indent: 0px;"><span style="color: #000000;">&nbsp;</span></p>
+<p style="text-indent: 0px;"><span style="color: #000000;">&nbsp;</span></p>
+<p style="text-indent: 0px;"><span style="color: #000000;">&nbsp;</span></p>
+<p style="text-indent: 0px;"><span style="color: #000000;">&nbsp;</span></p>
+<p style="text-indent: 0px;"><span style="color: #000000;">&nbsp;</span></p>
+<p style="text-indent: 0px;"><span style="color: #000000;">&nbsp;</span></p>
+<p style="text-indent: 0px;"><span style="color: #000000;">&nbsp;</span></p>
+<p style="text-indent: 0px;"><span style="color: #000000;">&nbsp;</span></p>
+<p style="text-indent: 0px;"><span style="color: #000000;">&nbsp;</span></p>
+<p style="text-indent: 0px;"><span style="color: #000000;">&nbsp;</span></p>
+<p style="text-indent: 0px;"><span style="color: #000000;">&nbsp;</span></p>
+<p style="text-indent: 0px;"><span style="color: #000000;">&nbsp;</span></p>
+<p style="text-indent: 0px;"><span style="color: #000000;">&nbsp;</span></p>
+<p style="text-indent: 0px;"><span style="color: #000000;">&nbsp;</span></p>
+
+</td></tr></table>
+
+</body>
+</html>

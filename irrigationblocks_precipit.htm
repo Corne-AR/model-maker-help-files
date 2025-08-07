@@ -1,0 +1,84 @@
+<!DOCTYPE HTML PUBLIC "-//W3C//DTD HTML 4.01 Transitional//EN">
+<html>
+<head>
+   <title>IRRIGATION : Blocks - Precipitation</title>
+   <meta name="generator" content="Help &amp; Manual" />
+   <meta name="keywords" content="Block,Flow,Global edit,Precipitation,Valve" />
+   <meta http-equiv="Content-Type" content="text/html; charset=ISO-8859-1" />
+   <meta http-equiv="Content-Style-Type" content="text/css" />
+   <link type="text/css" href="default.css" rel="stylesheet" />
+
+<script type="text/javascript" src="helpman_topicinit.js"></script>
+</head>
+<body style="margin: 0px 0px 0px 0px; background: #FFFFFF;">
+
+
+<table width="100%" border="0" cellspacing="0" cellpadding="5" bgcolor="#D0D0D0">
+  <tr valign="middle">
+    <td align="left">
+      <p class="p_Heading1"><span class="f_Heading1">IRRIGATION : Blocks - Precipitation</span></p>
+
+    </td>
+    <td align="right">
+     <span style="font-size: 9pt">
+     <a href="start_up.htm">Top</a>&nbsp;
+     <a href="irrigation__blocks___tramlines.htm">Previous</a>&nbsp;
+     <a href="irrigation_blocks___edit_emitt.htm">Next</a>
+     </span>
+    </td>
+  </tr>
+</table>
+
+
+<!-- Placeholder for topic body. -->
+<table width="100%" border="0" cellspacing="0" cellpadding="5"><tr valign="top"><td align="left">
+<p class="p_Heading1"><span class="f_Heading1">&nbsp;</span></p>
+<p class="p_Heading1"><span class="f_rrelatedtopic">MENU : Irr - Blocks </span></p>
+<p class="p_Heading1"><span class="f_Heading1">&nbsp;</span></p>
+<p class="p_Heading1"><span style="font-size: 5pt; color: #010100;">&nbsp;</span></p>
+<p class="p_Heading1"><span style="font-size: 9pt; font-weight: bold; color: #010100;">This dialog helps to globally change the pressure and flow of irrigation blocks that consist only of one valve node</span><span style="font-size: 9pt; color: #010100;">. </span></p>
+<p class="p_Heading1"><span class="f_Heading1">&nbsp;</span></p>
+<p class="p_Heading1"><span style="font-size: 9pt; color: #010100;">Normally an irrigation block will be defined by the layout of the sprinklers which in turn are all connected to the source (valve) node. One would then use the <a href="irrigationhydraulics.htm">hydraulics</a> functions to calculate the flow required by the block when all the sprinklers are active.</span></p>
+<p class="p_Heading1"><span style="font-size: 9pt; color: #010100;">There is however often a need to define a block with only the source valve as the solitary node. This situation is often encountered when one is estimating a design by assuming a general precipitation rate over each block and then need to know what the size of the main line pipes must be to feed the blocks.</span></p>
+<p class="p_Heading1"><span style="font-size: 9pt; color: #010100;">In these situations the source valve of each block will then hold the values for the flow and pressure that is required by the block. </span></p>
+<p class="p_Heading1"><span style="font-size: 9pt; color: #010100;">The flow and pressure of these valves can individually be changed by using the <a href="irrigationnodes_info.htm">node edit</a> functions.</span></p>
+<p class="p_Heading1"><span class="f_Heading1">&nbsp;</span></p>
+<p class="p_Heading1"><span style="font-size: 9pt; color: #010100;">This dialog box assists in changing the attributes of the source node of these types of blocks without the user having to edit each block individually.</span></p>
+<p class="p_Heading1"><span class="f_Heading1">&nbsp;</span></p>
+<p class="p_Heading1"><span class="f_Heading1">&nbsp;</span></p>
+<p class="p_Heading1"><span class="f_CourierFixed">The components</span></p>
+<p class="p_Heading1"><span class="f_CourierFixed">1)</span><span style="font-size: 9pt; color: #010100;"> The list that shows all the blocks that has only one node which is of a valve type.</span></p>
+<p style="text-indent: 0px;"><span class="f_CourierFixed">2)</span><span style="font-size: 9pt; color: #010100;"> The 3 command buttons that may be used to set the flow, pressure or precipitation in each block.</span></p>
+<p style="text-indent: 0px;"><span style="color: #000000;">&nbsp;</span></p>
+<p style="text-indent: 0px;"><span style="color: #000000;">&nbsp;</span></p>
+<p style="text-indent: 0px;"><span class="f_CourierFixed">The actions</span></p>
+<div style="text-align: left; text-indent: 0px; padding: 0px 0px 0px 0px; margin: 0px 0px 0px 0px;"><table cellspacing="0" cellpadding="1" border="0" style="border: none; border-spacing:0px;">
+<tr style="text-align:left;vertical-align:top;">
+<td valign="top" width="129" style="width:129px;"><p style="text-indent: 0px;"><span class="f_CourierFixed">1) </span><span style="font-size: 9pt; color: #010100;">Set the flow </span></p>
+<p style="text-indent: 0px;"><span class="f_CourierFixed">2) </span><span style="font-size: 9pt; color: #010100;">Set the precipitation </span></p>
+<p style="text-indent: 0px;"><span class="f_CourierFixed">3) </span><span style="font-size: 9pt; color: #010100;">Set the pressure </span></p>
+</td>
+<td valign="top" width="605" style="width:605px;"><p style="text-indent: 0px;"><span class="f_CourierFixed">:</span><span style="font-size: 9pt; color: #010100;">This action will change the input flow of each block to the set value.</span></p>
+<p style="text-indent: 0px;"><span class="f_CourierFixed">:</span><span style="font-size: 9pt; color: #010100;">The block flow will be changed to match the required precipitation within the block area.</span></p>
+<p class="p_Heading1"><span class="f_CourierFixed">:</span><span style="font-size: 9pt; color: #010100;">The pressure of all the block valves will be set to the desired value.</span></p>
+</td>
+</tr>
+</table>
+</div>
+<p style="text-indent: 0px;"><span style="width:24px">&nbsp;</span> &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp;</p>
+<div style="text-align: left; text-indent: 0px; padding: 0px 0px 0px 0px; margin: 0px 0px 0px 0px;"><table cellspacing="0" cellpadding="1" border="0" style="border: none; border-spacing:0px;">
+<tr style="text-align:left;vertical-align:top;">
+<td valign="top" width="312" style="width:312px;"><p style="text-align: center; text-indent: 0px;"><span style="font-style: italic; font-weight: bold; color: #d10707;">Note:</span></p>
+<p style="text-align: center; text-indent: 0px;"><span style="font-size: 9pt; color: #010100;">This is a global command and all the blocks in the list will automatically be updated when any of the 3 command buttons are used.</span></p>
+</td>
+</tr>
+</table>
+</div>
+<p style="text-indent: 0px;"><span style="color: #000000;">&nbsp;</span></p>
+<p style="text-indent: 0px;"><span style="color: #000000;">&nbsp;</span></p>
+<p style="text-indent: 0px;"><span style="color: #000000;">&nbsp;</span></p>
+
+</td></tr></table>
+
+</body>
+</html>
